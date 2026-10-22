@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-title-key="ourStory.title">Nuestra historia · JessyIsCrafting</title>
+  <meta name="description" data-i18n-desc-key="ourStory.metaDescription" content="Quién está detrás de JessyIsCrafting y por qué la artesanía, los pequeños detalles y el trabajo hecho con mimo importan tanto.">
+  <meta name="theme-color" content="#3F5A43">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://jessicamoradogetronics.github.io/jessyiscraftingGE/our-story.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JessyIsCrafting">
+  <meta property="og:image" content="https://jessicamoradogetronics.github.io/jessyiscraftingGE/assets/images/placeholders/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-base="./" data-page-id="ourStory">
+  <a class="skip-link" href="#main" data-i18n="nav.skipToContent">Ir al contenido principal</a>
+  <div data-include="header"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container story-layout">
+        <div>
+          <div class="story-portrait">
+            <img src="assets/images/placeholders/portrait-founder.svg" data-i18n-alt="ourStory.photoCaption" alt="Foto: próximamente" width="900" height="1100">
+          </div>
+          <p class="image-note" data-i18n="ourStory.photoCaption">Foto: próximamente, una fotografía mía trabajando en el taller.</p>
+        </div>
+        <div>
+          <span class="eyebrow" data-i18n="ourStory.eyebrow">Quién hay detrás</span>
+          <h1 data-i18n="ourStory.heading">La persona detrás de JessyIsCrafting</h1>
+          <div data-story-paragraphs></div>
+          <p class="pull-quote" data-i18n="ourStory.quote">Lo que hago, lo hago con mimo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2 data-i18n="ourStory.valuesTitle">Lo que me importa</h2>
+        </div>
+        <div class="grid grid--3 values-grid" data-story-values></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    function renderOurStory() {
+      app.renderArrayInto(document.querySelector("[data-story-paragraphs]"), "ourStory.paragraphs", function (paragraph) {
+        return "<p>" + paragraph + "</p>";
+      });
+      app.renderArrayInto(document.querySelector("[data-story-values]"), "ourStory.values", function (value) {
+        return (
+          '<div class="card"><div class="card__body">' +
+          '<h3 class="card__title">' + value.title + "</h3>" +
+          '<p class="card__desc">' + value.text + "</p>" +
+          "</div></div>"
+        );
+      });
+    }
+    document.addEventListener("app:ready", renderOurStory);
+    document.addEventListener("i18n:changed", renderOurStory);
+  </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+{
+  "htmlLang": "de",
+  "meta": {
+    "titleSuffix": " · JessyIsCrafting",
+    "defaultDescription": "Handgefertigtes Kunsthandwerk, digitale Kunst, Gemälde und bemalte Figuren aus Spanien. Einzigartige, mit Sorgfalt gefertigte Stücke."
+  },
+  "nav": {
+    "home": "Start",
+    "shop": "Shop",
+    "gallery": "Galerie",
+    "ourStory": "Unsere Geschichte",
+    "customOrders": "Individuelle Geschenke",
+    "collaborations": "Kooperationen",
+    "inspiration": "Inspiration",
+    "contact": "Kontakt",
+    "faq": "Häufige Fragen",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "languageLabel": "Sprache",
+    "skipToContent": "Zum Hauptinhalt springen"
+  },
+  "footer": {
+    "tagline": "Kunsthandwerk mit Seele, handgefertigt in Spanien.",
+    "quickLinksTitle": "Schnellzugriff",
+    "followTitle": "Folge uns",
+    "madeWith": "Mit Liebe gemacht, in Spanien.",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "home": {
+    "title": "Start",
+    "metaDescription": "JessyIsCrafting: handgefertigtes Kunsthandwerk, digitale Kunst, Gemälde und bemalte Figuren. Einzigartige Stücke mit Liebe aus Spanien.",
+    "heroEyebrow": "Handgefertigtes Kunsthandwerk aus Spanien",
+    "heroTitle": "Kunsthandwerk mit Seele",
+    "heroSubtitle": "Farkle-Sets, digitale Zeichnungen, Gemälde und bemalte Figuren, mit Geduld und viel Liebe zum Detail gefertigt.",
+    "heroCtaShop": "Shop entdecken",
+    "heroCtaGallery": "Galerie ansehen",
+    "quickLinksTitle": "Entdecke JessyIsCrafting",
+    "quickLinks": {
+      "shop": { "title": "Shop", "description": "Kunsthandwerk, digitale Kunst, Gemälde und Figuren, bereit für ein neues Zuhause." },
+      "gallery": { "title": "Galerie", "description": "Ein Blick auf fertige Stücke und den Prozess dahinter." },
+      "collaborations": { "title": "Kooperationen", "description": "Auftragsarbeiten, Zeichenkooperationen und Projekte mit anderen Marken und Kreativen." },
+      "inspiration": { "title": "Inspiration", "description": "Videospiele, Bücher und die Geschichten, die jedes Design prägen." }
+    },
+    "introTitle": "Handgefertigt, mit Zeit und Hingabe",
+    "introText": "Hinter jedem Stück stecken Stunden ruhiger Arbeit: gute Materialien auswählen, jeden Strich mit Sorgfalt setzen und ein Detail so oft wiederholen, bis es stimmt. Nichts verlässt diese Werkstatt, wenn ich nicht zufrieden bin.",
+    "introCta": "Unsere Geschichte lesen",
+    "featuredTitle": "Ausgewählte Stücke",
+    "featuredCta": "Zum gesamten Shop"
+  },
+  "shop": {
+    "title": "Online-Shop",
+    "metaDescription": "Entdecke handgefertigtes Kunsthandwerk, digitale Kunst, Gemälde und bemalte Figuren, mit Liebe gemacht und auf Bestellung erhältlich.",
+    "intro": "Jedes Stück ist handgefertigt, mit Zeit und Liebe zum Detail. Wähle eine Kategorie, um alles Verfügbare zu entdecken.",
+    "categoriesTitle": "Kategorien",
+    "howToBuyTitle": "Wie bestellen?",
+    "howToBuyText": "Schreib mir, welches Stück dich interessiert, und ich sage dir, ob es verfügbar ist, wie lange es dauert und welche Anpassungen möglich sind.",
+    "howToBuyCta": "Verfügbarkeit anfragen",
+    "priceLabel": "Preis",
+    "fromPriceLabel": "Ab",
+    "customizableLabel": "Individualisierbar",
+    "customizationTitle": "Individualisierungsoptionen",
+    "exampleBadge": "Beispielprodukt",
+    "ctaInquire": "Anfragen & bestellen",
+    "viewDetails": "Details ansehen",
+    "closeModal": "Schließen",
+    "backToShop": "Zurück zum Shop",
+    "viewCategory": "Kategorie ansehen"
+  },
+  "categories": {
+    "crafts": {
+      "name": "Kunsthandwerk",
+      "metaDescription": "Farkle-Sets und andere handgefertigte Holzarbeiten, zum Spielen und Verschenken.",
+      "intro": "Farkle-Sets und andere Stücke aus Holz und hochwertigen Materialien, zum Spielen und Verschenken gedacht."
+    },
+    "digitalArt": {
+      "name": "Digitale Kunst",
+      "metaDescription": "Digitale Illustrationen, Porträts und individuelle Stücke, Strich für Strich erstellt.",
+      "intro": "Digitale Illustrationen, Porträts und individuelle Stücke, Strich für Strich nach deiner Idee erstellt."
+    },
+    "paintings": {
+      "name": "Gemälde",
+      "metaDescription": "Handgemalte Bilder mit Texturen und Farben, die zu jeder Ecke deines Zuhauses passen.",
+      "intro": "Handgemalte Bilder mit Texturen und Farben, die zu jeder Ecke deines Zuhauses passen."
+    },
+    "figures": {
+      "name": "Figuren",
+      "metaDescription": "Handbemalte 3D-Figuren mit viel Liebe zum Detail und sorgfältigem Finish.",
+      "intro": "Handbemalte Figuren mit viel Liebe zum Detail, perfekt zum Sammeln oder Verschenken."
+    }
+  },
+  "gallery": {
+    "title": "Galerie",
+    "metaDescription": "Eine Auswahl fertiger Stücke und des kreativen Prozesses hinter JessyIsCrafting.",
+    "intro": "Eine Auswahl fertiger Stücke und des kreativen Prozesses: Hände, Pinsel, Holz und viel Geduld.",
+    "finishedTitle": "Fertige Stücke",
+    "processTitle": "Hinter den Kulissen",
+    "processText": "Fotos aus der Werkstatt, vom Bemalen und von der Vorbereitung jeder Bestellung. Denn hinter jedem Stück steckt immer ein menschlicher, handwerklicher Prozess."
+  },
+  "ourStory": {
+    "title": "Unsere Geschichte",
+    "metaDescription": "Wer hinter JessyIsCrafting steht und warum Handwerk, kleine Details und mit Liebe gemachte Arbeit so wichtig sind.",
+    "eyebrow": "Wer dahintersteckt",
+    "heading": "Die Person hinter JessyIsCrafting",
+    "paragraphs": [
+      "Ich bin Jessy, die Person hinter JessyIsCrafting. Alles begann als eine Möglichkeit, vom Alltag abzuschalten, und wurde nach und nach zu meiner liebsten Art, schöne Dinge mit meinen eigenen Händen zu erschaffen.",
+      "Für mich bedeutet Handwerk vor allem Zeit: Zeit, um gute Materialien auszuwählen, jeden Strich mit Sorgfalt zu setzen und ein Detail so oft zu wiederholen, bis es stimmt. Nichts verlässt diese Werkstatt, wenn ich mit dem Ergebnis nicht zufrieden bin.",
+      "Jedes Stück wird in Spanien von Hand entworfen, bemalt und vorbereitet, mit Materialien, die ich sorgfältig und bewusst auswähle. Die kleinen Details – eine gut genutzte Holzmaserung, ein Farbverlauf, ein sorgfältiges Finish – machen für mich den Unterschied zwischen einem Gegenstand und einer Erinnerung."
+    ],
+    "quote": "Was ich mache, mache ich mit Hingabe.",
+    "photoCaption": "Foto folgt in Kürze: ich bei der Arbeit im Atelier.",
+    "valuesTitle": "Was mir wichtig ist",
+    "values": [
+      { "title": "Gut investierte Zeit", "text": "Ich nehme mir lieber etwas mehr Zeit, damit jedes Stück genau so wird, wie ich es möchte." },
+      { "title": "Details mit Bedeutung", "text": "Kleine Entscheidungen – eine Farbe, ein Finish – machen jedes Stück einzigartig." },
+      { "title": "Made in Spain", "text": "Ich entwerfe, bemale und bereite jede Bestellung von Hand hier vor." }
+    ]
+  },
+  "customOrders": {
+    "title": "Individuelle Geschenke",
+    "metaDescription": "Handgefertigte, individuelle Bestellungen und Geschenke für Geburtstage, Jubiläen, Weihnachten und jeden besonderen Anlass.",
+    "intro": "Suchst du ein besonderes Geschenk oder ein Stück, das für jemand Bestimmtes gedacht ist? Ich fertige individuelle Bestellungen für Geburtstage, Jubiläen, Weihnachten und jeden Anlass, den es zu feiern gibt.",
+    "stepsTitle": "So funktioniert es",
+    "steps": [
+      { "title": "Erzähl mir deine Idee", "text": "Schreib mir den Anlass, den Stil oder für wen das Geschenk gedacht ist." },
+      { "title": "Wir gestalten die Details gemeinsam", "text": "Ich schlage dir je nach Produkt Materialien, Farben und Oberflächen vor." },
+      { "title": "Ich bereite deine Bestellung mit Sorgfalt vor", "text": "Jede Auftragsarbeit braucht ihren eigenen Prozess; ich nenne dir den gesamten Zeitplan." },
+      { "title": "Du erhältst es bereit zum Verschenken", "text": "Sorgfältig verpackt, damit die Überraschung schon beim Öffnen spürbar ist." }
+    ],
+    "seasonalTitle": "Für besondere Termine",
+    "seasonalText": "Termine wie Weihnachten sind schnell ausgebucht. Wenn du also eine Frist hast, melde dich am besten frühzeitig, damit wir gut planen können.",
+    "cta": "Erzähl mir deine Idee"
+  },
+  "collaborations": {
+    "title": "Kooperationen",
+    "metaDescription": "Auftragsarbeiten für digitale Kunst und Kooperationen mit Marken, Shops und anderen Kreativen.",
+    "intro": "Wenn dir meine Art zu zeichnen oder zu malen gefällt und du etwas ganz Persönliches möchtest, lass uns reden. Ich bin auch offen für Kooperationen mit anderen Marken, Shops und Kreativen bei sinnvollen Projekten.",
+    "commissionsTitle": "Zeichenaufträge",
+    "commissionsText": "Ich öffne zeitlich begrenzt Aufträge für digitale Illustrationen: Porträts, eigene Charaktere, Fan Art und Geschenkstücke. Schreib mir deine Idee oder Referenz, und ich sage dir, was möglich ist, in welchem Stil und zu welchem ungefähren Preis.",
+    "otherTitle": "Andere Arten von Kooperationen",
+    "otherText": "Kunsthandwerksmärkte, Sets für Shops, Kooperationen mit anderen Kreativen, gemeinsame Inhalte in sozialen Netzwerken... Wenn du einen Vorschlag hast, erzähl mir unverbindlich davon.",
+    "cta": "Kooperation vorschlagen"
+  },
+  "inspiration": {
+    "title": "Inspiration",
+    "metaDescription": "Videospiele, Kingdom Come: Deliverance, Lesen und Schreiben: die Geschichten, die jedes Stück von JessyIsCrafting inspirieren.",
+    "intro": "Alles, was ich mache, schöpft aus dem, was ich liebe: Videospiele, Bücher und gut erzählte Geschichten.",
+    "kcdTitle": "Kingdom Come: Deliverance",
+    "kcdText1": "Wenn ein Videospiel dieses Projekt geprägt hat, dann Kingdom Come: Deliverance. Ich habe mich vom ersten Moment an in sein mittelalterliches Böhmen verliebt: die Wälder, das Licht, die Kleidung, jedes kleine Objekt mit seiner eigenen Geschichte.",
+    "kcdText2": "Sein Soundtrack begleitet mich beim Arbeiten fast genauso wie meine Pinsel. Und genau diese Ästhetik – Erde, Holz, Eisen, natürliche Stoffe – inspiriert wirklich die Farben und Texturen von JessyIsCrafting.",
+    "readingTitle": "Lesen und Schreiben",
+    "readingText": "Außerhalb der Werkstatt findet man mich fast immer mit einem Buch – oder beim Schreiben. Ich schreibe seit einiger Zeit Fanfiction, die in der Welt von Kingdom Come: Deliverance spielt, aus purer Liebe zu seinen Figuren und seiner Welt.",
+    "fanficCta": "Meine Fanfics lesen",
+    "fanficNote": "Beispiel-Link: ersetze ihn durch die URL, unter der du deine Geschichten veröffentlichst (zum Beispiel Archive of Our Own oder Wattpad)."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "metaDescription": "Schreib mir für individuelle Bestellungen, Kooperationen oder Fragen zu JessyIsCrafting.",
+    "intro": "Hast du eine Frage, möchtest du ein individuelles Stück bestellen oder einfach Hallo sagen? Schreib mir, ich freue mich über deine Nachricht.",
+    "formName": "Name",
+    "formEmail": "E-Mail",
+    "formSubject": "Betreff",
+    "formMessage": "Nachricht",
+    "formSubmit": "Nachricht senden",
+    "formNote": "Mit dem Absenden dieses Formulars stimmst du zu, dass ich deine Daten ausschließlich zur Beantwortung deiner Nachricht verwende.",
+    "directTitle": "Direkter Kontakt",
+    "emailLabel": "E-Mail",
+    "socialTitle": "Soziale Netzwerke",
+    "responseTime": "Ich antworte in der Regel innerhalb von 1-3 Werktagen."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "metaDescription": "Versand, Bearbeitungszeiten, Rückgaben und Individualisierung: alles, was du vor einer Bestellung bei JessyIsCrafting wissen solltest.",
+    "intro": "Alles, was du über Versand, Zeitrahmen, Rückgaben und Individualisierung wissen musst. Falls du weitere Fragen hast, schreib mir gerne.",
+    "items": [
+      {
+        "question": "In welche Länder versendet ihr?",
+        "answer": "Ich versende regelmäßig in die gesamte Europäische Union und nach Großbritannien. Wenn du anderswo wohnst, schreib mir vor der Bestellung, damit wir gemeinsam nach Möglichkeiten suchen können."
+      },
+      {
+        "question": "Wie lange dauert die Vorbereitung meiner Bestellung?",
+        "answer": "Jedes Stück ist handgefertigt, daher variieren die Zeiten je nach Produkt und ob es individualisiert ist. Als Richtwert: 3 bis 10 Werktage vor dem Versand; rund um Termine wie Weihnachten kann es länger dauern."
+      },
+      {
+        "question": "Kann ich ein Produkt zurückgeben?",
+        "answer": "Bei nicht individualisierten Produkten akzeptiere ich Rückgaben innerhalb von 14 Tagen nach Erhalt, sofern sie sich im Originalzustand befinden. Individualisierte oder auf Bestellung gefertigte Stücke können nicht zurückgegeben werden, außer bei einem Fertigungsfehler."
+      },
+      {
+        "question": "Kann ich ein individuelles Stück bestellen?",
+        "answer": "Ja. Viele Produkte lassen sich in Farbe, Größe oder Details anpassen. Gib dies bei der Bestellung an oder schreib mir vorher, um Optionen und Zeitrahmen zu klären."
+      },
+      {
+        "question": "Ich lebe außerhalb der EU oder Großbritanniens, kann ich trotzdem bestellen?",
+        "answer": "Schreib mir vor der Bestellung und nenne mir deinen Standort; ich prüfe jeden Fall einzeln, je nach Produkt und Versandkosten."
+      },
+      {
+        "question": "Wie kann ich bezahlen?",
+        "answer": "Ich nenne dir die verfügbare Zahlungsmethode, wenn wir deine Bestellung per Nachricht oder E-Mail abschließen, je nach Produkt und Versandart."
+      }
+    ]
+  },
+  "common": {
+    "exampleDataNote": "Die gezeigten Produkte sind Beispiele. Ersetze sie durch deinen echten Katalog in assets/data/products.json.",
+    "placeholderImageNote": "Beispielbild — durch echtes Foto ersetzen",
+    "notFoundTitle": "Seite nicht gefunden",
+    "notFoundText": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "notFoundCta": "Zurück zur Startseite"
+  }
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-title-key="faq.title">Preguntas frecuentes · JessyIsCrafting</title>
+  <meta name="description" data-i18n-desc-key="faq.metaDescription" content="Envíos, plazos de preparación, devoluciones y personalización: todo lo que debes saber antes de comprar en JessyIsCrafting.">
+  <meta name="theme-color" content="#3F5A43">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://jessicamoradogetronics.github.io/jessyiscraftingGE/faq.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JessyIsCrafting">
+  <meta property="og:image" content="https://jessicamoradogetronics.github.io/jessyiscraftingGE/assets/images/placeholders/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-base="./" data-page-id="faq">
+  <a class="skip-link" href="#main" data-i18n="nav.skipToContent">Ir al contenido principal</a>
+  <div data-include="header"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="nav.faq">Preguntas frecuentes</span>
+          <h1 data-i18n="faq.title">Preguntas frecuentes</h1>
+          <p class="lede" data-i18n="faq.intro">Todo lo que necesitas saber sobre envíos y devoluciones.</p>
+        </div>
+
+        <div style="max-width:780px; margin-inline:auto;" data-faq-list></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    function renderFaq() {
+      var first = true;
+      app.renderArrayInto(document.querySelector("[data-faq-list]"), "faq.items", function (item) {
+        var isOpen = first;
+        first = false;
+        return (
+          '<div class="accordion-item" data-accordion-item data-open="' + isOpen + '">' +
+          '<h2 style="margin:0;"><button type="button" class="accordion-trigger" data-accordion-trigger aria-expanded="' + isOpen + '">' +
+          "<span>" + item.question + "</span>" +
+          '<span class="accordion-trigger__icon" aria-hidden="true">+</span>' +
+          "</button></h2>" +
+          '<div class="accordion-panel"><div class="accordion-panel__inner"><p>' + item.answer + "</p></div></div>" +
+          "</div>"
+        );
+      });
+    }
+    document.addEventListener("app:ready", renderFaq);
+    document.addEventListener("i18n:changed", renderFaq);
+  </script>
+</body>
+</html>

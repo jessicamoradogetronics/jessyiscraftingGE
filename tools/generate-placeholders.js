@@ -6,7 +6,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const OUT_DIR = path.join(__dirname, "..", "src", "assets", "images", "placeholders");
+const OUT_DIR = path.join(__dirname, "..", "assets", "images", "placeholders");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
 const palette = {

@@ -1,0 +1,208 @@
+{
+  "htmlLang": "es",
+  "meta": {
+    "titleSuffix": " · JessyIsCrafting",
+    "defaultDescription": "Artesanía, dibujo digital, cuadros y figuras pintadas a mano en España. Piezas únicas hechas con mimo, una a una."
+  },
+  "nav": {
+    "home": "Inicio",
+    "shop": "Tienda",
+    "gallery": "Galería",
+    "ourStory": "Nuestra historia",
+    "customOrders": "Personalizados y regalos",
+    "collaborations": "Colaboraciones",
+    "inspiration": "Inspiración",
+    "contact": "Contacto",
+    "faq": "Preguntas frecuentes",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú",
+    "languageLabel": "Idioma",
+    "skipToContent": "Ir al contenido principal"
+  },
+  "footer": {
+    "tagline": "Artesanía con alma, hecha a mano en España.",
+    "quickLinksTitle": "Enlaces rápidos",
+    "followTitle": "Síguenos",
+    "madeWith": "Hecho con mimo, en España.",
+    "rights": "Todos los derechos reservados."
+  },
+  "home": {
+    "title": "Inicio",
+    "metaDescription": "JessyIsCrafting: artesanía, dibujo digital, cuadros y figuras pintadas a mano. Piezas únicas hechas con cariño en España.",
+    "heroEyebrow": "Artesanía hecha a mano en España",
+    "heroTitle": "Artesanía con alma, hecha a mano",
+    "heroSubtitle": "Sets de Farkle, dibujos digitales, cuadros y figuras pintadas con paciencia y mucho mimo por los pequeños detalles.",
+    "heroCtaShop": "Explorar la tienda",
+    "heroCtaGallery": "Ver la galería",
+    "quickLinksTitle": "Descubre JessyIsCrafting",
+    "quickLinks": {
+      "shop": { "title": "Tienda", "description": "Artesanías, dibujo digital, cuadros y figuras, listas para encontrar un nuevo hogar." },
+      "gallery": { "title": "Galería", "description": "Un vistazo a las piezas terminadas y al proceso detrás de cada una." },
+      "collaborations": { "title": "Colaboraciones", "description": "Encargos, comisiones de dibujo y proyectos con otras marcas y creadoras." },
+      "inspiration": { "title": "Inspiración", "description": "Videojuegos, lectura y las historias que dan forma a cada diseño." }
+    },
+    "introTitle": "Hecho a mano, con tiempo y cariño",
+    "introText": "Detrás de cada pieza hay horas de trabajo tranquilo: elegir bien los materiales, cuidar cada trazo y repetir un detalle tantas veces como haga falta hasta que esté bien. Nada sale de aquí si no estoy contenta con el resultado.",
+    "introCta": "Conoce mi historia",
+    "featuredTitle": "Piezas destacadas",
+    "featuredCta": "Ver toda la tienda"
+  },
+  "shop": {
+    "title": "Tienda online",
+    "metaDescription": "Descubre artesanías, dibujo digital, cuadros y figuras pintadas a mano, hechas con cariño y disponibles para pedido.",
+    "intro": "Cada pieza está hecha a mano, con tiempo y cuidado por los detalles. Elige una categoría para descubrir todo lo disponible.",
+    "categoriesTitle": "Categorías",
+    "howToBuyTitle": "¿Cómo comprar?",
+    "howToBuyText": "Escríbeme indicando la pieza que te interesa y te cuento disponibilidad, plazos y opciones de personalización.",
+    "howToBuyCta": "Consultar disponibilidad",
+    "priceLabel": "Precio",
+    "fromPriceLabel": "Desde",
+    "customizableLabel": "Personalizable",
+    "customizationTitle": "Opciones de personalización",
+    "exampleBadge": "Producto de ejemplo",
+    "ctaInquire": "Consultar y pedir",
+    "viewDetails": "Ver detalles",
+    "closeModal": "Cerrar",
+    "backToShop": "Volver a la tienda",
+    "viewCategory": "Ver categoría"
+  },
+  "categories": {
+    "crafts": {
+      "name": "Artesanías",
+      "metaDescription": "Sets de Farkle y piezas de artesanía en madera, hechas a mano y pensadas para jugar y para regalar.",
+      "intro": "Sets de Farkle y otras piezas en madera y materiales nobles, pensadas para jugar y para regalar."
+    },
+    "digitalArt": {
+      "name": "Dibujo digital",
+      "metaDescription": "Ilustraciones digitales, retratos y piezas personalizadas creadas trazo a trazo.",
+      "intro": "Ilustraciones digitales, retratos y piezas personalizadas, creadas trazo a trazo según tu idea."
+    },
+    "paintings": {
+      "name": "Cuadros",
+      "metaDescription": "Cuadros pintados a mano, con texturas y colores pensados para acompañar cualquier rincón.",
+      "intro": "Cuadros pintados a mano, con texturas y colores pensados para acompañar cualquier rincón de tu casa."
+    },
+    "figures": {
+      "name": "Figuras",
+      "metaDescription": "Figuras 3D pintadas a mano, con atención en cada detalle y acabado.",
+      "intro": "Figuras pintadas a mano, con atención en cada detalle, pensadas para coleccionar o regalar."
+    }
+  },
+  "gallery": {
+    "title": "Galería",
+    "metaDescription": "Una muestra de piezas terminadas y del proceso de creación detrás de JessyIsCrafting.",
+    "intro": "Una muestra de piezas terminadas y del proceso de creación: manos, pinceles, madera y mucha paciencia.",
+    "finishedTitle": "Piezas terminadas",
+    "processTitle": "Detrás de las escenas",
+    "processText": "Fotografías del taller, del proceso de pintado y de la preparación de cada pedido. Porque detrás de cada pieza hay siempre un proceso humano y artesanal."
+  },
+  "ourStory": {
+    "title": "Nuestra historia",
+    "metaDescription": "Quién está detrás de JessyIsCrafting y por qué la artesanía, los pequeños detalles y el trabajo hecho con mimo importan tanto.",
+    "eyebrow": "Quién hay detrás",
+    "heading": "La persona detrás de JessyIsCrafting",
+    "paragraphs": [
+      "Soy Jessy, la persona detrás de JessyIsCrafting. Todo empezó como una forma de desconectar del día a día y, poco a poco, se convirtió en mi manera favorita de crear cosas bonitas con las manos.",
+      "Para mí la artesanía es sinónimo de tiempo: tiempo para elegir bien los materiales, para cuidar cada trazo y para repetir un detalle tantas veces como haga falta hasta que esté bien. Nada sale de aquí si no estoy contenta con el resultado.",
+      "Cada pieza se diseña, se pinta y se prepara a mano en España, con materiales que intento cuidar y elegir con sentido. Los pequeños detalles —una veta de madera bien aprovechada, un degradado de color, un acabado cuidado— son los que para mí marcan la diferencia entre un objeto y un recuerdo."
+    ],
+    "quote": "Lo que hago, lo hago con mimo.",
+    "photoCaption": "Foto: próximamente, una fotografía mía trabajando en el taller.",
+    "valuesTitle": "Lo que me importa",
+    "values": [
+      { "title": "Tiempo bien invertido", "text": "Prefiero tardar un poco más y que cada pieza salga como yo quiero." },
+      { "title": "Detalles con sentido", "text": "Las pequeñas decisiones —un color, un acabado— son las que hacen única cada pieza." },
+      { "title": "Hecho en España", "text": "Diseño, pinto y preparo cada pedido con mis manos, aquí." }
+    ]
+  },
+  "customOrders": {
+    "title": "Personalizados y regalos",
+    "metaDescription": "Pedidos personalizados y regalos hechos a mano para cumpleaños, aniversarios, Navidad y cualquier ocasión especial.",
+    "intro": "¿Buscas un regalo diferente o una pieza pensada para alguien en concreto? Preparo pedidos personalizados para cumpleaños, aniversarios, Navidad y cualquier ocasión que quieras celebrar.",
+    "stepsTitle": "Cómo funciona",
+    "steps": [
+      { "title": "Cuéntame tu idea", "text": "Escríbeme con la ocasión, el estilo o la persona a quien va destinado el regalo." },
+      { "title": "Diseñamos juntas los detalles", "text": "Te propongo opciones de materiales, colores y acabados según el producto." },
+      { "title": "Preparo tu pedido con tiempo", "text": "Cada encargo necesita su proceso; te indico los plazos de principio a fin." },
+      { "title": "Lo recibes listo para regalar", "text": "Embalaje cuidado, pensado para que la sorpresa también se note al abrir el paquete." }
+    ],
+    "seasonalTitle": "Para fechas señaladas",
+    "seasonalText": "Las fechas como la Navidad suelen reservarse rápido, así que si tienes una fecha límite, cuanto antes me escribas, mejor podremos organizarlo.",
+    "cta": "Cuéntame tu idea"
+  },
+  "collaborations": {
+    "title": "Colaboraciones",
+    "metaDescription": "Comisiones de dibujo digital y colaboraciones con marcas, tiendas y otras creadoras.",
+    "intro": "Si te gusta mi forma de dibujar o pintar y quieres algo hecho a tu medida, hablamos. También estoy abierta a colaborar con otras marcas, tiendas y creadoras en proyectos con sentido.",
+    "commissionsTitle": "Comisiones de dibujo",
+    "commissionsText": "Abro encargos de ilustración digital por tiempo limitado: retratos, personajes originales, fan art y piezas para regalar. Escríbeme con tu idea o referencia y te cuento disponibilidad, estilo y precio orientativo.",
+    "otherTitle": "Otro tipo de colaboraciones",
+    "otherText": "Mercadillos y ferias de artesanía, packs para tiendas, colaboraciones con otras creadoras, contenido conjunto en redes... Si tienes una propuesta, cuéntamela sin compromiso.",
+    "cta": "Proponer una colaboración"
+  },
+  "inspiration": {
+    "title": "Inspiración",
+    "metaDescription": "Videojuegos, Kingdom Come Deliverance, lectura y escritura: las historias que inspiran cada pieza de JessyIsCrafting.",
+    "intro": "Todo lo que hago bebe de lo que me gusta: los videojuegos, la lectura y las historias bien contadas.",
+    "kcdTitle": "Kingdom Come: Deliverance",
+    "kcdText1": "Si hay un videojuego que ha marcado este proyecto, ese es Kingdom Come: Deliverance. Me enamoré de su Bohemia medieval desde el primer momento: los bosques, la luz, la ropa, cada pequeño objeto con su propia historia.",
+    "kcdText2": "Su banda sonora me acompaña mientras trabajo casi tanto como mis pinceles. Y esa estética —tierra, madera, hierro, telas naturales— es la que de verdad inspira los colores y las texturas de JessyIsCrafting.",
+    "readingTitle": "Lectura y escritura",
+    "readingText": "Fuera del taller me encontraréis casi siempre con un libro o escribiendo. Llevo tiempo escribiendo fanfics ambientados en el universo de Kingdom Come: Deliverance, por puro cariño a sus personajes y a su mundo.",
+    "fanficCta": "Leer mis fanfics",
+    "fanficNote": "Enlace de ejemplo: sustitúyelo por la URL donde publiques tus historias (por ejemplo, Archive of Our Own o Wattpad)."
+  },
+  "contact": {
+    "title": "Contacto",
+    "metaDescription": "Escríbeme para pedidos personalizados, colaboraciones o cualquier pregunta sobre JessyIsCrafting.",
+    "intro": "¿Tienes alguna pregunta, quieres pedir una pieza personalizada o simplemente saludar? Escríbeme, te respondo encantada.",
+    "formName": "Nombre",
+    "formEmail": "Correo electrónico",
+    "formSubject": "Asunto",
+    "formMessage": "Mensaje",
+    "formSubmit": "Enviar mensaje",
+    "formNote": "Al enviar este formulario aceptas que use tus datos únicamente para responder a tu mensaje.",
+    "directTitle": "Contacto directo",
+    "emailLabel": "Email",
+    "socialTitle": "Redes sociales",
+    "responseTime": "Normalmente respondo en 1-3 días laborables."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "metaDescription": "Envíos, plazos de preparación, devoluciones y personalización: todo lo que debes saber antes de comprar en JessyIsCrafting.",
+    "intro": "Todo lo que necesitas saber sobre envíos, plazos, devoluciones y personalización. Si tienes otra duda, escríbeme sin problema.",
+    "items": [
+      {
+        "question": "¿A qué países enviáis?",
+        "answer": "Hago envíos a toda la Unión Europea y a Reino Unido de forma habitual. Si estás en otro país, escríbeme antes de comprar y miramos opciones juntas."
+      },
+      {
+        "question": "¿Cuánto tarda en prepararse mi pedido?",
+        "answer": "Cada pieza es hecha a mano, así que los plazos varían según el producto y si es personalizado. De forma orientativa, entre 3 y 10 días laborables antes del envío; en fechas como Navidad, el plazo puede ampliarse."
+      },
+      {
+        "question": "¿Puedo devolver un producto?",
+        "answer": "Para productos no personalizados, acepto devoluciones hasta 14 días tras la recepción, siempre que estén en su estado original. Las piezas personalizadas o hechas a medida no admiten devolución, salvo defecto de fabricación."
+      },
+      {
+        "question": "¿Puedo pedir una pieza personalizada?",
+        "answer": "Sí. Muchos productos admiten personalización de color, tamaño o detalles. Indícalo en el pedido o escríbeme antes para confirmar opciones y plazo."
+      },
+      {
+        "question": "Vivo fuera de la Unión Europea o Reino Unido, ¿puedo comprar igualmente?",
+        "answer": "Escríbeme antes de hacer el pedido contándome tu ubicación; estudio cada caso según el producto y los gastos de envío."
+      },
+      {
+        "question": "¿Cómo puedo pagar?",
+        "answer": "Te indico el método de pago disponible al confirmar tu pedido por mensaje o email, según el producto y la forma de envío."
+      }
+    ]
+  },
+  "common": {
+    "exampleDataNote": "Los productos mostrados son ejemplos de muestra. Sustitúyelos por tu catálogo real en assets/data/products.json.",
+    "placeholderImageNote": "Imagen de ejemplo — sustituir por fotografía real",
+    "notFoundTitle": "Página no encontrada",
+    "notFoundText": "La página que buscas no existe o se ha movido.",
+    "notFoundCta": "Volver al inicio"
+  }
+}

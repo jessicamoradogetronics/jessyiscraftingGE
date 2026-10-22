@@ -1,0 +1,208 @@
+{
+  "htmlLang": "en",
+  "meta": {
+    "titleSuffix": " · JessyIsCrafting",
+    "defaultDescription": "Handmade crafts, digital art, paintings and painted figures from Spain. Unique pieces made with care, one at a time."
+  },
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "gallery": "Gallery",
+    "ourStory": "Our Story",
+    "customOrders": "Custom Orders & Gifts",
+    "collaborations": "Collaborations",
+    "inspiration": "Inspiration",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "languageLabel": "Language",
+    "skipToContent": "Skip to main content"
+  },
+  "footer": {
+    "tagline": "Handmade crafts with soul, made in Spain.",
+    "quickLinksTitle": "Quick links",
+    "followTitle": "Follow us",
+    "madeWith": "Made with care, in Spain.",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "title": "Home",
+    "metaDescription": "JessyIsCrafting: handmade crafts, digital art, paintings and painted figures. Unique pieces made with care in Spain.",
+    "heroEyebrow": "Handmade crafts from Spain",
+    "heroTitle": "Handmade crafts with soul",
+    "heroSubtitle": "Farkle sets, digital drawings, paintings and painted figures, made with patience and great care for the little details.",
+    "heroCtaShop": "Explore the shop",
+    "heroCtaGallery": "View the gallery",
+    "quickLinksTitle": "Discover JessyIsCrafting",
+    "quickLinks": {
+      "shop": { "title": "Shop", "description": "Crafts, digital art, paintings and figures, ready to find a new home." },
+      "gallery": { "title": "Gallery", "description": "A look at finished pieces and the process behind each one." },
+      "collaborations": { "title": "Collaborations", "description": "Commissions, drawing collaborations and projects with other brands and creators." },
+      "inspiration": { "title": "Inspiration", "description": "Video games, books and the stories that shape every design." }
+    },
+    "introTitle": "Handmade, with time and care",
+    "introText": "Behind every piece there are hours of quiet work: choosing good materials, taking care of every stroke, and repeating a detail as many times as it takes to get it right. Nothing leaves this workshop unless I'm happy with it.",
+    "introCta": "Read our story",
+    "featuredTitle": "Featured pieces",
+    "featuredCta": "View the full shop"
+  },
+  "shop": {
+    "title": "Shop",
+    "metaDescription": "Discover handmade crafts, digital art, paintings and painted figures, made with care and available to order.",
+    "intro": "Every piece is handmade, with time and care for the details. Choose a category to discover everything available.",
+    "categoriesTitle": "Categories",
+    "howToBuyTitle": "How to order",
+    "howToBuyText": "Write to me with the piece you're interested in, and I'll let you know about availability, timelines and customization options.",
+    "howToBuyCta": "Ask about availability",
+    "priceLabel": "Price",
+    "fromPriceLabel": "From",
+    "customizableLabel": "Customizable",
+    "customizationTitle": "Customization options",
+    "exampleBadge": "Sample product",
+    "ctaInquire": "Ask & order",
+    "viewDetails": "View details",
+    "closeModal": "Close",
+    "backToShop": "Back to shop",
+    "viewCategory": "View category"
+  },
+  "categories": {
+    "crafts": {
+      "name": "Crafts",
+      "metaDescription": "Farkle sets and other handmade wooden crafts, made to play and to gift.",
+      "intro": "Farkle sets and other pieces made of wood and fine materials, made to play and to gift."
+    },
+    "digitalArt": {
+      "name": "Digital Art",
+      "metaDescription": "Digital illustrations, portraits and custom pieces, created stroke by stroke.",
+      "intro": "Digital illustrations, portraits and custom pieces, created stroke by stroke based on your idea."
+    },
+    "paintings": {
+      "name": "Paintings",
+      "metaDescription": "Hand-painted paintings, with textures and colors designed to fit any corner of your home.",
+      "intro": "Hand-painted paintings, with textures and colors designed to fit any corner of your home."
+    },
+    "figures": {
+      "name": "Figures",
+      "metaDescription": "Hand-painted 3D figures, with careful attention to every detail and finish.",
+      "intro": "Hand-painted figures, with careful attention to every detail, perfect to collect or gift."
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "metaDescription": "A showcase of finished pieces and the creative process behind JessyIsCrafting.",
+    "intro": "A showcase of finished pieces and the creative process: hands, brushes, wood and plenty of patience.",
+    "finishedTitle": "Finished pieces",
+    "processTitle": "Behind the scenes",
+    "processText": "Photos from the workshop, the painting process and the preparation of every order. Because behind every piece there's always a human, handmade process."
+  },
+  "ourStory": {
+    "title": "Our Story",
+    "metaDescription": "Who's behind JessyIsCrafting, and why craftsmanship, little details and work made with care matter so much.",
+    "eyebrow": "Who's behind it",
+    "heading": "The person behind JessyIsCrafting",
+    "paragraphs": [
+      "I'm Jessy, the person behind JessyIsCrafting. It all started as a way to unwind from everyday life and, little by little, became my favorite way of making beautiful things with my hands.",
+      "To me, craftsmanship means time: time to choose good materials, to take care of every stroke, and to repeat a detail as many times as it takes to get it right. Nothing leaves here unless I'm happy with the result.",
+      "Every piece is designed, painted and prepared by hand in Spain, with materials I try to choose with care and purpose. The small details — a well-used wood grain, a color gradient, a careful finish — are, to me, what turns an object into a keepsake."
+    ],
+    "quote": "What I make, I make with care.",
+    "photoCaption": "Photo coming soon: me working in the studio.",
+    "valuesTitle": "What matters to me",
+    "values": [
+      { "title": "Time well spent", "text": "I'd rather take a little longer and get every piece exactly how I want it." },
+      { "title": "Details with meaning", "text": "Small decisions — a color, a finish — are what make each piece unique." },
+      { "title": "Made in Spain", "text": "I design, paint and prepare every order by hand, right here." }
+    ]
+  },
+  "customOrders": {
+    "title": "Custom Orders & Gifts",
+    "metaDescription": "Handmade custom orders and gifts for birthdays, anniversaries, Christmas and any special occasion.",
+    "intro": "Looking for a different kind of gift, or a piece made with someone special in mind? I prepare custom orders for birthdays, anniversaries, Christmas and any occasion worth celebrating.",
+    "stepsTitle": "How it works",
+    "steps": [
+      { "title": "Tell me your idea", "text": "Write to me with the occasion, style, or the person the gift is for." },
+      { "title": "We design the details together", "text": "I'll suggest materials, colors and finishes depending on the product." },
+      { "title": "I prepare your order with care", "text": "Every custom piece needs its own process; I'll let you know the full timeline." },
+      { "title": "It arrives ready to gift", "text": "Carefully packaged, so the surprise shows the moment the box is opened." }
+    ],
+    "seasonalTitle": "For special dates",
+    "seasonalText": "Dates like Christmas tend to book up fast, so if you have a deadline, the sooner you write, the better we can plan it.",
+    "cta": "Tell me your idea"
+  },
+  "collaborations": {
+    "title": "Collaborations",
+    "metaDescription": "Digital art commissions and collaborations with brands, shops and other creators.",
+    "intro": "If you like my drawing or painting style and want something made just for you, let's talk. I'm also open to collaborating with other brands, shops and creators on meaningful projects.",
+    "commissionsTitle": "Drawing commissions",
+    "commissionsText": "I open digital illustration commissions for limited periods: portraits, original characters, fan art and gift pieces. Write to me with your idea or reference, and I'll tell you about availability, style and an estimated price.",
+    "otherTitle": "Other kinds of collaborations",
+    "otherText": "Craft fairs and markets, packs for shops, collaborations with other creators, joint content on social media... If you have a proposal, tell me about it, no strings attached.",
+    "cta": "Propose a collaboration"
+  },
+  "inspiration": {
+    "title": "Inspiration",
+    "metaDescription": "Video games, Kingdom Come: Deliverance, reading and writing: the stories that inspire every piece of JessyIsCrafting.",
+    "intro": "Everything I make draws from what I love: video games, reading, and well-told stories.",
+    "kcdTitle": "Kingdom Come: Deliverance",
+    "kcdText1": "If there's one video game that shaped this project, it's Kingdom Come: Deliverance. I fell in love with its medieval Bohemia from the very first moment: the forests, the light, the clothing, every small object with its own story.",
+    "kcdText2": "Its soundtrack keeps me company while I work, almost as much as my brushes do. And that aesthetic — earth, wood, iron, natural fabrics — is what truly inspires the colors and textures of JessyIsCrafting.",
+    "readingTitle": "Reading and writing",
+    "readingText": "Outside the workshop you'll almost always find me with a book, or writing one. I've spent time writing fanfiction set in the world of Kingdom Come: Deliverance, purely out of love for its characters and its world.",
+    "fanficCta": "Read my fanfics",
+    "fanficNote": "Sample link: replace it with the URL where you publish your stories (for example, Archive of Our Own or Wattpad)."
+  },
+  "contact": {
+    "title": "Contact",
+    "metaDescription": "Get in touch for custom orders, collaborations, or any question about JessyIsCrafting.",
+    "intro": "Have a question, want to order a custom piece, or just want to say hi? Write to me, I'd love to hear from you.",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formSubject": "Subject",
+    "formMessage": "Message",
+    "formSubmit": "Send message",
+    "formNote": "By submitting this form you agree that I'll use your details only to reply to your message.",
+    "directTitle": "Direct contact",
+    "emailLabel": "Email",
+    "socialTitle": "Social media",
+    "responseTime": "I usually reply within 1-3 business days."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "metaDescription": "Shipping, preparation times, returns and customization: everything you need to know before ordering from JessyIsCrafting.",
+    "intro": "Everything you need to know about shipping, timelines, returns and customization. If you have another question, feel free to write to me.",
+    "items": [
+      {
+        "question": "Which countries do you ship to?",
+        "answer": "I regularly ship across the whole European Union and to the United Kingdom. If you're elsewhere, write to me before ordering so we can look into options together."
+      },
+      {
+        "question": "How long does it take to prepare my order?",
+        "answer": "Every piece is handmade, so timelines vary depending on the product and whether it's customized. As a rough guide, between 3 and 10 business days before shipping; around dates like Christmas, this can take longer."
+      },
+      {
+        "question": "Can I return a product?",
+        "answer": "For non-customized products, I accept returns within 14 days of receipt, as long as they're in their original condition. Customized or made-to-order pieces can't be returned, except in case of a manufacturing fault."
+      },
+      {
+        "question": "Can I order a customized piece?",
+        "answer": "Yes. Many products support customization of color, size or details. Mention it in your order or write to me beforehand to confirm options and timing."
+      },
+      {
+        "question": "I live outside the EU or UK, can I still order?",
+        "answer": "Write to me before placing your order and let me know your location; I'll look at each case depending on the product and shipping costs."
+      },
+      {
+        "question": "How can I pay?",
+        "answer": "I'll confirm the available payment method with you when we finalize your order by message or email, depending on the product and shipping method."
+      }
+    ]
+  },
+  "common": {
+    "exampleDataNote": "The products shown are sample examples. Replace them with your real catalog in assets/data/products.json.",
+    "placeholderImageNote": "Sample image — replace with a real photograph",
+    "notFoundTitle": "Page not found",
+    "notFoundText": "The page you're looking for doesn't exist or has moved.",
+    "notFoundCta": "Back to home"
+  }
+}

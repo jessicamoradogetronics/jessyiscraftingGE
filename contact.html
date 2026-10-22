@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-title-key="contact.title">Contacto · JessyIsCrafting</title>
+  <meta name="description" data-i18n-desc-key="contact.metaDescription" content="Escríbeme para pedidos personalizados, colaboraciones o cualquier pregunta sobre JessyIsCrafting.">
+  <meta name="theme-color" content="#3F5A43">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://jessicamoradogetronics.github.io/jessyiscraftingGE/contact.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JessyIsCrafting">
+  <meta property="og:image" content="https://jessicamoradogetronics.github.io/jessyiscraftingGE/assets/images/placeholders/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-base="./" data-page-id="contact">
+  <a class="skip-link" href="#main" data-i18n="nav.skipToContent">Ir al contenido principal</a>
+  <div data-include="header"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="nav.contact">Contacto</span>
+          <h1 data-i18n="contact.title">Contacto</h1>
+          <p class="lede" data-i18n="contact.intro">¿Tienes alguna pregunta? Escríbeme.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Reemplaza la acción del formulario por tu propio endpoint de Formspree (https://formspree.io/) -->
+          <form class="form-grid" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+            <input type="hidden" name="_language" value="es" data-contact-lang>
+            <div class="form-field">
+              <label for="name" data-i18n="contact.formName">Nombre</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email" data-i18n="contact.formEmail">Correo electrónico</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+              <label for="subject" data-i18n="contact.formSubject">Asunto</label>
+              <input type="text" id="subject" name="subject" data-contact-subject>
+            </div>
+            <div class="form-field">
+              <label for="message" data-i18n="contact.formMessage">Mensaje</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary" data-i18n="contact.formSubmit">Enviar mensaje</button>
+              <p class="image-note" data-i18n="contact.formNote">Al enviar este formulario aceptas el uso de tus datos.</p>
+            </div>
+          </form>
+
+          <aside class="contact-aside">
+            <h2 data-i18n="contact.directTitle">Contacto directo</h2>
+            <p><strong data-i18n="contact.emailLabel">Email</strong>: <a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a></p>
+            <p data-i18n="contact.responseTime">Normalmente respondo en 1-3 días laborables.</p>
+
+            <h2 data-i18n="contact.socialTitle">Redes sociales</h2>
+            <div class="social-list">
+              <a href="https://www.instagram.com/jessyiscrafting/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+              </a>
+              <a href="https://x.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var producto = params.get("producto");
+      var subjectField = document.querySelector("[data-contact-subject]");
+      if (producto && subjectField) subjectField.value = producto;
+    })();
+    document.addEventListener("i18n:ready", function (e) {
+      var langField = document.querySelector("[data-contact-lang]");
+      if (langField) langField.value = e.detail.lang;
+    });
+    document.addEventListener("i18n:changed", function (e) {
+      var langField = document.querySelector("[data-contact-lang]");
+      if (langField) langField.value = e.detail.lang;
+    });
+  </script>
+</body>
+</html>

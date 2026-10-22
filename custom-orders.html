@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-title-key="customOrders.title">Personalizados y regalos · JessyIsCrafting</title>
+  <meta name="description" data-i18n-desc-key="customOrders.metaDescription" content="Pedidos personalizados y regalos hechos a mano para cumpleaños, aniversarios, Navidad y cualquier ocasión especial.">
+  <meta name="theme-color" content="#3F5A43">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://jessicamoradogetronics.github.io/jessyiscraftingGE/custom-orders.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JessyIsCrafting">
+  <meta property="og:image" content="https://jessicamoradogetronics.github.io/jessyiscraftingGE/assets/images/placeholders/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-base="./" data-page-id="customOrders">
+  <a class="skip-link" href="#main" data-i18n="nav.skipToContent">Ir al contenido principal</a>
+  <div data-include="header"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="nav.customOrders">Personalizados y regalos</span>
+          <h1 data-i18n="customOrders.title">Personalizados y regalos</h1>
+          <p class="lede" data-i18n="customOrders.intro">Preparo pedidos personalizados para cualquier ocasión.</p>
+        </div>
+
+        <h2 class="text-center" data-i18n="customOrders.stepsTitle">Cómo funciona</h2>
+        <div class="steps" data-order-steps></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container text-center">
+        <h2 data-i18n="customOrders.seasonalTitle">Para fechas señaladas</h2>
+        <p class="lede" style="max-width:640px; margin-inline:auto;" data-i18n="customOrders.seasonalText">Las fechas como la Navidad suelen reservarse rápido.</p>
+        <a class="btn btn-primary" href="contact.html" data-i18n="customOrders.cta">Cuéntame tu idea</a>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    function renderSteps() {
+      app.renderArrayInto(document.querySelector("[data-order-steps]"), "customOrders.steps", function (step) {
+        return '<div class="step"><h3>' + step.title + "</h3><p>" + step.text + "</p></div>";
+      });
+    }
+    document.addEventListener("app:ready", renderSteps);
+    document.addEventListener("i18n:changed", renderSteps);
+  </script>
+</body>
+</html>
