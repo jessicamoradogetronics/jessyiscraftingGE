@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+pageId: collaborations
+pagination:
+  data: locales
+  size: 1
+  alias: locale
+permalink: "/{{ locale.code }}/collaborations/index.html"
+---
+{% set lang = locale.code %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">{{ 'nav.collaborations' | t(lang) }}</span>
+      <h1>{{ 'collaborations.title' | t(lang) }}</h1>
+      <p class="lede">{{ 'collaborations.intro' | t(lang) }}</p>
+    </div>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <div class="card__body">
+          <h2 class="card__title">{{ 'collaborations.commissionsTitle' | t(lang) }}</h2>
+          <p class="card__desc">{{ 'collaborations.commissionsText' | t(lang) }}</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__body">
+          <h2 class="card__title">{{ 'collaborations.otherTitle' | t(lang) }}</h2>
+          <p class="card__desc">{{ 'collaborations.otherText' | t(lang) }}</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center" style="margin-top:2.5rem;">
+      <a class="btn btn-primary" href="{{ ('/' + lang + '/contact/') | url }}">{{ 'collaborations.cta' | t(lang) }}</a>
+    </p>
+  </div>
+</section>

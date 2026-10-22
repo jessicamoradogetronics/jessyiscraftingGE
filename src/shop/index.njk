@@ -1,0 +1,59 @@
+---
+layout: layouts/base.njk
+pageId: shop
+pagination:
+  data: locales
+  size: 1
+  alias: locale
+permalink: "/{{ locale.code }}/shop/index.html"
+---
+{% set lang = locale.code %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">{{ 'nav.shop' | t(lang) }}</span>
+      <h1>{{ 'shop.title' | t(lang) }}</h1>
+      <p class="lede">{{ 'shop.intro' | t(lang) }}</p>
+    </div>
+
+    <div class="grid grid--2">
+      <a class="category-tile" href="{{ ('/' + lang + '/shop/crafts/') | url }}">
+        <img src="{{ '/assets/images/placeholders/category-crafts.svg' | url }}" alt="{{ 'categories.crafts.name' | t(lang) }}" width="800" height="600">
+        <div class="category-tile__overlay">
+          <h3>{{ 'categories.crafts.name' | t(lang) }}</h3>
+          <span>{{ 'shop.viewCategory' | t(lang) }} &rarr;</span>
+        </div>
+      </a>
+      <a class="category-tile" href="{{ ('/' + lang + '/shop/digital-art/') | url }}">
+        <img src="{{ '/assets/images/placeholders/category-digital-art.svg' | url }}" alt="{{ 'categories.digitalArt.name' | t(lang) }}" width="800" height="600">
+        <div class="category-tile__overlay">
+          <h3>{{ 'categories.digitalArt.name' | t(lang) }}</h3>
+          <span>{{ 'shop.viewCategory' | t(lang) }} &rarr;</span>
+        </div>
+      </a>
+      <a class="category-tile" href="{{ ('/' + lang + '/shop/paintings/') | url }}">
+        <img src="{{ '/assets/images/placeholders/category-paintings.svg' | url }}" alt="{{ 'categories.paintings.name' | t(lang) }}" width="800" height="600">
+        <div class="category-tile__overlay">
+          <h3>{{ 'categories.paintings.name' | t(lang) }}</h3>
+          <span>{{ 'shop.viewCategory' | t(lang) }} &rarr;</span>
+        </div>
+      </a>
+      <a class="category-tile" href="{{ ('/' + lang + '/shop/figures/') | url }}">
+        <img src="{{ '/assets/images/placeholders/category-figures.svg' | url }}" alt="{{ 'categories.figures.name' | t(lang) }}" width="800" height="600">
+        <div class="category-tile__overlay">
+          <h3>{{ 'categories.figures.name' | t(lang) }}</h3>
+          <span>{{ 'shop.viewCategory' | t(lang) }} &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container text-center">
+    <h2>{{ 'shop.howToBuyTitle' | t(lang) }}</h2>
+    <p class="lede" style="max-width:640px; margin-inline:auto;">{{ 'shop.howToBuyText' | t(lang) }}</p>
+    <a class="btn btn-primary" href="{{ ('/' + lang + '/contact/') | url }}">{{ 'shop.howToBuyCta' | t(lang) }}</a>
+  </div>
+</section>

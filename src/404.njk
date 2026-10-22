@@ -1,0 +1,29 @@
+---
+permalink: "/404.html"
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 · {{ site.name }}</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="{{ '/assets/images/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+</head>
+<body>
+  <div class="container section text-center">
+    <h1>404</h1>
+    <p class="lede">{{ 'common.notFoundTitle' | t('es') }} · {{ 'common.notFoundTitle' | t('en') }} · {{ 'common.notFoundTitle' | t('de') }}</p>
+    <p>{{ 'common.notFoundText' | t('es') }}</p>
+    <p>{{ 'common.notFoundText' | t('en') }}</p>
+    <p>{{ 'common.notFoundText' | t('de') }}</p>
+    <div class="hero__actions" style="justify-content:center;">
+      {% for locale in locales %}
+      <a class="btn btn-primary" href="{{ ('/' + locale.code + '/') | url }}">{{ locale.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

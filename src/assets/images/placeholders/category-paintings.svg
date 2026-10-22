@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Cuadros pintados a mano">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F2E8"/>
+      <stop offset="1" stop-color="#ECE2CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect x="14" y="14" width="772" height="572" fill="none" stroke="#B08D57" stroke-width="1.5" opacity="0.6"/>
+  <g transform="translate(400, 292) scale(3.5294117647058822)">
+    <g stroke="#4A3222" stroke-width="3" fill="none">
+    <rect x="-32" y="-24" width="64" height="48" rx="2" />
+    <path d="M-32,14 L-10,-6 L6,8 L20,-10 L32,2" stroke="#6F8F6B" stroke-width="2.5"/>
+    <circle cx="14" cy="-10" r="5" fill="#B08D57" stroke="none"/>
+  </g>
+  </g>
+  <text x="400" y="566" font-family="Georgia, 'Times New Roman', serif" font-size="31" fill="#4A3222" text-anchor="middle">Cuadros pintados a mano</text>
+  
+</svg>

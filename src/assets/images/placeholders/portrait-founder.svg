@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Fotografía de la artesana">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F2E8"/>
+      <stop offset="1" stop-color="#ECE2CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <rect x="14" y="14" width="872" height="1072" fill="none" stroke="#B08D57" stroke-width="1.5" opacity="0.6"/>
+  <g transform="translate(450, 532) scale(5.294117647058823)">
+    <g stroke="#4A3222" stroke-width="2.5" fill="none">
+    <circle cx="0" cy="-10" r="18" fill="#ECE2CC"/>
+    <path d="M-26,34 C-26,10 26,10 26,34" fill="#ECE2CC"/>
+  </g>
+  </g>
+  <text x="450" y="1066" font-family="Georgia, 'Times New Roman', serif" font-size="57" fill="#4A3222" text-anchor="middle">Fotografía de la artesana</text>
+  <text x="450" y="1086" font-family="Verdana, sans-serif" font-size="35" fill="#6B4A33" text-anchor="middle" letter-spacing="1">PRÓXIMAMENTE</text>
+</svg>

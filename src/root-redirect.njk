@@ -1,0 +1,43 @@
+---
+permalink: "/index.html"
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.name }}</title>
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={{ ('/es/') | url }}">
+  <link rel="canonical" href="{{ site.url }}{{ '/' | url }}">
+  {% for locale in locales %}
+  <link rel="alternate" hreflang="{{ locale.code }}" href="{{ site.url }}{{ ('/' + locale.code + '/') | url }}">
+  {% endfor %}
+  <link rel="icon" href="{{ '/assets/images/favicon.svg' | url }}" type="image/svg+xml">
+  <style>
+    body { font-family: Georgia, serif; background: #faf6ec; color: #2e2a22; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center; }
+    a { color: #35492f; font-weight: 600; }
+    .links { display: flex; gap: 1rem; justify-content: center; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <div>
+    <p>{{ site.name }}</p>
+    <p class="links">
+      {% for locale in locales %}
+      <a href="{{ ('/' + locale.code + '/') | url }}">{{ locale.label }}</a>
+      {% endfor %}
+    </p>
+  </div>
+  <script>
+    (function () {
+      var base = "{{ '/' | url }}";
+      var supported = {{ locales | pluck('code') | jsonify | safe }};
+      var browserLang = (navigator.language || "es").slice(0, 2).toLowerCase();
+      var target = supported.indexOf(browserLang) !== -1 ? browserLang : "es";
+      window.location.replace(base + target + "/");
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+pageId: customOrders
+pagination:
+  data: locales
+  size: 1
+  alias: locale
+permalink: "/{{ locale.code }}/custom-orders/index.html"
+---
+{% set lang = locale.code %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">{{ 'nav.customOrders' | t(lang) }}</span>
+      <h1>{{ 'customOrders.title' | t(lang) }}</h1>
+      <p class="lede">{{ 'customOrders.intro' | t(lang) }}</p>
+    </div>
+
+    <h2 class="text-center">{{ 'customOrders.stepsTitle' | t(lang) }}</h2>
+    <div class="steps">
+      {% for step in ('customOrders.steps' | t(lang)) %}
+      <div class="step">
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container text-center">
+    <h2>{{ 'customOrders.seasonalTitle' | t(lang) }}</h2>
+    <p class="lede" style="max-width:640px; margin-inline:auto;">{{ 'customOrders.seasonalText' | t(lang) }}</p>
+    <a class="btn btn-primary" href="{{ ('/' + lang + '/contact/') | url }}">{{ 'customOrders.cta' | t(lang) }}</a>
+  </div>
+</section>

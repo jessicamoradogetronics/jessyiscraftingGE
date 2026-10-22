@@ -1,0 +1,33 @@
+<header class="site-header">
+  <div class="container container--wide site-header__bar">
+    <a class="brand" href="{{ ('/' + locale.code + '/') | url }}">
+      <img src="{{ '/assets/images/favicon.svg' | url }}" alt="" width="36" height="36">
+      <span>{{ site.name }}</span>
+    </a>
+
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="main-nav" aria-label="{{ 'nav.menuOpen' | t(locale.code) }}">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" data-main-nav aria-label="{{ 'nav.menuOpen' | t(locale.code) }}">
+      <ul class="main-nav__list">
+        <li><a href="{{ ('/' + locale.code + '/') | url }}" {% if pageId == 'home' %}aria-current="page"{% endif %}>{{ 'nav.home' | t(locale.code) }}</a></li>
+        <li><a href="{{ ('/' + locale.code + '/shop/') | url }}" {% if pageId == 'shop' %}aria-current="page"{% endif %}>{{ 'nav.shop' | t(locale.code) }}</a></li>
+        <li><a href="{{ ('/' + locale.code + '/gallery/') | url }}" {% if pageId == 'gallery' %}aria-current="page"{% endif %}>{{ 'nav.gallery' | t(locale.code) }}</a></li>
+        <li><a href="{{ ('/' + locale.code + '/our-story/') | url }}" {% if pageId == 'ourStory' %}aria-current="page"{% endif %}>{{ 'nav.ourStory' | t(locale.code) }}</a></li>
+        <li><a href="{{ ('/' + locale.code + '/custom-orders/') | url }}" {% if pageId == 'customOrders' %}aria-current="page"{% endif %}>{{ 'nav.customOrders' | t(locale.code) }}</a></li>
+        <li><a href="{{ ('/' + locale.code + '/collaborations/') | url }}" {% if pageId == 'collaborations' %}aria-current="page"{% endif %}>{{ 'nav.collaborations' | t(locale.code) }}</a></li>
+        <li><a href="{{ ('/' + locale.code + '/inspiration/') | url }}" {% if pageId == 'inspiration' %}aria-current="page"{% endif %}>{{ 'nav.inspiration' | t(locale.code) }}</a></li>
+        <li><a href="{{ ('/' + locale.code + '/faq/') | url }}" {% if pageId == 'faq' %}aria-current="page"{% endif %}>{{ 'nav.faq' | t(locale.code) }}</a></li>
+        <li><a href="{{ ('/' + locale.code + '/contact/') | url }}" {% if pageId == 'contact' %}aria-current="page"{% endif %}>{{ 'nav.contact' | t(locale.code) }}</a></li>
+      </ul>
+
+      <div class="lang-switcher" role="group" aria-label="{{ 'nav.languageLabel' | t(locale.code) }}">
+        {% for otherLocale in locales %}
+        <a href="{{ (page.url | swapLocale(locale.code, otherLocale.code)) | url }}" {% if otherLocale.code == locale.code %}aria-current="true"{% endif %}>{{ otherLocale.shortLabel }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="nav-backdrop" data-nav-backdrop></div>
