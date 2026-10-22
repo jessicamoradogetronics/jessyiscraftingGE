@@ -1,0 +1,451 @@
+{
+  "home": {
+    "hero": {
+      "eyebrow": "Hecho a mano · Hecho con mimo",
+      "title": "Artesanía con alma de bosque",
+      "tagline": "\"Cada pieza nace despacio, como crece un árbol.\"",
+      "subtitle": "Sets de Farkle tallados, cuadros al óleo, ilustración digital y figuras pintadas a mano. Piezas únicas, inspiradas en la naturaleza y en los mundos medievales que más amo, creadas una a una desde España.",
+      "ctaStore": "Ir a la tienda",
+      "ctaStory": "Conoce mi historia"
+    },
+    "quicklinks": {
+      "store": {
+        "title": "Tienda",
+        "text": "Artesanías, cuadros, dibujos y figuras listas para encargar."
+      },
+      "gallery": {
+        "title": "Galería",
+        "text": "Un paseo visual por mis piezas y mi taller."
+      },
+      "collab": {
+        "title": "Colaboraciones",
+        "text": "Comisiones, proyectos conjuntos y encargos profesionales."
+      },
+      "inspiration": {
+        "title": "Inspiración",
+        "text": "Videojuegos, lectura y los mundos que dan forma a mi trabajo."
+      }
+    },
+    "featured": {
+      "eyebrow": "Piezas destacadas",
+      "title": "Algunas de mis piezas favoritas",
+      "subtitle": "Una pequeña muestra de lo que vas a encontrar en la tienda: madera, pintura, pinceles digitales y mucha paciencia.",
+      "cta": "Ver toda la tienda"
+    },
+    "story": {
+      "photoCaption": "Foto de Jessy en su taller (próximamente)",
+      "eyebrow": "Detrás de cada pieza",
+      "title": "Hecho despacio, hecho con mimo",
+      "text1": "Soy Jessy, y detrás de JessyIsCrafting hay horas de lija, pinceles finos y muchas tazas de té. Cada pieza se piensa, se dibuja y se repasa hasta que siento que de verdad merece salir de mi mesa de trabajo.",
+      "text2": "No busco la producción en cadena: busco que cuando abras la caja, notes que alguien ha puesto cariño de verdad en lo que tienes entre las manos.",
+      "cta": "Leer nuestra historia"
+    },
+    "cta": {
+      "eyebrow": "¿Tienes algo en mente?",
+      "title": "Hablemos de tu encargo especial",
+      "text": "Regalos personalizados, piezas para celebraciones, comisiones de ilustración o proyectos de colaboración: cuéntame tu idea y la convertimos en algo único.",
+      "ctaCustom": "Personalizados y regalos",
+      "ctaContact": "Contactar"
+    }
+  },
+  "store": {
+    "eyebrow": "Tienda",
+    "title": "Cada categoría, una forma distinta de contar lo mismo",
+    "subtitle": "Artesanías de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano. Todo se hace por encargo o en tiradas muy cortas, así que cada pieza es prácticamente irrepetible.",
+    "filters": {
+      "all": "Todos"
+    },
+    "empty": "De momento no hay piezas en esta categoría, ¡vuelve pronto!",
+    "ctaTitle": "¿No encuentras exactamente lo que buscas?",
+    "ctaText": "Casi todas mis piezas admiten personalización: colores, iniciales, escudos, tamaños de lienzo o tu propio personaje. Cuéntame qué tienes en mente.",
+    "ctaButton": "Pedir una pieza personalizada"
+  },
+  "nav": {
+    "storeCategories": {
+      "artesanias": "Artesanías",
+      "dibujos": "Dibujo digital",
+      "cuadros": "Cuadros",
+      "figuras": "Figuras"
+    },
+    "home": "Inicio",
+    "store": "Tienda",
+    "story": "Nuestra historia",
+    "custom": "Personalizados y regalos",
+    "collab": "Colaboraciones",
+    "inspiration": "Inspiración",
+    "contact": "Contacto",
+    "faq": "Preguntas frecuentes",
+    "langLabel": "Idioma"
+  },
+  "productDetail": {
+    "notFound": "No hemos encontrado esta pieza. Puede que ya no esté disponible — echa un vistazo al resto de la tienda.",
+    "customizationTitle": "Personalización disponible",
+    "orderButton": "Consultar / Encargar esta pieza",
+    "backToStore": "Volver a la tienda",
+    "shippingNote": "Envíos a toda España, la Unión Europea y Reino Unido. Para otros países, consulta antes de encargar — más info en las preguntas frecuentes.",
+    "relatedEyebrow": "También te puede gustar",
+    "relatedTitle": "Más piezas de esta misma familia"
+  },
+  "gallery": {
+    "eyebrow": "Galería",
+    "title": "Un paseo por el taller",
+    "subtitle": "Piezas terminadas, procesos a medio camino y algún que otro momento detrás de la mesa de trabajo. Toca cualquier imagen para verla más grande.",
+    "captions": {
+      "caballero": "Miniatura de caballero, pintada a pincel fino.",
+      "minasTirith": "Óleo sobre lienzo, ciudadela entre montañas.",
+      "farkleDetalle": "Detalle del escudo tallado a mano.",
+      "luminoso": "Ilustración digital, luz entre la niebla.",
+      "jinete": "Diorama de jinete, base pintada a mano.",
+      "heinrich": "Escena narrativa, ilustración digital.",
+      "lune": "Figura con peana de efectos, pintura por encargo.",
+      "bosque": "Óleo sobre lienzo, un rincón de bosque.",
+      "renoir": "Figura de coleccionista, acabado mate.",
+      "miniFarkle": "Mini Farkle de viaje, listo para la mochila."
+    },
+    "placeholder1": "📷 Foto del taller — próximamente",
+    "placeholder2": "📷 Preparando un pedido — próximamente"
+  },
+  "story": {
+    "eyebrow": "Nuestra historia",
+    "title": "La persona detrás de JessyIsCrafting",
+    "subtitle": "Un proyecto pequeño, hecho a mano, pieza a pieza.",
+    "photoCaption": "Foto de Jessy (próximamente)",
+    "intro": {
+      "title": "Hola, soy Jessy",
+      "p1": "JessyIsCrafting empezó como una afición entre semana: pintar figuras por las noches, probar óleos los domingos, dibujar cuando necesitaba desconectar. Con el tiempo, esa afición se convirtió en algo que quería compartir de verdad.",
+      "p2": "Hoy sigo trabajando igual que al principio: sin prisa, pieza por pieza, cuidando cada detalle como si fuera para mí. Cada caja de Farkle, cada lienzo y cada figura pasa muchas horas en mis manos antes de llegar a las tuyas."
+    },
+    "values": {
+      "eyebrow": "Lo que me mueve",
+      "title": "Por qué hago las cosas despacio",
+      "item1": {
+        "title": "La artesanía como lenguaje",
+        "text": "Para mí trabajar la madera, el óleo o el pincel digital es una forma de contar algo sin palabras. Cada textura y cada veta tienen su propio carácter, y me gusta respetarlo en vez de forzarlo."
+      },
+      "item2": {
+        "title": "Los pequeños detalles",
+        "text": "Un filo bien lijado, una veladura de más, un pliegue de tela pintado con paciencia. Son detalles que casi nadie nota a primera vista, pero que cambian por completo cómo se siente una pieza acabada."
+      },
+      "item3": {
+        "title": "Trabajo hecho con mimo",
+        "text": "Prefiero tardar un poco más y hacerlo bien. Cada encargo se trata como si fuera único, porque lo es: no hay dos piezas exactamente iguales saliendo de mi mesa."
+      },
+      "item4": {
+        "title": "Hecho en España",
+        "text": "Todo el proceso —diseño, pintura, embalaje— ocurre aquí, en mi taller. Apoyar lo artesanal también es apoyar el trabajo local, hecho despacio y con honestidad."
+      }
+    },
+    "ctaTitle": "¿Quieres ver en qué estoy trabajando ahora?",
+    "ctaText": "En la tienda encontrarás las piezas disponibles, y en la galería, un poco más del proceso detrás de cada una.",
+    "ctaStore": "Ir a la tienda",
+    "ctaGallery": "Ver galería"
+  },
+  "custom": {
+    "eyebrow": "Personalizados y regalos",
+    "title": "Un regalo que de verdad signifique algo",
+    "subtitle": "Iniciales grabadas, un escudo propio, el personaje favorito de alguien o una escena pensada para una fecha concreta. Si se puede imaginar, probablemente se pueda crear.",
+    "cards": {
+      "gifts": {
+        "title": "🎁 Regalos con nombre propio",
+        "text": "Añade iniciales, una fecha o un pequeño símbolo a cualquier pieza de la tienda: un set de Farkle, una figura o un cuadro. Perfecto para bodas, cumpleaños o un \"porque sí\"."
+      },
+      "celebrations": {
+        "title": "🎄 Celebraciones y fechas señaladas",
+        "text": "En Navidad, aniversarios o despedidas preparo piezas con tiempo limitado: adornos, cuadros pequeños o figuras temáticas. Resérvala con antelación para asegurar que llega a tiempo."
+      },
+      "fullCustom": {
+        "title": "✨ Encargo cien por cien a medida",
+        "text": "Tu propia idea de principio a fin: un retrato digital de tu personaje, un cuadro de un lugar especial o una figura pintada según tu referencia. Hablamos, bocetamos y lo construimos juntas."
+      }
+    },
+    "process": {
+      "eyebrow": "Cómo funciona",
+      "title": "De tu idea a la pieza terminada",
+      "step1": {
+        "title": "Cuéntamelo",
+        "text": "Escríbeme por el formulario de contacto o redes sociales contándome qué tienes en mente, para cuándo lo necesitas y tu presupuesto aproximado."
+      },
+      "step2": {
+        "title": "Propuesta y presupuesto",
+        "text": "Te preparo un boceto o una propuesta de personalización, junto con el precio final y el plazo estimado de entrega."
+      },
+      "step3": {
+        "title": "Manos a la obra",
+        "text": "Una vez confirmado el encargo, empiezo a trabajar en tu pieza y te mantengo al tanto del progreso con fotos del proceso."
+      },
+      "step4": {
+        "title": "Empaquetado con mimo",
+        "text": "Protejo cada pieza como si viajara frágil, porque lo es, y te la envío con todo el cuidado posible."
+      }
+    },
+    "ctaTitle": "¿Tienes una fecha en mente?",
+    "ctaText": "Los encargos personalizados necesitan tiempo de preparación. Escríbeme cuanto antes para asegurar tu pieza a tiempo.",
+    "ctaButton": "Contarme mi idea"
+  },
+  "collab": {
+    "eyebrow": "Colaboraciones",
+    "title": "Trabajemos juntas en algo nuevo",
+    "subtitle": "Además de la tienda, estoy abierta a comisiones de ilustración y a propuestas de colaboración con otras marcas, creadores o proyectos.",
+    "commissions": {
+      "eyebrow": "Comisiones",
+      "title": "Encarga tu propia ilustración",
+      "p1": "Dibujo personajes originales, fan art y retratos digitales con un estilo cuidado y narrativo. Puedo trabajar a partir de una descripción, referencias visuales o tu propio personaje de rol, videojuego o historia.",
+      "p2": "Cada comisión incluye un boceto previo para validar la pose y composición antes de pasar a color, así nos aseguramos de que el resultado final es justo lo que buscabas.",
+      "cta": "Solicitar una comisión"
+    },
+    "brands": {
+      "eyebrow": "Marcas y creadores",
+      "title": "Propón una colaboración",
+      "p1": "Si tienes una marca, una tienda, un proyecto editorial o un canal de contenido y crees que encajamos, escríbeme. Me interesan especialmente las colaboraciones relacionadas con artesanía, fantasía medieval, videojuegos y literatura.",
+      "p2": "También puedo preparar packs de emotes o ilustraciones para streamers y creadores de contenido, con revisiones incluidas hasta cerrar el estilo que más te represente.",
+      "cta": "Proponer colaboración"
+    },
+    "workshops": {
+      "eyebrow": "Talleres",
+      "title": "Talleres de iniciación a la artesanía",
+      "text": "Estoy abierta a organizar o participar en talleres presenciales u online de pintura de miniaturas, dibujo digital o manualidades en madera, tanto para particulares como para espacios culturales, tiendas o eventos. Si te interesa, cuéntame tu propuesta.",
+      "cta": "Hablar de un taller"
+    },
+    "examples": {
+      "eyebrow": "Ejemplos de trabajo",
+      "title": "Algunas comisiones anteriores",
+      "caption1": "Retrato personalizado a partir de una escena real.",
+      "caption2": "Pack de emotes para un canal de streaming.",
+      "caption3": "Escena narrativa para un proyecto literario."
+    }
+  },
+  "inspiration": {
+    "eyebrow": "Inspiración",
+    "title": "Los mundos que dan forma a mi trabajo",
+    "subtitle": "Todo lo que hago sale de algún sitio: de una partida interminable, de un libro que no sueltas, de una melodía que se queda contigo años después. Esto es un poco de ese origen.",
+    "kcd": {
+      "eyebrow": "Kingdom Come: Deliverance",
+      "title": "El juego que sentó las bases de todo esto",
+      "p1": "Kingdom Come: Deliverance es, probablemente, la razón por la que JessyIsCrafting existe tal y como es hoy. Descubrí Bohemia, sus bosques, su barro, su luz de atardecer entre los árboles, y algo hizo clic: quería pintar eso, quería dibujar eso, quería tener esos mundos sobre mi mesa de trabajo.",
+      "quote": "\"Un juego que no idealiza la Edad Media, sino que la hace sentir real: polvorienta, dura y, a la vez, profundamente hermosa.\"",
+      "p2": "Su dirección de arte —esos castillos desgastados, esas aldeas de madera, esa paleta de verdes, ocres y grises de piedra— está detrás de buena parte de mis cuadros y de mis figuras. Y su banda sonora, con esos coros corales y esos instrumentos medievales, ha sonado de fondo en incontables sesiones de pintura.",
+      "p3": "Henry, Hans Capon y toda Bohemia se han colado en mi trabajo de mil formas distintas: en una figura pintada, en un boceto digital, en una escena que quería contar con mis propias manos."
+    },
+    "reading": {
+      "eyebrow": "Leer y escribir",
+      "title": "La otra mitad de mi cabeza",
+      "p1": "Si no estoy pintando, probablemente esté leyendo, o escribiendo. Siempre me ha gustado meterme en los huecos que una historia deja sin contar: qué piensa un personaje secundario, qué pasó entre dos escenas, qué se sintió en un momento que el juego apenas roza.",
+      "p2": "De ahí nacieron mis fanfics de Kingdom Come: Deliverance: una forma de seguir viviendo en Bohemia un poco más, explorando a sus personajes desde otro ángulo. Si te apetece echar un vistazo, los comparto en Archive of Our Own."
+    },
+    "fanfics": {
+      "item1": {
+        "status": "En curso",
+        "title": "Worth the Wreckage",
+        "summary": "Henry lleva una vida sencilla, con algún trabajo que es mejor no cuestionar. Cuando le piden que acoja a Hans en su casa sin hacer preguntas, dos mundos completamente distintos empiezan a chocar — y, poco a poco, también a transformarse."
+      },
+      "readOn": "Leer en AO3",
+      "item2": {
+        "status": "Completo",
+        "title": "Something We Cannot Name",
+        "summary": "Qué le pasó a Hans mientras estuvo cautivo en Malešov, y qué pensaba Henry mientras se enfrentaba a sus misiones más peligrosas. Los momentos clave de KCD2 contados desde el punto de vista de Hans, hasta llegar a lo ocurrido en Suchdol."
+      },
+      "item3": {
+        "status": "Completo",
+        "title": "The Road to Constantinople",
+        "summary": "Se acerca la boda de Hans Capon. Antes de rendirse a ese destino, cumple una promesa hecha a Henry años atrás: viajar juntos hasta Constantinopla. Un último viaje de amor y libertad, marcado por la belleza del mundo y también por su crueldad."
+      }
+    },
+    "ctaTitle": "¿Quieres ver dónde termina toda esta inspiración?",
+    "ctaText": "En la tienda encontrarás cuadros, figuras y dibujos que nacieron, de una forma u otra, de estos mismos mundos.",
+    "ctaButton": "Ver la tienda"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos",
+    "subtitle": "¿Quieres encargar una pieza, proponer una colaboración o simplemente saludar? Este es el sitio.",
+    "formTitle": "Escríbeme directamente",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "note": "Suelo responder en 2-3 días laborables. Si tu consulta es urgente, escríbeme mejor por Instagram.",
+      "subjectPlaceholder": "Ej. Encargo personalizado, colaboración..."
+    },
+    "channelsTitle": "Otras formas de encontrarme",
+    "channels": {
+      "email": "Correo electrónico"
+    },
+    "shippingTitle": "Antes de escribir",
+    "shippingText": "Envío a toda España, la Unión Europea y Reino Unido sin problema. Si vives en otro país, escríbeme primero para confirmar plazos y gastos de envío — tienes todos los detalles en las preguntas frecuentes.",
+    "prefillMessage": "Hola, me gustaría encargar:"
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Todo lo que necesitas saber antes de pedir",
+    "subtitle": "Si tienes alguna duda que no aparece aquí, escríbeme sin problema por el formulario de contacto.",
+    "items": {
+      "shipping": {
+        "q": "¿A qué países hacéis envíos?",
+        "a": "Envío de forma habitual a toda España, al resto de la Unión Europea y a Reino Unido. Si vives en cualquier otro país, escríbeme antes de hacer el pedido: lo valoramos juntas, ya que los gastos de aduana y los plazos pueden variar bastante."
+      },
+      "prepTime": {
+        "q": "¿Cuánto tarda en prepararse mi pedido?",
+        "a": "Las piezas que ya están terminadas suelen salir de mi taller en 2-4 días laborables. Los encargos personalizados, las comisiones de ilustración o las figuras pintadas a medida necesitan normalmente entre 1 y 3 semanas, según la complejidad del encargo y la lista de espera que tenga en ese momento. En fechas como Navidad, te recomiendo reservar con bastante antelación."
+      },
+      "returns": {
+        "q": "¿Puedo devolver o cambiar un pedido?",
+        "a": "Las piezas de catálogo sin personalizar se pueden devolver en un plazo de 14 días naturales desde la recepción, siempre que lleguen en perfecto estado y sin usar. Las piezas personalizadas, los encargos a medida y las comisiones de ilustración no admiten devolución, salvo que exista un defecto de fabricación o un daño ocurrido durante el transporte."
+      },
+      "customization": {
+        "q": "¿Qué puedo personalizar exactamente?",
+        "a": "Depende de cada pieza. En los sets de Farkle puedes elegir iniciales, un escudo propio o el tono de la madera. En los cuadros, el tamaño del lienzo y, en muchos casos, la escena. En los dibujos digitales, el personaje o la referencia que quieras retratar. Y en las figuras, los colores, el acabado y la base. En la ficha de cada producto encontrarás el detalle exacto de lo que se puede adaptar."
+      },
+      "packaging": {
+        "q": "¿Cómo viajan las piezas?",
+        "a": "Con mucho cuidado. Las figuras y los cuadros se protegen con materiales acolchados y, siempre que es posible, reutilizo o reduzco plástico. Si tu pieza es frágil, lo indico claramente en el paquete para quien la reciba en tu nombre."
+      },
+      "commission": {
+        "q": "¿Cómo encargo una comisión de ilustración?",
+        "a": "Escríbeme por el formulario de contacto o por redes sociales contándome tu idea, con referencias si las tienes. Te preparo un boceto inicial, cerramos juntas el precio y el plazo, y solo quedaría pasarlo a color. Tienes más información en la sección de Colaboraciones."
+      },
+      "payment": {
+        "q": "¿Cómo se paga un encargo?",
+        "a": "Una vez cerrado el presupuesto, te paso los detalles de pago por el canal que prefieras (transferencia o la plataforma que usemos para el encargo). En piezas más grandes o comisiones, suelo pedir una señal al confirmar el encargo y el resto antes del envío."
+      }
+    },
+    "ctaTitle": "¿Sigues con dudas?",
+    "ctaText": "Escríbeme y te respondo encantada.",
+    "ctaButton": "Ir a contacto"
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "Esta senda se pierde en el bosque",
+    "text": "La página que buscas no existe o se ha movido de sitio. Vuelve al camino principal.",
+    "cta": "Volver al inicio"
+  },
+  "footer": {
+    "tagline": "Artesanía, pintura e ilustración hechas a mano, con mimo, desde España.",
+    "exploreTitle": "Explorar",
+    "gallery": "Galería",
+    "serviceTitle": "Encargos",
+    "contactTitle": "Contacto",
+    "contactFormLink": "Formulario de contacto",
+    "location": "Hecho a mano en España",
+    "rights": "Todos los derechos reservados.",
+    "madeWith": "Hecho con 🌿 y mucho mimo."
+  },
+  "brand": {
+    "name": "JessyIsCrafting — ir a inicio"
+  },
+  "common": {
+    "from": "Desde",
+    "customizable": "Personalizable",
+    "viewProduct": "Ver producto"
+  },
+  "categories": {
+    "artesanias": {
+      "name": "Artesanías",
+      "description": "Piezas de madera talladas y pintadas a mano, pensadas para jugar y para regalar."
+    },
+    "dibujos": {
+      "name": "Dibujo digital",
+      "description": "Ilustraciones digitales, retratos y escenas narrativas con un toque pictórico."
+    },
+    "cuadros": {
+      "name": "Cuadros",
+      "description": "Óleos sobre lienzo pintados a mano, inspirados en paisajes y mundos de fantasía."
+    },
+    "figuras": {
+      "name": "Figuras",
+      "description": "Miniaturas y figuras 3D pintadas a pincel fino, con acabados de coleccionista."
+    }
+  },
+  "products": {
+    "set-farkle-blason": {
+      "name": "Set de Farkle «Blasón»",
+      "short": "Caja de madera tallada a mano con escudo pintado y set completo de dados para jugar al Farkle.",
+      "description": "Una caja de madera maciza con un escudo heráldico pintado a mano en la tapa, cubilete de cuero cosido y todos los dados que necesitas para una partida de Farkle con amigos. Cada detalle, desde el tinte de la madera hasta el trazo del escudo, se cuida pieza a pieza.",
+      "customization": "Puedes elegir los colores del escudo, grabar iniciales o una fecha especial en el interior de la tapa, y escoger el tono de la madera (nogal, roble claro o caoba)."
+    },
+    "mini-farkle-viajero": {
+      "name": "Mini Farkle de viaje",
+      "short": "Versión compacta del set de Farkle, lista para meter en la mochila o el bolso.",
+      "description": "La misma pasión por el detalle, en un formato pequeño pensado para viajar. Ideal para escapadas, camping o simplemente para tener siempre a mano una partida improvisada.",
+      "customization": "Disponible en distintos colores de tapa y con la opción de añadir iniciales grabadas."
+    },
+    "oleo-minas-tirith": {
+      "name": "Óleo «La Ciudadela»",
+      "short": "Interpretación al óleo de una gran ciudadela de piedra entre montañas, inspirada en la fantasía medieval.",
+      "description": "Un homenaje pintado a mano a los paisajes de fantasía que más me emocionan: una ciudadela blanca tallada en la roca, bajo un cielo de tormenta. Óleo sobre lienzo, con capas de veladura para dar profundidad a la piedra y a la montaña.",
+      "customization": "Se puede encargar en otros tamaños de lienzo y, si lo prefieres, adaptar la paleta de colores o el paisaje a una escena distinta."
+    },
+    "oleo-rincon-bosque": {
+      "name": "Óleo «Rincón de bosque»",
+      "short": "Un riachuelo escondido entre árboles, pintado al óleo con mucha luz natural.",
+      "description": "Pintado a partir de uno de esos rincones de bosque que parecen sacados de un cuento: agua corriendo entre piedras, luz filtrándose entre las hojas y mucho verde en todas sus variantes. Una pieza pensada para traer un poco de naturaleza a cualquier pared.",
+      "customization": "Disponible en varios tamaños de lienzo; también puedo pintar tu propio paisaje de referencia bajo encargo."
+    },
+    "retrato-digital-personalizado": {
+      "name": "Retrato digital personalizado",
+      "short": "Ilustración digital a partir de tu propia escena, con un estilo cálido y algo de humor si lo quieres.",
+      "description": "Cuéntame quién o qué quieres ver retratado —tú, tu mascota, tu personaje de rol— y lo convierto en una ilustración digital con acabado semi-realista o de cómic, según lo que busques. Esta pieza, con ardillas incluidas, fue uno de mis encargos favoritos.",
+      "customization": "Totalmente personalizable: número de personajes, fondo, estilo (realista, cómic, chibi) y formato de entrega (digital o impreso)."
+    },
+    "pack-emotes-personalizados": {
+      "name": "Pack de emotes personalizados",
+      "short": "Set de 3 emotes ilustrados, perfectos para Discord, Twitch o tu chat favorito.",
+      "description": "Un pack de tres emotes con un estilo simpático y expresivo, pensados para dar vida a cualquier chat o canal de streaming. Se entregan en alta resolución y con fondo transparente, listos para subir a tu plataforma.",
+      "customization": "Puedes elegir las expresiones, los colores y, si quieres, basarlos en tu propio personaje o avatar."
+    },
+    "escena-heinrich": {
+      "name": "Escena «La habitación de Heinrich»",
+      "short": "Ilustración digital narrativa de un interior medieval junto al fuego.",
+      "description": "Una escena pensada para contar algo más que una imagen: un niño sentado junto a la chimenea, en una habitación cargada de detalles heráldicos y calidez. Ilustración digital con un acabado pictórico, pensada para quien disfruta de las historias con trasfondo.",
+      "customization": "Puedo adaptar la escena a tu propio personaje, cambiar el punto de vista o preparar una composición completamente nueva bajo encargo."
+    },
+    "jinete-de-la-niebla": {
+      "name": "«El jinete de la niebla»",
+      "short": "Ilustración digital de un caballero a caballo, perdido entre la niebla de un bosque de pinos.",
+      "description": "Una de mis ilustraciones más atmosféricas: un jinete avanzando entre pinos y niebla, con esa luz fría que tanto me gusta pintar. Un pequeño homenaje a la estética que más me inspira de la fantasía medieval.",
+      "customization": "Disponible como impresión en distintos tamaños; la escena original es única, pero puedo crear una composición similar con tu propio personaje."
+    },
+    "hijos-del-caos": {
+      "name": "«Los hijos del caos»",
+      "short": "Ilustración digital narrativa de dos personajes de fantasía oscura, ejemplo de encargo de ilustración de personajes.",
+      "description": "Un encargo centrado en la relación entre dos personajes originales, con una paleta otoñal y una composición muy cuidada. Un ejemplo del tipo de escenas narrativas que puedo preparar para tus propios personajes o historias.",
+      "customization": "Disponible como encargo con tus propios personajes, paleta de colores y nivel de detalle a elegir."
+    },
+    "luminoso": {
+      "name": "«Luminoso»",
+      "short": "Ilustración digital semi-realista de una armadura y un caballo blanco, pieza única.",
+      "description": "Una pieza pensada para explorar la luz: el blanco del caballo, el brillo frío de la armadura y un fondo de bosque desenfocado. Una de mis ilustraciones más personales, sin encargo de por medio."
+    },
+    "miniatura-caballero-henry": {
+      "name": "Miniatura «Caballero»",
+      "short": "Figura de caballero medieval, pintada a pincel fino sobre peana de madera.",
+      "description": "Una miniatura pintada capa a capa, cuidando los contrastes de la armadura y el escudo heráldico. Un pequeño gesto hacia la estética de los caballeros medievales que tanto me inspiran.",
+      "customization": "Puedo pintar tu propia miniatura (debes hacérmela llegar) con los colores, escudo y base que prefieras."
+    },
+    "diorama-jinete-heraldico": {
+      "name": "Diorama «Jinete heráldico»",
+      "short": "Figura de caballero a caballo, con escudo propio y peana temática en piedra y musgo.",
+      "description": "Un diorama completo: caballo encabritado, caballero con escudo heráldico pintado a mano y una base de piedra con musgo y pequeños detalles de vegetación. Pensado para quienes buscan algo más que una figura: una pequeña escena.",
+      "customization": "Puedo pintar tu propia figura con los colores y el escudo que elijas, además de adaptar la base a tu gusto (musgo, piedra, nieve...)."
+    },
+    "figura-lune": {
+      "name": "Figura «Lune»",
+      "short": "Figura de personaje de fantasía con efectos de fuego y cristal pintados a mano.",
+      "description": "Una figura de resina con una peana muy trabajada, combinando efectos de fuego pintado y detalles de cristal. Un reto técnico que disfruté especialmente por el contraste de colores y texturas.",
+      "customization": "Pintura de tu propia figura (resina o miniatura de peana) con los efectos y colores que prefieras."
+    },
+    "figura-renoir": {
+      "name": "Figura «Renoir»",
+      "short": "Figura de personaje con abrigo largo, acabado mate y mucho detalle en los pliegues de la ropa.",
+      "description": "Una figura centrada en el detalle de la tela: pliegues, sombras y un acabado mate que le da un aire casi cinematográfico. Ideal para quien colecciona figuras de personajes con mucha personalidad.",
+      "customization": "Pintura bajo encargo de tu propia figura, ajustando acabados (mate o satinado) y paleta de colores."
+    },
+    "diorama-brutus": {
+      "name": "Diorama «Brutus»",
+      "short": "Pequeño diorama arquitectónico pintado a mano, con columnas y detalles dorados.",
+      "description": "Una pieza distinta: en vez de un personaje, un pequeño edificio clásico pintado con texturas de piedra envejecida, columnas y detalles en dorado. Un ejercicio de paciencia y de pintura de texturas.",
+      "customization": "Puedo adaptar los colores, el tipo de piedra y los detalles dorados a tu propio proyecto o diorama."
+    }
+  }
+}

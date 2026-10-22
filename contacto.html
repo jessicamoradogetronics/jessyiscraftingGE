@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — JessyIsCrafting</title>
+<meta name="description" content="Escríbeme para encargar una pieza, proponer una colaboración o resolver cualquier duda. Formulario de contacto, correo electrónico, Instagram y X.">
+<link rel="canonical" href="https://jessicamrey.github.io/jessyiscrafting/contacto.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#37472f">
+<meta property="og:title" content="Contacto — JessyIsCrafting">
+<meta property="og:description" content="Escríbeme para encargar una pieza, proponer una colaboración o resolver cualquier duda.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<div data-include="header"></div>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" data-i18n="contact.eyebrow">Contacto</span>
+      <h1 data-i18n="contact.title">Hablemos</h1>
+      <p data-i18n="contact.subtitle">¿Quieres encargar una pieza, proponer una colaboración o simplemente saludar? Este es el sitio.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2 data-i18n="contact.formTitle">Escríbeme directamente</h2>
+        <form class="form-grid" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="form-row">
+            <label for="contactName" data-i18n="contact.form.name">Nombre</label>
+            <input type="text" id="contactName" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="contactEmail" data-i18n="contact.form.email">Correo electrónico</label>
+            <input type="email" id="contactEmail" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="contactSubject" data-i18n="contact.form.subject">Asunto</label>
+            <input type="text" id="contactSubject" name="subject" data-i18n-attr="placeholder:contact.form.subjectPlaceholder" placeholder="Ej. Encargo personalizado, colaboración...">
+          </div>
+          <div class="form-row">
+            <label for="contactMessage" data-i18n="contact.form.message">Mensaje</label>
+            <textarea id="contactMessage" name="message" rows="6" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <button type="submit" class="btn btn--primary btn--block" data-i18n="contact.form.submit">Enviar mensaje</button>
+          <p class="form-note" data-i18n="contact.form.note">Suelo responder en 2-3 días laborables. Si tu consulta es urgente, escríbeme mejor por Instagram.</p>
+        </form>
+      </div>
+
+      <div>
+        <h2 data-i18n="contact.channelsTitle">Otras formas de encontrarme</h2>
+        <div class="contact-channels">
+          <a class="contact-channel" href="mailto:hola@jessyiscrafting.com">
+            <span class="contact-channel__icon">✉️</span>
+            <span>
+              <span class="contact-channel__label" data-i18n="contact.channels.email">Correo electrónico</span><br>
+              <span class="contact-channel__value">hola@jessyiscrafting.com</span>
+            </span>
+          </a>
+          <a class="contact-channel" href="https://instagram.com/" target="_blank" rel="noopener">
+            <span class="contact-channel__icon">📷</span>
+            <span>
+              <span class="contact-channel__label">Instagram</span><br>
+              <span class="contact-channel__value">@jessyiscrafting</span>
+            </span>
+          </a>
+          <a class="contact-channel" href="https://x.com/" target="_blank" rel="noopener">
+            <span class="contact-channel__icon">𝕏</span>
+            <span>
+              <span class="contact-channel__label">X (Twitter)</span><br>
+              <span class="contact-channel__value">@jessyiscrafting</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="customization-box" style="margin-top:2rem;">
+          <h3 data-i18n="contact.shippingTitle">Antes de escribir</h3>
+          <p data-i18n="contact.shippingText">Envío a toda España, la Unión Europea y Reino Unido sin problema. Si vives en otro país, escríbeme primero para confirmar plazos y gastos de envío — tienes todos los detalles en las preguntas frecuentes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div data-include="footer"></div>
+
+<script src="js/include.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

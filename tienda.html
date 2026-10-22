@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda — JessyIsCrafting</title>
+<meta name="description" content="Descubre artesanías de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano. Piezas únicas y personalizables, hechas con mimo en España.">
+<link rel="canonical" href="https://jessicamrey.github.io/jessyiscrafting/tienda.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#37472f">
+<meta property="og:title" content="Tienda — JessyIsCrafting">
+<meta property="og:description" content="Artesanías, cuadros, dibujo digital y figuras pintadas a mano, hechas con mimo en España.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://jessicamrey.github.io/jessyiscrafting/assets/img/artesanias/farkle-set-1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<div data-include="header"></div>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" data-i18n="store.eyebrow">Tienda</span>
+      <h1 data-i18n="store.title">Cada categoría, una forma distinta de contar lo mismo</h1>
+      <p data-i18n="store.subtitle">Artesanías de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano. Todo se hace por encargo o en tiradas muy cortas, así que cada pieza es prácticamente irrepetible.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="store-filters" id="storeFilters">
+        <button type="button" data-category="all" class="is-active" data-i18n="store.filters.all">Todos</button>
+        <button type="button" data-category="artesanias" data-i18n="nav.storeCategories.artesanias">Artesanías</button>
+        <button type="button" data-category="dibujos" data-i18n="nav.storeCategories.dibujos">Dibujo digital</button>
+        <button type="button" data-category="cuadros" data-i18n="nav.storeCategories.cuadros">Cuadros</button>
+        <button type="button" data-category="figuras" data-i18n="nav.storeCategories.figuras">Figuras</button>
+      </div>
+
+      <div class="grid grid--4" id="productGrid" aria-live="polite"></div>
+      <p id="productEmpty" hidden data-i18n="store.empty">De momento no hay piezas en esta categoría, ¡vuelve pronto!</p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 data-i18n="store.ctaTitle">¿No encuentras exactamente lo que buscas?</h2>
+        <p data-i18n="store.ctaText">Casi todas mis piezas admiten personalización: colores, iniciales, escudos, tamaños de lienzo o tu propio personaje. Cuéntame qué tienes en mente.</p>
+        <a href="personalizados.html" class="btn btn--gold" data-i18n="store.ctaButton">Pedir una pieza personalizada</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div data-include="footer"></div>
+
+<script src="js/include.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/store.js"></script>
+</body>
+</html>

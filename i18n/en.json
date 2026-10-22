@@ -1,0 +1,451 @@
+{
+  "home": {
+    "hero": {
+      "eyebrow": "Handmade · Made with care",
+      "title": "Craftsmanship with a forest soul",
+      "tagline": "\"Every piece grows slowly, like a tree.\"",
+      "subtitle": "Carved Farkle sets, oil paintings, digital illustration and hand-painted figures. Unique pieces, inspired by nature and the medieval worlds I love most, created one by one from Spain.",
+      "ctaStore": "Visit the shop",
+      "ctaStory": "Discover my story"
+    },
+    "quicklinks": {
+      "store": {
+        "title": "Shop",
+        "text": "Crafts, paintings, drawings and figures ready to order."
+      },
+      "gallery": {
+        "title": "Gallery",
+        "text": "A visual walk through my pieces and my workshop."
+      },
+      "collab": {
+        "title": "Collaborations",
+        "text": "Commissions, joint projects and professional work."
+      },
+      "inspiration": {
+        "title": "Inspiration",
+        "text": "Video games, reading and the worlds that shape my work."
+      }
+    },
+    "featured": {
+      "eyebrow": "Featured pieces",
+      "title": "A few of my favourite pieces",
+      "subtitle": "A small taste of what you'll find in the shop: wood, paint, digital brushes and a lot of patience.",
+      "cta": "See the whole shop"
+    },
+    "story": {
+      "photoCaption": "Photo of Jessy in her workshop (coming soon)",
+      "eyebrow": "Behind every piece",
+      "title": "Made slowly, made with care",
+      "text1": "I'm Jessy, and behind JessyIsCrafting there are hours of sanding, fine brushes and many cups of tea. Every piece is thought through, sketched and refined until I feel it truly deserves to leave my worktable.",
+      "text2": "I'm not after mass production: I want you to open the box and feel that someone genuinely cared about what you're holding.",
+      "cta": "Read our story"
+    },
+    "cta": {
+      "eyebrow": "Have something in mind?",
+      "title": "Let's talk about your special order",
+      "text": "Personalised gifts, pieces for celebrations, illustration commissions or collaboration projects: tell me your idea and we'll turn it into something one of a kind.",
+      "ctaCustom": "Custom pieces & gifts",
+      "ctaContact": "Get in touch"
+    }
+  },
+  "store": {
+    "eyebrow": "Shop",
+    "title": "Every category, a different way of telling the same story",
+    "subtitle": "Wooden crafts, oil paintings, digital illustration and hand-painted figures. Everything is made to order or in very short batches, so every piece is practically one of a kind.",
+    "filters": {
+      "all": "All"
+    },
+    "empty": "There are no pieces in this category yet — check back soon!",
+    "ctaTitle": "Can't find exactly what you're looking for?",
+    "ctaText": "Almost all of my pieces can be customised: colours, initials, crests, canvas sizes or your own character. Tell me what you have in mind.",
+    "ctaButton": "Request a custom piece"
+  },
+  "nav": {
+    "storeCategories": {
+      "artesanias": "Crafts",
+      "dibujos": "Digital drawing",
+      "cuadros": "Paintings",
+      "figuras": "Figures"
+    },
+    "home": "Home",
+    "store": "Shop",
+    "story": "Our story",
+    "custom": "Custom pieces & gifts",
+    "collab": "Collaborations",
+    "inspiration": "Inspiration",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "langLabel": "Language"
+  },
+  "productDetail": {
+    "notFound": "We couldn't find this piece. It may no longer be available — take a look at the rest of the shop.",
+    "customizationTitle": "Customisation available",
+    "orderButton": "Ask about / order this piece",
+    "backToStore": "Back to the shop",
+    "shippingNote": "Shipping to Spain, the European Union and the United Kingdom. For other countries, please get in touch before ordering — more details in the FAQ.",
+    "relatedEyebrow": "You might also like",
+    "relatedTitle": "More pieces from the same family"
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "A walk through the workshop",
+    "subtitle": "Finished pieces, works in progress and the odd moment behind the worktable. Tap any image to see it larger.",
+    "captions": {
+      "caballero": "Knight miniature, painted with a fine brush.",
+      "minasTirith": "Oil on canvas, citadel among the mountains.",
+      "farkleDetalle": "Detail of the hand-carved crest.",
+      "luminoso": "Digital illustration, light through the mist.",
+      "jinete": "Rider diorama, hand-painted base.",
+      "heinrich": "Narrative scene, digital illustration.",
+      "lune": "Figure with effects base, commissioned paint job.",
+      "bosque": "Oil on canvas, a corner of the forest.",
+      "renoir": "Collector's figure, matte finish.",
+      "miniFarkle": "Travel-size Mini Farkle, ready for your backpack."
+    },
+    "placeholder1": "📷 Workshop photo — coming soon",
+    "placeholder2": "📷 Preparing an order — coming soon"
+  },
+  "story": {
+    "eyebrow": "Our story",
+    "title": "The person behind JessyIsCrafting",
+    "subtitle": "A small project, handmade, piece by piece.",
+    "photoCaption": "Photo of Jessy (coming soon)",
+    "intro": {
+      "title": "Hi, I'm Jessy",
+      "p1": "JessyIsCrafting started as a weekday hobby: painting figures at night, trying out oils on Sundays, drawing whenever I needed to unwind. Over time, that hobby became something I genuinely wanted to share.",
+      "p2": "Today I still work the same way I did at the beginning: unhurried, piece by piece, caring about every detail as if it were for myself. Every Farkle box, every canvas and every figure spends many hours in my hands before it reaches yours."
+    },
+    "values": {
+      "eyebrow": "What drives me",
+      "title": "Why I take things slowly",
+      "item1": {
+        "title": "Craft as a language",
+        "text": "For me, working with wood, oil paint or a digital brush is a way of saying something without words. Every texture and every grain has its own character, and I'd rather respect it than force it."
+      },
+      "item2": {
+        "title": "The small details",
+        "text": "A well-sanded edge, one extra glaze, a fabric fold painted with patience. Details that almost no one notices at first glance, yet completely change how a finished piece feels."
+      },
+      "item3": {
+        "title": "Work made with care",
+        "text": "I'd rather take a little longer and get it right. Every order is treated as unique, because it is: no two pieces leaving my desk are ever exactly the same."
+      },
+      "item4": {
+        "title": "Made in Spain",
+        "text": "The whole process — design, painting, packaging — happens right here, in my workshop. Supporting handmade work also means supporting local work, made slowly and honestly."
+      }
+    },
+    "ctaTitle": "Want to see what I'm working on right now?",
+    "ctaText": "In the shop you'll find the pieces currently available, and in the gallery, a bit more of the process behind each one.",
+    "ctaStore": "Visit the shop",
+    "ctaGallery": "View gallery"
+  },
+  "custom": {
+    "eyebrow": "Custom pieces & gifts",
+    "title": "A gift that truly means something",
+    "subtitle": "Engraved initials, your own crest, someone's favourite character, or a scene built around a specific date. If it can be imagined, it can probably be made.",
+    "cards": {
+      "gifts": {
+        "title": "🎁 Gifts with a name on them",
+        "text": "Add initials, a date or a small symbol to any piece in the shop: a Farkle set, a figure or a painting. Perfect for weddings, birthdays, or just because."
+      },
+      "celebrations": {
+        "title": "🎄 Celebrations & special dates",
+        "text": "For Christmas, anniversaries or farewells, I prepare pieces with limited time slots: ornaments, small paintings or themed figures. Book ahead to make sure it arrives on time."
+      },
+      "fullCustom": {
+        "title": "✨ Fully custom commission",
+        "text": "Your own idea from start to finish: a digital portrait of your character, a painting of a special place, or a figure painted from your reference. We talk, sketch and build it together."
+      }
+    },
+    "process": {
+      "eyebrow": "How it works",
+      "title": "From your idea to the finished piece",
+      "step1": {
+        "title": "Tell me about it",
+        "text": "Message me through the contact form or social media, telling me what you have in mind, when you need it and your approximate budget."
+      },
+      "step2": {
+        "title": "Proposal & quote",
+        "text": "I'll prepare a sketch or a customisation proposal, along with the final price and estimated delivery time."
+      },
+      "step3": {
+        "title": "Getting to work",
+        "text": "Once the order is confirmed, I start working on your piece and keep you updated with photos of the process."
+      },
+      "step4": {
+        "title": "Packed with care",
+        "text": "I protect every piece as if it were travelling fragile, because it is, and I ship it with as much care as possible."
+      }
+    },
+    "ctaTitle": "Do you have a date in mind?",
+    "ctaText": "Custom orders need preparation time. Get in touch as soon as you can to secure your piece on time.",
+    "ctaButton": "Tell me your idea"
+  },
+  "collab": {
+    "eyebrow": "Collaborations",
+    "title": "Let's work on something new together",
+    "subtitle": "Besides the shop, I'm open to illustration commissions and collaboration proposals with other brands, creators or projects.",
+    "commissions": {
+      "eyebrow": "Commissions",
+      "title": "Order your own illustration",
+      "p1": "I draw original characters, fan art and digital portraits with a careful, narrative style. I can work from a description, visual references, or your own roleplay or video game character.",
+      "p2": "Every commission includes an initial sketch to validate the pose and composition before moving on to colour, so we make sure the final result is exactly what you were looking for.",
+      "cta": "Request a commission"
+    },
+    "brands": {
+      "eyebrow": "Brands & creators",
+      "title": "Propose a collaboration",
+      "p1": "If you run a brand, a shop, an editorial project or a content channel and think we'd be a good fit, get in touch. I'm especially interested in collaborations related to crafts, medieval fantasy, video games and literature.",
+      "p2": "I can also prepare emote packs or illustrations for streamers and content creators, with revisions included until we nail the style that represents you best.",
+      "cta": "Propose a collaboration"
+    },
+    "workshops": {
+      "eyebrow": "Workshops",
+      "title": "Introductory craft workshops",
+      "text": "I'm open to organising or taking part in in-person or online workshops on miniature painting, digital drawing or woodcraft, whether for individuals, cultural spaces, shops or events. If you're interested, tell me about your idea.",
+      "cta": "Discuss a workshop"
+    },
+    "examples": {
+      "eyebrow": "Work examples",
+      "title": "Some previous commissions",
+      "caption1": "Personalised portrait based on a real scene.",
+      "caption2": "Emote pack for a streaming channel.",
+      "caption3": "Narrative scene for a literary project."
+    }
+  },
+  "inspiration": {
+    "eyebrow": "Inspiration",
+    "title": "The worlds that shape my work",
+    "subtitle": "Everything I make comes from somewhere: an endless playthrough, a book you can't put down, a melody that stays with you for years. This is a bit of that origin.",
+    "kcd": {
+      "eyebrow": "Kingdom Come: Deliverance",
+      "title": "The game that laid the foundations for all of this",
+      "p1": "Kingdom Come: Deliverance is, probably, the reason JessyIsCrafting exists the way it does today. I discovered Bohemia, its forests, its mud, its sunset light filtering through the trees, and something clicked: I wanted to paint that, draw that, have those worlds sitting on my worktable.",
+      "quote": "\"A game that doesn't idealise the Middle Ages, but makes them feel real: dusty, hard, and at the same time, deeply beautiful.\"",
+      "p2": "Its art direction — those weathered castles, those wooden villages, that palette of greens, ochres and stone greys — is behind much of my paintings and figures. And its soundtrack, with those choirs and medieval instruments, has played in the background of countless painting sessions.",
+      "p3": "Henry, Hans Capon and all of Bohemia have found their way into my work in a thousand different forms: in a painted figure, in a digital sketch, in a scene I wanted to tell with my own hands."
+    },
+    "reading": {
+      "eyebrow": "Reading & writing",
+      "title": "The other half of my brain",
+      "p1": "If I'm not painting, I'm probably reading, or writing. I've always loved filling in the gaps a story leaves untold: what a side character thinks, what happened between two scenes, what was felt in a moment the game barely touches.",
+      "p2": "That's where my Kingdom Come: Deliverance fanfics came from: a way of keeping on living in Bohemia a little longer, exploring its characters from another angle. If you'd like to take a look, I share them on Archive of Our Own."
+    },
+    "fanfics": {
+      "item1": {
+        "status": "In progress",
+        "title": "Worth the Wreckage",
+        "summary": "Henry leads a simple life, with the odd job that's better left unquestioned. When he's asked to take Hans into his home, no questions asked, two completely different worlds begin to clash — and, slowly, to change each other."
+      },
+      "readOn": "Read on AO3",
+      "item2": {
+        "status": "Complete",
+        "title": "Something We Cannot Name",
+        "summary": "What happened to Hans while he was held captive in Malešov, and what went through Henry's mind while he faced his most dangerous missions. The key events of KCD2 told from Hans's point of view, up to what happened in Suchdol."
+      },
+      "item3": {
+        "status": "Complete",
+        "title": "The Road to Constantinople",
+        "summary": "Hans Capon's wedding is drawing near. Before giving in to that fate, he fulfils a promise made to Henry years ago: to travel together all the way to Constantinople. One last journey of love and freedom, marked by the beauty of the world — and its cruelty."
+      }
+    },
+    "ctaTitle": "Want to see where all this inspiration ends up?",
+    "ctaText": "In the shop you'll find paintings, figures and drawings that were born, one way or another, from these same worlds.",
+    "ctaButton": "Browse the shop"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk",
+    "subtitle": "Want to order a piece, propose a collaboration, or just say hi? This is the place.",
+    "formTitle": "Write to me directly",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "subjectPlaceholder": "E.g. Custom order, collaboration...",
+      "message": "Message",
+      "submit": "Send message",
+      "note": "I usually reply within 2-3 business days. If your enquiry is urgent, it's best to message me on Instagram."
+    },
+    "channelsTitle": "Other ways to reach me",
+    "channels": {
+      "email": "Email"
+    },
+    "shippingTitle": "Before you write",
+    "shippingText": "I ship to Spain, the European Union and the United Kingdom without any issues. If you live elsewhere, please get in touch first so we can confirm timing and shipping costs — you'll find all the details in the FAQ.",
+    "prefillMessage": "Hi, I'd like to order:"
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Everything you need to know before ordering",
+    "subtitle": "If you have a question that isn't answered here, feel free to reach out through the contact form.",
+    "items": {
+      "shipping": {
+        "q": "Which countries do you ship to?",
+        "a": "I ship as standard to all of Spain, the rest of the European Union and the United Kingdom. If you live anywhere else, message me before placing your order: we'll figure it out together, since customs fees and delivery times can vary quite a bit."
+      },
+      "prepTime": {
+        "q": "How long does it take to prepare my order?",
+        "a": "Pieces that are already finished usually leave my workshop within 2-4 business days. Custom orders, illustration commissions or made-to-order painted figures normally need between 1 and 3 weeks, depending on how complex the order is and my waiting list at that moment. Around Christmas, I'd recommend booking well in advance."
+      },
+      "returns": {
+        "q": "Can I return or exchange an order?",
+        "a": "Non-personalised catalogue pieces can be returned within 14 calendar days of receipt, as long as they arrive in perfect, unused condition. Personalised pieces, made-to-order commissions and illustration commissions cannot be returned, except in the case of a manufacturing fault or transport damage."
+      },
+      "customization": {
+        "q": "What exactly can I customise?",
+        "a": "It depends on each piece. On the Farkle sets you can choose initials, your own crest or the wood tone. On paintings, the canvas size and, in many cases, the scene itself. On digital drawings, the character or reference you'd like portrayed. And on figures, the colours, finish and base. Each product page lists exactly what can be adapted."
+      },
+      "packaging": {
+        "q": "How do the pieces travel?",
+        "a": "With a lot of care. Figures and paintings are protected with padded materials, and whenever possible I reuse or reduce plastic. If your piece is fragile, it's clearly marked on the parcel for whoever receives it on your behalf."
+      },
+      "commission": {
+        "q": "How do I order an illustration commission?",
+        "a": "Message me through the contact form or on social media telling me your idea, with references if you have any. I'll prepare an initial sketch, we'll agree on the price and timeline together, and all that's left is moving on to colour. You'll find more information in the Collaborations section."
+      },
+      "payment": {
+        "q": "How is a commission paid for?",
+        "a": "Once the quote is agreed, I'll send you the payment details through whichever channel we're using for the order (bank transfer or the platform we're working on). For larger pieces or commissions, I usually ask for a deposit when the order is confirmed and the rest before shipping."
+      }
+    },
+    "ctaTitle": "Still have questions?",
+    "ctaText": "Get in touch and I'll be happy to help.",
+    "ctaButton": "Go to contact"
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "This path gets lost in the forest",
+    "text": "The page you're looking for doesn't exist or has moved. Let's get you back on the main path.",
+    "cta": "Back to home"
+  },
+  "footer": {
+    "tagline": "Crafts, painting and illustration made by hand, with care, from Spain.",
+    "exploreTitle": "Explore",
+    "gallery": "Gallery",
+    "serviceTitle": "Commissions",
+    "contactTitle": "Contact",
+    "location": "Handmade in Spain",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with 🌿 and a lot of care.",
+    "contactFormLink": "Contact form"
+  },
+  "brand": {
+    "name": "JessyIsCrafting — go to homepage"
+  },
+  "common": {
+    "from": "From",
+    "customizable": "Customisable",
+    "viewProduct": "View product"
+  },
+  "categories": {
+    "artesanias": {
+      "name": "Crafts",
+      "description": "Hand-carved and hand-painted wooden pieces, made to play with and to give."
+    },
+    "dibujos": {
+      "name": "Digital drawing",
+      "description": "Digital illustrations, portraits and narrative scenes with a painterly touch."
+    },
+    "cuadros": {
+      "name": "Paintings",
+      "description": "Oil paintings on canvas, inspired by landscapes and fantasy worlds."
+    },
+    "figuras": {
+      "name": "Figures",
+      "description": "Miniatures and 3D figures painted with a fine brush, with a collector's finish."
+    }
+  },
+  "products": {
+    "set-farkle-blason": {
+      "name": "\"Crest\" Farkle Set",
+      "short": "Hand-carved wooden box with a painted crest and a complete dice set for playing Farkle.",
+      "description": "A solid wood box with a hand-painted heraldic crest on the lid, a stitched leather dice cup and all the dice you need for a game of Farkle with friends. Every detail, from the wood stain to the brushstrokes of the crest, is finished piece by piece.",
+      "customization": "You can choose the crest colours, have initials or a special date engraved inside the lid, and pick the wood tone (walnut, light oak or mahogany)."
+    },
+    "mini-farkle-viajero": {
+      "name": "Travel Mini Farkle",
+      "short": "A compact version of the Farkle set, ready to slip into a backpack or bag.",
+      "description": "The same love for detail, in a small format made for travelling. Perfect for trips, camping, or simply having an impromptu game always within reach.",
+      "customization": "Available in different lid colours, with the option to add engraved initials."
+    },
+    "oleo-minas-tirith": {
+      "name": "\"The Citadel\" Oil Painting",
+      "short": "An oil-painted interpretation of a great stone citadel among mountains, inspired by medieval fantasy.",
+      "description": "A hand-painted homage to the fantasy landscapes that move me most: a white citadel carved into the rock, under a stormy sky. Oil on canvas, with layered glazes to bring depth to the stone and the mountain.",
+      "customization": "Can be commissioned in other canvas sizes and, if you prefer, with an adapted colour palette or a different landscape."
+    },
+    "oleo-rincon-bosque": {
+      "name": "\"Forest Corner\" Oil Painting",
+      "short": "A stream tucked away among the trees, oil-painted with plenty of natural light.",
+      "description": "Painted from one of those forest corners that look straight out of a storybook: water running over stones, light filtering through the leaves and every shade of green. A piece made to bring a little nature to any wall.",
+      "customization": "Available in several canvas sizes; I can also paint your own reference landscape on request."
+    },
+    "retrato-digital-personalizado": {
+      "name": "Custom digital portrait",
+      "short": "A digital illustration based on your own scene, with a warm style and a touch of humour if you like.",
+      "description": "Tell me who or what you'd like portrayed — you, your pet, your roleplay character — and I'll turn it into a digital illustration with a semi-realistic or comic-style finish, whichever you're after. This piece, squirrels included, was one of my favourite commissions.",
+      "customization": "Fully customisable: number of characters, background, style (realistic, comic, chibi) and delivery format (digital file or print)."
+    },
+    "pack-emotes-personalizados": {
+      "name": "Custom emote pack",
+      "short": "A set of 3 illustrated emotes, perfect for Discord, Twitch or your favourite chat.",
+      "description": "A pack of three emotes with a fun, expressive style, made to bring any chat or streaming channel to life. Delivered in high resolution with a transparent background, ready to upload to your platform.",
+      "customization": "You can choose the expressions, the colours and, if you like, base them on your own character or avatar."
+    },
+    "escena-heinrich": {
+      "name": "\"Heinrich's Room\" scene",
+      "short": "A narrative digital illustration of a medieval interior by the fire.",
+      "description": "A scene meant to tell more than just an image: a boy sitting by the fireplace, in a room full of heraldic details and warmth. Digital illustration with a painterly finish, made for anyone who enjoys stories with depth.",
+      "customization": "I can adapt the scene to your own character, change the point of view, or build a brand new composition on request."
+    },
+    "jinete-de-la-niebla": {
+      "name": "\"The Rider in the Mist\"",
+      "short": "A digital illustration of a mounted knight, lost in the mist of a pine forest.",
+      "description": "One of my most atmospheric illustrations: a rider moving through pines and mist, with that cold light I love to paint. A small homage to the aesthetic that inspires me most in medieval fantasy.",
+      "customization": "Available as a print in different sizes; the original scene is one of a kind, but I can create a similar composition with your own character."
+    },
+    "hijos-del-caos": {
+      "name": "\"Children of Chaos\"",
+      "short": "A narrative digital illustration of two dark-fantasy characters, an example of a character illustration commission.",
+      "description": "A commission focused on the relationship between two original characters, with an autumnal palette and a carefully built composition. An example of the kind of narrative scenes I can prepare for your own characters or stories.",
+      "customization": "Available as a commission with your own characters, colour palette and level of detail to choose from."
+    },
+    "luminoso": {
+      "name": "\"Luminous\"",
+      "short": "A semi-realistic digital illustration of a suit of armour and a white horse, a one-of-a-kind piece.",
+      "description": "A piece made to explore light: the white of the horse, the cold gleam of the armour and a blurred forest background. One of my most personal illustrations, with no commission behind it."
+    },
+    "miniatura-caballero-henry": {
+      "name": "\"Knight\" Miniature",
+      "short": "A medieval knight figure, painted with a fine brush on a wooden base.",
+      "description": "A miniature painted layer by layer, with careful attention to the contrasts of the armour and the heraldic shield. A small tribute to the medieval-knight aesthetic that inspires me so much.",
+      "customization": "I can paint your own miniature (you'll need to send it to me) with the colours, crest and base you prefer."
+    },
+    "diorama-jinete-heraldico": {
+      "name": "\"Heraldic Rider\" Diorama",
+      "short": "A mounted knight figure, with its own crest and a themed base of stone and moss.",
+      "description": "A complete diorama: a rearing horse, a knight with a hand-painted heraldic shield, and a stone base with moss and small vegetation details. Made for anyone looking for more than a figure: a small scene.",
+      "customization": "I can paint your own figure with the colours and crest you choose, as well as adapt the base to your taste (moss, stone, snow...)."
+    },
+    "figura-lune": {
+      "name": "\"Lune\" Figure",
+      "short": "A fantasy character figure with hand-painted fire and crystal effects.",
+      "description": "A resin figure with a richly detailed base, combining painted fire effects with crystal details. A technical challenge I especially enjoyed for the contrast of colours and textures.",
+      "customization": "Painting service for your own figure (resin or based miniature) with the effects and colours you prefer."
+    },
+    "figura-renoir": {
+      "name": "\"Renoir\" Figure",
+      "short": "A character figure in a long coat, with a matte finish and plenty of detail in the fabric folds.",
+      "description": "A figure focused on fabric detail: folds, shadows and a matte finish that gives it an almost cinematic feel. Ideal for anyone who collects figures with a lot of character.",
+      "customization": "Commissioned painting of your own figure, adjusting finishes (matte or satin) and colour palette."
+    },
+    "diorama-brutus": {
+      "name": "\"Brutus\" Diorama",
+      "short": "A small hand-painted architectural diorama, with columns and gold details.",
+      "description": "A different kind of piece: instead of a character, a small classical building painted with aged stone textures, columns and gilded details. An exercise in patience and texture painting.",
+      "customization": "I can adapt the colours, the type of stone and the gold details to your own project or diorama."
+    }
+  }
+}

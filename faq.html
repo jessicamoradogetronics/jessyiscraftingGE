@@ -1,65 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n-title-key="faq.title">Preguntas frecuentes · JessyIsCrafting</title>
-  <meta name="description" data-i18n-desc-key="faq.metaDescription" content="Envíos, plazos de preparación, devoluciones y personalización: todo lo que debes saber antes de comprar en JessyIsCrafting.">
-  <meta name="theme-color" content="#3F5A43">
-  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://jessicamoradogetronics.github.io/jessyiscraftingGE/faq.html">
-
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="JessyIsCrafting">
-  <meta property="og:image" content="https://jessicamoradogetronics.github.io/jessyiscraftingGE/assets/images/placeholders/og-default.svg">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body data-base="./" data-page-id="faq">
-  <a class="skip-link" href="#main" data-i18n="nav.skipToContent">Ir al contenido principal</a>
-  <div data-include="header"></div>
-
-  <main id="main">
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow" data-i18n="nav.faq">Preguntas frecuentes</span>
-          <h1 data-i18n="faq.title">Preguntas frecuentes</h1>
-          <p class="lede" data-i18n="faq.intro">Todo lo que necesitas saber sobre envíos y devoluciones.</p>
-        </div>
-
-        <div style="max-width:780px; margin-inline:auto;" data-faq-list></div>
-      </div>
-    </section>
-  </main>
-
-  <div data-include="footer"></div>
-
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script>
-    function renderFaq() {
-      var first = true;
-      app.renderArrayInto(document.querySelector("[data-faq-list]"), "faq.items", function (item) {
-        var isOpen = first;
-        first = false;
-        return (
-          '<div class="accordion-item" data-accordion-item data-open="' + isOpen + '">' +
-          '<h2 style="margin:0;"><button type="button" class="accordion-trigger" data-accordion-trigger aria-expanded="' + isOpen + '">' +
-          "<span>" + item.question + "</span>" +
-          '<span class="accordion-trigger__icon" aria-hidden="true">+</span>' +
-          "</button></h2>" +
-          '<div class="accordion-panel"><div class="accordion-panel__inner"><p>' + item.answer + "</p></div></div>" +
-          "</div>"
-        );
-      });
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preguntas frecuentes — JessyIsCrafting</title>
+<meta name="description" content="Envíos a España, la Unión Europea y Reino Unido, plazos de preparación, devoluciones y personalización. Resuelve tus dudas antes de hacer un pedido.">
+<link rel="canonical" href="https://jessicamrey.github.io/jessyiscrafting/faq.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#37472f">
+<meta property="og:title" content="Preguntas frecuentes — JessyIsCrafting">
+<meta property="og:description" content="Envíos, plazos de preparación, devoluciones y personalización.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿A qué países hacéis envíos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Envío a toda España, al resto de la Unión Europea y a Reino Unido de forma habitual. Para pedidos a otros países, escríbeme antes de comprar para confirmar plazos, aduanas y gastos de envío." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tarda en prepararse mi pedido?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Las piezas ya terminadas se preparan en 2-4 días laborables. Los encargos personalizados o comisiones de ilustración suelen necesitar entre 1 y 3 semanas, según la complejidad y la lista de espera del momento." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo devolver o cambiar un pedido?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Las piezas de catálogo sin personalizar pueden devolverse en un plazo de 14 días si llegan en perfecto estado. Las piezas personalizadas o hechas por encargo no admiten devolución, salvo defecto de fabricación o daño en el transporte." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué puedo personalizar exactamente?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Depende de la pieza: iniciales o escudos en los sets de Farkle, tamaños y escenas en los cuadros, personajes de referencia en los dibujos digitales, o colores y bases en las figuras. En la ficha de cada producto se indica qué se puede personalizar." }
     }
-    document.addEventListener("app:ready", renderFaq);
-    document.addEventListener("i18n:changed", renderFaq);
-  </script>
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<div data-include="header"></div>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</span>
+      <h1 data-i18n="faq.title">Todo lo que necesitas saber antes de pedir</h1>
+      <p data-i18n="faq.subtitle">Si tienes alguna duda que no aparece aquí, escríbeme sin problema por el formulario de contacto.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-item__q">
+            <span data-i18n="faq.items.shipping.q">¿A qué países hacéis envíos?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a" data-i18n="faq.items.shipping.a">Envío de forma habitual a toda España, al resto de la Unión Europea y a Reino Unido. Si vives en cualquier otro país, escríbeme antes de hacer el pedido: lo valoramos juntas, ya que los gastos de aduana y los plazos pueden variar bastante.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q">
+            <span data-i18n="faq.items.prepTime.q">¿Cuánto tarda en prepararse mi pedido?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a" data-i18n="faq.items.prepTime.a">Las piezas que ya están terminadas suelen salir de mi taller en 2-4 días laborables. Los encargos personalizados, las comisiones de ilustración o las figuras pintadas a medida necesitan normalmente entre 1 y 3 semanas, según la complejidad del encargo y la lista de espera que tenga en ese momento. En fechas como Navidad, te recomiendo reservar con bastante antelación.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q">
+            <span data-i18n="faq.items.returns.q">¿Puedo devolver o cambiar un pedido?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a" data-i18n="faq.items.returns.a">Las piezas de catálogo sin personalizar se pueden devolver en un plazo de 14 días naturales desde la recepción, siempre que lleguen en perfecto estado y sin usar. Las piezas personalizadas, los encargos a medida y las comisiones de ilustración no admiten devolución, salvo que exista un defecto de fabricación o un daño ocurrido durante el transporte.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q">
+            <span data-i18n="faq.items.customization.q">¿Qué puedo personalizar exactamente?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a" data-i18n="faq.items.customization.a">Depende de cada pieza. En los sets de Farkle puedes elegir iniciales, un escudo propio o el tono de la madera. En los cuadros, el tamaño del lienzo y, en muchos casos, la escena. En los dibujos digitales, el personaje o la referencia que quieras retratar. Y en las figuras, los colores, el acabado y la base. En la ficha de cada producto encontrarás el detalle exacto de lo que se puede adaptar.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q">
+            <span data-i18n="faq.items.packaging.q">¿Cómo viajan las piezas?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a" data-i18n="faq.items.packaging.a">Con mucho cuidado. Las figuras y los cuadros se protegen con materiales acolchados y, siempre que es posible, reutilizo o reduzco plástico. Si tu pieza es frágil, lo indico claramente en el paquete para quien la reciba en tu nombre.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q">
+            <span data-i18n="faq.items.commission.q">¿Cómo encargo una comisión de ilustración?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a" data-i18n="faq.items.commission.a">Escríbeme por el formulario de contacto o por redes sociales contándome tu idea, con referencias si las tienes. Te preparo un boceto inicial, cerramos juntas el precio y el plazo, y solo quedaría pasarlo a color. Tienes más información en la sección de Colaboraciones.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q">
+            <span data-i18n="faq.items.payment.q">¿Cómo se paga un encargo?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a" data-i18n="faq.items.payment.a">Una vez cerrado el presupuesto, te paso los detalles de pago por el canal que prefieras (transferencia o la plataforma que usemos para el encargo). En piezas más grandes o comisiones, suelo pedir una señal al confirmar el encargo y el resto antes del envío.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 data-i18n="faq.ctaTitle">¿Sigues con dudas?</h2>
+        <p data-i18n="faq.ctaText">Escríbeme y te respondo encantada.</p>
+        <a href="contacto.html" class="btn btn--gold" data-i18n="faq.ctaButton">Ir a contacto</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div data-include="footer"></div>
+
+<script src="js/include.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

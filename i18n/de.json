@@ -1,0 +1,451 @@
+{
+  "home": {
+    "hero": {
+      "eyebrow": "Handgemacht · Mit Liebe gefertigt",
+      "title": "Handwerkskunst mit der Seele des Waldes",
+      "tagline": "„Jedes Stück wächst langsam, wie ein Baum.“",
+      "subtitle": "Geschnitzte Farkle-Sets, Ölgemälde, digitale Illustrationen und handbemalte Figuren. Einzigartige Stücke, inspiriert von der Natur und den mittelalterlichen Welten, die ich am meisten liebe, eines nach dem anderen in Spanien geschaffen.",
+      "ctaStore": "Zum Shop",
+      "ctaStory": "Meine Geschichte entdecken"
+    },
+    "quicklinks": {
+      "store": {
+        "title": "Shop",
+        "text": "Handwerk, Gemälde, Zeichnungen und Figuren, bereit zur Bestellung."
+      },
+      "gallery": {
+        "title": "Galerie",
+        "text": "Ein visueller Spaziergang durch meine Stücke und meine Werkstatt."
+      },
+      "collab": {
+        "title": "Kooperationen",
+        "text": "Auftragsarbeiten, gemeinsame Projekte und professionelle Aufträge."
+      },
+      "inspiration": {
+        "title": "Inspiration",
+        "text": "Videospiele, Lesen und die Welten, die meine Arbeit prägen."
+      }
+    },
+    "featured": {
+      "eyebrow": "Ausgewählte Stücke",
+      "title": "Ein paar meiner Lieblingsstücke",
+      "subtitle": "Ein kleiner Einblick in das, was dich im Shop erwartet: Holz, Farbe, digitale Pinsel und sehr viel Geduld.",
+      "cta": "Den ganzen Shop ansehen"
+    },
+    "story": {
+      "photoCaption": "Foto von Jessy in ihrer Werkstatt (demnächst)",
+      "eyebrow": "Hinter jedem Stück",
+      "title": "Langsam gemacht, mit Liebe gemacht",
+      "text1": "Ich bin Jessy, und hinter JessyIsCrafting stecken Stunden des Schleifens, feine Pinsel und viele Tassen Tee. Jedes Stück wird durchdacht, skizziert und überarbeitet, bis ich das Gefühl habe, dass es meinen Arbeitstisch wirklich verdient hat.",
+      "text2": "Ich strebe keine Massenproduktion an: Ich möchte, dass du beim Öffnen der Box spürst, dass jemand wirklich Liebe in das gesteckt hat, was du in den Händen hältst.",
+      "cta": "Unsere Geschichte lesen"
+    },
+    "cta": {
+      "eyebrow": "Hast du eine Idee im Kopf?",
+      "title": "Lass uns über deinen besonderen Auftrag sprechen",
+      "text": "Personalisierte Geschenke, Stücke für besondere Anlässe, Illustrationsaufträge oder Kooperationsprojekte: Erzähl mir von deiner Idee, und wir machen daraus etwas Einzigartiges.",
+      "ctaCustom": "Individuelles & Geschenke",
+      "ctaContact": "Kontakt aufnehmen"
+    }
+  },
+  "store": {
+    "eyebrow": "Shop",
+    "title": "Jede Kategorie erzählt dieselbe Geschichte auf ihre eigene Art",
+    "subtitle": "Handwerk aus Holz, Ölgemälde, digitale Illustration und handbemalte Figuren. Alles wird auf Bestellung oder in sehr kleinen Auflagen gefertigt, sodass jedes Stück praktisch einzigartig ist.",
+    "filters": {
+      "all": "Alle"
+    },
+    "empty": "In dieser Kategorie gibt es gerade keine Stücke — schau bald wieder vorbei!",
+    "ctaTitle": "Nicht genau das gefunden, wonach du suchst?",
+    "ctaText": "Fast alle meine Stücke lassen sich individuell gestalten: Farben, Initialen, Wappen, Leinwandgrößen oder deine eigene Figur. Erzähl mir, was dir vorschwebt.",
+    "ctaButton": "Ein individuelles Stück anfragen"
+  },
+  "nav": {
+    "storeCategories": {
+      "artesanias": "Handwerk",
+      "dibujos": "Digitale Zeichnung",
+      "cuadros": "Gemälde",
+      "figuras": "Figuren"
+    },
+    "home": "Start",
+    "store": "Shop",
+    "story": "Unsere Geschichte",
+    "custom": "Individuelles & Geschenke",
+    "collab": "Kooperationen",
+    "inspiration": "Inspiration",
+    "contact": "Kontakt",
+    "faq": "Häufige Fragen",
+    "langLabel": "Sprache"
+  },
+  "productDetail": {
+    "notFound": "Wir konnten dieses Stück nicht finden. Es ist möglicherweise nicht mehr verfügbar — wirf einen Blick in den restlichen Shop.",
+    "customizationTitle": "Personalisierung möglich",
+    "orderButton": "Anfragen / Dieses Stück bestellen",
+    "backToStore": "Zurück zum Shop",
+    "shippingNote": "Versand nach Spanien, in die Europäische Union und nach Großbritannien. Für andere Länder bitte vor der Bestellung Kontakt aufnehmen — mehr Infos in den häufigen Fragen.",
+    "relatedEyebrow": "Das könnte dir auch gefallen",
+    "relatedTitle": "Weitere Stücke aus derselben Familie"
+  },
+  "gallery": {
+    "eyebrow": "Galerie",
+    "title": "Ein Spaziergang durch die Werkstatt",
+    "subtitle": "Fertige Stücke, Werke in Arbeit und der ein oder andere Moment hinter dem Arbeitstisch. Tippe auf ein Bild, um es größer zu sehen.",
+    "captions": {
+      "caballero": "Ritter-Miniatur, mit feinem Pinsel bemalt.",
+      "minasTirith": "Öl auf Leinwand, Zitadelle zwischen den Bergen.",
+      "farkleDetalle": "Detail des handgeschnitzten Wappens.",
+      "luminoso": "Digitale Illustration, Licht im Nebel.",
+      "jinete": "Reiter-Diorama, handbemalte Basis.",
+      "heinrich": "Erzählende Szene, digitale Illustration.",
+      "lune": "Figur mit Effekt-Basis, Auftragsbemalung.",
+      "bosque": "Öl auf Leinwand, ein Winkel des Waldes.",
+      "renoir": "Sammlerfigur, mattes Finish.",
+      "miniFarkle": "Mini-Farkle für unterwegs, bereit für den Rucksack."
+    },
+    "placeholder1": "📷 Foto aus der Werkstatt — demnächst",
+    "placeholder2": "📷 Eine Bestellung wird vorbereitet — demnächst"
+  },
+  "story": {
+    "eyebrow": "Unsere Geschichte",
+    "title": "Die Person hinter JessyIsCrafting",
+    "subtitle": "Ein kleines Projekt, handgemacht, Stück für Stück.",
+    "photoCaption": "Foto von Jessy (demnächst)",
+    "intro": {
+      "title": "Hallo, ich bin Jessy",
+      "p1": "JessyIsCrafting begann als Hobby unter der Woche: nachts Figuren bemalen, sonntags mit Ölfarben experimentieren, zeichnen, wenn ich abschalten musste. Mit der Zeit wurde aus diesem Hobby etwas, das ich wirklich teilen wollte.",
+      "p2": "Heute arbeite ich noch genauso wie am Anfang: ohne Eile, Stück für Stück, mit genauso viel Sorgfalt wie für mich selbst. Jede Farkle-Box, jede Leinwand und jede Figur verbringt viele Stunden in meinen Händen, bevor sie bei dir ankommt."
+    },
+    "values": {
+      "eyebrow": "Was mich antreibt",
+      "title": "Warum ich mir Zeit lasse",
+      "item1": {
+        "title": "Handwerk als Sprache",
+        "text": "Für mich ist die Arbeit mit Holz, Öl oder dem digitalen Pinsel eine Art, etwas ohne Worte zu erzählen. Jede Textur und jede Maserung hat ihren eigenen Charakter, und ich respektiere ihn lieber, als ihn zu erzwingen."
+      },
+      "item2": {
+        "title": "Die kleinen Details",
+        "text": "Eine gut geschliffene Kante, eine zusätzliche Lasur, eine geduldig gemalte Stofffalte. Details, die auf den ersten Blick kaum jemand bemerkt, die aber völlig verändern, wie sich ein fertiges Stück anfühlt."
+      },
+      "item3": {
+        "title": "Mit Liebe gefertigte Arbeit",
+        "text": "Ich nehme mir lieber etwas mehr Zeit und mache es richtig. Jeder Auftrag wird wie etwas Einzigartiges behandelt, weil er es ist: Keine zwei Stücke, die meinen Tisch verlassen, sind exakt gleich."
+      },
+      "item4": {
+        "title": "Hergestellt in Spanien",
+        "text": "Der gesamte Prozess — Entwurf, Bemalung, Verpackung — findet hier in meiner Werkstatt statt. Handwerk zu unterstützen bedeutet auch, lokale Arbeit zu unterstützen, langsam und ehrlich gemacht."
+      }
+    },
+    "ctaTitle": "Möchtest du sehen, woran ich gerade arbeite?",
+    "ctaText": "Im Shop findest du die aktuell verfügbaren Stücke, und in der Galerie noch etwas mehr vom Entstehungsprozess jedes einzelnen.",
+    "ctaStore": "Zum Shop",
+    "ctaGallery": "Galerie ansehen"
+  },
+  "custom": {
+    "eyebrow": "Individuelles & Geschenke",
+    "title": "Ein Geschenk, das wirklich etwas bedeutet",
+    "subtitle": "Eingravierte Initialen, ein eigenes Wappen, die Lieblingsfigur von jemandem oder eine Szene für ein bestimmtes Datum. Was sich vorstellen lässt, lässt sich meistens auch umsetzen.",
+    "cards": {
+      "gifts": {
+        "title": "🎁 Geschenke mit eigenem Namen",
+        "text": "Füge Initialen, ein Datum oder ein kleines Symbol zu jedem Stück im Shop hinzu: ein Farkle-Set, eine Figur oder ein Gemälde. Perfekt für Hochzeiten, Geburtstage oder einfach so."
+      },
+      "celebrations": {
+        "title": "🎄 Besondere Anlässe und Termine",
+        "text": "Zu Weihnachten, Jubiläen oder Abschieden bereite ich Stücke mit begrenzten Zeitfenstern vor: Ornamente, kleine Gemälde oder thematische Figuren. Reserviere rechtzeitig, damit alles pünktlich ankommt."
+      },
+      "fullCustom": {
+        "title": "✨ Hundertprozent individueller Auftrag",
+        "text": "Deine eigene Idee von Anfang bis Ende: ein digitales Porträt deiner Figur, ein Gemälde eines besonderen Ortes oder eine nach deiner Vorlage bemalte Figur. Wir besprechen, skizzieren und entwickeln es gemeinsam."
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert es",
+      "title": "Von deiner Idee zum fertigen Stück",
+      "step1": {
+        "title": "Erzähl es mir",
+        "text": "Schreib mir über das Kontaktformular oder die sozialen Medien und erzähl mir, was dir vorschwebt, bis wann du es brauchst und dein ungefähres Budget."
+      },
+      "step2": {
+        "title": "Vorschlag & Angebot",
+        "text": "Ich bereite eine Skizze oder einen Personalisierungsvorschlag vor, zusammen mit dem Endpreis und der geschätzten Lieferzeit."
+      },
+      "step3": {
+        "title": "Es geht los",
+        "text": "Sobald der Auftrag bestätigt ist, beginne ich mit der Arbeit an deinem Stück und halte dich mit Fotos vom Fortschritt auf dem Laufenden."
+      },
+      "step4": {
+        "title": "Mit Sorgfalt verpackt",
+        "text": "Ich schütze jedes Stück, als wäre es zerbrechlich — weil es das oft ist — und verschicke es mit größtmöglicher Sorgfalt."
+      }
+    },
+    "ctaTitle": "Hast du schon ein Datum im Kopf?",
+    "ctaText": "Individuelle Aufträge brauchen Vorbereitungszeit. Melde dich möglichst früh, damit dein Stück rechtzeitig fertig wird.",
+    "ctaButton": "Erzähl mir deine Idee"
+  },
+  "collab": {
+    "eyebrow": "Kooperationen",
+    "title": "Lass uns gemeinsam etwas Neues schaffen",
+    "subtitle": "Neben dem Shop bin ich offen für Illustrationsaufträge und Kooperationsvorschläge mit anderen Marken, Kreativen oder Projekten.",
+    "commissions": {
+      "eyebrow": "Auftragsarbeiten",
+      "title": "Beauftrage deine eigene Illustration",
+      "p1": "Ich zeichne Originalcharaktere, Fanart und digitale Porträts mit einem sorgfältigen, erzählerischen Stil. Ich kann mit einer Beschreibung, visuellen Referenzen oder deiner eigenen Rollenspiel- oder Videospielfigur arbeiten.",
+      "p2": "Jeder Auftrag beinhaltet eine erste Skizze, um Pose und Komposition zu klären, bevor es zur Farbe geht — so stellen wir sicher, dass das Endergebnis genau das ist, was du dir vorgestellt hast.",
+      "cta": "Einen Auftrag anfragen"
+    },
+    "brands": {
+      "eyebrow": "Marken & Kreative",
+      "title": "Eine Kooperation vorschlagen",
+      "p1": "Wenn du eine Marke, einen Shop, ein Verlagsprojekt oder einen Content-Kanal hast und denkst, wir passen zusammen, schreib mir. Besonders interessiert bin ich an Kooperationen rund um Handwerk, mittelalterliche Fantasy, Videospiele und Literatur.",
+      "p2": "Ich kann auch Emote-Pakete oder Illustrationen für Streamer und Content-Creator vorbereiten, inklusive Überarbeitungen, bis der Stil wirklich zu dir passt.",
+      "cta": "Kooperation vorschlagen"
+    },
+    "workshops": {
+      "eyebrow": "Workshops",
+      "title": "Einführungsworkshops ins Handwerk",
+      "text": "Ich bin offen dafür, Präsenz- oder Online-Workshops zum Bemalen von Miniaturen, digitalem Zeichnen oder Holzhandwerk zu organisieren oder daran teilzunehmen — für Privatpersonen ebenso wie für Kulturräume, Läden oder Events. Wenn dich das interessiert, erzähl mir von deiner Idee.",
+      "cta": "Über einen Workshop sprechen"
+    },
+    "examples": {
+      "eyebrow": "Arbeitsbeispiele",
+      "title": "Einige frühere Aufträge",
+      "caption1": "Personalisiertes Porträt nach einer echten Szene.",
+      "caption2": "Emote-Paket für einen Streaming-Kanal.",
+      "caption3": "Erzählende Szene für ein literarisches Projekt."
+    }
+  },
+  "inspiration": {
+    "eyebrow": "Inspiration",
+    "title": "Die Welten, die meine Arbeit prägen",
+    "subtitle": "Alles, was ich mache, kommt irgendwoher: aus einem endlosen Spieldurchgang, einem Buch, das man nicht weglegen kann, einer Melodie, die einen jahrelang begleitet. Das hier ist ein Stück dieses Ursprungs.",
+    "kcd": {
+      "eyebrow": "Kingdom Come: Deliverance",
+      "title": "Das Spiel, das den Grundstein für all das gelegt hat",
+      "p1": "Kingdom Come: Deliverance ist wahrscheinlich der Grund, warum JessyIsCrafting heute so ist, wie es ist. Ich entdeckte Böhmen, seine Wälder, seinen Schlamm, sein Abendlicht zwischen den Bäumen, und irgendetwas hat Klick gemacht: Ich wollte das malen, das zeichnen, diese Welten auf meinem Arbeitstisch haben.",
+      "quote": "„Ein Spiel, das das Mittelalter nicht idealisiert, sondern es real wirken lässt: staubig, hart und zugleich zutiefst schön.“",
+      "p2": "Seine Art Direction — diese verwitterten Burgen, diese Holzdörfer, diese Palette aus Grün-, Ocker- und Steingrautönen — steckt hinter einem großen Teil meiner Gemälde und Figuren. Und sein Soundtrack mit diesen Chören und mittelalterlichen Instrumenten lief im Hintergrund unzähliger Mal-Sessions.",
+      "p3": "Henry, Hans Capon und ganz Böhmen haben sich auf tausend verschiedene Arten in meine Arbeit geschlichen: in eine bemalte Figur, in eine digitale Skizze, in eine Szene, die ich mit meinen eigenen Händen erzählen wollte."
+    },
+    "reading": {
+      "eyebrow": "Lesen & Schreiben",
+      "title": "Die andere Hälfte meines Kopfes",
+      "p1": "Wenn ich nicht male, lese oder schreibe ich wahrscheinlich gerade. Ich habe es schon immer geliebt, die Lücken zu füllen, die eine Geschichte offenlässt: was eine Nebenfigur denkt, was zwischen zwei Szenen geschah, was in einem Moment empfunden wurde, den das Spiel kaum streift.",
+      "p2": "Daraus entstanden meine Kingdom-Come-Deliverance-Fanfics: eine Art, noch ein bisschen länger in Böhmen zu leben und seine Figuren aus einem anderen Blickwinkel zu erkunden. Wenn du Lust hast, reinzuschauen — ich teile sie auf Archive of Our Own."
+    },
+    "fanfics": {
+      "item1": {
+        "status": "In Arbeit",
+        "title": "Worth the Wreckage",
+        "summary": "Henry führt ein einfaches Leben, mit dem einen oder anderen Job, den man besser nicht hinterfragt. Als er gebeten wird, Hans ohne Fragen bei sich aufzunehmen, beginnen zwei völlig unterschiedliche Welten aufeinanderzuprallen — und sich langsam gegenseitig zu verändern."
+      },
+      "readOn": "Auf AO3 lesen",
+      "item2": {
+        "status": "Abgeschlossen",
+        "title": "Something We Cannot Name",
+        "summary": "Was Hans widerfuhr, während er in Malešov gefangen gehalten wurde, und was Henry durch den Kopf ging, während er sich seinen gefährlichsten Missionen stellte. Die Schlüsselereignisse von KCD2, erzählt aus Hans' Perspektive, bis hin zu den Ereignissen in Suchdol."
+      },
+      "item3": {
+        "status": "Abgeschlossen",
+        "title": "The Road to Constantinople",
+        "summary": "Hans Capons Hochzeit rückt näher. Bevor er sich diesem Schicksal ergibt, erfüllt er ein Versprechen, das er Henry vor Jahren gegeben hat: gemeinsam bis nach Konstantinopel zu reisen. Eine letzte Reise voller Liebe und Freiheit, geprägt von der Schönheit der Welt — und ihrer Grausamkeit."
+      }
+    },
+    "ctaTitle": "Möchtest du sehen, wo all diese Inspiration endet?",
+    "ctaText": "Im Shop findest du Gemälde, Figuren und Zeichnungen, die auf die eine oder andere Weise aus genau diesen Welten entstanden sind.",
+    "ctaButton": "Zum Shop"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Lass uns reden",
+    "subtitle": "Möchtest du ein Stück bestellen, eine Kooperation vorschlagen oder einfach nur Hallo sagen? Hier bist du richtig.",
+    "formTitle": "Schreib mir direkt",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "subjectPlaceholder": "z. B. Individueller Auftrag, Kooperation ...",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "note": "Ich antworte normalerweise innerhalb von 2-3 Werktagen. Bei dringenden Anliegen schreib mir lieber über Instagram."
+    },
+    "channelsTitle": "Weitere Wege, mich zu erreichen",
+    "channels": {
+      "email": "E-Mail"
+    },
+    "shippingTitle": "Bevor du schreibst",
+    "shippingText": "Ich versende problemlos nach Spanien, in die Europäische Union und nach Großbritannien. Wenn du in einem anderen Land lebst, melde dich bitte vorher, damit wir Fristen und Versandkosten klären können — alle Details findest du in den häufigen Fragen.",
+    "prefillMessage": "Hallo, ich möchte gerne bestellen:"
+  },
+  "faq": {
+    "eyebrow": "Häufige Fragen",
+    "title": "Alles, was du vor einer Bestellung wissen musst",
+    "subtitle": "Wenn deine Frage hier nicht beantwortet wird, melde dich einfach über das Kontaktformular.",
+    "items": {
+      "shipping": {
+        "q": "In welche Länder versendet ihr?",
+        "a": "Ich versende standardmäßig nach ganz Spanien, in die restliche Europäische Union und nach Großbritannien. Wenn du anderswo lebst, schreib mir vor der Bestellung — wir klären das gemeinsam, da Zollgebühren und Lieferzeiten stark variieren können."
+      },
+      "prepTime": {
+        "q": "Wie lange dauert die Vorbereitung meiner Bestellung?",
+        "a": "Bereits fertige Stücke verlassen meine Werkstatt normalerweise innerhalb von 2-4 Werktagen. Individuelle Aufträge, Illustrationsaufträge oder nach Maß bemalte Figuren brauchen in der Regel 1 bis 3 Wochen, je nach Komplexität und aktueller Warteliste. Rund um Weihnachten empfehle ich, deutlich im Voraus zu bestellen."
+      },
+      "returns": {
+        "q": "Kann ich eine Bestellung zurückgeben oder umtauschen?",
+        "a": "Nicht personalisierte Katalogstücke können innerhalb von 14 Kalendertagen nach Erhalt zurückgegeben werden, sofern sie unbenutzt und in einwandfreiem Zustand ankommen. Personalisierte Stücke, Sonderanfertigungen und Illustrationsaufträge können nicht zurückgegeben werden, außer bei einem Fertigungsfehler oder einem Transportschaden."
+      },
+      "customization": {
+        "q": "Was genau kann ich personalisieren?",
+        "a": "Das hängt vom jeweiligen Stück ab. Bei den Farkle-Sets kannst du Initialen, ein eigenes Wappen oder den Holzton wählen. Bei Gemälden die Leinwandgröße und oft auch das Motiv. Bei digitalen Zeichnungen die Figur oder Referenz, die dargestellt werden soll. Und bei Figuren die Farben, das Finish und die Basis. Auf jeder Produktseite steht genau, was angepasst werden kann."
+      },
+      "packaging": {
+        "q": "Wie werden die Stücke verschickt?",
+        "a": "Mit sehr viel Sorgfalt. Figuren und Gemälde werden mit gepolstertem Material geschützt, und wo immer möglich, verwende ich weniger oder wiederverwendetes Plastik. Wenn dein Stück zerbrechlich ist, wird das deutlich auf dem Paket vermerkt, damit es auch die Person weiß, die es für dich entgegennimmt."
+      },
+      "commission": {
+        "q": "Wie beauftrage ich eine Illustration?",
+        "a": "Schreib mir über das Kontaktformular oder über soziale Medien und erzähl mir deine Idee, gerne mit Referenzen. Ich bereite eine erste Skizze vor, wir einigen uns gemeinsam auf Preis und Zeitrahmen, und danach geht es nur noch an die Farbe. Mehr Informationen findest du im Bereich Kooperationen."
+      },
+      "payment": {
+        "q": "Wie bezahle ich einen Auftrag?",
+        "a": "Sobald das Angebot vereinbart ist, schicke ich dir die Zahlungsdetails über den Kanal, den wir für den Auftrag nutzen (Überweisung oder die jeweilige Plattform). Bei größeren Stücken oder Aufträgen bitte ich meist um eine Anzahlung bei Auftragsbestätigung und den Rest vor dem Versand."
+      }
+    },
+    "ctaTitle": "Noch Fragen?",
+    "ctaText": "Schreib mir, ich helfe dir gerne weiter.",
+    "ctaButton": "Zum Kontakt"
+  },
+  "notFound": {
+    "eyebrow": "Fehler 404",
+    "title": "Dieser Pfad verliert sich im Wald",
+    "text": "Die gesuchte Seite existiert nicht mehr oder wurde verschoben. Zurück auf den Hauptweg geht es hier.",
+    "cta": "Zurück zur Startseite"
+  },
+  "footer": {
+    "tagline": "Handwerk, Malerei und Illustration, von Hand und mit Liebe gefertigt, aus Spanien.",
+    "exploreTitle": "Entdecken",
+    "gallery": "Galerie",
+    "serviceTitle": "Aufträge",
+    "contactTitle": "Kontakt",
+    "location": "Handgemacht in Spanien",
+    "rights": "Alle Rechte vorbehalten.",
+    "madeWith": "Mit 🌿 und sehr viel Liebe gemacht.",
+    "contactFormLink": "Kontaktformular"
+  },
+  "brand": {
+    "name": "JessyIsCrafting — zur Startseite"
+  },
+  "common": {
+    "from": "Ab",
+    "customizable": "Personalisierbar",
+    "viewProduct": "Produkt ansehen"
+  },
+  "categories": {
+    "artesanias": {
+      "name": "Handwerk",
+      "description": "Handgeschnitzte und handbemalte Holzstücke, zum Spielen und Verschenken gemacht."
+    },
+    "dibujos": {
+      "name": "Digitale Zeichnung",
+      "description": "Digitale Illustrationen, Porträts und erzählende Szenen mit malerischem Touch."
+    },
+    "cuadros": {
+      "name": "Gemälde",
+      "description": "Ölgemälde auf Leinwand, inspiriert von Landschaften und Fantasiewelten."
+    },
+    "figuras": {
+      "name": "Figuren",
+      "description": "Miniaturen und 3D-Figuren, mit feinem Pinsel bemalt, im Sammlerfinish."
+    }
+  },
+  "products": {
+    "set-farkle-blason": {
+      "name": "Farkle-Set „Wappen“",
+      "short": "Handgeschnitzte Holzbox mit bemaltem Wappen und komplettem Würfelset für Farkle.",
+      "description": "Eine massive Holzbox mit einem handbemalten heraldischen Wappen auf dem Deckel, einem genähten Lederbecher und allen Würfeln, die du für eine Partie Farkle mit Freunden brauchst. Jedes Detail, von der Holzbeize bis zum Pinselstrich des Wappens, wird Stück für Stück ausgearbeitet.",
+      "customization": "Du kannst die Farben des Wappens wählen, Initialen oder ein besonderes Datum in den Deckel eingravieren lassen und den Holzton auswählen (Nussbaum, helle Eiche oder Mahagoni)."
+    },
+    "mini-farkle-viajero": {
+      "name": "Mini-Farkle für unterwegs",
+      "short": "Eine kompakte Version des Farkle-Sets, bereit für Rucksack oder Tasche.",
+      "description": "Dieselbe Liebe zum Detail, in einem kleinen, reisetauglichen Format. Ideal für Ausflüge, Camping oder einfach, um immer eine spontane Partie griffbereit zu haben.",
+      "customization": "Erhältlich in verschiedenen Deckelfarben, mit der Option auf eingravierte Initialen."
+    },
+    "oleo-minas-tirith": {
+      "name": "Ölgemälde „Die Zitadelle“",
+      "short": "Eine in Öl gemalte Interpretation einer großen Steinzitadelle zwischen Bergen, inspiriert von mittelalterlicher Fantasy.",
+      "description": "Eine handgemalte Hommage an die Fantasy-Landschaften, die mich am meisten berühren: eine weiße, in den Fels gehauene Zitadelle unter einem stürmischen Himmel. Öl auf Leinwand, mit mehreren Lasurschichten für mehr Tiefe in Stein und Berg.",
+      "customization": "Kann in anderen Leinwandgrößen bestellt werden, auf Wunsch auch mit angepasster Farbpalette oder einer anderen Landschaft."
+    },
+    "oleo-rincon-bosque": {
+      "name": "Ölgemälde „Waldwinkel“",
+      "short": "Ein versteckter Bach zwischen den Bäumen, in Öl gemalt mit viel natürlichem Licht.",
+      "description": "Gemalt nach einem jener Waldwinkel, die wie aus einem Märchen wirken: Wasser, das über Steine fließt, Licht, das durch die Blätter fällt, und sehr viel Grün in all seinen Schattierungen. Ein Stück, das ein bisschen Natur an jede Wand bringt.",
+      "customization": "Erhältlich in verschiedenen Leinwandgrößen; auf Wunsch male ich auch deine eigene Referenzlandschaft."
+    },
+    "retrato-digital-personalizado": {
+      "name": "Individuelles digitales Porträt",
+      "short": "Eine digitale Illustration nach deiner eigenen Szene, mit warmem Stil und auf Wunsch einer Prise Humor.",
+      "description": "Erzähl mir, wer oder was dargestellt werden soll — du selbst, dein Haustier, deine Rollenspielfigur — und ich verwandle es in eine digitale Illustration mit halbrealistischem oder comicartigem Finish, ganz wie du magst. Dieses Stück, mit Eichhörnchen inklusive, war einer meiner liebsten Aufträge.",
+      "customization": "Vollständig individuell gestaltbar: Anzahl der Figuren, Hintergrund, Stil (realistisch, Comic, Chibi) und Lieferformat (digital oder als Druck)."
+    },
+    "pack-emotes-personalizados": {
+      "name": "Individuelles Emote-Paket",
+      "short": "Ein Set aus 3 illustrierten Emotes, perfekt für Discord, Twitch oder deinen Lieblingschat.",
+      "description": "Ein Paket aus drei Emotes mit sympathischem, ausdrucksstarkem Stil, gemacht, um jeden Chat oder Streaming-Kanal zu beleben. Lieferung in hoher Auflösung mit transparentem Hintergrund, startklar für deine Plattform.",
+      "customization": "Du kannst die Ausdrücke, die Farben und auf Wunsch auch deine eigene Figur oder dein Avatar als Vorlage wählen."
+    },
+    "escena-heinrich": {
+      "name": "Szene „Heinrichs Zimmer“",
+      "short": "Eine erzählende digitale Illustration eines mittelalterlichen Innenraums am Kamin.",
+      "description": "Eine Szene, die mehr erzählen soll als nur ein Bild: ein Junge sitzt am Kamin, in einem Zimmer voller heraldischer Details und Wärme. Digitale Illustration mit malerischem Finish, für alle, die Geschichten mit Tiefgang mögen.",
+      "customization": "Ich kann die Szene an deine eigene Figur anpassen, die Perspektive ändern oder eine komplett neue Komposition auf Bestellung gestalten."
+    },
+    "jinete-de-la-niebla": {
+      "name": "„Der Reiter im Nebel“",
+      "short": "Eine digitale Illustration eines berittenen Ritters, verloren im Nebel eines Kiefernwaldes.",
+      "description": "Eine meiner stimmungsvollsten Illustrationen: ein Reiter, der sich durch Kiefern und Nebel bewegt, mit diesem kühlen Licht, das ich so gerne male. Eine kleine Hommage an die Ästhetik, die mich in der mittelalterlichen Fantasy am meisten inspiriert.",
+      "customization": "Als Druck in verschiedenen Größen erhältlich; die Originalszene ist einzigartig, aber ich kann eine ähnliche Komposition mit deiner eigenen Figur erstellen."
+    },
+    "hijos-del-caos": {
+      "name": "„Kinder des Chaos“",
+      "short": "Eine erzählende digitale Illustration zweier Dark-Fantasy-Figuren, ein Beispiel für einen Charakter-Illustrationsauftrag.",
+      "description": "Ein Auftrag mit Fokus auf die Beziehung zwischen zwei Originalfiguren, mit herbstlicher Farbpalette und sorgfältig aufgebauter Komposition. Ein Beispiel für die Art erzählender Szenen, die ich für deine eigenen Figuren oder Geschichten anfertigen kann.",
+      "customization": "Als Auftrag mit deinen eigenen Figuren, wählbarer Farbpalette und wählbarem Detailgrad erhältlich."
+    },
+    "luminoso": {
+      "name": "„Luminoso“ (Leuchtend)",
+      "short": "Eine halbrealistische digitale Illustration einer Rüstung und eines weißen Pferdes, ein einzigartiges Stück.",
+      "description": "Ein Stück, das sich dem Licht widmet: das Weiß des Pferdes, der kühle Glanz der Rüstung und ein unscharfer Waldhintergrund. Eine meiner persönlichsten Illustrationen, ohne dass ein Auftrag dahintersteckt."
+    },
+    "miniatura-caballero-henry": {
+      "name": "Miniatur „Ritter“",
+      "short": "Eine mittelalterliche Ritterfigur, mit feinem Pinsel auf einer Holzbasis bemalt.",
+      "description": "Eine Schicht für Schicht bemalte Miniatur, mit besonderer Sorgfalt für die Kontraste der Rüstung und des heraldischen Schildes. Eine kleine Hommage an die Ästhetik mittelalterlicher Ritter, die mich so sehr inspiriert.",
+      "customization": "Ich kann deine eigene Miniatur bemalen (du müsstest sie mir zuschicken), mit den Farben, dem Wappen und der Basis deiner Wahl."
+    },
+    "diorama-jinete-heraldico": {
+      "name": "Diorama „Heraldischer Reiter“",
+      "short": "Eine berittene Ritterfigur mit eigenem Wappen und thematischer Basis aus Stein und Moos.",
+      "description": "Ein vollständiges Diorama: ein aufbäumendes Pferd, ein Ritter mit handbemaltem heraldischem Schild und eine Steinbasis mit Moos und kleinen Vegetationsdetails. Für alle, die mehr als nur eine Figur suchen: eine kleine Szene.",
+      "customization": "Ich kann deine eigene Figur mit den Farben und dem Wappen deiner Wahl bemalen und die Basis nach deinem Geschmack anpassen (Moos, Stein, Schnee ...)."
+    },
+    "figura-lune": {
+      "name": "Figur „Lune“",
+      "short": "Eine Fantasy-Charakterfigur mit handbemalten Feuer- und Kristalleffekten.",
+      "description": "Eine Harzfigur mit einer aufwendig gestalteten Basis, die gemalte Feuereffekte mit Kristalldetails kombiniert. Eine technische Herausforderung, die ich besonders wegen des Kontrasts von Farben und Texturen genossen habe.",
+      "customization": "Bemalung deiner eigenen Figur (Harz oder Miniatur mit Basis) mit den Effekten und Farben deiner Wahl."
+    },
+    "figura-renoir": {
+      "name": "Figur „Renoir“",
+      "short": "Eine Charakterfigur im langen Mantel, mit mattem Finish und viel Detail in den Stofffalten.",
+      "description": "Eine Figur mit Fokus auf Stoffdetails: Falten, Schatten und ein mattes Finish, das ihr eine fast filmische Note verleiht. Ideal für alle, die Figuren mit viel Charakter sammeln.",
+      "customization": "Auftragsbemalung deiner eigenen Figur, mit Anpassung von Finish (matt oder seidenglänzend) und Farbpalette."
+    },
+    "diorama-brutus": {
+      "name": "Diorama „Brutus“",
+      "short": "Ein kleines, handbemaltes architektonisches Diorama mit Säulen und goldenen Details.",
+      "description": "Ein anderes Stück: statt einer Figur ein kleines klassisches Gebäude, bemalt mit gealterten Steintexturen, Säulen und goldenen Details. Eine Übung in Geduld und Texturmalerei.",
+      "customization": "Ich kann die Farben, die Steinart und die goldenen Details an dein eigenes Projekt oder Diorama anpassen."
+    }
+  }
+}

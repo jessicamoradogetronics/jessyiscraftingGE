@@ -1,0 +1,16 @@
+{
+  "name": "JessyIsCrafting",
+  "short_name": "JessyIsCrafting",
+  "description": "Artesanía, pintura e ilustración hechas a mano en España.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#faf7f0",
+  "theme_color": "#37472f",
+  "icons": [
+    {
+      "src": "assets/img/brand/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

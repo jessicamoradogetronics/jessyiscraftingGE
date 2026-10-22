@@ -1,128 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n-title-key="home.title">Inicio · JessyIsCrafting</title>
-  <meta name="description" data-i18n-desc-key="home.metaDescription" content="JessyIsCrafting: artesanía, dibujo digital, cuadros y figuras pintadas a mano. Piezas únicas hechas con cariño en España.">
-  <meta name="theme-color" content="#3F5A43">
-  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://jessicamoradogetronics.github.io/jessyiscraftingGE/index.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JessyIsCrafting — Artesanía, pintura e ilustración hechas a mano en España</title>
+<meta name="description" content="Sets de Farkle de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano. Artesanía con alma, inspirada en el bosque y en Kingdom Come: Deliverance, hecha con mimo en España.">
+<link rel="canonical" href="https://jessicamrey.github.io/jessyiscrafting/index.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#37472f">
 
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="JessyIsCrafting">
-  <meta property="og:image" content="https://jessicamoradogetronics.github.io/jessyiscraftingGE/assets/images/placeholders/og-default.svg">
-  <meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="JessyIsCrafting">
+<meta property="og:title" content="JessyIsCrafting — Artesanía hecha a mano en España">
+<meta property="og:description" content="Sets de Farkle de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano, con alma de bosque medieval.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://jessicamrey.github.io/jessyiscrafting/assets/img/figuras/caballero-henry-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "JessyIsCrafting",
-    "url": "https://jessicamoradogetronics.github.io/jessyiscraftingGE/",
-    "logo": "https://jessicamoradogetronics.github.io/jessyiscraftingGE/assets/images/favicon.svg",
-    "sameAs": ["https://www.instagram.com/jessyiscrafting/", "https://x.com/TU_USUARIO"]
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "JessyIsCrafting",
+  "url": "https://jessicamrey.github.io/jessyiscrafting/",
+  "logo": "https://jessicamrey.github.io/jessyiscrafting/assets/img/brand/favicon.svg",
+  "sameAs": [
+    "https://instagram.com/",
+    "https://x.com/"
+  ],
+  "description": "Artesanía, pintura e ilustración digital hechas a mano en España: sets de Farkle, cuadros, dibujos y figuras pintadas."
+}
+</script>
 </head>
-<body data-base="./" data-page-id="home">
-  <a class="skip-link" href="#main" data-i18n="nav.skipToContent">Ir al contenido principal</a>
-  <div data-include="header"></div>
+<body>
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<div data-include="header"></div>
 
-  <main id="main">
-    <section class="hero container">
+<main id="main">
+
+  <section class="hero">
+    <div class="container hero__inner">
       <div class="hero__content">
-        <span class="eyebrow" data-i18n="home.heroEyebrow">Artesanía hecha a mano en España</span>
-        <h1 data-i18n="home.heroTitle">Artesanía con alma, hecha a mano</h1>
-        <p class="lede" data-i18n="home.heroSubtitle">Sets de Farkle, dibujos digitales, cuadros y figuras pintadas con paciencia y mucho mimo por los pequeños detalles.</p>
+        <span class="eyebrow" data-i18n="home.hero.eyebrow">Hecho a mano · Hecho con mimo</span>
+        <h1 data-i18n="home.hero.title">Artesanía con alma de bosque</h1>
+        <p class="hero__tagline" data-i18n="home.hero.tagline">"Cada pieza nace despacio, como crece un árbol."</p>
+        <p data-i18n="home.hero.subtitle">Sets de Farkle tallados, cuadros al óleo, ilustración digital y figuras pintadas a mano. Piezas únicas, inspiradas en la naturaleza y en los mundos medievales que más amo, creadas una a una desde España.</p>
         <div class="hero__actions">
-          <a class="btn btn-primary" href="shop/index.html" data-i18n="home.heroCtaShop">Explorar la tienda</a>
-          <a class="btn btn-outline" href="gallery.html" data-i18n="home.heroCtaGallery">Ver la galería</a>
+          <a href="tienda.html" class="btn btn--primary" data-i18n="home.hero.ctaStore">Ir a la tienda</a>
+          <a href="historia.html" class="btn btn--outline" data-i18n="home.hero.ctaStory">Conoce mi historia</a>
         </div>
       </div>
-      <div class="hero__media">
-        <img src="assets/images/placeholders/hero-main.svg" data-i18n-alt="common.placeholderImageNote" alt="Imagen de ejemplo" width="1200" height="900">
+      <div class="hero__gallery">
+        <a href="producto.html?id=miniatura-caballero-henry" aria-label="Figura pintada a mano">
+          <picture>
+            <source srcset="assets/img/figuras/caballero-henry-1-thumb.webp" type="image/webp">
+            <img src="assets/img/figuras/caballero-henry-1-thumb.jpg" alt="Figura de caballero medieval pintada a mano" loading="lazy" width="640" height="800">
+          </picture>
+        </a>
+        <a href="producto.html?id=oleo-minas-tirith" aria-label="Cuadro al óleo">
+          <picture>
+            <source srcset="assets/img/cuadros/minas-tirith-1-thumb.webp" type="image/webp">
+            <img src="assets/img/cuadros/minas-tirith-1-thumb.jpg" alt="Cuadro al óleo de una ciudadela entre montañas" loading="lazy" width="640" height="800">
+          </picture>
+        </a>
+        <a href="producto.html?id=set-farkle-blason" aria-label="Set de Farkle de madera">
+          <picture>
+            <source srcset="assets/img/artesanias/farkle-set-1-thumb.webp" type="image/webp">
+            <img src="assets/img/artesanias/farkle-set-1-thumb.jpg" alt="Caja de madera tallada con set de dados Farkle" loading="lazy" width="640" height="800">
+          </picture>
+        </a>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">JessyIsCrafting</span>
-          <h2 data-i18n="home.quickLinksTitle">Descubre JessyIsCrafting</h2>
+      <div class="quicklinks">
+        <a class="quicklink" href="tienda.html">
+          <span class="quicklink__icon">🛍️</span>
+          <span class="quicklink__title" data-i18n="home.quicklinks.store.title">Tienda</span>
+          <p class="quicklink__text" data-i18n="home.quicklinks.store.text">Artesanías, cuadros, dibujos y figuras listas para encargar.</p>
+        </a>
+        <a class="quicklink" href="galeria.html">
+          <span class="quicklink__icon">🖼️</span>
+          <span class="quicklink__title" data-i18n="home.quicklinks.gallery.title">Galería</span>
+          <p class="quicklink__text" data-i18n="home.quicklinks.gallery.text">Un paseo visual por mis piezas y mi taller.</p>
+        </a>
+        <a class="quicklink" href="colaboraciones.html">
+          <span class="quicklink__icon">🤝</span>
+          <span class="quicklink__title" data-i18n="home.quicklinks.collab.title">Colaboraciones</span>
+          <p class="quicklink__text" data-i18n="home.quicklinks.collab.text">Comisiones, proyectos conjuntos y encargos profesionales.</p>
+        </a>
+        <a class="quicklink" href="inspiracion.html">
+          <span class="quicklink__icon">🍃</span>
+          <span class="quicklink__title" data-i18n="home.quicklinks.inspiration.title">Inspiración</span>
+          <p class="quicklink__text" data-i18n="home.quicklinks.inspiration.text">Videojuegos, lectura y los mundos que dan forma a mi trabajo.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="home.featured.eyebrow">Piezas destacadas</span>
+        <h2 data-i18n="home.featured.title">Algunas de mis piezas favoritas</h2>
+        <div class="divider-leaf" aria-hidden="true">🌿</div>
+        <p data-i18n="home.featured.subtitle">Una pequeña muestra de lo que vas a encontrar en la tienda: madera, pintura, pinceles digitales y mucha paciencia.</p>
+      </div>
+      <div class="grid grid--4" id="homeFeatured"></div>
+      <div class="text-center" style="margin-top:2.5rem;">
+        <a href="tienda.html" class="btn btn--primary" data-i18n="home.featured.cta">Ver toda la tienda</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-split">
+      <div class="photo-frame">
+        <div class="photo-frame__placeholder">
+          <span>📷</span>
+          <span data-i18n="home.story.photoCaption">Foto de Jessy en su taller (próximamente)</span>
         </div>
-        <div class="grid grid--4">
-          <a class="quick-link-card" href="shop/index.html">
-            <span class="quick-link-card__icon" aria-hidden="true">🛍️</span>
-            <h3 data-i18n="home.quickLinks.shop.title">Tienda</h3>
-            <p data-i18n="home.quickLinks.shop.description">Artesanías, dibujo digital, cuadros y figuras, listas para encontrar un nuevo hogar.</p>
+      </div>
+      <div>
+        <span class="eyebrow" data-i18n="home.story.eyebrow">Detrás de cada pieza</span>
+        <h2 data-i18n="home.story.title">Hecho despacio, hecho con mimo</h2>
+        <p data-i18n="home.story.text1">Soy Jessy, y detrás de JessyIsCrafting hay horas de lija, pinceles finos y muchas tazas de té. Cada pieza se piensa, se dibuja y se repasa hasta que siento que de verdad merece salir de mi mesa de trabajo.</p>
+        <p data-i18n="home.story.text2">No busco la producción en cadena: busco que cuando abras la caja, notes que alguien ha puesto cariño de verdad en lo que tienes entre las manos.</p>
+        <a href="historia.html" class="btn btn--outline" data-i18n="home.story.cta">Leer nuestra historia</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="cta-banner">
+        <span class="eyebrow" style="color:var(--color-gold-soft)" data-i18n="home.cta.eyebrow">¿Tienes algo en mente?</span>
+        <h2 data-i18n="home.cta.title">Hablemos de tu encargo especial</h2>
+        <p data-i18n="home.cta.text">Regalos personalizados, piezas para celebraciones, comisiones de ilustración o proyectos de colaboración: cuéntame tu idea y la convertimos en algo único.</p>
+        <div class="hero__actions" style="justify-content:center;">
+          <a href="personalizados.html" class="btn btn--gold" data-i18n="home.cta.ctaCustom">Personalizados y regalos</a>
+          <a href="contacto.html" class="btn btn--outline" style="border-color:var(--color-brown-pale); color:var(--color-brown-pale)" data-i18n="home.cta.ctaContact">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div data-include="footer"></div>
+
+<script src="js/include.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Mini-rejilla de productos destacados en la portada, reutilizando data/products.json
+  (function () {
+    function cardHtml(p, dict) {
+      const t = dict.products[p.id] || {};
+      const cat = dict.categories[p.category] || {};
+      const img = p.images[0];
+      const amount = Number.isInteger(p.price) ? p.price : p.price.toFixed(2);
+      const prefix = p.priceFrom ? `<span class="price__from">${dict.common.from}</span>` : '';
+      return `
+        <article class="product-card">
+          <a class="product-card__media" href="producto.html?id=${p.id}">
+            <picture>
+              <source srcset="${img}-thumb.webp" type="image/webp">
+              <img src="${img}-thumb.jpg" alt="${t.name || ''}" loading="lazy" width="640" height="800">
+            </picture>
+            <span class="badge">${cat.name || ''}</span>
           </a>
-          <a class="quick-link-card" href="gallery.html">
-            <span class="quick-link-card__icon" aria-hidden="true">🖼️</span>
-            <h3 data-i18n="home.quickLinks.gallery.title">Galería</h3>
-            <p data-i18n="home.quickLinks.gallery.description">Un vistazo a las piezas terminadas y al proceso detrás de cada una.</p>
-          </a>
-          <a class="quick-link-card" href="collaborations.html">
-            <span class="quick-link-card__icon" aria-hidden="true">🤝</span>
-            <h3 data-i18n="home.quickLinks.collaborations.title">Colaboraciones</h3>
-            <p data-i18n="home.quickLinks.collaborations.description">Encargos, comisiones de dibujo y proyectos con otras marcas y creadoras.</p>
-          </a>
-          <a class="quick-link-card" href="inspiration.html">
-            <span class="quick-link-card__icon" aria-hidden="true">🌲</span>
-            <h3 data-i18n="home.quickLinks.inspiration.title">Inspiración</h3>
-            <p data-i18n="home.quickLinks.inspiration.description">Videojuegos, lectura y las historias que dan forma a cada diseño.</p>
-          </a>
-        </div>
-      </div>
-    </section>
+          <div class="product-card__body">
+            <h3 class="product-card__title"><a href="producto.html?id=${p.id}">${t.name || ''}</a></h3>
+            <p class="product-card__desc">${t.short || ''}</p>
+            <div class="product-card__footer">
+              <span class="price">${prefix}${amount}€</span>
+              <a class="btn btn--outline btn--sm" href="producto.html?id=${p.id}">${dict.common.viewProduct}</a>
+            </div>
+          </div>
+        </article>`;
+    }
 
-    <section class="section section--alt">
-      <div class="container story-layout">
-        <div class="story-portrait">
-          <img src="assets/images/placeholders/workshop-1.svg" data-i18n-alt="common.placeholderImageNote" alt="Imagen de ejemplo" width="900" height="700">
-        </div>
-        <div>
-          <span class="eyebrow" data-i18n="ourStory.eyebrow">Quién hay detrás</span>
-          <h2 data-i18n="home.introTitle">Hecho a mano, con tiempo y cariño</h2>
-          <p class="lede" data-i18n="home.introText">Detrás de cada pieza hay horas de trabajo tranquilo.</p>
-          <a class="btn btn-primary" href="our-story.html" data-i18n="home.introCta">Conoce mi historia</a>
-        </div>
-      </div>
-    </section>
+    function render() {
+      const dict = window.JIC_I18N.getDict();
+      const grid = document.getElementById('homeFeatured');
+      if (!dict || !grid || !window.__jicProducts) return;
+      const featured = window.__jicProducts.filter((p) => p.featured).slice(0, 4);
+      grid.innerHTML = featured.map((p) => cardHtml(p, dict)).join('');
+    }
 
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow" data-i18n="nav.shop">Tienda</span>
-          <h2 data-i18n="home.featuredTitle">Piezas destacadas</h2>
-        </div>
-        <div class="grid grid--4" data-featured-products></div>
-        <p class="text-center" style="margin-top:2rem;">
-          <a class="btn btn-primary" href="shop/index.html" data-i18n="home.featuredCta">Ver toda la tienda</a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <div data-include="footer"></div>
-
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/products.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script>
-    document.addEventListener("app:ready", function () {
-      productsApi.load().then(function () {
-        productsApi.renderFeatured(document.querySelector("[data-featured-products]"), ["crafts", "digitalArt", "paintings", "figures"]);
-      });
+    fetch('data/products.json').then((r) => r.json()).then((data) => {
+      window.__jicProducts = data;
+      if (window.JIC_I18N.getDict()) render();
     });
-    document.addEventListener("i18n:changed", function () {
-      productsApi.renderFeatured(document.querySelector("[data-featured-products]"), ["crafts", "digitalArt", "paintings", "figures"]);
-    });
-  </script>
+    document.addEventListener('i18n:ready', render);
+  })();
+</script>
 </body>
 </html>

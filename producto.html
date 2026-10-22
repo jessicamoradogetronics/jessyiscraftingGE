@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producto — JessyIsCrafting</title>
+<meta name="description" content="Pieza artesanal hecha a mano por JessyIsCrafting.">
+<link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#37472f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<div data-include="header"></div>
+
+<main id="main">
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="index.html" data-i18n="nav.home">Inicio</a> /
+        <a href="tienda.html" data-i18n="nav.store">Tienda</a> /
+        <a href="#" id="breadcrumbCategory">Categoría</a> /
+        <span id="breadcrumbCurrent">Producto</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0.5rem;">
+    <div class="container">
+
+      <p id="productNotFound" hidden data-i18n="productDetail.notFound">No hemos encontrado esta pieza. Puede que ya no esté disponible — echa un vistazo al resto de la tienda.</p>
+
+      <div class="product-detail" id="productWrapper">
+        <div class="product-gallery">
+          <div class="product-gallery__main" id="galleryMain"></div>
+          <div class="product-gallery__thumbs" id="galleryThumbs"></div>
+        </div>
+
+        <div class="product-info">
+          <span class="eyebrow" id="productCategory">Categoría</span>
+          <h1 id="productTitle">Nombre del producto</h1>
+          <p class="product-info__price" id="productPrice">0€</p>
+          <p id="productDescription">Descripción del producto.</p>
+
+          <div class="customization-box" id="customizationBox" hidden>
+            <h3 data-i18n="productDetail.customizationTitle">Personalización disponible</h3>
+            <p id="customizationText">Detalle de personalización.</p>
+          </div>
+
+          <div class="product-info__actions">
+            <a href="contacto.html" id="orderButton" class="btn btn--primary" data-i18n="productDetail.orderButton">Consultar / Encargar esta pieza</a>
+            <a href="tienda.html" class="btn btn--outline" data-i18n="productDetail.backToStore">Volver a la tienda</a>
+          </div>
+
+          <p class="form-note" style="margin-top:1.5rem;" data-i18n="productDetail.shippingNote">Envíos a toda España, la Unión Europea y Reino Unido. Para otros países, consulta antes de encargar — más info en las preguntas frecuentes.</p>
+        </div>
+      </div>
+
+      <section id="relatedSection" style="margin-top:4.5rem;">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="productDetail.relatedEyebrow">También te puede gustar</span>
+          <h2 data-i18n="productDetail.relatedTitle">Más piezas de esta misma familia</h2>
+        </div>
+        <div class="grid grid--3" id="relatedProducts"></div>
+      </section>
+    </div>
+  </section>
+</main>
+
+<div data-include="footer"></div>
+
+<script src="js/include.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>

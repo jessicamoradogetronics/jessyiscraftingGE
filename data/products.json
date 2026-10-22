@@ -1,0 +1,179 @@
+[
+  {
+    "id": "set-farkle-blason",
+    "category": "artesanias",
+    "price": 34.90,
+    "priceFrom": false,
+    "customizable": true,
+    "featured": true,
+    "images": [
+      "assets/img/artesanias/farkle-set-1",
+      "assets/img/artesanias/farkle-set-2",
+      "assets/img/artesanias/farkle-set-3",
+      "assets/img/artesanias/farkle-set-4",
+      "assets/img/artesanias/farkle-set-5"
+    ]
+  },
+  {
+    "id": "mini-farkle-viajero",
+    "category": "artesanias",
+    "price": 19.90,
+    "priceFrom": false,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/artesanias/mini-farkle-1"
+    ]
+  },
+  {
+    "id": "oleo-minas-tirith",
+    "category": "cuadros",
+    "price": 180,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": true,
+    "images": [
+      "assets/img/cuadros/minas-tirith-1"
+    ]
+  },
+  {
+    "id": "oleo-rincon-bosque",
+    "category": "cuadros",
+    "price": 150,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/cuadros/rincon-del-bosque-1"
+    ]
+  },
+  {
+    "id": "retrato-digital-personalizado",
+    "category": "dibujos",
+    "price": 45,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": true,
+    "images": [
+      "assets/img/dibujos/retrato-ardillas-1"
+    ]
+  },
+  {
+    "id": "pack-emotes-personalizados",
+    "category": "dibujos",
+    "price": 25,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/dibujos/emotes-pack-1",
+      "assets/img/dibujos/emotes-pack-2",
+      "assets/img/dibujos/emotes-pack-3"
+    ]
+  },
+  {
+    "id": "escena-heinrich",
+    "category": "dibujos",
+    "price": 55,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/dibujos/escena-heinrich-1"
+    ]
+  },
+  {
+    "id": "jinete-de-la-niebla",
+    "category": "dibujos",
+    "price": 60,
+    "priceFrom": false,
+    "customizable": true,
+    "featured": true,
+    "images": [
+      "assets/img/dibujos/jinete-de-la-niebla-1"
+    ]
+  },
+  {
+    "id": "hijos-del-caos",
+    "category": "dibujos",
+    "price": 65,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/dibujos/hijos-del-caos-1"
+    ]
+  },
+  {
+    "id": "luminoso",
+    "category": "dibujos",
+    "price": 60,
+    "priceFrom": false,
+    "customizable": false,
+    "featured": false,
+    "images": [
+      "assets/img/dibujos/luminoso-1"
+    ]
+  },
+  {
+    "id": "miniatura-caballero-henry",
+    "category": "figuras",
+    "price": 42,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": true,
+    "images": [
+      "assets/img/figuras/caballero-henry-1"
+    ]
+  },
+  {
+    "id": "diorama-jinete-heraldico",
+    "category": "figuras",
+    "price": 95,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/figuras/jinete-heraldico-1",
+      "assets/img/figuras/jinete-heraldico-2",
+      "assets/img/figuras/jinete-heraldico-3"
+    ]
+  },
+  {
+    "id": "figura-lune",
+    "category": "figuras",
+    "price": 110,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/figuras/lune-1"
+    ]
+  },
+  {
+    "id": "figura-renoir",
+    "category": "figuras",
+    "price": 85,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/figuras/renoir-1",
+      "assets/img/figuras/renoir-2"
+    ]
+  },
+  {
+    "id": "diorama-brutus",
+    "category": "figuras",
+    "price": 120,
+    "priceFrom": true,
+    "customizable": true,
+    "featured": true,
+    "images": [
+      "assets/img/figuras/brutus-1",
+      "assets/img/figuras/brutus-2",
+      "assets/img/figuras/brutus-3",
+      "assets/img/figuras/brutus-4"
+    ]
+  }
+]

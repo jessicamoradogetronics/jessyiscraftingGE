@@ -1,33 +1,38 @@
 <header class="site-header">
-  <div class="container container--wide site-header__bar">
-    <a class="brand" href="{{BASE}}index.html">
-      <img src="{{BASE}}assets/images/favicon.svg" alt="" width="36" height="36">
+  <div class="container site-header__bar">
+    <a href="index.html" class="brand" data-i18n-attr="aria-label:brand.name">
+      <svg class="brand__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M24 4C24 4 10 12 10 24C10 34 16 42 24 44C32 42 38 34 38 24C38 12 24 4 24 4Z" fill="#4f6b45"/>
+        <path d="M24 10C24 10 15 16 15 24C15 31 19 37 24 39C29 37 33 31 33 24C33 16 24 10 24 10Z" fill="#f1ebdd"/>
+        <path d="M24 14V34" stroke="#4f6b45" stroke-width="1.5"/>
+        <path d="M24 18L19 22M24 22L29 26M24 26L19 30" stroke="#4f6b45" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
       <span>JessyIsCrafting</span>
     </a>
 
-    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="nav.menuOpen">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="main-nav" id="main-nav" data-main-nav data-i18n-aria-label="nav.menuOpen">
-      <ul class="main-nav__list">
-        <li><a href="{{BASE}}index.html" data-page-id="home" data-i18n="nav.home"></a></li>
-        <li><a href="{{BASE}}shop/index.html" data-page-id="shop" data-i18n="nav.shop"></a></li>
-        <li><a href="{{BASE}}gallery.html" data-page-id="gallery" data-i18n="nav.gallery"></a></li>
-        <li><a href="{{BASE}}our-story.html" data-page-id="ourStory" data-i18n="nav.ourStory"></a></li>
-        <li><a href="{{BASE}}custom-orders.html" data-page-id="customOrders" data-i18n="nav.customOrders"></a></li>
-        <li><a href="{{BASE}}collaborations.html" data-page-id="collaborations" data-i18n="nav.collaborations"></a></li>
-        <li><a href="{{BASE}}inspiration.html" data-page-id="inspiration" data-i18n="nav.inspiration"></a></li>
-        <li><a href="{{BASE}}faq.html" data-page-id="faq" data-i18n="nav.faq"></a></li>
-        <li><a href="{{BASE}}contact.html" data-page-id="contact" data-i18n="nav.contact"></a></li>
+    <nav class="nav-drawer" id="navDrawer" aria-label="Navegación principal">
+      <ul class="main-nav">
+        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="tienda.html" data-i18n="nav.store">Tienda</a></li>
+        <li><a href="historia.html" data-i18n="nav.story">Nuestra historia</a></li>
+        <li><a href="personalizados.html" data-i18n="nav.custom">Personalizados y regalos</a></li>
+        <li><a href="colaboraciones.html" data-i18n="nav.collab">Colaboraciones</a></li>
+        <li><a href="inspiracion.html" data-i18n="nav.inspiration">Inspiración</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
+        <li><a href="faq.html" data-i18n="nav.faq">Preguntas frecuentes</a></li>
       </ul>
-
-      <div class="lang-switcher" role="group" data-i18n-aria-label="nav.languageLabel">
-        <button type="button" data-lang="es">ES</button>
-        <button type="button" data-lang="en">EN</button>
-        <button type="button" data-lang="de">DE</button>
-      </div>
+      <label class="visually-hidden" for="langSelect" data-i18n="nav.langLabel">Idioma</label>
+      <select class="lang-select" id="langSelect" aria-label="Seleccionar idioma">
+        <option value="es">🌿 Español</option>
+        <option value="en">🌿 English</option>
+        <option value="de">🌿 Deutsch</option>
+      </select>
     </nav>
+
+    <div class="header-actions">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navDrawer" aria-label="Abrir menú">
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
   </div>
 </header>
-<div class="nav-backdrop" data-nav-backdrop></div>
