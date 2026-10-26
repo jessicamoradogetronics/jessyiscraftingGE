@@ -81,11 +81,16 @@
   function init() {
     applyInitialHash();
     setupFilters();
-    fetch('data/products.json')
-      .then((res) => res.json())
-      .then((data) => {
+
+    const productsReady = fetch('data/products.json').then((res) => res.json());
+    const dictReady = window.JIC_I18N.getDict()
+      ? Promise.resolve()
+      : new Promise((resolve) => document.addEventListener('i18n:ready', resolve, { once: true }));
+
+    Promise.all([productsReady, dictReady])
+      .then(([data]) => {
         products = data;
-        if (window.JIC_I18N.getDict()) render();
+        render();
       })
       .catch((err) => console.error('No se pudieron cargar los productos', err));
 

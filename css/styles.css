@@ -252,12 +252,7 @@ p { margin: 0 0 1em; }
   transition: color var(--transition);
 }
 
-.main-nav a:hover,
-.main-nav a[aria-current="page"] {
-  color: var(--color-green-deep);
-}
-
-.main-nav a[aria-current="page"]::after {
+.main-nav a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -265,6 +260,19 @@ p { margin: 0 0 1em; }
   bottom: -4px;
   height: 2px;
   background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  color: var(--color-green-deep);
+}
+
+.main-nav a:hover::after,
+.main-nav a[aria-current="page"]::after {
+  transform: scaleX(1);
 }
 
 .header-actions {
