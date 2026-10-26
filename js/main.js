@@ -74,19 +74,32 @@
   function setupGalleryCarousel() {
     const carousel = document.querySelector('.gallery-carousel');
     if (!carousel) return;
+    const viewport = carousel.querySelector('.gallery-carousel__viewport');
     const track = carousel.querySelector('.gallery-carousel__track');
+    const slides = Array.from(carousel.querySelectorAll('.gallery-carousel__slide'));
     const prevBtn = carousel.querySelector('[data-carousel-prev]');
     const nextBtn = carousel.querySelector('[data-carousel-next]');
-    if (!track) return;
+    if (!viewport || !track || slides.length < 2) return;
 
-    function scrollByAmount(direction) {
-      const slide = track.querySelector('.gallery-carousel__slide');
-      const step = slide ? slide.getBoundingClientRect().width + 18 : track.clientWidth * 0.8;
-      track.scrollBy({ left: direction * step, behavior: 'smooth' });
+    let index = 0;
+
+    function step(direction) {
+      const first = slides[0];
+      const slideWidth = first.getBoundingClientRect().width;
+      const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 0;
+      const visible = Math.max(1, Math.floor((viewport.clientWidth + gap) / (slideWidth + gap)));
+      const maxIndex = Math.max(0, slides.length - visible);
+
+      index = Math.min(Math.max(index + direction, 0), maxIndex);
+      track.style.transform = `translateX(${-index * (slideWidth + gap)}px)`;
+      if (prevBtn) prevBtn.classList.toggle('is-disabled', index === 0);
+      if (nextBtn) nextBtn.classList.toggle('is-disabled', index >= maxIndex);
     }
 
-    prevBtn && prevBtn.addEventListener('click', () => scrollByAmount(-1));
-    nextBtn && nextBtn.addEventListener('click', () => scrollByAmount(1));
+    prevBtn && prevBtn.addEventListener('click', () => step(-1.5));
+    nextBtn && nextBtn.addEventListener('click', () => step(1.5));
+    window.addEventListener('resize', () => step(0));
+    step(0);
   }
 
   function init() {
