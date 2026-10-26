@@ -10,7 +10,7 @@
     return fetch(url)
       .then((res) => res.text())
       .then((html) => {
-        target.innerHTML = html;
+        target.innerHTML = html.split('{{BASE}}').join('');
       })
       .catch((err) => console.error(`No se pudo cargar ${url}`, err));
   }
