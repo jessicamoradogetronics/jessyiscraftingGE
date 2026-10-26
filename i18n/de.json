@@ -5,17 +5,12 @@
       "title": "Handwerkskunst mit der Seele des Waldes",
       "tagline": "„Jedes Stück wächst langsam, wie ein Baum.“",
       "subtitle": "Geschnitzte Farkle-Sets, Ölgemälde, digitale Illustrationen und handbemalte Figuren. Einzigartige Stücke, inspiriert von der Natur und den mittelalterlichen Welten, die ich am meisten liebe, eines nach dem anderen in Spanien geschaffen.",
-      "ctaStore": "Zum Shop",
-      "ctaStory": "Meine Geschichte entdecken"
+      "ctaStore": "Zum Shop"
     },
     "quicklinks": {
       "store": {
         "title": "Shop",
         "text": "Handwerk, Gemälde, Zeichnungen und Figuren, bereit zur Bestellung."
-      },
-      "gallery": {
-        "title": "Galerie",
-        "text": "Ein visueller Spaziergang durch meine Stücke und meine Werkstatt."
       },
       "collab": {
         "title": "Kooperationen",
@@ -25,6 +20,12 @@
         "title": "Inspiration",
         "text": "Videospiele, Lesen und die Welten, die meine Arbeit prägen."
       }
+    },
+    "galleryTeaser": {
+      "eyebrow": "Ein Blick in die Werkstatt",
+      "title": "Ein Spaziergang durch die Galerie",
+      "text": "Fertige Stücke, Werke im Entstehen und ein paar Momente hinter dem Arbeitstisch.",
+      "cta": "Zur ganzen Galerie"
     },
     "featured": {
       "eyebrow": "Ausgewählte Stücke",
@@ -37,8 +38,7 @@
       "eyebrow": "Hinter jedem Stück",
       "title": "Langsam gemacht, mit Liebe gemacht",
       "text1": "Ich bin Jessy, und hinter JessyIsCrafting stecken Stunden des Schleifens, feine Pinsel und viele Tassen Tee. Jedes Stück wird durchdacht, skizziert und überarbeitet, bis ich das Gefühl habe, dass es meinen Arbeitstisch wirklich verdient hat.",
-      "text2": "Ich strebe keine Massenproduktion an: Ich möchte, dass du beim Öffnen der Box spürst, dass jemand wirklich Liebe in das gesteckt hat, was du in den Händen hältst.",
-      "cta": "Unsere Geschichte lesen"
+      "text2": "Ich strebe keine Massenproduktion an: Ich möchte, dass du beim Öffnen der Box spürst, dass jemand wirklich Liebe in das gesteckt hat, was du in den Händen hältst."
     },
     "cta": {
       "eyebrow": "Hast du eine Idee im Kopf?",
@@ -60,6 +60,17 @@
     "ctaText": "Fast alle meine Stücke lassen sich individuell gestalten: Farben, Initialen, Wappen, Leinwandgrößen oder deine eigene Figur. Erzähl mir, was dir vorschwebt.",
     "ctaButton": "Ein individuelles Stück anfragen"
   },
+  "cart": {
+    "title": "Dein Warenkorb",
+    "empty": "Dein Warenkorb ist leer.",
+    "addButton": "In den Warenkorb",
+    "remove": "Entfernen",
+    "checkout": "Angebot anfragen",
+    "checkoutSubject": "Angebotsanfrage",
+    "checkoutMessage": "Hallo, ich hätte gerne ein Angebot für:",
+    "quantityLabel": "Menge",
+    "openCart": "Warenkorb öffnen"
+  },
   "nav": {
     "storeCategories": {
       "artesanias": "Handwerk",
@@ -69,9 +80,8 @@
     },
     "home": "Start",
     "store": "Shop",
-    "story": "Unsere Geschichte",
-    "custom": "Individuelles & Geschenke",
-    "collab": "Kooperationen",
+    "gallery": "Galerie",
+    "custom": "Personalisierungen",
     "inspiration": "Inspiration",
     "contact": "Kontakt",
     "faq": "Häufige Fragen",
@@ -104,41 +114,6 @@
     },
     "placeholder1": "📷 Foto aus der Werkstatt — demnächst",
     "placeholder2": "📷 Eine Bestellung wird vorbereitet — demnächst"
-  },
-  "story": {
-    "eyebrow": "Unsere Geschichte",
-    "title": "Die Person hinter JessyIsCrafting",
-    "subtitle": "Ein kleines Projekt, handgemacht, Stück für Stück.",
-    "photoCaption": "Foto von Jessy (demnächst)",
-    "intro": {
-      "title": "Hallo, ich bin Jessy",
-      "p1": "JessyIsCrafting begann als Hobby unter der Woche: nachts Figuren bemalen, sonntags mit Ölfarben experimentieren, zeichnen, wenn ich abschalten musste. Mit der Zeit wurde aus diesem Hobby etwas, das ich wirklich teilen wollte.",
-      "p2": "Heute arbeite ich noch genauso wie am Anfang: ohne Eile, Stück für Stück, mit genauso viel Sorgfalt wie für mich selbst. Jede Farkle-Box, jede Leinwand und jede Figur verbringt viele Stunden in meinen Händen, bevor sie bei dir ankommt."
-    },
-    "values": {
-      "eyebrow": "Was mich antreibt",
-      "title": "Warum ich mir Zeit lasse",
-      "item1": {
-        "title": "Handwerk als Sprache",
-        "text": "Für mich ist die Arbeit mit Holz, Öl oder dem digitalen Pinsel eine Art, etwas ohne Worte zu erzählen. Jede Textur und jede Maserung hat ihren eigenen Charakter, und ich respektiere ihn lieber, als ihn zu erzwingen."
-      },
-      "item2": {
-        "title": "Die kleinen Details",
-        "text": "Eine gut geschliffene Kante, eine zusätzliche Lasur, eine geduldig gemalte Stofffalte. Details, die auf den ersten Blick kaum jemand bemerkt, die aber völlig verändern, wie sich ein fertiges Stück anfühlt."
-      },
-      "item3": {
-        "title": "Mit Liebe gefertigte Arbeit",
-        "text": "Ich nehme mir lieber etwas mehr Zeit und mache es richtig. Jeder Auftrag wird wie etwas Einzigartiges behandelt, weil er es ist: Keine zwei Stücke, die meinen Tisch verlassen, sind exakt gleich."
-      },
-      "item4": {
-        "title": "Hergestellt in Spanien",
-        "text": "Der gesamte Prozess — Entwurf, Bemalung, Verpackung — findet hier in meiner Werkstatt statt. Handwerk zu unterstützen bedeutet auch, lokale Arbeit zu unterstützen, langsam und ehrlich gemacht."
-      }
-    },
-    "ctaTitle": "Möchtest du sehen, woran ich gerade arbeite?",
-    "ctaText": "Im Shop findest du die aktuell verfügbaren Stücke, und in der Galerie noch etwas mehr vom Entstehungsprozess jedes einzelnen.",
-    "ctaStore": "Zum Shop",
-    "ctaGallery": "Galerie ansehen"
   },
   "custom": {
     "eyebrow": "Individuelles & Geschenke",
@@ -303,7 +278,7 @@
       },
       "commission": {
         "q": "Wie beauftrage ich eine Illustration?",
-        "a": "Schreib mir über das Kontaktformular oder über soziale Medien und erzähl mir deine Idee, gerne mit Referenzen. Ich bereite eine erste Skizze vor, wir einigen uns gemeinsam auf Preis und Zeitrahmen, und danach geht es nur noch an die Farbe. Mehr Informationen findest du im Bereich Kooperationen."
+        "a": "Schreib mir über das Kontaktformular oder über soziale Medien und erzähl mir deine Idee, gerne mit Referenzen. Ich bereite eine erste Skizze vor, wir einigen uns gemeinsam auf Preis und Zeitrahmen, und danach geht es nur noch an die Farbe. Mehr Informationen findest du im Bereich Personalisierungen."
       },
       "payment": {
         "q": "Wie bezahle ich einen Auftrag?",

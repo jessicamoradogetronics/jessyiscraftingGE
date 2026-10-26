@@ -37,6 +37,7 @@
             <span class="price">${formatPrice(product, dict)}</span>
             <a class="btn btn--outline btn--sm" href="producto.html?id=${product.id}">${dict.common.viewProduct}</a>
           </div>
+          <button type="button" class="btn btn--primary btn--sm btn--block" data-add-to-cart="${product.id}">${dict.cart.addButton}</button>
         </div>
       </article>
     `;

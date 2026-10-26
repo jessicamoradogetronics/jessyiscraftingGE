@@ -5,17 +5,12 @@
       "title": "Artesanía con alma de bosque",
       "tagline": "\"Cada pieza nace despacio, como crece un árbol.\"",
       "subtitle": "Sets de Farkle tallados, cuadros al óleo, ilustración digital y figuras pintadas a mano. Piezas únicas, inspiradas en la naturaleza y en los mundos medievales que más amo, creadas una a una desde España.",
-      "ctaStore": "Ir a la tienda",
-      "ctaStory": "Conoce mi historia"
+      "ctaStore": "Ir a la tienda"
     },
     "quicklinks": {
       "store": {
         "title": "Tienda",
         "text": "Artesanías, cuadros, dibujos y figuras listas para encargar."
-      },
-      "gallery": {
-        "title": "Galería",
-        "text": "Un paseo visual por mis piezas y mi taller."
       },
       "collab": {
         "title": "Colaboraciones",
@@ -25,6 +20,12 @@
         "title": "Inspiración",
         "text": "Videojuegos, lectura y los mundos que dan forma a mi trabajo."
       }
+    },
+    "galleryTeaser": {
+      "eyebrow": "Un vistazo al taller",
+      "title": "Un paseo por la galería",
+      "text": "Piezas terminadas, procesos a medio camino y algún que otro momento detrás de la mesa de trabajo.",
+      "cta": "Ver la galería completa"
     },
     "featured": {
       "eyebrow": "Piezas destacadas",
@@ -37,8 +38,7 @@
       "eyebrow": "Detrás de cada pieza",
       "title": "Hecho despacio, hecho con mimo",
       "text1": "Soy Jessy, y detrás de JessyIsCrafting hay horas de lija, pinceles finos y muchas tazas de té. Cada pieza se piensa, se dibuja y se repasa hasta que siento que de verdad merece salir de mi mesa de trabajo.",
-      "text2": "No busco la producción en cadena: busco que cuando abras la caja, notes que alguien ha puesto cariño de verdad en lo que tienes entre las manos.",
-      "cta": "Leer nuestra historia"
+      "text2": "No busco la producción en cadena: busco que cuando abras la caja, notes que alguien ha puesto cariño de verdad en lo que tienes entre las manos."
     },
     "cta": {
       "eyebrow": "¿Tienes algo en mente?",
@@ -60,6 +60,17 @@
     "ctaText": "Casi todas mis piezas admiten personalización: colores, iniciales, escudos, tamaños de lienzo o tu propio personaje. Cuéntame qué tienes en mente.",
     "ctaButton": "Pedir una pieza personalizada"
   },
+  "cart": {
+    "title": "Tu carrito",
+    "empty": "Tu carrito está vacío.",
+    "addButton": "Añadir al carrito",
+    "remove": "Eliminar",
+    "checkout": "Solicitar presupuesto",
+    "checkoutSubject": "Solicitud de presupuesto",
+    "checkoutMessage": "Hola, me gustaría solicitar presupuesto para:",
+    "quantityLabel": "Cantidad",
+    "openCart": "Abrir carrito"
+  },
   "nav": {
     "storeCategories": {
       "artesanias": "Artesanías",
@@ -69,9 +80,8 @@
     },
     "home": "Inicio",
     "store": "Tienda",
-    "story": "Nuestra historia",
-    "custom": "Personalizados y regalos",
-    "collab": "Colaboraciones",
+    "gallery": "Galería",
+    "custom": "Personalizaciones",
     "inspiration": "Inspiración",
     "contact": "Contacto",
     "faq": "Preguntas frecuentes",
@@ -104,41 +114,6 @@
     },
     "placeholder1": "📷 Foto del taller — próximamente",
     "placeholder2": "📷 Preparando un pedido — próximamente"
-  },
-  "story": {
-    "eyebrow": "Nuestra historia",
-    "title": "La persona detrás de JessyIsCrafting",
-    "subtitle": "Un proyecto pequeño, hecho a mano, pieza a pieza.",
-    "photoCaption": "Foto de Jessy (próximamente)",
-    "intro": {
-      "title": "Hola, soy Jessy",
-      "p1": "JessyIsCrafting empezó como una afición entre semana: pintar figuras por las noches, probar óleos los domingos, dibujar cuando necesitaba desconectar. Con el tiempo, esa afición se convirtió en algo que quería compartir de verdad.",
-      "p2": "Hoy sigo trabajando igual que al principio: sin prisa, pieza por pieza, cuidando cada detalle como si fuera para mí. Cada caja de Farkle, cada lienzo y cada figura pasa muchas horas en mis manos antes de llegar a las tuyas."
-    },
-    "values": {
-      "eyebrow": "Lo que me mueve",
-      "title": "Por qué hago las cosas despacio",
-      "item1": {
-        "title": "La artesanía como lenguaje",
-        "text": "Para mí trabajar la madera, el óleo o el pincel digital es una forma de contar algo sin palabras. Cada textura y cada veta tienen su propio carácter, y me gusta respetarlo en vez de forzarlo."
-      },
-      "item2": {
-        "title": "Los pequeños detalles",
-        "text": "Un filo bien lijado, una veladura de más, un pliegue de tela pintado con paciencia. Son detalles que casi nadie nota a primera vista, pero que cambian por completo cómo se siente una pieza acabada."
-      },
-      "item3": {
-        "title": "Trabajo hecho con mimo",
-        "text": "Prefiero tardar un poco más y hacerlo bien. Cada encargo se trata como si fuera único, porque lo es: no hay dos piezas exactamente iguales saliendo de mi mesa."
-      },
-      "item4": {
-        "title": "Hecho en España",
-        "text": "Todo el proceso —diseño, pintura, embalaje— ocurre aquí, en mi taller. Apoyar lo artesanal también es apoyar el trabajo local, hecho despacio y con honestidad."
-      }
-    },
-    "ctaTitle": "¿Quieres ver en qué estoy trabajando ahora?",
-    "ctaText": "En la tienda encontrarás las piezas disponibles, y en la galería, un poco más del proceso detrás de cada una.",
-    "ctaStore": "Ir a la tienda",
-    "ctaGallery": "Ver galería"
   },
   "custom": {
     "eyebrow": "Personalizados y regalos",
@@ -303,7 +278,7 @@
       },
       "commission": {
         "q": "¿Cómo encargo una comisión de ilustración?",
-        "a": "Escríbeme por el formulario de contacto o por redes sociales contándome tu idea, con referencias si las tienes. Te preparo un boceto inicial, cerramos juntas el precio y el plazo, y solo quedaría pasarlo a color. Tienes más información en la sección de Colaboraciones."
+        "a": "Escríbeme por el formulario de contacto o por redes sociales contándome tu idea, con referencias si las tienes. Te preparo un boceto inicial, cerramos juntas el precio y el plazo, y solo quedaría pasarlo a color. Tienes más información en la sección de Personalizaciones."
       },
       "payment": {
         "q": "¿Cómo se paga un encargo?",

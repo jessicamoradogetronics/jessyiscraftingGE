@@ -71,11 +71,30 @@
     });
   }
 
+  function setupGalleryCarousel() {
+    const carousel = document.querySelector('.gallery-carousel');
+    if (!carousel) return;
+    const track = carousel.querySelector('.gallery-carousel__track');
+    const prevBtn = carousel.querySelector('[data-carousel-prev]');
+    const nextBtn = carousel.querySelector('[data-carousel-next]');
+    if (!track) return;
+
+    function scrollByAmount(direction) {
+      const slide = track.querySelector('.gallery-carousel__slide');
+      const step = slide ? slide.getBoundingClientRect().width + 18 : track.clientWidth * 0.8;
+      track.scrollBy({ left: direction * step, behavior: 'smooth' });
+    }
+
+    prevBtn && prevBtn.addEventListener('click', () => scrollByAmount(-1));
+    nextBtn && nextBtn.addEventListener('click', () => scrollByAmount(1));
+  }
+
   function init() {
     markActiveLink();
     setupNavToggle();
     setupFooterYear();
     setupLightbox();
+    setupGalleryCarousel();
   }
 
   document.addEventListener('partials:loaded', init);

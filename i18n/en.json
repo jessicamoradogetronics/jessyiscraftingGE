@@ -5,17 +5,12 @@
       "title": "Craftsmanship with a forest soul",
       "tagline": "\"Every piece grows slowly, like a tree.\"",
       "subtitle": "Carved Farkle sets, oil paintings, digital illustration and hand-painted figures. Unique pieces, inspired by nature and the medieval worlds I love most, created one by one from Spain.",
-      "ctaStore": "Visit the shop",
-      "ctaStory": "Discover my story"
+      "ctaStore": "Visit the shop"
     },
     "quicklinks": {
       "store": {
         "title": "Shop",
         "text": "Crafts, paintings, drawings and figures ready to order."
-      },
-      "gallery": {
-        "title": "Gallery",
-        "text": "A visual walk through my pieces and my workshop."
       },
       "collab": {
         "title": "Collaborations",
@@ -25,6 +20,12 @@
         "title": "Inspiration",
         "text": "Video games, reading and the worlds that shape my work."
       }
+    },
+    "galleryTeaser": {
+      "eyebrow": "A peek into the workshop",
+      "title": "A walk through the gallery",
+      "text": "Finished pieces, works in progress and a few moments behind the worktable.",
+      "cta": "See the full gallery"
     },
     "featured": {
       "eyebrow": "Featured pieces",
@@ -37,8 +38,7 @@
       "eyebrow": "Behind every piece",
       "title": "Made slowly, made with care",
       "text1": "I'm Jessy, and behind JessyIsCrafting there are hours of sanding, fine brushes and many cups of tea. Every piece is thought through, sketched and refined until I feel it truly deserves to leave my worktable.",
-      "text2": "I'm not after mass production: I want you to open the box and feel that someone genuinely cared about what you're holding.",
-      "cta": "Read our story"
+      "text2": "I'm not after mass production: I want you to open the box and feel that someone genuinely cared about what you're holding."
     },
     "cta": {
       "eyebrow": "Have something in mind?",
@@ -60,6 +60,17 @@
     "ctaText": "Almost all of my pieces can be customised: colours, initials, crests, canvas sizes or your own character. Tell me what you have in mind.",
     "ctaButton": "Request a custom piece"
   },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "addButton": "Add to cart",
+    "remove": "Remove",
+    "checkout": "Request a quote",
+    "checkoutSubject": "Quote request",
+    "checkoutMessage": "Hi, I'd like a quote for:",
+    "quantityLabel": "Quantity",
+    "openCart": "Open cart"
+  },
   "nav": {
     "storeCategories": {
       "artesanias": "Crafts",
@@ -69,9 +80,8 @@
     },
     "home": "Home",
     "store": "Shop",
-    "story": "Our story",
-    "custom": "Custom pieces & gifts",
-    "collab": "Collaborations",
+    "gallery": "Gallery",
+    "custom": "Customizations",
     "inspiration": "Inspiration",
     "contact": "Contact",
     "faq": "FAQ",
@@ -104,41 +114,6 @@
     },
     "placeholder1": "📷 Workshop photo — coming soon",
     "placeholder2": "📷 Preparing an order — coming soon"
-  },
-  "story": {
-    "eyebrow": "Our story",
-    "title": "The person behind JessyIsCrafting",
-    "subtitle": "A small project, handmade, piece by piece.",
-    "photoCaption": "Photo of Jessy (coming soon)",
-    "intro": {
-      "title": "Hi, I'm Jessy",
-      "p1": "JessyIsCrafting started as a weekday hobby: painting figures at night, trying out oils on Sundays, drawing whenever I needed to unwind. Over time, that hobby became something I genuinely wanted to share.",
-      "p2": "Today I still work the same way I did at the beginning: unhurried, piece by piece, caring about every detail as if it were for myself. Every Farkle box, every canvas and every figure spends many hours in my hands before it reaches yours."
-    },
-    "values": {
-      "eyebrow": "What drives me",
-      "title": "Why I take things slowly",
-      "item1": {
-        "title": "Craft as a language",
-        "text": "For me, working with wood, oil paint or a digital brush is a way of saying something without words. Every texture and every grain has its own character, and I'd rather respect it than force it."
-      },
-      "item2": {
-        "title": "The small details",
-        "text": "A well-sanded edge, one extra glaze, a fabric fold painted with patience. Details that almost no one notices at first glance, yet completely change how a finished piece feels."
-      },
-      "item3": {
-        "title": "Work made with care",
-        "text": "I'd rather take a little longer and get it right. Every order is treated as unique, because it is: no two pieces leaving my desk are ever exactly the same."
-      },
-      "item4": {
-        "title": "Made in Spain",
-        "text": "The whole process — design, painting, packaging — happens right here, in my workshop. Supporting handmade work also means supporting local work, made slowly and honestly."
-      }
-    },
-    "ctaTitle": "Want to see what I'm working on right now?",
-    "ctaText": "In the shop you'll find the pieces currently available, and in the gallery, a bit more of the process behind each one.",
-    "ctaStore": "Visit the shop",
-    "ctaGallery": "View gallery"
   },
   "custom": {
     "eyebrow": "Custom pieces & gifts",
@@ -303,7 +278,7 @@
       },
       "commission": {
         "q": "How do I order an illustration commission?",
-        "a": "Message me through the contact form or on social media telling me your idea, with references if you have any. I'll prepare an initial sketch, we'll agree on the price and timeline together, and all that's left is moving on to colour. You'll find more information in the Collaborations section."
+        "a": "Message me through the contact form or on social media telling me your idea, with references if you have any. I'll prepare an initial sketch, we'll agree on the price and timeline together, and all that's left is moving on to colour. You'll find more information in the Customizations section."
       },
       "payment": {
         "q": "How is a commission paid for?",

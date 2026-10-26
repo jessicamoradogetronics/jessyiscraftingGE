@@ -110,6 +110,9 @@
     const orderBtn = document.getElementById('orderButton');
     if (orderBtn) orderBtn.href = `contacto.html?producto=${encodeURIComponent(t.name || currentProduct.id)}`;
 
+    const addToCartBtn = document.getElementById('addToCartBtn');
+    if (addToCartBtn) addToCartBtn.dataset.addToCart = currentProduct.id;
+
     renderGallery(currentProduct, t.name || '');
     renderRelated(dict);
   }

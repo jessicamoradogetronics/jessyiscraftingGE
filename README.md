@@ -14,9 +14,7 @@ para titulares y una sans (Work Sans) para el texto.
 ├── tienda.html              Tienda (listado con filtro por categoría)
 ├── producto.html             Ficha de producto (?id=<slug>, ver data/products.json)
 ├── galeria.html              Galería visual (piezas + taller)
-├── historia.html             Nuestra historia
-├── personalizados.html        Personalizados y regalos
-├── colaboraciones.html        Colaboraciones (comisiones, marcas, talleres)
+├── personalizados.html        Personalizados, regalos y colaboraciones (comisiones, marcas, talleres)
 ├── inspiracion.html           Inspiración (Kingdom Come: Deliverance, lectura, fanfics)
 ├── contacto.html              Formulario + canales de contacto
 ├── faq.html                   Preguntas frecuentes (con JSON-LD FAQPage)
@@ -73,7 +71,7 @@ usar herramientas como [Squoosh](https://squoosh.app/) o `sharp` en Node).
 ## Pendiente de personalizar antes de publicar
 
 - **Fotos del taller / de Jessy trabajando**: hay marcadores de posición
-  (`photo-frame__placeholder`, `placeholder-tile`) en `historia.html`,
+  (`photo-frame__placeholder`, `placeholder-tile`) en
   `index.html` y `galeria.html` listos para sustituir por fotos reales.
 - **Formulario de contacto**: `contacto.html` apunta a
   `https://formspree.io/f/your-form-id` — crea una cuenta gratuita en
