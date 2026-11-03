@@ -12,7 +12,14 @@
       "assets/img/artesanias/farkle-set-3",
       "assets/img/artesanias/farkle-set-4",
       "assets/img/artesanias/farkle-set-5"
-    ]
+    ],
+    "customOptions": {
+      "finishes": [
+        { "id": "caoba", "color": "#5a2a1a" },
+        { "id": "roble", "color": "#9a6234" }
+      ],
+      "notes": { "maxLength": 1000 }
+    }
   },
   {
     "id": "mini-farkle-viajero",
@@ -23,7 +30,14 @@
     "featured": false,
     "images": [
       "assets/img/artesanias/mini-farkle-1"
-    ]
+    ],
+    "customOptions": {
+      "finishes": [
+        { "id": "caoba", "color": "#5a2a1a" },
+        { "id": "roble", "color": "#9a6234" }
+      ],
+      "notes": { "maxLength": 1000 }
+    }
   },
   {
     "id": "oleo-minas-tirith",

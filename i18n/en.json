@@ -90,8 +90,19 @@
   "productDetail": {
     "notFound": "We couldn't find this piece. It may no longer be available — take a look at the rest of the shop.",
     "customizationTitle": "Customisation available",
-    "orderButton": "Ask about / order this piece",
+    "orderButton": "Ask about or order a made-to-measure piece",
     "backToStore": "Back to the shop",
+    "taxNote": "Taxes included · Fast, protected shipping",
+    "customChoiceLabel": "Customisation",
+    "customNone": "No customisation",
+    "customYes": "Customise",
+    "customFinishLabel": "Lid finish",
+    "customSelected": "Selected",
+    "customNotesLabel": "Details of your customisation (optional)",
+    "customNotesPlaceholder": "Describe what you want",
+    "customLabel": "Customised",
+    "qtyDecrease": "Decrease quantity",
+    "qtyIncrease": "Increase quantity",
     "shippingNote": "Shipping to Spain, the European Union and the United Kingdom. For other countries, please get in touch before ordering — more details in the FAQ.",
     "relatedEyebrow": "You might also like",
     "relatedTitle": "More pieces from the same family"
@@ -334,16 +345,18 @@
   },
   "products": {
     "set-farkle-blason": {
+      "finishes": { "caoba": "Mahogany", "roble": "Rustic Oak" },
       "name": "\"Crest\" Farkle Set",
       "short": "Hand-carved wooden box with a painted crest and a complete dice set for playing Farkle.",
       "description": "A solid wood box with a hand-painted heraldic crest on the lid, a stitched leather dice cup and all the dice you need for a game of Farkle with friends. Every detail, from the wood stain to the brushstrokes of the crest, is finished piece by piece.",
-      "customization": "You can choose the crest colours, have initials or a special date engraved inside the lid, and pick the wood tone (walnut, light oak or mahogany)."
+      "customization": "You can choose the wood colours, the crests you want on each side up to 4 (two on the outside and two on the inside), or a custom motif such as letters or drawings."
     },
     "mini-farkle-viajero": {
+      "finishes": { "caoba": "Mahogany", "roble": "Rustic Oak" },
       "name": "Travel Mini Farkle",
       "short": "A compact version of the Farkle set, ready to slip into a backpack or bag.",
       "description": "The same love for detail, in a small format made for travelling. Perfect for trips, camping, or simply having an impromptu game always within reach.",
-      "customization": "Available in different lid colours, with the option to add engraved initials."
+      "customization": "You can choose the wood colours, the crests you want on each side up to 4 (two on the outside and two on the inside), or a custom motif such as letters or drawings."
     },
     "oleo-minas-tirith": {
       "name": "\"The Citadel\" Oil Painting",

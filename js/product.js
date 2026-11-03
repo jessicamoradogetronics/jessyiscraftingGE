@@ -81,6 +81,130 @@
     if (relatedSection) relatedSection.hidden = related.length === 0;
   }
 
+  let selection = { mode: 'none', finish: null, notes: '' };
+
+  function resetSelection() {
+    selection = { mode: 'none', finish: null, notes: '' };
+  }
+
+  function finishNames(t) {
+    return t.finishes || {};
+  }
+
+  function customPayload(t) {
+    const payload = {};
+    if (selection.finish) payload.finish = finishNames(t)[selection.finish] || selection.finish;
+    const notes = selection.notes.trim();
+    if (notes) payload.notes = notes;
+    return payload;
+  }
+
+  function syncCartData(t) {
+    const btn = document.getElementById('addToCartBtn');
+    if (!btn) return;
+    btn.dataset.custom = selection.mode === 'custom' ? JSON.stringify(customPayload(t)) : '';
+  }
+
+  function renderCustom(dict, t) {
+    const tr = dict.productDetail || {};
+    const choice = document.getElementById('customChoice');
+    const box = document.getElementById('customizationBox');
+    const options = currentProduct.customOptions || {};
+    const finishes = options.finishes || [];
+    const names = finishNames(t);
+
+    if (!currentProduct.customizable || !t.customization) {
+      resetSelection();
+      if (choice) choice.hidden = true;
+      if (box) box.hidden = true;
+      syncCartData(t);
+      return;
+    }
+
+    if (!selection.finish && finishes.length) selection.finish = finishes[0].id;
+
+    if (choice) {
+      choice.hidden = false;
+      choice.innerHTML = `
+        <span class="custom-choice__label">${tr.customChoiceLabel || ''}</span>
+        <div class="custom-choice__track">
+          <button type="button" class="custom-choice__btn ${selection.mode === 'none' ? 'is-active' : ''}" data-custom-mode="none" aria-pressed="${selection.mode === 'none'}">${tr.customNone || ''}</button>
+          <button type="button" class="custom-choice__btn ${selection.mode === 'custom' ? 'is-active' : ''}" data-custom-mode="custom" aria-pressed="${selection.mode === 'custom'}">${tr.customYes || ''}</button>
+        </div>`;
+    }
+
+    if (box) {
+      box.hidden = selection.mode !== 'custom';
+      const finishBlock = finishes.length ? `
+        <span class="customization-box__label">${tr.customFinishLabel || ''}</span>
+        <p class="customization-box__selected">${tr.customSelected || ''}: <strong>${names[selection.finish] || ''}</strong></p>
+        <div class="swatches" role="radiogroup" aria-label="${tr.customFinishLabel || ''}">
+          ${finishes.map((f) => `
+            <button type="button" class="swatch ${f.id === selection.finish ? 'is-active' : ''}" role="radio" aria-checked="${f.id === selection.finish}" data-finish="${f.id}">
+              <span class="swatch__dot" style="background:${f.color}"></span>
+              <span class="swatch__name">${names[f.id] || f.id}</span>
+            </button>`).join('')}
+        </div>` : '';
+      const notesBlock = options.notes ? `
+        <label class="customization-box__label" for="notesInput">${tr.customNotesLabel || ''}</label>
+        <div class="notes-field">
+          <textarea id="notesInput" rows="4" maxlength="${options.notes.maxLength}" placeholder="${tr.customNotesPlaceholder || ''}"></textarea>
+        </div>` : '';
+      box.innerHTML = `
+        <div class="customization-box__head">
+          <span class="customization-box__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+          <div>
+            <h3>${tr.customizationTitle || ''}</h3>
+            <p>${t.customization}</p>
+          </div>
+        </div>
+        ${finishBlock}
+        ${notesBlock}`;
+      const input = box.querySelector('#notesInput');
+      if (input) input.value = selection.notes;
+    }
+
+    syncCartData(t);
+  }
+
+  function refreshCustom() {
+    const dict = window.JIC_I18N.getDict();
+    if (!dict || !currentProduct) return;
+    renderCustom(dict, dict.products[currentProduct.id] || {});
+  }
+
+  function setupInteractions() {
+    const wrap = document.getElementById('productWrapper');
+    if (!wrap) return;
+
+    wrap.addEventListener('click', (e) => {
+      const modeBtn = e.target.closest('[data-custom-mode]');
+      if (modeBtn) {
+        selection.mode = modeBtn.dataset.customMode;
+        refreshCustom();
+        return;
+      }
+      const swatch = e.target.closest('[data-finish]');
+      if (swatch) {
+        selection.finish = swatch.dataset.finish;
+        refreshCustom();
+        return;
+      }
+      const step = e.target.closest('[data-qty-step]');
+      if (step) {
+        const input = document.getElementById('productQty');
+        input.value = Math.max(1, (parseInt(input.value, 10) || 1) + Number(step.dataset.qtyStep));
+      }
+    });
+
+    wrap.addEventListener('input', (e) => {
+      if (e.target.id !== 'notesInput') return;
+      selection.notes = e.target.value;
+      const dict = window.JIC_I18N.getDict();
+      if (dict && currentProduct) syncCartData(dict.products[currentProduct.id] || {});
+    });
+  }
+
   function render() {
     const dict = window.JIC_I18N.getDict();
     if (!dict || !currentProduct) return;
@@ -99,13 +223,7 @@
     document.getElementById('breadcrumbCategory').textContent = cat.name || '';
     document.getElementById('breadcrumbCategory').setAttribute('href', `tienda.html#${currentProduct.category}`);
 
-    const customBox = document.getElementById('customizationBox');
-    if (currentProduct.customizable && t.customization) {
-      customBox.hidden = false;
-      document.getElementById('customizationText').textContent = t.customization;
-    } else if (customBox) {
-      customBox.hidden = true;
-    }
+    renderCustom(dict, t);
 
     const orderBtn = document.getElementById('orderButton');
     if (orderBtn) orderBtn.href = `contacto.html?producto=${encodeURIComponent(t.name || currentProduct.id)}`;
@@ -124,6 +242,7 @@
       .then((data) => {
         products = data;
         currentProduct = products.find((p) => p.id === id);
+        resetSelection();
         const notFound = document.getElementById('productNotFound');
         const wrapper = document.getElementById('productWrapper');
         if (!currentProduct) {
@@ -136,6 +255,7 @@
       .catch((err) => console.error('No se pudo cargar el producto', err));
 
     document.addEventListener('i18n:ready', render);
+    setupInteractions();
   }
 
   document.addEventListener('partials:loaded', init);

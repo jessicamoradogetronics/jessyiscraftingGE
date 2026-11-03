@@ -72,34 +72,65 @@
   }
 
   function setupGalleryCarousel() {
-    const carousel = document.querySelector('.gallery-carousel');
-    if (!carousel) return;
-    const viewport = carousel.querySelector('.gallery-carousel__viewport');
-    const track = carousel.querySelector('.gallery-carousel__track');
-    const slides = Array.from(carousel.querySelectorAll('.gallery-carousel__slide'));
-    const prevBtn = carousel.querySelector('[data-carousel-prev]');
-    const nextBtn = carousel.querySelector('[data-carousel-next]');
-    if (!viewport || !track || slides.length < 2) return;
+    const root = document.querySelector('.gallery-carousel');
+    if (!root) return;
+    const viewport = root.querySelector('.gallery-carousel__viewport');
+    const track = root.querySelector('.gallery-carousel__track');
+    const slides = Array.from(root.querySelectorAll('.gallery-carousel__slide'));
+    const dotsNav = root.querySelector('.gallery-carousel__dots');
+    const prev = root.querySelector('[data-carousel-prev]');
+    const next = root.querySelector('[data-carousel-next]');
+    const status = root.querySelector('.gallery-carousel__sr');
+    if (!viewport || !track || !prev || !next || slides.length < 2) return;
 
+    const n = slides.length;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let index = 0;
+    let timer = null;
+    let startX = null;
 
-    function step(direction) {
-      const first = slides[0];
-      const slideWidth = first.getBoundingClientRect().width;
-      const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 0;
-      const visible = Math.max(1, Math.floor((viewport.clientWidth + gap) / (slideWidth + gap)));
-      const maxIndex = Math.max(0, slides.length - visible);
+    const dots = slides.map((_, i) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'gallery-carousel__dot';
+      dot.setAttribute('aria-label', `Imagen ${i + 1} de ${n}`);
+      dot.addEventListener('click', () => { show(i); restart(); });
+      if (dotsNav) dotsNav.appendChild(dot);
+      return dot;
+    });
 
-      index = Math.min(Math.max(index + direction, 0), maxIndex);
-      track.style.transform = `translateX(${-index * (slideWidth + gap)}px)`;
-      if (prevBtn) prevBtn.classList.toggle('is-disabled', index === 0);
-      if (nextBtn) nextBtn.classList.toggle('is-disabled', index >= maxIndex);
+    function show(i) {
+      index = ((i % n) + n) % n;
+      track.style.transform = `translateX(${-index * 100}%)`;
+      slides.forEach((slide, k) => { slide.inert = k !== index; });
+      dots.forEach((dot, k) => {
+        if (k === index) dot.setAttribute('aria-current', 'true');
+        else dot.removeAttribute('aria-current');
+      });
+      if (status) status.textContent = `Imagen ${index + 1} de ${n}`;
     }
 
-    prevBtn && prevBtn.addEventListener('click', () => step(-1.5));
-    nextBtn && nextBtn.addEventListener('click', () => step(1.5));
-    window.addEventListener('resize', () => step(0));
-    step(0);
+    function restart() {
+      clearInterval(timer);
+      if (!reduceMotion) timer = setInterval(() => show(index + 1), 5000);
+    }
+
+    prev.addEventListener('click', () => { show(index - 1); restart(); });
+    next.addEventListener('click', () => { show(index + 1); restart(); });
+    root.addEventListener('mouseenter', () => clearInterval(timer));
+    root.addEventListener('mouseleave', restart);
+
+    viewport.addEventListener('pointerdown', (e) => { startX = e.clientX; });
+    viewport.addEventListener('pointerup', (e) => {
+      if (startX === null) return;
+      const dx = e.clientX - startX;
+      startX = null;
+      if (Math.abs(dx) > 40) { show(index + (dx < 0 ? 1 : -1)); restart(); }
+    });
+    viewport.addEventListener('pointercancel', () => { startX = null; });
+
+    show(0);
+    restart();
   }
 
   function init() {

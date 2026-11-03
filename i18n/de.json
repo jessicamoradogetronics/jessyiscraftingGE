@@ -90,8 +90,19 @@
   "productDetail": {
     "notFound": "Wir konnten dieses Stück nicht finden. Es ist möglicherweise nicht mehr verfügbar — wirf einen Blick in den restlichen Shop.",
     "customizationTitle": "Personalisierung möglich",
-    "orderButton": "Anfragen / Dieses Stück bestellen",
+    "orderButton": "Anfragen oder individuell bestellen",
     "backToStore": "Zurück zum Shop",
+    "taxNote": "Inklusive Steuern · Schneller, geschützter Versand",
+    "customChoiceLabel": "Personalisierung",
+    "customNone": "Ohne Personalisierung",
+    "customYes": "Personalisieren",
+    "customFinishLabel": "Deckelfinish",
+    "customSelected": "Ausgewählt",
+    "customNotesLabel": "Details deiner Individualisierung (optional)",
+    "customNotesPlaceholder": "Beschreibe, was du dir wünschst",
+    "customLabel": "Personalisiert",
+    "qtyDecrease": "Menge verringern",
+    "qtyIncrease": "Menge erhöhen",
     "shippingNote": "Versand nach Spanien, in die Europäische Union und nach Großbritannien. Für andere Länder bitte vor der Bestellung Kontakt aufnehmen — mehr Infos in den häufigen Fragen.",
     "relatedEyebrow": "Das könnte dir auch gefallen",
     "relatedTitle": "Weitere Stücke aus derselben Familie"
@@ -334,16 +345,18 @@
   },
   "products": {
     "set-farkle-blason": {
+      "finishes": { "caoba": "Mahagoni", "roble": "Rustikale Eiche" },
       "name": "Farkle-Set „Wappen“",
       "short": "Handgeschnitzte Holzbox mit bemaltem Wappen und komplettem Würfelset für Farkle.",
       "description": "Eine massive Holzbox mit einem handbemalten heraldischen Wappen auf dem Deckel, einem genähten Lederbecher und allen Würfeln, die du für eine Partie Farkle mit Freunden brauchst. Jedes Detail, von der Holzbeize bis zum Pinselstrich des Wappens, wird Stück für Stück ausgearbeitet.",
-      "customization": "Du kannst die Farben des Wappens wählen, Initialen oder ein besonderes Datum in den Deckel eingravieren lassen und den Holzton auswählen (Nussbaum, helle Eiche oder Mahagoni)."
+      "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
     },
     "mini-farkle-viajero": {
+      "finishes": { "caoba": "Mahagoni", "roble": "Rustikale Eiche" },
       "name": "Mini-Farkle für unterwegs",
       "short": "Eine kompakte Version des Farkle-Sets, bereit für Rucksack oder Tasche.",
       "description": "Dieselbe Liebe zum Detail, in einem kleinen, reisetauglichen Format. Ideal für Ausflüge, Camping oder einfach, um immer eine spontane Partie griffbereit zu haben.",
-      "customization": "Erhältlich in verschiedenen Deckelfarben, mit der Option auf eingravierte Initialen."
+      "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
     },
     "oleo-minas-tirith": {
       "name": "Ölgemälde „Die Zitadelle“",

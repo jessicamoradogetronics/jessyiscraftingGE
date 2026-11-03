@@ -90,8 +90,19 @@
   "productDetail": {
     "notFound": "No hemos encontrado esta pieza. Puede que ya no esté disponible — echa un vistazo al resto de la tienda.",
     "customizationTitle": "Personalización disponible",
-    "orderButton": "Consultar / Encargar esta pieza",
+    "orderButton": "Consultar o encargar pieza a medida",
     "backToStore": "Volver a la tienda",
+    "taxNote": "Impuestos incluidos · Envío rápido protegido",
+    "customChoiceLabel": "Personalización",
+    "customNone": "Sin personalizar",
+    "customYes": "Personalizar",
+    "customFinishLabel": "Acabado de tapa",
+    "customSelected": "Seleccionado",
+    "customNotesLabel": "Detalles de tu personalización (opcional)",
+    "customNotesPlaceholder": "Describe lo que quieres",
+    "customLabel": "Personalizada",
+    "qtyDecrease": "Reducir cantidad",
+    "qtyIncrease": "Aumentar cantidad",
     "shippingNote": "Envíos a toda España, la Unión Europea y Reino Unido. Para otros países, consulta antes de encargar — más info en las preguntas frecuentes.",
     "relatedEyebrow": "También te puede gustar",
     "relatedTitle": "Más piezas de esta misma familia"
@@ -334,16 +345,18 @@
   },
   "products": {
     "set-farkle-blason": {
+      "finishes": { "caoba": "Caoba", "roble": "Roble Rústico" },
       "name": "Set de Farkle «Blasón»",
       "short": "Caja de madera tallada a mano con escudo pintado y set completo de dados para jugar al Farkle.",
       "description": "Una caja de madera maciza con un escudo heráldico pintado a mano en la tapa, cubilete de cuero cosido y todos los dados que necesitas para una partida de Farkle con amigos. Cada detalle, desde el tinte de la madera hasta el trazo del escudo, se cuida pieza a pieza.",
-      "customization": "Puedes elegir los colores del escudo, grabar iniciales o una fecha especial en el interior de la tapa, y escoger el tono de la madera (nogal, roble claro o caoba)."
+      "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
     },
     "mini-farkle-viajero": {
+      "finishes": { "caoba": "Caoba", "roble": "Roble Rústico" },
       "name": "Mini Farkle de viaje",
       "short": "Versión compacta del set de Farkle, lista para meter en la mochila o el bolso.",
       "description": "La misma pasión por el detalle, en un formato pequeño pensado para viajar. Ideal para escapadas, camping o simplemente para tener siempre a mano una partida improvisada.",
-      "customization": "Disponible en distintos colores de tapa y con la opción de añadir iniciales grabadas."
+      "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
     },
     "oleo-minas-tirith": {
       "name": "Óleo «La Ciudadela»",

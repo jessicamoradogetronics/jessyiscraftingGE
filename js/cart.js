@@ -23,30 +23,33 @@
     document.dispatchEvent(new CustomEvent('cart:changed', { detail: { items } }));
   }
 
-  function addItem(id, qty) {
+  function sameCustom(a, b) {
+    return JSON.stringify(a || null) === JSON.stringify(b || null);
+  }
+
+  function addItem(id, qty, custom) {
     const items = readCart();
-    const existing = items.find((it) => it.id === id);
+    const existing = items.find((it) => it.id === id && sameCustom(it.custom, custom));
     if (existing) {
       existing.qty += qty;
     } else {
-      items.push({ id, qty });
+      items.push(custom ? { id, qty, custom } : { id, qty });
     }
     writeCart(items);
   }
 
-  function setQty(id, qty) {
+  function setQty(index, qty) {
     let items = readCart();
     if (qty <= 0) {
-      items = items.filter((it) => it.id !== id);
-    } else {
-      const existing = items.find((it) => it.id === id);
-      if (existing) existing.qty = qty;
+      items = items.filter((_, i) => i !== index);
+    } else if (items[index]) {
+      items[index].qty = qty;
     }
     writeCart(items);
   }
 
-  function removeItem(id) {
-    writeCart(readCart().filter((it) => it.id !== id));
+  function removeItem(index) {
+    writeCart(readCart().filter((_, i) => i !== index));
   }
 
   function clearCart() {
@@ -88,20 +91,27 @@
     badge.hidden = count === 0;
   }
 
-  function cartItemRow(item, dict) {
+  function customSummary(custom, dict) {
+    const tr = dict.productDetail || {};
+    const parts = [custom.finish, custom.notes].filter(Boolean);
+    return `${tr.customLabel || ''}${parts.length ? `: ${parts.join(' · ')}` : ''}`;
+  }
+
+  function cartItemRow(item, index, dict) {
     const product = products.find((p) => p.id === item.id);
     const t = (dict.products && dict.products[item.id]) || {};
     const name = t.name || item.id;
     const priceLabel = product ? formatPrice(product, dict) : '';
     const img = product ? product.images[0] : '';
     return `
-      <div class="cart-item" data-id="${item.id}">
+      <div class="cart-item" data-index="${index}">
         <div class="cart-item__media">
           ${img ? `<picture><source srcset="${img}-thumb.webp" type="image/webp"><img src="${img}-thumb.jpg" alt="${name}"></picture>` : ''}
         </div>
         <div class="cart-item__info">
           <span class="cart-item__name">${name}</span>
           <span class="cart-item__price">${priceLabel}</span>
+          ${item.custom ? `<span class="cart-item__price">${customSummary(item.custom, dict)}</span>` : ''}
         </div>
         <div class="cart-item__qty">
           <button type="button" class="cart-item__qty-btn" data-action="decrease" aria-label="-">&minus;</button>
@@ -121,7 +131,7 @@
     if (!dict || !itemsEl) return;
 
     const items = readCart();
-    itemsEl.innerHTML = items.map((item) => cartItemRow(item, dict)).join('');
+    itemsEl.innerHTML = items.map((item, i) => cartItemRow(item, i, dict)).join('');
     if (emptyEl) emptyEl.hidden = items.length !== 0;
     if (checkoutBtn) checkoutBtn.hidden = items.length === 0;
   }
@@ -160,13 +170,13 @@
         const row = e.target.closest('.cart-item');
         const action = e.target.closest('[data-action]');
         if (!row || !action) return;
-        const id = row.dataset.id;
+        const index = Number(row.dataset.index);
         const items = readCart();
-        const current = items.find((it) => it.id === id);
+        const current = items[index];
         if (!current) return;
-        if (action.dataset.action === 'increase') setQty(id, current.qty + 1);
-        if (action.dataset.action === 'decrease') setQty(id, current.qty - 1);
-        if (action.dataset.action === 'remove') removeItem(id);
+        if (action.dataset.action === 'increase') setQty(index, current.qty + 1);
+        if (action.dataset.action === 'decrease') setQty(index, current.qty - 1);
+        if (action.dataset.action === 'remove') removeItem(index);
         renderDrawer();
       });
     }
@@ -180,7 +190,8 @@
       if (!id) return;
       const qtyInput = document.getElementById('productQty');
       const qty = qtyInput ? Math.max(1, parseInt(qtyInput.value, 10) || 1) : 1;
-      addItem(id, qty);
+      const custom = btn.dataset.custom ? JSON.parse(btn.dataset.custom) : null;
+      addItem(id, qty, custom);
       loadProducts().then(() => {
         renderDrawer();
         openDrawer();
@@ -201,7 +212,8 @@
       const t = (dict.products && dict.products[item.id]) || {};
       const name = t.name || item.id;
       const priceLabel = product ? ` \u2014 ${formatPrice(product, dict)}` : '';
-      return `- ${name} x${item.qty}${priceLabel}`;
+      const customText = item.custom ? ` (${customSummary(item.custom, dict)})` : '';
+      return `- ${name}${customText} x${item.qty}${priceLabel}`;
     });
 
     if (!subjectField.value) subjectField.value = dict.cart.checkoutSubject;
