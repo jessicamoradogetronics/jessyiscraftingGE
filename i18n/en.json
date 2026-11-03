@@ -107,10 +107,27 @@
     "relatedEyebrow": "You might also like",
     "relatedTitle": "More pieces from the same family"
   },
+  "works": {
+    "backToGallery": "Back to the gallery",
+    "consultButton": "Ask about this piece",
+    "notFound": "We could not find this piece. You can go back to the gallery to see the rest.",
+    "items": {
+      "caballero": { "title": "Henry the Knight", "description": "A hand-painted knight miniature, with every detail of the armour worked with a fine brush. Layers of colour build up slowly to give depth to the metal and the fabrics, without losing the character of a figure made to be seen up close." },
+      "minas-tirith": { "title": "Oil «The Citadel»", "description": "An oil on canvas showing a citadel rising between mountains, painted with thin glazes to capture the light of early morning. The composition leads the eye from the road up to the walls, where each stone is worked with short, precise brushstrokes." },
+      "farkle-detalle": { "title": "Detail of the carved crest", "description": "A close-up of the crest hand-carved into a solid wooden box. The relief is shaped with gouges and gradual sanding; a finishing coat then sets the tone and brings out the natural grain of the wood." },
+      "luminoso": { "title": "Luminous", "description": "A digital illustration of an armoured figure and a white horse wrapped in mist. Light enters from an undefined point in the background and travels across the metallic surfaces, creating a soft contrast between shadows and reflections." },
+      "jinete": { "title": "Heraldic rider", "description": "A diorama of a rider with a heraldic shield, mounted on a hand-painted base that recreates a dirt track. Each element of the shield is painted in solid colours with clean edges, so the crest reads clearly even from a distance." },
+      "heinrich": { "title": "Heinrich's scene", "description": "A narrative scene set in a medieval interior, digitally illustrated. The characters stand in a room lit by a single source of light, and every object in the hall tells a fragment of the story." },
+      "lune": { "title": "Lune", "description": "A figure on an effects base, painted with transitions of fire and crystal. The highlights are built in translucent layers, so the base looks like a fragment of another world for the character to stand on." },
+      "bosque": { "title": "Corner of the forest", "description": "An oil on canvas of a stream running through a dense forest. The scene is built with layers of greens and ochres, letting the light filtering through the trees mark the path of the water." },
+      "renoir": { "title": "Renoir", "description": "A collector figure in a long coat, finished in a matte coat to soften the reflections and bring out the fabrics. The paint is worked area by area, with particular care for the seams and folds." },
+      "mini-farkle": { "title": "Travel Mini Farkle", "description": "The compact version of the Farkle set, made to carry in a backpack. It keeps the same care for detail in a small format, ideal for trips, camping or an impromptu game always within reach." }
+    }
+  },
   "gallery": {
     "eyebrow": "Gallery",
     "title": "A walk through the workshop",
-    "subtitle": "Finished pieces, works in progress and the odd moment behind the worktable. Tap any image to see it larger.",
+    "subtitle": "Finished pieces, works in progress and the odd moment behind the worktable. Tap any image to see its details.",
     "captions": {
       "caballero": "Knight miniature, painted with a fine brush.",
       "minasTirith": "Oil on canvas, citadel among the mountains.",

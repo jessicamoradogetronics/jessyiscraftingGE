@@ -107,10 +107,27 @@
     "relatedEyebrow": "Das könnte dir auch gefallen",
     "relatedTitle": "Weitere Stücke aus derselben Familie"
   },
+  "works": {
+    "backToGallery": "Zurück zur Galerie",
+    "consultButton": "Zu diesem Stück anfragen",
+    "notFound": "Dieses Werk konnten wir nicht finden. Du kannst zur Galerie zurückkehren, um die anderen zu sehen.",
+    "items": {
+      "caballero": { "title": "Ritter Henry", "description": "Eine handbemalte Ritterminiatur, bei der jedes Detail der Rüstung mit feinem Pinsel gearbeitet ist. Die Farbschichten bauen sich langsam auf, um Metall und Stoffen Tiefe zu geben, ohne den Charakter einer Figur zu verlieren, die aus der Nähe betrachtet werden soll." },
+      "minas-tirith": { "title": "Öl „Die Zitadelle“", "description": "Ein Ölgemälde auf Leinwand, das eine Zitadelle zwischen Bergen zeigt, mit dünnen Lasuren gemalt, um das Licht der frühen Morgenstunden einzufangen. Die Komposition führt den Blick von der Straße bis zu den Mauern, wo jeder Stein mit kurzen, präzisen Pinselstrichen gearbeitet ist." },
+      "farkle-detalle": { "title": "Detail des geschnitzten Wappens", "description": "Nahaufnahme des von Hand geschnitzten Wappens auf einer massiven Holzbox. Das Relief entsteht mit Stechbeitel und schrittweisem Schleifen; danach fixiert eine Schutzschicht den Ton und betont die natürliche Maserung des Holzes." },
+      "luminoso": { "title": "Leuchtend", "description": "Digitale Illustration einer gepanzerten Gestalt und eines weißen Pferdes im Nebel. Das Licht fällt aus einem unbestimmten Punkt im Hintergrund über die metallischen Flächen und erzeugt einen sanften Kontrast zwischen Schatten und Reflexen." },
+      "jinete": { "title": "Heraldischer Reiter", "description": "Ein Diorama eines Reiters mit heraldischem Schild, auf einem handbemalten Sockel, der einen Feldweg nachbildet. Jedes Element des Schildes ist in satten Farben mit sauberen Konturen gemalt, damit das Wappen auch aus der Ferne gut lesbar ist." },
+      "heinrich": { "title": "Szene Heinrichs", "description": "Eine erzählerische Szene in einem mittelalterlichen Innenraum, digital illustriert. Die Figuren stehen in einem Raum, der von einer einzigen Lichtquelle beleuchtet wird, und jeder Gegenstand erzählt ein Stück der Geschichte." },
+      "lune": { "title": "Lune", "description": "Eine Figur mit Effektsockel, bemalt mit Übergängen aus Feuer und Kristall. Die Lichter entstehen in durchscheinenden Schichten, sodass der Sockel wie ein Stück einer anderen Welt wirkt, auf dem die Figur steht." },
+      "bosque": { "title": "Winkel im Wald", "description": "Ein Ölgemälde auf Leinwand eines Baches, der durch einen dichten Wald fließt. Die Szene entsteht aus Schichten von Grün und Ocker, und das Licht, das zwischen den Bäumen hindurchfällt, zeigt den Weg des Wassers." },
+      "renoir": { "title": "Renoir", "description": "Eine Sammlerfigur in einem langen Mantel, mit mattem Finish, um Reflexe zu mildern und die Stoffe hervorzuheben. Die Malerei wird Bereich für Bereich ausgearbeitet, mit besonderer Sorgfalt bei Nähten und Falten." },
+      "mini-farkle": { "title": "Mini-Farkle für unterwegs", "description": "Die kompakte Version des Farkle-Sets, zum Mitnehmen im Rucksack. Sie bewahrt dieselbe Liebe zum Detail in einem kleinen Format, ideal für Ausflüge, Camping oder eine spontane Partie, die immer griffbereit ist." }
+    }
+  },
   "gallery": {
     "eyebrow": "Galerie",
     "title": "Ein Spaziergang durch die Werkstatt",
-    "subtitle": "Fertige Stücke, Werke in Arbeit und der ein oder andere Moment hinter dem Arbeitstisch. Tippe auf ein Bild, um es größer zu sehen.",
+    "subtitle": "Fertige Stücke, Werke in Arbeit und der ein oder andere Moment hinter dem Arbeitstisch. Tippe auf ein Bild, um die Details zu sehen.",
     "captions": {
       "caballero": "Ritter-Miniatur, mit feinem Pinsel bemalt.",
       "minasTirith": "Öl auf Leinwand, Zitadelle zwischen den Bergen.",

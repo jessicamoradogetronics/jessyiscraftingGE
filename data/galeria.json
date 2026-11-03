@@ -1,0 +1,65 @@
+[
+  {
+    "id": "caballero",
+    "images": [
+      "assets/img/figuras/caballero-henry-1.jpg"
+    ]
+  },
+  {
+    "id": "minas-tirith",
+    "images": [
+      "assets/img/cuadros/minas-tirith-1.jpg"
+    ]
+  },
+  {
+    "id": "farkle-detalle",
+    "images": [
+      "assets/img/artesanias/farkle-set-2.jpg"
+    ]
+  },
+  {
+    "id": "luminoso",
+    "images": [
+      "assets/img/dibujos/luminoso-1.jpg"
+    ]
+  },
+  {
+    "id": "jinete",
+    "images": [
+      "assets/img/figuras/jinete-heraldico-1.jpg",
+      "assets/img/figuras/jinete-heraldico-2.jpg",
+      "assets/img/figuras/jinete-heraldico-3.jpg"
+    ]
+  },
+  {
+    "id": "heinrich",
+    "images": [
+      "assets/img/dibujos/escena-heinrich-1.jpg"
+    ]
+  },
+  {
+    "id": "lune",
+    "images": [
+      "assets/img/figuras/lune-1.jpg"
+    ]
+  },
+  {
+    "id": "bosque",
+    "images": [
+      "assets/img/cuadros/rincon-del-bosque-1.jpg"
+    ]
+  },
+  {
+    "id": "renoir",
+    "images": [
+      "assets/img/figuras/renoir-1.jpg",
+      "assets/img/figuras/renoir-2.jpg"
+    ]
+  },
+  {
+    "id": "mini-farkle",
+    "images": [
+      "assets/img/artesanias/mini-farkle-1.jpg"
+    ]
+  }
+]

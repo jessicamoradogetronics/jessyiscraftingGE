@@ -107,10 +107,27 @@
     "relatedEyebrow": "También te puede gustar",
     "relatedTitle": "Más piezas de esta misma familia"
   },
+  "works": {
+    "backToGallery": "Volver a la galería",
+    "consultButton": "Consultar esta pieza",
+    "notFound": "No hemos encontrado esta obra. Puedes volver a la galería para ver el resto.",
+    "items": {
+      "caballero": { "title": "Caballero Henry", "description": "Miniatura de caballero pintada a mano, con cada detalle de la armadura trabajado a pincel fino. Las capas de color se superponen poco a poco para dar profundidad al metal y a los tejidos, sin perder el carácter de una figura pensada para verse de cerca." },
+      "minas-tirith": { "title": "Óleo «La Ciudadela»", "description": "Óleo sobre lienzo que muestra una ciudadela alzada entre montañas, pintado con veladuras finas para capturar la luz de las primeras horas del día. La composición guía la mirada desde el camino hasta las murallas, donde cada piedra se trabaja con pinceladas breves y precisas." },
+      "farkle-detalle": { "title": "Detalle del escudo tallado", "description": "Primer plano del escudo tallado a mano en una caja de madera maciza. El relieve se trabaja con gubias y lijado progresivo; después, una capa de acabado fija el tono y resalta la veta natural de la madera." },
+      "luminoso": { "title": "Luminoso", "description": "Ilustración digital de una armadura y un caballo blanco envueltos en niebla. La luz llega desde un punto indefinido del fondo y recorre las superficies metálicas, creando un contraste suave entre sombras y reflejos." },
+      "jinete": { "title": "Jinete heráldico", "description": "Diorama de un jinete con escudo heráldico, montado sobre una base pintada a mano que recrea un camino de tierra. Cada elemento del escudo se pinta con colores sólidos y perfiles limpios, para que el blasón se lea incluso a distancia." },
+      "heinrich": { "title": "Escena de Heinrich", "description": "Escena narrativa de interior medieval, ilustrada digitalmente. Los personajes se sitúan en una estancia iluminada por una única fuente de luz, y cada objeto de la sala cuenta un fragmento de la historia." },
+      "lune": { "title": "Lune", "description": "Figura con peana de efectos, pintada con transiciones de fuego y cristal. Los brillos se construyen en capas translúcidas, para que la base parezca un fragmento de otro mundo sobre el que se apoya el personaje." },
+      "bosque": { "title": "Rincón del bosque", "description": "Óleo sobre lienzo de un riachuelo que atraviesa un bosque cerrado. La escena se construye con capas de verdes y ocres, dejando que la luz filtrada entre los árboles marque el recorrido del agua." },
+      "renoir": { "title": "Renoir", "description": "Figura de coleccionista con un abrigo largo, terminada en acabado mate para suavizar los reflejos y resaltar los tejidos. La pintura se trabaja por zonas, con especial cuidado en las costuras y los pliegues." },
+      "mini-farkle": { "title": "Mini Farkle de viaje", "description": "La versión compacta del set de Farkle, pensada para llevar en la mochila. Mantiene el mismo cuidado por el detalle en un formato pequeño, ideal para escapadas, acampadas o para tener siempre a mano una partida improvisada." }
+    }
+  },
   "gallery": {
     "eyebrow": "Galería",
     "title": "Un paseo por el taller",
-    "subtitle": "Piezas terminadas, procesos a medio camino y algún que otro momento detrás de la mesa de trabajo. Toca cualquier imagen para verla más grande.",
+    "subtitle": "Piezas terminadas, procesos a medio camino y algún que otro momento detrás de la mesa de trabajo. Toca cualquier imagen para ver su detalle.",
     "captions": {
       "caballero": "Miniatura de caballero, pintada a pincel fino.",
       "minasTirith": "Óleo sobre lienzo, ciudadela entre montañas.",

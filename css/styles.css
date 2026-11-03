@@ -1101,13 +1101,31 @@ p { margin: 0 0 1em; }
   border: 1px solid var(--color-border);
   background: var(--color-surface);
 }
-.gallery-grid img { width: 100%; cursor: zoom-in; transition: transform 0.4s ease; }
+.gallery-grid a { display: block; }
+.gallery-grid img { width: 100%; cursor: pointer; transition: transform 0.4s ease; }
 .gallery-grid img:hover { transform: scale(1.03); }
 .gallery-grid figcaption {
   padding: 0.7rem 0.9rem;
   font-size: 0.82rem;
   color: var(--color-text-soft);
 }
+
+/* Detalle de obra (obra.html) */
+.work-detail { display: grid; gap: 3rem; }
+.work-intro { max-width: 760px; }
+.work-intro h1 { margin: 0.4rem 0 1.2rem; }
+.work-description p { margin: 0 0 1rem; line-height: 1.75; color: var(--color-text-soft); }
+.work-description p:last-child { margin-bottom: 0; }
+.work-actions { margin-top: 1.8rem; }
+.work-images { display: grid; gap: 2rem; }
+.work-images__item {
+  margin: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+.work-images__item img { width: 100%; height: auto; display: block; cursor: zoom-in; }
 
 .placeholder-tile {
   aspect-ratio: 4/5;
