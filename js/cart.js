@@ -27,13 +27,16 @@
     return JSON.stringify(a || null) === JSON.stringify(b || null);
   }
 
-  function addItem(id, qty, custom) {
+  function addItem(id, qty, custom, size) {
     const items = readCart();
-    const existing = items.find((it) => it.id === id && sameCustom(it.custom, custom));
+    const existing = items.find((it) => it.id === id && sameCustom(it.custom, custom) && (it.size || null) === (size || null));
     if (existing) {
       existing.qty += qty;
     } else {
-      items.push(custom ? { id, qty, custom } : { id, qty });
+      const item = { id, qty };
+      if (custom) item.custom = custom;
+      if (size) item.size = size;
+      items.push(item);
     }
     writeCart(items);
   }
@@ -76,11 +79,28 @@
     return productsLoaded;
   }
 
-  function formatPrice(product, dict) {
+  function formatPrice(product, dict, value) {
     const currency = '€';
-    const amount = Number.isInteger(product.price) ? product.price : product.price.toFixed(2);
-    const prefix = product.priceFrom ? `${dict.common.from} ` : '';
+    const price = value === undefined ? product.price : value;
+    const amount = Number.isInteger(price) ? price : price.toFixed(2);
+    const prefix = product.priceFrom && !product.sizes ? `${dict.common.from} ` : '';
     return `${prefix}${amount}${currency}`;
+  }
+
+  function unitPrice(product, size) {
+    const sizes = product.sizes || [];
+    const match = sizes.find((s) => s.id === size) || sizes.find((s) => s.default);
+    return match ? match.price : product.price;
+  }
+
+  function itemDetails(item, dict) {
+    const lines = [];
+    if (item.size) {
+      const names = ((dict.products && dict.products[item.id]) || {}).sizes || {};
+      lines.push(names[item.size] || item.size);
+    }
+    if (item.custom) lines.push(customSummary(item.custom, dict));
+    return lines;
   }
 
   function renderBadge() {
@@ -101,7 +121,7 @@
     const product = products.find((p) => p.id === item.id);
     const t = (dict.products && dict.products[item.id]) || {};
     const name = t.name || item.id;
-    const priceLabel = product ? formatPrice(product, dict) : '';
+    const priceLabel = product ? formatPrice(product, dict, unitPrice(product, item.size)) : '';
     const img = product ? product.images[0] : '';
     return `
       <div class="cart-item" data-index="${index}">
@@ -111,7 +131,7 @@
         <div class="cart-item__info">
           <span class="cart-item__name">${name}</span>
           <span class="cart-item__price">${priceLabel}</span>
-          ${item.custom ? `<span class="cart-item__price">${customSummary(item.custom, dict)}</span>` : ''}
+          ${itemDetails(item, dict).map((d) => `<span class="cart-item__price">${d}</span>`).join('')}
         </div>
         <div class="cart-item__qty">
           <button type="button" class="cart-item__qty-btn" data-action="decrease" aria-label="-">&minus;</button>
@@ -191,7 +211,8 @@
       const qtyInput = document.getElementById('productQty');
       const qty = qtyInput ? Math.max(1, parseInt(qtyInput.value, 10) || 1) : 1;
       const custom = btn.dataset.custom ? JSON.parse(btn.dataset.custom) : null;
-      addItem(id, qty, custom);
+      const size = btn.dataset.size || null;
+      addItem(id, qty, custom, size);
       loadProducts().then(() => {
         renderDrawer();
         openDrawer();
@@ -211,8 +232,9 @@
       const product = products.find((p) => p.id === item.id);
       const t = (dict.products && dict.products[item.id]) || {};
       const name = t.name || item.id;
-      const priceLabel = product ? ` \u2014 ${formatPrice(product, dict)}` : '';
-      const customText = item.custom ? ` (${customSummary(item.custom, dict)})` : '';
+      const priceLabel = product ? ` \u2014 ${formatPrice(product, dict, unitPrice(product, item.size))}` : '';
+      const details = itemDetails(item, dict);
+      const customText = details.length ? ` (${details.join(' · ')})` : '';
       return `- ${name}${customText} x${item.qty}${priceLabel}`;
     });
 

@@ -81,14 +81,19 @@
     if (relatedSection) relatedSection.hidden = related.length === 0;
   }
 
-  let selection = { mode: 'none', finish: null, notes: '' };
+  let selection = { mode: 'none', finish: null, size: null, notes: '' };
 
   function resetSelection() {
-    selection = { mode: 'none', finish: null, notes: '' };
+    selection = { mode: 'none', finish: null, size: null, notes: '' };
   }
 
   function finishNames(t) {
     return t.finishes || {};
+  }
+
+  function defaultSize() {
+    const sizes = currentProduct.sizes || [];
+    return sizes.find((s) => s.default) || sizes[0] || null;
   }
 
   function customPayload(t) {
@@ -103,6 +108,8 @@
     const btn = document.getElementById('addToCartBtn');
     if (!btn) return;
     btn.dataset.custom = selection.mode === 'custom' ? JSON.stringify(customPayload(t)) : '';
+    const size = selection.mode === 'custom' && selection.size ? selection.size : (defaultSize() || {}).id;
+    btn.dataset.size = size || '';
   }
 
   function renderCustom(dict, t) {
@@ -122,6 +129,11 @@
     }
 
     if (!selection.finish && finishes.length) selection.finish = finishes[0].id;
+
+    const sizes = currentProduct.sizes || [];
+    const sizeNames = t.sizes || {};
+    if (!selection.size && sizes.length) selection.size = defaultSize().id;
+    const selectedSize = sizes.find((s) => s.id === selection.size);
 
     if (choice) {
       choice.hidden = false;
@@ -145,6 +157,15 @@
               <span class="swatch__name">${names[f.id] || f.id}</span>
             </button>`).join('')}
         </div>` : '';
+      const sizeBlock = sizes.length ? `
+        <span class="customization-box__label">${tr.customSizeLabel || ''}</span>
+        <p class="customization-box__selected">${tr.customSelected || ''}: <strong>${sizeNames[selection.size] || ''}${selectedSize ? ` · ${formatPrice({ price: selectedSize.price }, dict)}` : ''}</strong></p>
+        <div class="swatches" role="radiogroup" aria-label="${tr.customSizeLabel || ''}">
+          ${sizes.map((s) => `
+            <button type="button" class="swatch ${s.id === selection.size ? 'is-active' : ''}" role="radio" aria-checked="${s.id === selection.size}" data-size="${s.id}">
+              <span class="swatch__name">${sizeNames[s.id] || s.id}</span>
+            </button>`).join('')}
+        </div>` : '';
       const notesBlock = options.notes ? `
         <label class="customization-box__label" for="notesInput">${tr.customNotesLabel || ''}</label>
         <div class="notes-field">
@@ -159,6 +180,7 @@
           </div>
         </div>
         ${finishBlock}
+        ${sizeBlock}
         ${notesBlock}`;
       const input = box.querySelector('#notesInput');
       if (input) input.value = selection.notes;
@@ -187,6 +209,12 @@
       const swatch = e.target.closest('[data-finish]');
       if (swatch) {
         selection.finish = swatch.dataset.finish;
+        refreshCustom();
+        return;
+      }
+      const sizeBtn = e.target.closest('[data-size]');
+      if (sizeBtn) {
+        selection.size = sizeBtn.dataset.size;
         refreshCustom();
         return;
       }

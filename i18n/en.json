@@ -98,6 +98,7 @@
     "customYes": "Customise",
     "customFinishLabel": "Lid finish",
     "customSelected": "Selected",
+    "customSizeLabel": "Size",
     "customNotesLabel": "Details of your customisation (optional)",
     "customNotesPlaceholder": "Describe what you want",
     "customLabel": "Customised",
@@ -423,10 +424,11 @@
       "description": "A piece made to explore light: the white of the horse, the cold gleam of the armour and a blurred forest background. One of my most personal illustrations, with no commission behind it."
     },
     "miniatura-caballero-henry": {
-      "name": "\"Knight\" Miniature",
-      "short": "A medieval knight figure, painted with a fine brush on a wooden base.",
-      "description": "A miniature painted layer by layer, with careful attention to the contrasts of the armour and the heraldic shield. A small tribute to the medieval-knight aesthetic that inspires me so much.",
-      "customization": "I can paint your own miniature (you'll need to send it to me) with the colours, crest and base you prefer."
+      "name": "Sir Henry",
+      "sizes": { "10cm": "10 cm (miniature)", "15cm": "15 cm (standard)", "18cm": "18 cm (large)" },
+      "short": "Figure of Henry as a knight, hand-painted with nature details.",
+      "description": "Figure of Henry as a knight, hand-painted with nature details.",
+      "customization": "I can paint it in the colours you like. If you prefer the brigandine and gambeson in another colour, let me know in the customization box."
     },
     "diorama-jinete-heraldico": {
       "name": "\"Heraldic Rider\" Diorama",

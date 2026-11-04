@@ -98,6 +98,7 @@
     "customYes": "Personalisieren",
     "customFinishLabel": "Deckelfinish",
     "customSelected": "Ausgewählt",
+    "customSizeLabel": "Format",
     "customNotesLabel": "Details deiner Individualisierung (optional)",
     "customNotesPlaceholder": "Beschreibe, was du dir wünschst",
     "customLabel": "Personalisiert",
@@ -423,10 +424,11 @@
       "description": "Ein Stück, das sich dem Licht widmet: das Weiß des Pferdes, der kühle Glanz der Rüstung und ein unscharfer Waldhintergrund. Eine meiner persönlichsten Illustrationen, ohne dass ein Auftrag dahintersteckt."
     },
     "miniatura-caballero-henry": {
-      "name": "Miniatur „Ritter“",
-      "short": "Eine mittelalterliche Ritterfigur, mit feinem Pinsel auf einer Holzbasis bemalt.",
-      "description": "Eine Schicht für Schicht bemalte Miniatur, mit besonderer Sorgfalt für die Kontraste der Rüstung und des heraldischen Schildes. Eine kleine Hommage an die Ästhetik mittelalterlicher Ritter, die mich so sehr inspiriert.",
-      "customization": "Ich kann deine eigene Miniatur bemalen (du müsstest sie mir zuschicken), mit den Farben, dem Wappen und der Basis deiner Wahl."
+      "name": "Sir Henry",
+      "sizes": { "10cm": "10 cm (Miniatur)", "15cm": "15 cm (Standard)", "18cm": "18 cm (groß)" },
+      "short": "Figur von Henry als Ritter, handbemalt mit Naturdetails.",
+      "description": "Figur von Henry als Ritter, handbemalt mit Naturdetails.",
+      "customization": "Ich kann sie in den Farben deiner Wahl bemalen. Wenn du die Brigantine und das Gambeson in einer anderen Farbe möchtest, sag mir das im Feld für die Personalisierung."
     },
     "diorama-jinete-heraldico": {
       "name": "Diorama „Heraldischer Reiter“",

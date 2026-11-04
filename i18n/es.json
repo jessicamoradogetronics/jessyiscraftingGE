@@ -98,6 +98,7 @@
     "customYes": "Personalizar",
     "customFinishLabel": "Acabado de tapa",
     "customSelected": "Seleccionado",
+    "customSizeLabel": "Formato",
     "customNotesLabel": "Detalles de tu personalización (opcional)",
     "customNotesPlaceholder": "Describe lo que quieres",
     "customLabel": "Personalizada",
@@ -423,10 +424,11 @@
       "description": "Una pieza pensada para explorar la luz: el blanco del caballo, el brillo frío de la armadura y un fondo de bosque desenfocado. Una de mis ilustraciones más personales, sin encargo de por medio."
     },
     "miniatura-caballero-henry": {
-      "name": "Miniatura «Caballero»",
-      "short": "Figura de caballero medieval, pintada a pincel fino sobre peana de madera.",
-      "description": "Una miniatura pintada capa a capa, cuidando los contrastes de la armadura y el escudo heráldico. Un pequeño gesto hacia la estética de los caballeros medievales que tanto me inspiran.",
-      "customization": "Puedo pintar tu propia miniatura (debes hacérmela llegar) con los colores, escudo y base que prefieras."
+      "name": "Sir Henry",
+      "sizes": { "10cm": "10 cm (miniatura)", "15cm": "15 cm (estándar)", "18cm": "18 cm (grande)" },
+      "short": "Figura de Henry como caballero, pintada a mano con detalles de naturaleza.",
+      "description": "Figura de Henry como caballero, pintada a mano con detalles de naturaleza.",
+      "customization": "Puedo pintarla con los colores que desees. Si prefieres la brigantina y el gambesón de otro color, házmelo saber en el recuadro de personalización."
     },
     "diorama-jinete-heraldico": {
       "name": "Diorama «Jinete heráldico»",

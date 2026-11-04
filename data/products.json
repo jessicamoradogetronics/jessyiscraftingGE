@@ -42,13 +42,23 @@
   {
     "id": "miniatura-caballero-henry",
     "category": "figuras",
-    "price": 42,
+    "price": 29.95,
     "priceFrom": true,
     "customizable": true,
     "featured": true,
     "images": [
-      "assets/img/figuras/caballero-henry-1"
-    ]
+      "assets/img/figuras/caballero-henry-1",
+      "assets/img/figuras/caballero-henry-2",
+      "assets/img/figuras/caballero-henry-3"
+    ],
+    "sizes": [
+      { "id": "10cm", "price": 29.95 },
+      { "id": "15cm", "price": 39.95, "default": true },
+      { "id": "18cm", "price": 49.95 }
+    ],
+    "customOptions": {
+      "notes": { "maxLength": 1000 }
+    }
   },
   {
     "id": "diorama-jinete-heraldico",
