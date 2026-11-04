@@ -93,19 +93,22 @@
   {
     "id": "figura-renoir",
     "category": "figuras",
-    "price": 85,
-    "priceFrom": true,
-    "customizable": true,
+    "price": 70,
+    "priceFrom": false,
+    "customizable": false,
     "featured": false,
     "images": [
       "assets/img/figuras/renoir-1",
-      "assets/img/figuras/renoir-2"
+      "assets/img/figuras/renoir-2",
+      "assets/img/figuras/renoir-3",
+      "assets/img/figuras/renoir-4",
+      "assets/img/figuras/renoir-5"
     ]
   },
   {
     "id": "diorama-brutus",
     "category": "figuras",
-    "price": 60,
+    "price": 70,
     "priceFrom": false,
     "customizable": true,
     "featured": true,
