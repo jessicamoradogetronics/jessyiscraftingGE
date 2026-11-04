@@ -27,15 +27,16 @@
     return JSON.stringify(a || null) === JSON.stringify(b || null);
   }
 
-  function addItem(id, qty, custom, size) {
+  function addItem(id, qty, custom, size, addons) {
     const items = readCart();
-    const existing = items.find((it) => it.id === id && sameCustom(it.custom, custom) && (it.size || null) === (size || null));
+    const existing = items.find((it) => it.id === id && sameCustom(it.custom, custom) && (it.size || null) === (size || null) && sameCustom(it.addons, addons));
     if (existing) {
       existing.qty += qty;
     } else {
       const item = { id, qty };
       if (custom) item.custom = custom;
       if (size) item.size = size;
+      if (addons) item.addons = addons;
       items.push(item);
     }
     writeCart(items);
@@ -93,13 +94,32 @@
     return match ? match.price : product.price;
   }
 
-  function itemDetails(item, dict) {
+  function addonPrice(product, addonId) {
+    const addon = (product.addons || []).find((a) => a.id === addonId);
+    return addon ? addon.price : 0;
+  }
+
+  function itemPrice(product, item) {
+    const addons = Object.entries(item.addons || {})
+      .reduce((sum, [addonId, n]) => sum + addonPrice(product, addonId) * n, 0);
+    return Math.round((unitPrice(product, item.size) + addons) * 100) / 100;
+  }
+
+  function itemDetails(item, dict, product) {
     const lines = [];
     if (item.size) {
       const names = ((dict.products && dict.products[item.id]) || {}).sizes || {};
       lines.push(names[item.size] || item.size);
     }
     if (item.custom) lines.push(customSummary(item.custom, dict));
+    if (item.addons) {
+      const addonNames = ((dict.products && dict.products[item.id]) || {}).addons || {};
+      Object.entries(item.addons).forEach(([addonId, n]) => {
+        const name = (addonNames[addonId] || {}).name || addonId;
+        const price = product ? ` (+${formatPrice(product, dict, addonPrice(product, addonId))})` : '';
+        lines.push(`${name} x${n}${price}`);
+      });
+    }
     return lines;
   }
 
@@ -121,7 +141,7 @@
     const product = products.find((p) => p.id === item.id);
     const t = (dict.products && dict.products[item.id]) || {};
     const name = t.name || item.id;
-    const priceLabel = product ? formatPrice(product, dict, unitPrice(product, item.size)) : '';
+    const priceLabel = product ? formatPrice(product, dict, itemPrice(product, item)) : '';
     const img = product ? product.images[0] : '';
     return `
       <div class="cart-item" data-index="${index}">
@@ -131,7 +151,7 @@
         <div class="cart-item__info">
           <span class="cart-item__name">${name}</span>
           <span class="cart-item__price">${priceLabel}</span>
-          ${itemDetails(item, dict).map((d) => `<span class="cart-item__price">${d}</span>`).join('')}
+          ${itemDetails(item, dict, product).map((d) => `<span class="cart-item__price">${d}</span>`).join('')}
         </div>
         <div class="cart-item__qty">
           <button type="button" class="cart-item__qty-btn" data-action="decrease" aria-label="-">&minus;</button>
@@ -212,7 +232,8 @@
       const qty = qtyInput ? Math.max(1, parseInt(qtyInput.value, 10) || 1) : 1;
       const custom = btn.dataset.custom ? JSON.parse(btn.dataset.custom) : null;
       const size = btn.dataset.size || null;
-      addItem(id, qty, custom, size);
+      const addons = btn.dataset.addons ? JSON.parse(btn.dataset.addons) : null;
+      addItem(id, qty, custom, size, addons);
       loadProducts().then(() => {
         renderDrawer();
         openDrawer();
@@ -232,8 +253,8 @@
       const product = products.find((p) => p.id === item.id);
       const t = (dict.products && dict.products[item.id]) || {};
       const name = t.name || item.id;
-      const priceLabel = product ? ` \u2014 ${formatPrice(product, dict, unitPrice(product, item.size))}` : '';
-      const details = itemDetails(item, dict);
+      const priceLabel = product ? ` \u2014 ${formatPrice(product, dict, itemPrice(product, item))}` : '';
+      const details = itemDetails(item, dict, product);
       const customText = details.length ? ` (${details.join(' · ')})` : '';
       return `- ${name}${customText} x${item.qty}${priceLabel}`;
     });

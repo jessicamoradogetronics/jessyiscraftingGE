@@ -6,6 +6,7 @@
 (function () {
   let products = [];
   let currentProduct = null;
+  let addonQty = {};
 
   function getIdFromUrl() {
     return new URLSearchParams(location.search).get('id');
@@ -190,6 +191,52 @@
     syncCartData(t);
   }
 
+  function syncAddons() {
+    const btn = document.getElementById('addToCartBtn');
+    if (!btn) return;
+    const chosen = {};
+    Object.keys(addonQty).sort().forEach((id) => {
+      if (addonQty[id] > 0) chosen[id] = addonQty[id];
+    });
+    btn.dataset.addons = Object.keys(chosen).length ? JSON.stringify(chosen) : '';
+  }
+
+  function renderAddons(dict, t) {
+    const box = document.getElementById('productAddons');
+    const list = currentProduct.addons || [];
+    if (!box) return;
+    box.hidden = list.length === 0;
+    if (!list.length) {
+      syncAddons();
+      return;
+    }
+    const tr = dict.productDetail || {};
+    const names = t.addons || {};
+    box.innerHTML = `
+      <div class="addons__head">
+        <span>${tr.addonsTitle || ''}</span>
+        <span class="addons__tag">${tr.addonsTag || ''}</span>
+      </div>
+      ${list.map((a) => {
+        const info = names[a.id] || {};
+        const qty = addonQty[a.id] || 0;
+        return `
+          <div class="addon ${qty ? 'is-selected' : ''}">
+            <div class="addon__info">
+              <span class="addon__name">${info.name || a.id}</span>
+              <span class="addon__desc">${info.description || ''}</span>
+            </div>
+            <span class="addon__price">+${formatPrice({ price: a.price }, dict)}</span>
+            <div class="qty-stepper addon__qty">
+              <button type="button" class="qty-stepper__btn" data-addon-id="${a.id}" data-addon-step="-1" aria-label="-">&minus;</button>
+              <span class="addon__qty-value">${qty}</span>
+              <button type="button" class="qty-stepper__btn" data-addon-id="${a.id}" data-addon-step="1" aria-label="+">+</button>
+            </div>
+          </div>`;
+      }).join('')}`;
+    syncAddons();
+  }
+
   function refreshCustom() {
     const dict = window.JIC_I18N.getDict();
     if (!dict || !currentProduct) return;
@@ -219,6 +266,14 @@
         refreshCustom();
         return;
       }
+      const addonStep = e.target.closest('[data-addon-step]');
+      if (addonStep) {
+        const id = addonStep.dataset.addonId;
+        addonQty[id] = Math.max(0, (addonQty[id] || 0) + Number(addonStep.dataset.addonStep));
+        const dict = window.JIC_I18N.getDict();
+        if (dict && currentProduct) renderAddons(dict, dict.products[currentProduct.id] || {});
+        return;
+      }
       const step = e.target.closest('[data-qty-step]');
       if (step) {
         const input = document.getElementById('productQty');
@@ -234,6 +289,27 @@
     });
   }
 
+  function renderDescription(el, text) {
+    el.replaceChildren();
+    let list = null;
+    text.split('\n').map((line) => line.trim()).filter(Boolean).forEach((line) => {
+      if (line.startsWith('- ')) {
+        if (!list) {
+          list = document.createElement('ul');
+          el.appendChild(list);
+        }
+        const li = document.createElement('li');
+        li.textContent = line.slice(2);
+        list.appendChild(li);
+      } else {
+        list = null;
+        const p = document.createElement('p');
+        p.textContent = line;
+        el.appendChild(p);
+      }
+    });
+  }
+
   function render() {
     const dict = window.JIC_I18N.getDict();
     if (!dict || !currentProduct) return;
@@ -246,13 +322,14 @@
 
     document.getElementById('productCategory').textContent = cat.name || '';
     document.getElementById('productTitle').textContent = t.name || '';
-    document.getElementById('productDescription').textContent = t.description || '';
+    renderDescription(document.getElementById('productDescription'), t.description || '');
     document.getElementById('productPrice').textContent = formatPrice(currentProduct, dict);
     document.getElementById('breadcrumbCurrent').textContent = t.name || '';
     document.getElementById('breadcrumbCategory').textContent = cat.name || '';
     document.getElementById('breadcrumbCategory').setAttribute('href', `tienda.html#${currentProduct.category}`);
 
     renderCustom(dict, t);
+    renderAddons(dict, t);
 
     const orderBtn = document.getElementById('orderButton');
     if (orderBtn) orderBtn.href = `contacto.html?producto=${encodeURIComponent(t.name || currentProduct.id)}`;
@@ -272,6 +349,7 @@
         products = data;
         currentProduct = products.find((p) => p.id === id);
         resetSelection();
+        addonQty = {};
         const notFound = document.getElementById('productNotFound');
         const wrapper = document.getElementById('productWrapper');
         if (!currentProduct) {

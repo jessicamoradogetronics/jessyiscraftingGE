@@ -97,6 +97,8 @@
     "customNone": "Sin personalizar",
     "customYes": "Personalizar",
     "customFinishLabel": "Acabado de tapa",
+    "addonsTitle": "¿Quieres completar tu set?",
+    "addonsTag": "Complementos",
     "customSelected": "Seleccionado",
     "customSizeLabel": "Formato",
     "customNotesLabel": "Detalles de tu personalización (opcional)",
@@ -371,9 +373,10 @@
     },
     "mini-farkle-viajero": {
       "finishes": { "caoba": "Caoba", "roble": "Roble Rústico" },
+      "addons": { "cubilete-extra": { "name": "Cubilete artesanal extra", "description": "Piel sintética cosida a mano" }, "micro-dados": { "name": "Set de 6 micro-dados adicionales", "description": "Borde rectangular, 1cmX1cm" } },
       "name": "Mini Farkle de viaje",
       "short": "Versión compacta del set de Farkle, lista para meter en la mochila o el bolso.",
-      "description": "La misma pasión por el detalle, en un formato pequeño pensado para viajar. Ideal para escapadas, camping o simplemente para tener siempre a mano una partida improvisada.",
+      "description": "La misma pasión por el detalle, en un formato pequeño pensado para viajar. Ideal para escapadas, camping o simplemente para tener siempre a mano una partida improvisada.\n- Tablero de 12 cm x 12 cm.\n- Incluye 12 dados normales grabados a mano y 4 especiales. Siempre incluyo 4 «cabezas de diablo», pero puedes solicitar otro diseño.",
       "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
     },
     "oleo-minas-tirith": {

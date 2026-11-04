@@ -97,6 +97,8 @@
     "customNone": "Ohne Personalisierung",
     "customYes": "Personalisieren",
     "customFinishLabel": "Deckelfinish",
+    "addonsTitle": "Möchtest du dein Set vervollständigen?",
+    "addonsTag": "Zusatzartikel",
     "customSelected": "Ausgewählt",
     "customSizeLabel": "Format",
     "customNotesLabel": "Details deiner Individualisierung (optional)",
@@ -371,9 +373,10 @@
     },
     "mini-farkle-viajero": {
       "finishes": { "caoba": "Mahagoni", "roble": "Rustikale Eiche" },
+      "addons": { "cubilete-extra": { "name": "Zusätzlicher handgefertigter Becher", "description": "Handgenähtes Kunstleder" }, "micro-dados": { "name": "Set mit 6 zusätzlichen Mikro-Würfeln", "description": "Rechteckige Kante, 1 cm x 1 cm" } },
       "name": "Mini-Farkle für unterwegs",
       "short": "Eine kompakte Version des Farkle-Sets, bereit für Rucksack oder Tasche.",
-      "description": "Dieselbe Liebe zum Detail, in einem kleinen, reisetauglichen Format. Ideal für Ausflüge, Camping oder einfach, um immer eine spontane Partie griffbereit zu haben.",
+      "description": "Dieselbe Liebe zum Detail, in einem kleinen, reisetauglichen Format. Ideal für Ausflüge, Camping oder einfach, um immer eine spontane Partie griffbereit zu haben.\n- Brett mit 12 cm x 12 cm.\n- Enthält 12 normale Würfel und 4 besondere, alle von Hand graviert. Ich lege immer 4 „Teufelsköpfe“ bei, du kannst aber auch ein anderes Design anfragen.",
       "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
     },
     "oleo-minas-tirith": {

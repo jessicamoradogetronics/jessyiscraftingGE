@@ -97,6 +97,8 @@
     "customNone": "No customisation",
     "customYes": "Customise",
     "customFinishLabel": "Lid finish",
+    "addonsTitle": "Want to complete your set?",
+    "addonsTag": "Add-ons",
     "customSelected": "Selected",
     "customSizeLabel": "Size",
     "customNotesLabel": "Details of your customisation (optional)",
@@ -371,9 +373,10 @@
     },
     "mini-farkle-viajero": {
       "finishes": { "caoba": "Mahogany", "roble": "Rustic Oak" },
+      "addons": { "cubilete-extra": { "name": "Extra artisan cup", "description": "Hand-stitched synthetic leather" }, "micro-dados": { "name": "Set of 6 additional micro-dice", "description": "Rectangular edge, 1 cm x 1 cm" } },
       "name": "Travel Mini Farkle",
       "short": "A compact version of the Farkle set, ready to slip into a backpack or bag.",
-      "description": "The same love for detail, in a small format made for travelling. Perfect for trips, camping, or simply having an impromptu game always within reach.",
+      "description": "The same love for detail, in a small format made for travelling. Perfect for trips, camping, or simply having an impromptu game always within reach.\n- Board of 12 cm x 12 cm.\n- Includes 12 regular dice and 4 special ones, all hand-engraved. I always include 4 “devil heads”, but you can request another design.",
       "customization": "You can choose the wood colours, the crests you want on each side up to 4 (two on the outside and two on the inside), or a custom motif such as letters or drawings."
     },
     "oleo-minas-tirith": {

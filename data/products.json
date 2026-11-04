@@ -24,12 +24,16 @@
   {
     "id": "mini-farkle-viajero",
     "category": "artesanias",
-    "price": 19.90,
+    "price": 29.95,
     "priceFrom": false,
     "customizable": true,
     "featured": false,
     "images": [
       "assets/img/artesanias/mini-farkle-1"
+    ],
+    "addons": [
+      { "id": "cubilete-extra", "price": 5.95 },
+      { "id": "micro-dados", "price": 3 }
     ],
     "customOptions": {
       "finishes": [
