@@ -79,12 +79,15 @@
   {
     "id": "figura-lune",
     "category": "figuras",
-    "price": 110,
-    "priceFrom": true,
-    "customizable": true,
+    "price": 150,
+    "priceFrom": false,
+    "customizable": false,
     "featured": false,
     "images": [
-      "assets/img/figuras/lune-1"
+      "assets/img/figuras/lune-1",
+      "assets/img/figuras/lune-2",
+      "assets/img/figuras/lune-3",
+      "assets/img/figuras/lune-4"
     ]
   },
   {
