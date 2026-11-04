@@ -99,15 +99,22 @@
   {
     "id": "diorama-brutus",
     "category": "figuras",
-    "price": 120,
-    "priceFrom": true,
+    "price": 60,
+    "priceFrom": false,
     "customizable": true,
     "featured": true,
     "images": [
-      "assets/img/figuras/brutus-1",
       "assets/img/figuras/brutus-2",
+      "assets/img/figuras/brutus-1",
       "assets/img/figuras/brutus-3",
-      "assets/img/figuras/brutus-4"
-    ]
+      "assets/img/figuras/brutus-4",
+      "assets/img/figuras/brutus-5"
+    ],
+    "customOptions": {
+      "finishes": [
+        { "id": "brillo", "color": "#e9e4d8" },
+        { "id": "mate", "color": "#8c8680" }
+      ]
+    }
   }
 ]

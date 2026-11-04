@@ -119,6 +119,7 @@
     const options = currentProduct.customOptions || {};
     const finishes = options.finishes || [];
     const names = finishNames(t);
+    const finishLabel = t.finishLabel || tr.customFinishLabel || '';
 
     if (!currentProduct.customizable || !t.customization) {
       resetSelection();
@@ -148,9 +149,9 @@
     if (box) {
       box.hidden = selection.mode !== 'custom';
       const finishBlock = finishes.length ? `
-        <span class="customization-box__label">${tr.customFinishLabel || ''}</span>
+        <span class="customization-box__label">${finishLabel}</span>
         <p class="customization-box__selected">${tr.customSelected || ''}: <strong>${names[selection.finish] || ''}</strong></p>
-        <div class="swatches" role="radiogroup" aria-label="${tr.customFinishLabel || ''}">
+        <div class="swatches" role="radiogroup" aria-label="${finishLabel}">
           ${finishes.map((f) => `
             <button type="button" class="swatch ${f.id === selection.finish ? 'is-active' : ''}" role="radio" aria-checked="${f.id === selection.finish}" data-finish="${f.id}">
               <span class="swatch__dot" style="background:${f.color}"></span>

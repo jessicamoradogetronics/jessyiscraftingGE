@@ -449,10 +449,12 @@
       "customization": "Commissioned painting of your own figure, adjusting finishes (matte or satin) and colour palette."
     },
     "diorama-brutus": {
-      "name": "\"Brutus\" Diorama",
+      "name": "\"Brutus\", from Julius Caesar",
       "short": "A small hand-painted architectural diorama, with columns and gold details.",
-      "description": "A different kind of piece: instead of a character, a small classical building painted with aged stone textures, columns and gilded details. An exercise in patience and texture painting.",
-      "customization": "I can adapt the colours, the type of stone and the gold details to your own project or diorama."
+      "description": "A piece I designed from Tom McKay's interpretation of the role in \"Julius Caesar\" at Shakespeare's Globe Theatre in London. The base on which the character of Brutus stands is directly inspired by the stage of this theatre.",
+      "finishLabel": "Finish",
+      "finishes": { "brillo": "Gloss", "mate": "Matte" },
+      "customization": "The colours of this piece cannot be chosen, only the finish."
     }
   }
 }

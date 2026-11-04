@@ -449,10 +449,12 @@
       "customization": "Pintura bajo encargo de tu propia figura, ajustando acabados (mate o satinado) y paleta de colores."
     },
     "diorama-brutus": {
-      "name": "Diorama «Brutus»",
+      "name": "«Brutus», de Julius Caesar",
       "short": "Pequeño diorama arquitectónico pintado a mano, con columnas y detalles dorados.",
-      "description": "Una pieza distinta: en vez de un personaje, un pequeño edificio clásico pintado con texturas de piedra envejecida, columnas y detalles en dorado. Un ejercicio de paciencia y de pintura de texturas.",
-      "customization": "Puedo adaptar los colores, el tipo de piedra y los detalles dorados a tu propio proyecto o diorama."
+      "description": "Una pieza que diseñé a partir de la interpretación de Tom McKay en la obra \"Julius Caesar\" en el teatro Shakespeare's Globe de Londres. La base sobre la que está el personaje de Brutus está directamente inspirada en el escenario de este teatro.",
+      "finishLabel": "Acabado",
+      "finishes": { "brillo": "Brillo", "mate": "Mate" },
+      "customization": "No se pueden elegir los colores de esta pieza, únicamente el acabado."
     }
   }
 }
