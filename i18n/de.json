@@ -370,7 +370,7 @@
       "addons": { "cubilete-extra": { "name": "Zusätzlicher handgefertigter Becher", "description": "Handgenähtes Kunstleder" }, "dados-extra": { "name": "Set mit 12 zusätzlichen Würfeln", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } },
       "name": "Farkle-Brett",
       "short": "Farkle-Brett in Holzbox-Format, handbemalt mit deinen Lieblingswappen.",
-      "description": "Farkle-Brett im Kastenformat, handbemalt und verziert mit deinen Lieblingswappen oder -motiven. Jedes Detail, von der Holzbeize bis zum Pinselstrich des Wappens, wird Stück für Stück ausgearbeitet.",
+      "description": "Farkle-Brett im Kastenformat von 20 cm x 20 cm, handbemalt und verziert mit deinen Lieblingswappen oder -motiven. Jedes Detail, von der Holzbeize bis zum Pinselstrich des Wappens, wird Stück für Stück ausgearbeitet.",
       "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
     },
     "set-farkle": {
@@ -378,7 +378,7 @@
       "addons": { "cubilete-extra": { "name": "Zusätzlicher handgefertigter Becher", "description": "Handgenähtes Kunstleder" }, "dados-extra": { "name": "Set mit 12 zusätzlichen Würfeln", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } },
       "name": "Komplettes Farkle-Set",
       "short": "Farkle-Brett in Holzbox-Format, handbemalt mit deinen Lieblingswappen.",
-      "description": "Ein Farkle-Brett im Kastenformat, handbemalt und verziert mit deinen Lieblingswappen oder -motiven. Ein Set aus 12 handgravierten Holzwürfeln und 4 besonderen Würfeln, die du wählen kannst. Teufelskopf, Hugos Zahn... wähle 4!\nZwei handgenähte Becher aus Kunstleder gehören dazu, damit jeder Wurf perfekt gelingt.\nUnd um das Set zu vervollständigen: 50 handbemalte Holz-Groschen, Stück für Stück, damit das Spiel noch mehr Spaß macht.",
+      "description": "Ein Farkle-Brett im Kastenformat von 20 cm x 20 cm, handbemalt und verziert mit deinen Lieblingswappen oder -motiven. Ein Set aus 12 handgravierten Holzwürfeln und 4 besonderen Würfeln, die du wählen kannst. Teufelskopf, Hugos Zahn... wähle 4!\nZwei handgenähte Becher aus Kunstleder gehören dazu, damit jeder Wurf perfekt gelingt.\nUnd um das Set zu vervollständigen: 50 handbemalte Holz-Groschen, Stück für Stück, damit das Spiel noch mehr Spaß macht.",
       "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
     },
     "mini-farkle-viajero": {
@@ -388,6 +388,17 @@
       "short": "Eine kompakte Version des Farkle-Sets, bereit für Rucksack oder Tasche.",
       "description": "Dieselbe Liebe zum Detail, in einem kleinen, reisetauglichen Format. Ideal für Ausflüge, Camping oder einfach, um immer eine spontane Partie griffbereit zu haben.\n- Brett mit 12 cm x 12 cm.\n- Enthält 12 normale Würfel und 4 besondere, alle von Hand graviert. Ich lege immer 4 „Teufelsköpfe“ bei, du kannst aber auch ein anderes Design anfragen.",
       "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
+    },
+    "set-dados-artesanales": {
+      "name": "Handgefertigtes Würfelset",
+      "short": "Geschnitzte und handbemalte Würfel in handwerklicher Ästhetik",
+      "description": "Individualisierbar.",
+      "customization": "Du kannst 4 Würfel mit besonderem Design wählen. Erzähl mir von deiner Idee oder deinen Farben. Du kannst bis zu 2 Würfel mit abgerundeten Kanten wählen."
+    },
+    "groschens-madera-50": {
+      "name": "Holz-Groschen",
+      "short": "50 Holz-Groschen, einzeln handbemalt",
+      "description": "50 Holzmünzen im Design böhmischer Groschen. Einzeln bemalt und lackiert, in einem Raffiabeutel aufbewahrt."
     },
     "oleo-minas-tirith": {
       "name": "Ölgemälde „Die Zitadelle“",

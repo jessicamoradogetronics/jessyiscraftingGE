@@ -370,7 +370,7 @@
       "addons": { "cubilete-extra": { "name": "Cubilete artesanal extra", "description": "Piel sintética cosida a mano" }, "dados-extra": { "name": "Set de 12 dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } },
       "name": "Tablero de Farkle",
       "short": "Tablero de Farkle en formato caja de madera, pintada a mano con tus escudos favoritos.",
-      "description": "Tablero de Farkle en formato caja, pintado y decorado a mano con tus escudos o motivos favoritos. Cada detalle, desde el tinte de la madera hasta el trazo del escudo, se cuida pieza a pieza.",
+      "description": "Tablero de Farkle en formato caja de 20 cm x 20 cm, pintado y decorado a mano con tus escudos o motivos favoritos. Cada detalle, desde el tinte de la madera hasta el trazo del escudo, se cuida pieza a pieza.",
       "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
     },
     "set-farkle": {
@@ -378,7 +378,7 @@
       "addons": { "cubilete-extra": { "name": "Cubilete artesanal extra", "description": "Piel sintética cosida a mano" }, "dados-extra": { "name": "Set de 12 dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } },
       "name": "Set completo de Farkle",
       "short": "Tablero de Farkle en formato caja de madera, pintada a mano con tus escudos favoritos.",
-      "description": "Un tablero de Farkle en formato caja, pintado y decorado a mano con tus escudos o motivos favoritos. Un set de 12 dados de madera grabados a mano y 4 dados especiales que puedes elegir. Cabeza de diablo, Diente de Hugo... ¡escoge 4!\nSe incluyen dos cubiletes de piel sintética, cosidos a mano, para que todas tus tiradas salgan perfectas.\nY para completar el set, un juego de 50 groschens de madera, pintados a mano uno a uno, para hacer el juego más divertido.",
+      "description": "Un tablero de Farkle en formato caja de 20 cm x 20 cm, pintado y decorado a mano con tus escudos o motivos favoritos. Un set de 12 dados de madera grabados a mano y 4 dados especiales que puedes elegir. Cabeza de diablo, Diente de Hugo... ¡escoge 4!\nSe incluyen dos cubiletes de piel sintética, cosidos a mano, para que todas tus tiradas salgan perfectas.\nY para completar el set, un juego de 50 groschens de madera, pintados a mano uno a uno, para hacer el juego más divertido.",
       "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
     },
     "mini-farkle-viajero": {
@@ -388,6 +388,17 @@
       "short": "Versión compacta del set de Farkle, lista para meter en la mochila o el bolso.",
       "description": "La misma pasión por el detalle, en un formato pequeño pensado para viajar. Ideal para escapadas, camping o simplemente para tener siempre a mano una partida improvisada.\n- Tablero de 12 cm x 12 cm.\n- Incluye 12 dados normales grabados a mano y 4 especiales. Siempre incluyo 4 «cabezas de diablo», pero puedes solicitar otro diseño.",
       "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
+    },
+    "set-dados-artesanales": {
+      "name": "Set de dados artesanales",
+      "short": "Dados grabados y pintados a mano con estética artesanal",
+      "description": "Set de 12 dados de madera grabados a mano, de 2cmx2cm y 4 dados especiales que se pueden personalizar",
+      "customization": "Puedes escoger 4 dados de diseño especial. Explícame tu idea o colores. Puedes escoger hasta 2 dados de borde redondeado."
+    },
+    "groschens-madera-50": {
+      "name": "Groschens de madera",
+      "short": "50 groschens de madera, pintados uno a uno",
+      "description": "50 monedas de madera que emulan el diseño de los groschens bohemios. Pintadas y barnizadas una a una, guardadas en una bolsa de rafia."
     },
     "oleo-minas-tirith": {
       "name": "Óleo «La Ciudadela»",

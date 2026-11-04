@@ -95,6 +95,36 @@
     }
   },
   {
+    "id": "set-dados-artesanales",
+    "category": "artesanias",
+    "price": 6.95,
+    "priceFrom": false,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/artesanias/farkle-dados-1",
+      "assets/img/artesanias/farkle-dados-2",
+      "assets/img/artesanias/farkle-dados-3"
+    ],
+    "customOptions": {
+      "notes": { "maxLength": 1000 }
+    }
+  },
+  {
+    "id": "groschens-madera-50",
+    "category": "artesanias",
+    "price": 14.95,
+    "priceFrom": false,
+    "customizable": false,
+    "featured": false,
+    "images": [
+      "assets/img/artesanias/farkle-groschens-1",
+      "assets/img/artesanias/farkle-groschens-2",
+      "assets/img/artesanias/farkle-groschens-3",
+      "assets/img/artesanias/farkle-groschens-4"
+    ]
+  },
+  {
     "id": "miniatura-caballero-henry",
     "category": "figuras",
     "price": 29.95,

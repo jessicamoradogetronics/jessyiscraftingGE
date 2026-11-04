@@ -370,7 +370,7 @@
       "addons": { "cubilete-extra": { "name": "Extra artisan cup", "description": "Hand-stitched synthetic leather" }, "dados-extra": { "name": "Set of 12 additional dice", "description": "" }, "groschens-madera": { "name": "50 wooden groschen", "description": "" } },
       "name": "Farkle Board",
       "short": "Farkle board in a wooden box, hand-painted with your favourite crests.",
-      "description": "Farkle board in box format, hand-painted and decorated with your favourite crests or motifs. Every detail, from the wood stain to the brushstrokes of the crest, is finished piece by piece.",
+      "description": "Farkle board in 20 cm x 20 cm box format, hand-painted and decorated with your favourite crests or motifs. Every detail, from the wood stain to the brushstrokes of the crest, is finished piece by piece.",
       "customization": "You can choose the wood colours, the crests you want on each side up to 4 (two on the outside and two on the inside), or a custom motif such as letters or drawings."
     },
     "set-farkle": {
@@ -378,7 +378,7 @@
       "addons": { "cubilete-extra": { "name": "Extra artisan cup", "description": "Hand-stitched synthetic leather" }, "dados-extra": { "name": "Set of 12 additional dice", "description": "" }, "groschens-madera": { "name": "50 wooden groschen", "description": "" } },
       "name": "Complete Farkle Set",
       "short": "Farkle board in a wooden box, hand-painted with your favourite crests.",
-      "description": "A Farkle board in box format, hand-painted and decorated with your favourite crests or motifs. A set of 12 hand-engraved wooden dice and 4 special dice you can choose. Devil head, Hugo's Tooth... pick 4!\nTwo hand-stitched synthetic leather dice cups are included, so every roll comes out perfect.\nAnd to complete the set, 50 wooden groschen, hand-painted one by one, to make the game even more fun.",
+      "description": "A Farkle board in 20 cm x 20 cm box format, hand-painted and decorated with your favourite crests or motifs. A set of 12 hand-engraved wooden dice and 4 special dice you can choose. Devil head, Hugo's Tooth... pick 4!\nTwo hand-stitched synthetic leather dice cups are included, so every roll comes out perfect.\nAnd to complete the set, 50 wooden groschen, hand-painted one by one, to make the game even more fun.",
       "customization": "You can choose the wood colours, the crests you want on each side up to 4 (two on the outside and two on the inside), or a custom motif such as letters or drawings."
     },
     "mini-farkle-viajero": {
@@ -388,6 +388,17 @@
       "short": "A compact version of the Farkle set, ready to slip into a backpack or bag.",
       "description": "The same love for detail, in a small format made for travelling. Perfect for trips, camping, or simply having an impromptu game always within reach.\n- Board of 12 cm x 12 cm.\n- Includes 12 regular dice and 4 special ones, all hand-engraved. I always include 4 “devil heads”, but you can request another design.",
       "customization": "You can choose the wood colours, the crests you want on each side up to 4 (two on the outside and two on the inside), or a custom motif such as letters or drawings."
+    },
+    "set-dados-artesanales": {
+      "name": "Handcrafted Dice Set",
+      "short": "Carved and hand-painted dice with an artisan aesthetic",
+      "description": "Customisable.",
+      "customization": "You can choose 4 specially designed dice. Tell me your idea or colours. You can choose up to 2 dice with rounded edges."
+    },
+    "groschens-madera-50": {
+      "name": "Wooden Groschen",
+      "short": "50 wooden groschen, painted one by one",
+      "description": "50 wooden coins that emulate the design of Bohemian groschen. Painted and varnished one by one, kept in a raffia bag."
     },
     "oleo-minas-tirith": {
       "name": "\"The Citadel\" Oil Painting",
