@@ -63,15 +63,18 @@
   {
     "id": "diorama-jinete-heraldico",
     "category": "figuras",
-    "price": 95,
-    "priceFrom": true,
+    "price": 150,
+    "priceFrom": false,
     "customizable": true,
     "featured": true,
     "images": [
       "assets/img/figuras/jinete-heraldico-1",
       "assets/img/figuras/jinete-heraldico-2",
       "assets/img/figuras/jinete-heraldico-3"
-    ]
+    ],
+    "customOptions": {
+      "notes": { "maxLength": 1000 }
+    }
   },
   {
     "id": "figura-lune",
