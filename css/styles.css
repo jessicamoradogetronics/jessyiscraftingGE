@@ -1609,7 +1609,6 @@ p { margin: 0 0 1em; }
 @media (prefers-reduced-motion: reduce) {
   .gallery-carousel__track,
   .gallery-carousel__arrow { transition: none; }
-}
 
 
 

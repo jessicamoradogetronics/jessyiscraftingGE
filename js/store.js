@@ -7,7 +7,7 @@
   let products = [];
   let activeCategory = 'all';
 
-  const CATEGORY_ORDER = ['artesanias', 'dibujos', 'cuadros', 'figuras'];
+  const CATEGORY_ORDER = ['artesanias', 'figuras'];
 
   function formatPrice(product, dict) {
     const currency = '€';
