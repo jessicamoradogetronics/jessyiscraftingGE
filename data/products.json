@@ -11,12 +11,57 @@
       "assets/img/artesanias/farkle-set-2",
       "assets/img/artesanias/farkle-set-3",
       "assets/img/artesanias/farkle-set-4",
-      "assets/img/artesanias/farkle-set-5"
+      "assets/img/artesanias/farkle-set-5",
+      "assets/img/artesanias/farkle-extra-1",
+      "assets/img/artesanias/farkle-extra-2",
+      "assets/img/artesanias/farkle-extra-3",
+      "assets/img/artesanias/farkle-extra-4",
+      "assets/img/artesanias/farkle-extra-5",
+      "assets/img/artesanias/farkle-extra-6",
+      "assets/img/artesanias/farkle-extra-7"
     ],
     "addons": [
       { "id": "cubilete-extra", "price": 5.95 },
       { "id": "dados-extra", "price": 5.95 },
-      { "id": "groschens-madera", "price": 9.95 }
+      { "id": "groschens-madera", "price": 14.95 }
+    ],
+    "customOptions": {
+      "finishes": [
+        { "id": "caoba", "color": "#5a2a1a" },
+        { "id": "roble", "color": "#9a6234" }
+      ],
+      "notes": { "maxLength": 1000 }
+    }
+  },
+  {
+    "id": "set-farkle",
+    "category": "artesanias",
+    "price": 84.95,
+    "priceFrom": false,
+    "customizable": true,
+    "featured": true,
+    "images": [
+      "assets/img/artesanias/farkle-set-6",
+      "assets/img/artesanias/farkle-set-2",
+      "assets/img/artesanias/farkle-set-3",
+      "assets/img/artesanias/farkle-set-4",
+      "assets/img/artesanias/farkle-set-5",
+      "assets/img/artesanias/farkle-extra-1",
+      "assets/img/artesanias/farkle-extra-2",
+      "assets/img/artesanias/farkle-extra-3",
+      "assets/img/artesanias/farkle-extra-4",
+      "assets/img/artesanias/farkle-extra-5",
+      "assets/img/artesanias/farkle-extra-6",
+      "assets/img/artesanias/farkle-extra-7",
+      "assets/img/artesanias/farkle-extra-8",
+      "assets/img/artesanias/farkle-extra-9",
+      "assets/img/artesanias/farkle-extra-10",
+      "assets/img/artesanias/farkle-extra-11"
+    ],
+    "addons": [
+      { "id": "cubilete-extra", "price": 5.95 },
+      { "id": "dados-extra", "price": 5.95 },
+      { "id": "groschens-madera", "price": 14.95 }
     ],
     "customOptions": {
       "finishes": [
@@ -38,7 +83,8 @@
     ],
     "addons": [
       { "id": "cubilete-extra", "price": 5.95 },
-      { "id": "micro-dados", "price": 3 }
+      { "id": "micro-dados", "price": 3 },
+      { "id": "groschens-madera", "price": 14.95 }
     ],
     "customOptions": {
       "finishes": [

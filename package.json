@@ -1,0 +1,23 @@
+{
+  "name": "jessyiscraftingge",
+  "version": "1.0.0",
+  "description": "Web estática (HTML + CSS + JavaScript, sin frameworks ni build step) para\r **JessyIsCrafting**, lista para alojarse gratis en **GitHub Pages**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicamoradogetronics/jessyiscraftingGE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicamoradogetronics/jessyiscraftingGE/issues"
+  },
+  "homepage": "https://github.com/jessicamoradogetronics/jessyiscraftingGE#readme",
+  "dependencies": {
+    "sharp": "^0.35.5"
+  }
+}

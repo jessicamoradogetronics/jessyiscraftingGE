@@ -92,6 +92,7 @@
     "customizationTitle": "Personalisierung möglich",
     "orderButton": "Anfragen oder individuell bestellen",
     "backToStore": "Zurück zum Shop",
+    "zoomImage": "Bild vergrößern",
     "taxNote": "Inklusive Steuern · Schneller, geschützter Versand",
     "customChoiceLabel": "Personalisierung",
     "customNone": "Ohne Personalisierung",
@@ -369,12 +370,20 @@
       "addons": { "cubilete-extra": { "name": "Zusätzlicher handgefertigter Becher", "description": "Handgenähtes Kunstleder" }, "dados-extra": { "name": "Set mit 12 zusätzlichen Würfeln", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } },
       "name": "Farkle-Brett",
       "short": "Farkle-Brett in Holzbox-Format, handbemalt mit deinen Lieblingswappen.",
-      "description": "Eine massive Holzbox mit einem handbemalten heraldischen Wappen auf dem Deckel, einem genähten Lederbecher und allen Würfeln, die du für eine Partie Farkle mit Freunden brauchst. Jedes Detail, von der Holzbeize bis zum Pinselstrich des Wappens, wird Stück für Stück ausgearbeitet.",
+      "description": "Farkle-Brett im Kastenformat, handbemalt und verziert mit deinen Lieblingswappen oder -motiven. Jedes Detail, von der Holzbeize bis zum Pinselstrich des Wappens, wird Stück für Stück ausgearbeitet.",
+      "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
+    },
+    "set-farkle": {
+      "finishes": { "caoba": "Mahagoni", "roble": "Rustikale Eiche" },
+      "addons": { "cubilete-extra": { "name": "Zusätzlicher handgefertigter Becher", "description": "Handgenähtes Kunstleder" }, "dados-extra": { "name": "Set mit 12 zusätzlichen Würfeln", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } },
+      "name": "Komplettes Farkle-Set",
+      "short": "Farkle-Brett in Holzbox-Format, handbemalt mit deinen Lieblingswappen.",
+      "description": "Ein Farkle-Brett im Kastenformat, handbemalt und verziert mit deinen Lieblingswappen oder -motiven. Ein Set aus 12 handgravierten Holzwürfeln und 4 besonderen Würfeln, die du wählen kannst. Teufelskopf, Hugos Zahn... wähle 4!\nZwei handgenähte Becher aus Kunstleder gehören dazu, damit jeder Wurf perfekt gelingt.\nUnd um das Set zu vervollständigen: 50 handbemalte Holz-Groschen, Stück für Stück, damit das Spiel noch mehr Spaß macht.",
       "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
     },
     "mini-farkle-viajero": {
       "finishes": { "caoba": "Mahagoni", "roble": "Rustikale Eiche" },
-      "addons": { "cubilete-extra": { "name": "Zusätzlicher handgefertigter Becher", "description": "Handgenähtes Kunstleder" }, "micro-dados": { "name": "Set mit 6 zusätzlichen Mikro-Würfeln", "description": "Rechteckige Kante, 1 cm x 1 cm" } },
+      "addons": { "cubilete-extra": { "name": "Zusätzlicher handgefertigter Becher", "description": "Handgenähtes Kunstleder" }, "micro-dados": { "name": "Set mit 6 zusätzlichen Mikro-Würfeln", "description": "Rechteckige Kante, 1 cm x 1 cm" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } },
       "name": "Mini-Farkle für unterwegs",
       "short": "Eine kompakte Version des Farkle-Sets, bereit für Rucksack oder Tasche.",
       "description": "Dieselbe Liebe zum Detail, in einem kleinen, reisetauglichen Format. Ideal für Ausflüge, Camping oder einfach, um immer eine spontane Partie griffbereit zu haben.\n- Brett mit 12 cm x 12 cm.\n- Enthält 12 normale Würfel und 4 besondere, alle von Hand graviert. Ich lege immer 4 „Teufelsköpfe“ bei, du kannst aber auch ein anderes Design anfragen.",

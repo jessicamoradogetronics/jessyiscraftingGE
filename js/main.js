@@ -39,11 +39,24 @@
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
     const closeBtn = document.getElementById('lightboxClose');
+    const prevBtn = document.getElementById('lightboxPrev');
+    const nextBtn = document.getElementById('lightboxNext');
     if (!lightbox || !lightboxImg) return;
 
-    function open(src, alt) {
-      lightboxImg.src = src;
-      lightboxImg.alt = alt || '';
+    let items = [];
+    let current = 0;
+
+    function show(index) {
+      current = (index + items.length) % items.length;
+      lightboxImg.src = items[current].src;
+      lightboxImg.alt = items[current].alt || '';
+      const multi = items.length > 1;
+      if (prevBtn) prevBtn.hidden = !multi;
+      if (nextBtn) nextBtn.hidden = !multi;
+    }
+    function open(list, index = 0) {
+      items = list;
+      show(index);
       lightbox.classList.add('is-open');
       document.body.style.overflow = 'hidden';
     }
@@ -53,21 +66,28 @@
       document.body.style.overflow = '';
     }
 
+    window.openLightbox = open;
+
     document.addEventListener('click', (e) => {
       const trigger = e.target.closest('[data-lightbox]');
       if (trigger) {
         const src = trigger.getAttribute('data-lightbox');
         const alt = trigger.getAttribute('alt') || trigger.getAttribute('data-alt') || '';
-        open(src, alt);
+        open([{ src, alt }], 0);
       }
     });
 
     closeBtn && closeBtn.addEventListener('click', close);
+    prevBtn && prevBtn.addEventListener('click', () => show(current - 1));
+    nextBtn && nextBtn.addEventListener('click', () => show(current + 1));
     lightbox.addEventListener('click', (e) => {
       if (e.target === lightbox) close();
     });
     document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('is-open')) return;
       if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') show(current - 1);
+      if (e.key === 'ArrowRight') show(current + 1);
     });
   }
 

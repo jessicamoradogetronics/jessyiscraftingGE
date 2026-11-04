@@ -19,7 +19,7 @@
     return `${prefix}${amount}${currency}`;
   }
 
-  function renderGallery(product, name) {
+  function renderGallery(product, name, dict) {
     const main = document.getElementById('galleryMain');
     const thumbs = document.getElementById('galleryThumbs');
     if (!main) return;
@@ -27,10 +27,16 @@
     function setMain(index) {
       const base = product.images[index];
       main.innerHTML = `
-        <picture>
-          <source srcset="${base}.webp" type="image/webp">
-          <img src="${base}.jpg" alt="${name}" id="galleryMainImg" data-lightbox="${base}.jpg" data-alt="${name}">
-        </picture>`;
+        <button type="button" class="product-gallery__open" aria-label="${dict.productDetail.zoomImage}">
+          <picture>
+            <source srcset="${base}.webp" type="image/webp">
+            <img src="${base}.jpg" alt="${name}" id="galleryMainImg">
+          </picture>
+          <span class="product-gallery__zoom" aria-hidden="true">+</span>
+        </button>`;
+      main.querySelector('button').addEventListener('click', () => {
+        window.openLightbox(product.images.map((b) => ({ src: `${b}.jpg`, alt: name })), index);
+      });
       thumbs?.querySelectorAll('button').forEach((b, i) => b.classList.toggle('is-active', i === index));
     }
 
@@ -337,7 +343,7 @@
     const addToCartBtn = document.getElementById('addToCartBtn');
     if (addToCartBtn) addToCartBtn.dataset.addToCart = currentProduct.id;
 
-    renderGallery(currentProduct, t.name || '');
+    renderGallery(currentProduct, t.name || '', dict);
     renderRelated(dict);
   }
 

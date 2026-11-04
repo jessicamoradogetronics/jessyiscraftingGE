@@ -92,6 +92,7 @@
     "customizationTitle": "Personalización disponible",
     "orderButton": "Consultar o encargar pieza a medida",
     "backToStore": "Volver a la tienda",
+    "zoomImage": "Ampliar imagen",
     "taxNote": "Impuestos incluidos · Envío rápido protegido",
     "customChoiceLabel": "Personalización",
     "customNone": "Sin personalizar",
@@ -369,12 +370,20 @@
       "addons": { "cubilete-extra": { "name": "Cubilete artesanal extra", "description": "Piel sintética cosida a mano" }, "dados-extra": { "name": "Set de 12 dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } },
       "name": "Tablero de Farkle",
       "short": "Tablero de Farkle en formato caja de madera, pintada a mano con tus escudos favoritos.",
-      "description": "Una caja de madera maciza con un escudo heráldico pintado a mano en la tapa, cubilete de cuero cosido y todos los dados que necesitas para una partida de Farkle con amigos. Cada detalle, desde el tinte de la madera hasta el trazo del escudo, se cuida pieza a pieza.",
+      "description": "Tablero de Farkle en formato caja, pintado y decorado a mano con tus escudos o motivos favoritos. Cada detalle, desde el tinte de la madera hasta el trazo del escudo, se cuida pieza a pieza.",
+      "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
+    },
+    "set-farkle": {
+      "finishes": { "caoba": "Caoba", "roble": "Roble Rústico" },
+      "addons": { "cubilete-extra": { "name": "Cubilete artesanal extra", "description": "Piel sintética cosida a mano" }, "dados-extra": { "name": "Set de 12 dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } },
+      "name": "Set completo de Farkle",
+      "short": "Tablero de Farkle en formato caja de madera, pintada a mano con tus escudos favoritos.",
+      "description": "Un tablero de Farkle en formato caja, pintado y decorado a mano con tus escudos o motivos favoritos. Un set de 12 dados de madera grabados a mano y 4 dados especiales que puedes elegir. Cabeza de diablo, Diente de Hugo... ¡escoge 4!\nSe incluyen dos cubiletes de piel sintética, cosidos a mano, para que todas tus tiradas salgan perfectas.\nY para completar el set, un juego de 50 groschens de madera, pintados a mano uno a uno, para hacer el juego más divertido.",
       "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
     },
     "mini-farkle-viajero": {
       "finishes": { "caoba": "Caoba", "roble": "Roble Rústico" },
-      "addons": { "cubilete-extra": { "name": "Cubilete artesanal extra", "description": "Piel sintética cosida a mano" }, "micro-dados": { "name": "Set de 6 micro-dados adicionales", "description": "Borde rectangular, 1cmX1cm" } },
+      "addons": { "cubilete-extra": { "name": "Cubilete artesanal extra", "description": "Piel sintética cosida a mano" }, "micro-dados": { "name": "Set de 6 micro-dados adicionales", "description": "Borde rectangular, 1cmX1cm" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } },
       "name": "Mini Farkle de viaje",
       "short": "Versión compacta del set de Farkle, lista para meter en la mochila o el bolso.",
       "description": "La misma pasión por el detalle, en un formato pequeño pensado para viajar. Ideal para escapadas, camping o simplemente para tener siempre a mano una partida improvisada.\n- Tablero de 12 cm x 12 cm.\n- Incluye 12 dados normales grabados a mano y 4 especiales. Siempre incluyo 4 «cabezas de diablo», pero puedes solicitar otro diseño.",
