@@ -366,8 +366,9 @@
   "products": {
     "set-farkle-blason": {
       "finishes": { "caoba": "Mahogany", "roble": "Rustic Oak" },
-      "name": "\"Crest\" Farkle Set",
-      "short": "Hand-carved wooden box with a painted crest and a complete dice set for playing Farkle.",
+      "addons": { "cubilete-extra": { "name": "Extra artisan cup", "description": "Hand-stitched synthetic leather" }, "dados-extra": { "name": "Set of 12 additional dice", "description": "" }, "groschens-madera": { "name": "50 wooden groschen", "description": "" } },
+      "name": "Farkle Board",
+      "short": "Farkle board in a wooden box, hand-painted with your favourite crests.",
       "description": "A solid wood box with a hand-painted heraldic crest on the lid, a stitched leather dice cup and all the dice you need for a game of Farkle with friends. Every detail, from the wood stain to the brushstrokes of the crest, is finished piece by piece.",
       "customization": "You can choose the wood colours, the crests you want on each side up to 4 (two on the outside and two on the inside), or a custom motif such as letters or drawings."
     },

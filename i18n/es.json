@@ -366,8 +366,9 @@
   "products": {
     "set-farkle-blason": {
       "finishes": { "caoba": "Caoba", "roble": "Roble Rústico" },
-      "name": "Set de Farkle «Blasón»",
-      "short": "Caja de madera tallada a mano con escudo pintado y set completo de dados para jugar al Farkle.",
+      "addons": { "cubilete-extra": { "name": "Cubilete artesanal extra", "description": "Piel sintética cosida a mano" }, "dados-extra": { "name": "Set de 12 dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } },
+      "name": "Tablero de Farkle",
+      "short": "Tablero de Farkle en formato caja de madera, pintada a mano con tus escudos favoritos.",
       "description": "Una caja de madera maciza con un escudo heráldico pintado a mano en la tapa, cubilete de cuero cosido y todos los dados que necesitas para una partida de Farkle con amigos. Cada detalle, desde el tinte de la madera hasta el trazo del escudo, se cuida pieza a pieza.",
       "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
     },

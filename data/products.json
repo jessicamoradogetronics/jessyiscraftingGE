@@ -2,7 +2,7 @@
   {
     "id": "set-farkle-blason",
     "category": "artesanias",
-    "price": 34.90,
+    "price": 54.95,
     "priceFrom": false,
     "customizable": true,
     "featured": true,
@@ -12,6 +12,11 @@
       "assets/img/artesanias/farkle-set-3",
       "assets/img/artesanias/farkle-set-4",
       "assets/img/artesanias/farkle-set-5"
+    ],
+    "addons": [
+      { "id": "cubilete-extra", "price": 5.95 },
+      { "id": "dados-extra", "price": 5.95 },
+      { "id": "groschens-madera", "price": 9.95 }
     ],
     "customOptions": {
       "finishes": [

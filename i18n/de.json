@@ -366,8 +366,9 @@
   "products": {
     "set-farkle-blason": {
       "finishes": { "caoba": "Mahagoni", "roble": "Rustikale Eiche" },
-      "name": "Farkle-Set „Wappen“",
-      "short": "Handgeschnitzte Holzbox mit bemaltem Wappen und komplettem Würfelset für Farkle.",
+      "addons": { "cubilete-extra": { "name": "Zusätzlicher handgefertigter Becher", "description": "Handgenähtes Kunstleder" }, "dados-extra": { "name": "Set mit 12 zusätzlichen Würfeln", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } },
+      "name": "Farkle-Brett",
+      "short": "Farkle-Brett in Holzbox-Format, handbemalt mit deinen Lieblingswappen.",
       "description": "Eine massive Holzbox mit einem handbemalten heraldischen Wappen auf dem Deckel, einem genähten Lederbecher und allen Würfeln, die du für eine Partie Farkle mit Freunden brauchst. Jedes Detail, von der Holzbeize bis zum Pinselstrich des Wappens, wird Stück für Stück ausgearbeitet.",
       "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
     },
