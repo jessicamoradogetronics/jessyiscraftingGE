@@ -81,7 +81,7 @@
     "home": "Inicio",
     "store": "Tienda",
     "gallery": "Galería",
-    "custom": "Personalizaciones",
+    "fanfics": "Fanfics",
     "inspiration": "Inspiración",
     "contact": "Contacto",
     "faq": "Preguntas frecuentes",
@@ -270,29 +270,47 @@
       "eyebrow": "Leer y escribir",
       "title": "La otra mitad de mi cabeza",
       "p1": "Si no estoy pintando, probablemente esté leyendo, o escribiendo. Siempre me ha gustado meterme en los huecos que una historia deja sin contar: qué piensa un personaje secundario, qué pasó entre dos escenas, qué se sintió en un momento que el juego apenas roza.",
-      "p2": "De ahí nacieron mis fanfics de Kingdom Come: Deliverance: una forma de seguir viviendo en Bohemia un poco más, explorando a sus personajes desde otro ángulo. Si te apetece echar un vistazo, los comparto en Archive of Our Own."
-    },
-    "fanfics": {
-      "item1": {
-        "status": "En curso",
-        "title": "Worth the Wreckage",
-        "summary": "Henry lleva una vida sencilla, con algún trabajo que es mejor no cuestionar. Cuando le piden que acoja a Hans en su casa sin hacer preguntas, dos mundos completamente distintos empiezan a chocar — y, poco a poco, también a transformarse."
-      },
-      "readOn": "Leer en AO3",
-      "item2": {
-        "status": "Completo",
-        "title": "Something We Cannot Name",
-        "summary": "Qué le pasó a Hans mientras estuvo cautivo en Malešov, y qué pensaba Henry mientras se enfrentaba a sus misiones más peligrosas. Los momentos clave de KCD2 contados desde el punto de vista de Hans, hasta llegar a lo ocurrido en Suchdol."
-      },
-      "item3": {
-        "status": "Completo",
-        "title": "The Road to Constantinople",
-        "summary": "Se acerca la boda de Hans Capon. Antes de rendirse a ese destino, cumple una promesa hecha a Henry años atrás: viajar juntos hasta Constantinopla. Un último viaje de amor y libertad, marcado por la belleza del mundo y también por su crueldad."
-      }
+      "p2": "De ahí nacieron mis fanfics de Kingdom Come: Deliverance: una forma de seguir viviendo en Bohemia un poco más, explorando a sus personajes desde otro ángulo. Si te apetece echar un vistazo, los tienes en la sección Fanfics."
     },
     "ctaTitle": "¿Quieres ver dónde termina toda esta inspiración?",
     "ctaText": "En la tienda encontrarás cuadros, figuras y dibujos que nacieron, de una forma u otra, de estos mismos mundos.",
     "ctaButton": "Ver la tienda"
+  },
+  "fanfics": {
+    "title": "Fanfics y Relatos",
+    "subtitle": "Historias inspiradas en miniaturas del taller y ficciones de universos medievales. Disponibles para leer directamente aquí o en nuestra biblioteca de Archive of Our Own (AO3).",
+    "filterLabel": "Filtrar",
+    "filters": {
+      "all": "Todos",
+      "fanfic": "Fanfic",
+      "original": "Relato original",
+      "ongoing": "En curso",
+      "finished": "Finalizado"
+    },
+    "latestLabel": "Último fanfic actualizado",
+    "catalogTitle": "Catálogo de Historias",
+    "catalogSubtitle": "Colección completa, lista para leer aquí o consultar en AO3.",
+    "showing": "Mostrando",
+    "storiesCount": "historias",
+    "empty": "Todavía no hay historias con este filtro.",
+    "readWeb": "Leer en la web",
+    "viewAO3": "Ver en AO3 ↗",
+    "game": "Kingdom Come: Deliverance",
+    "language": "Inglés",
+    "items": {
+      "worth": {
+        "title": "Worth the Wreckage",
+        "summary": "Henry lleva una vida sencilla, con algún trabajo que es mejor no cuestionar. Cuando le piden que acoja a Hans en su casa sin hacer preguntas, dos mundos completamente distintos empiezan a chocar — y, poco a poco, también a transformarse."
+      },
+      "something": {
+        "title": "Something We Cannot Name",
+        "summary": "Qué le pasó a Hans mientras estuvo cautivo en Malešov, y qué pensaba Henry mientras se enfrentaba a sus misiones más peligrosas. Los momentos clave de KCD2 contados desde el punto de vista de Hans, hasta llegar a lo ocurrido en Suchdol."
+      },
+      "road": {
+        "title": "The Road to Constantinople",
+        "summary": "Se acerca la boda de Hans Capon. Antes de rendirse a ese destino, cumple una promesa hecha a Henry años atrás: viajar juntos hasta Constantinopla. Un último viaje de amor y libertad, marcado por la belleza del mundo y también por su crueldad."
+      }
+    }
   },
   "contact": {
     "eyebrow": "Contacto",

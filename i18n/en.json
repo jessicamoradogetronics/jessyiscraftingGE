@@ -81,7 +81,7 @@
     "home": "Home",
     "store": "Shop",
     "gallery": "Gallery",
-    "custom": "Customizations",
+    "fanfics": "Fanfics",
     "inspiration": "Inspiration",
     "contact": "Contact",
     "faq": "FAQ",
@@ -270,29 +270,47 @@
       "eyebrow": "Reading & writing",
       "title": "The other half of my brain",
       "p1": "If I'm not painting, I'm probably reading, or writing. I've always loved filling in the gaps a story leaves untold: what a side character thinks, what happened between two scenes, what was felt in a moment the game barely touches.",
-      "p2": "That's where my Kingdom Come: Deliverance fanfics came from: a way of keeping on living in Bohemia a little longer, exploring its characters from another angle. If you'd like to take a look, I share them on Archive of Our Own."
-    },
-    "fanfics": {
-      "item1": {
-        "status": "In progress",
-        "title": "Worth the Wreckage",
-        "summary": "Henry leads a simple life, with the odd job that's better left unquestioned. When he's asked to take Hans into his home, no questions asked, two completely different worlds begin to clash — and, slowly, to change each other."
-      },
-      "readOn": "Read on AO3",
-      "item2": {
-        "status": "Complete",
-        "title": "Something We Cannot Name",
-        "summary": "What happened to Hans while he was held captive in Malešov, and what went through Henry's mind while he faced his most dangerous missions. The key events of KCD2 told from Hans's point of view, up to what happened in Suchdol."
-      },
-      "item3": {
-        "status": "Complete",
-        "title": "The Road to Constantinople",
-        "summary": "Hans Capon's wedding is drawing near. Before giving in to that fate, he fulfils a promise made to Henry years ago: to travel together all the way to Constantinople. One last journey of love and freedom, marked by the beauty of the world — and its cruelty."
-      }
+      "p2": "That's where my Kingdom Come: Deliverance fanfics came from: a way of keeping on living in Bohemia a little longer, exploring its characters from another angle. If you'd like to take a look, you'll find them in the Fanfics section."
     },
     "ctaTitle": "Want to see where all this inspiration ends up?",
     "ctaText": "In the shop you'll find paintings, figures and drawings that were born, one way or another, from these same worlds.",
     "ctaButton": "Browse the shop"
+  },
+  "fanfics": {
+    "title": "Fanfics and Tales",
+    "subtitle": "Stories inspired by the workshop's miniatures and fiction set in medieval worlds. Read them right here or in our Archive of Our Own (AO3) library.",
+    "filterLabel": "Filter",
+    "filters": {
+      "all": "All",
+      "fanfic": "Fanfic",
+      "original": "Original tale",
+      "ongoing": "Ongoing",
+      "finished": "Finished"
+    },
+    "latestLabel": "Latest fanfic updated",
+    "catalogTitle": "Story catalogue",
+    "catalogSubtitle": "Full collection, ready to read here or on AO3.",
+    "showing": "Showing",
+    "storiesCount": "stories",
+    "empty": "There are no stories with this filter yet.",
+    "readWeb": "Read on the web",
+    "viewAO3": "View on AO3 ↗",
+    "game": "Kingdom Come: Deliverance",
+    "language": "English",
+    "items": {
+      "worth": {
+        "title": "Worth the Wreckage",
+        "summary": "Henry leads a simple life, with the odd job that's better left unquestioned. When he's asked to take Hans into his home, no questions asked, two completely different worlds begin to clash — and, slowly, to change each other."
+      },
+      "something": {
+        "title": "Something We Cannot Name",
+        "summary": "What happened to Hans while he was held captive in Malešov, and what went through Henry's mind while he faced his most dangerous missions. The key events of KCD2 told from Hans's point of view, up to what happened in Suchdol."
+      },
+      "road": {
+        "title": "The Road to Constantinople",
+        "summary": "Hans Capon's wedding is drawing near. Before giving in to that fate, he fulfils a promise made to Henry years ago: to travel together all the way to Constantinople. One last journey of love and freedom, marked by the beauty of the world — and its cruelty."
+      }
+    }
   },
   "contact": {
     "eyebrow": "Contact",

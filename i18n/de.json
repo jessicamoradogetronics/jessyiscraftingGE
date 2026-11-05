@@ -81,7 +81,7 @@
     "home": "Start",
     "store": "Shop",
     "gallery": "Galerie",
-    "custom": "Personalisierungen",
+    "fanfics": "Fanfics",
     "inspiration": "Inspiration",
     "contact": "Kontakt",
     "faq": "Häufige Fragen",
@@ -270,29 +270,47 @@
       "eyebrow": "Lesen & Schreiben",
       "title": "Die andere Hälfte meines Kopfes",
       "p1": "Wenn ich nicht male, lese oder schreibe ich wahrscheinlich gerade. Ich habe es schon immer geliebt, die Lücken zu füllen, die eine Geschichte offenlässt: was eine Nebenfigur denkt, was zwischen zwei Szenen geschah, was in einem Moment empfunden wurde, den das Spiel kaum streift.",
-      "p2": "Daraus entstanden meine Kingdom-Come-Deliverance-Fanfics: eine Art, noch ein bisschen länger in Böhmen zu leben und seine Figuren aus einem anderen Blickwinkel zu erkunden. Wenn du Lust hast, reinzuschauen — ich teile sie auf Archive of Our Own."
-    },
-    "fanfics": {
-      "item1": {
-        "status": "In Arbeit",
-        "title": "Worth the Wreckage",
-        "summary": "Henry führt ein einfaches Leben, mit dem einen oder anderen Job, den man besser nicht hinterfragt. Als er gebeten wird, Hans ohne Fragen bei sich aufzunehmen, beginnen zwei völlig unterschiedliche Welten aufeinanderzuprallen — und sich langsam gegenseitig zu verändern."
-      },
-      "readOn": "Auf AO3 lesen",
-      "item2": {
-        "status": "Abgeschlossen",
-        "title": "Something We Cannot Name",
-        "summary": "Was Hans widerfuhr, während er in Malešov gefangen gehalten wurde, und was Henry durch den Kopf ging, während er sich seinen gefährlichsten Missionen stellte. Die Schlüsselereignisse von KCD2, erzählt aus Hans' Perspektive, bis hin zu den Ereignissen in Suchdol."
-      },
-      "item3": {
-        "status": "Abgeschlossen",
-        "title": "The Road to Constantinople",
-        "summary": "Hans Capons Hochzeit rückt näher. Bevor er sich diesem Schicksal ergibt, erfüllt er ein Versprechen, das er Henry vor Jahren gegeben hat: gemeinsam bis nach Konstantinopel zu reisen. Eine letzte Reise voller Liebe und Freiheit, geprägt von der Schönheit der Welt — und ihrer Grausamkeit."
-      }
+      "p2": "Daraus entstanden meine Kingdom-Come-Deliverance-Fanfics: eine Art, noch ein bisschen länger in Böhmen zu leben und seine Figuren aus einem anderen Blickwinkel zu erkunden. Wenn du Lust hast, reinzuschauen — du findest sie im Bereich Fanfics."
     },
     "ctaTitle": "Möchtest du sehen, wo all diese Inspiration endet?",
     "ctaText": "Im Shop findest du Gemälde, Figuren und Zeichnungen, die auf die eine oder andere Weise aus genau diesen Welten entstanden sind.",
     "ctaButton": "Zum Shop"
+  },
+  "fanfics": {
+    "title": "Fanfics und Geschichten",
+    "subtitle": "Geschichten, inspiriert von den Miniaturen der Werkstatt und Fiktion aus mittelalterlichen Welten. Hier direkt lesbar oder in unserer Bibliothek auf Archive of Our Own (AO3).",
+    "filterLabel": "Filtern",
+    "filters": {
+      "all": "Alle",
+      "fanfic": "Fanfic",
+      "original": "Originalerzählung",
+      "ongoing": "Laufend",
+      "finished": "Abgeschlossen"
+    },
+    "latestLabel": "Zuletzt aktualisiertes Fanfic",
+    "catalogTitle": "Geschichtenkatalog",
+    "catalogSubtitle": "Die vollständige Sammlung, bereit zum Lesen hier oder auf AO3.",
+    "showing": "Angezeigt:",
+    "storiesCount": "Geschichten",
+    "empty": "Zu diesem Filter gibt es noch keine Geschichten.",
+    "readWeb": "Hier lesen",
+    "viewAO3": "Auf AO3 ansehen ↗",
+    "game": "Kingdom Come: Deliverance",
+    "language": "Englisch",
+    "items": {
+      "worth": {
+        "title": "Worth the Wreckage",
+        "summary": "Henry führt ein einfaches Leben, mit dem einen oder anderen Job, den man besser nicht hinterfragt. Als er gebeten wird, Hans ohne Fragen bei sich aufzunehmen, beginnen zwei völlig unterschiedliche Welten aufeinanderzuprallen — und sich langsam gegenseitig zu verändern."
+      },
+      "something": {
+        "title": "Something We Cannot Name",
+        "summary": "Was Hans widerfuhr, während er in Malešov gefangen gehalten wurde, und was Henry durch den Kopf ging, während er sich seinen gefährlichsten Missionen stellte. Die Schlüsselereignisse von KCD2, erzählt aus Hans' Perspektive, bis hin zu den Ereignissen in Suchdol."
+      },
+      "road": {
+        "title": "The Road to Constantinople",
+        "summary": "Hans Capons Hochzeit rückt näher. Bevor er sich diesem Schicksal ergibt, erfüllt er ein Versprechen, das er Henry vor Jahren gegeben hat: gemeinsam bis nach Konstantinopel zu reisen. Eine letzte Reise voller Liebe und Freiheit, geprägt von der Schönheit der Welt — und ihrer Grausamkeit."
+      }
+    }
   },
   "contact": {
     "eyebrow": "Kontakt",
