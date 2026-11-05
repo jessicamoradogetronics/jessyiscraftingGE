@@ -400,6 +400,12 @@
       "short": "50 groschens de madera, pintados uno a uno",
       "description": "50 monedas de madera que emulan el diseño de los groschens bohemios. Pintadas y barnizadas una a una, guardadas en una bolsa de rafia."
     },
+    "cubilete-artesanal": {
+      "name": "Cubilete artesanal",
+      "short": "Cubiletes de piel sintética cortados y cosidos a mano",
+      "description": "Cubilete de piel sintética de 10 cm de alto, ideal para lanzar dados. Cosidos a mano con elegante patrón en X. Precio por unidad.",
+      "addons": { "dados-6": { "name": "Set de dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } }
+    },
     "oleo-minas-tirith": {
       "name": "Óleo «La Ciudadela»",
       "short": "Interpretación al óleo de una gran ciudadela de piedra entre montañas, inspirada en la fantasía medieval.",

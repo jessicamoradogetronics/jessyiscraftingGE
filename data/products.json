@@ -125,6 +125,22 @@
     ]
   },
   {
+    "id": "cubilete-artesanal",
+    "category": "artesanias",
+    "price": 5.95,
+    "priceFrom": false,
+    "customizable": false,
+    "featured": false,
+    "images": [
+      "assets/img/artesanias/cubilete-artesanal-1",
+      "assets/img/artesanias/cubilete-artesanal-2"
+    ],
+    "addons": [
+      { "id": "dados-6", "price": 6.95 },
+      { "id": "groschens-madera", "price": 14.95 }
+    ]
+  },
+  {
     "id": "miniatura-caballero-henry",
     "category": "figuras",
     "price": 29.95,

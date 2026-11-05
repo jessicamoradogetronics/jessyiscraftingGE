@@ -400,6 +400,12 @@
       "short": "50 Holz-Groschen, einzeln handbemalt",
       "description": "50 Holzmünzen im Design böhmischer Groschen. Einzeln bemalt und lackiert, in einem Raffiabeutel aufbewahrt."
     },
+    "cubilete-artesanal": {
+      "name": "Handgefertigter Würfelbecher",
+      "short": "Würfelbecher aus Kunstleder, handgeschnitten und handgenäht",
+      "description": "Würfelbecher aus Kunstleder, 10 cm hoch, ideal zum Würfeln. Von Hand genäht mit eleganten X-Muster. Preis pro Stück.",
+      "addons": { "dados-6": { "name": "Würfelset", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } }
+    },
     "oleo-minas-tirith": {
       "name": "Ölgemälde „Die Zitadelle“",
       "short": "Eine in Öl gemalte Interpretation einer großen Steinzitadelle zwischen Bergen, inspiriert von mittelalterlicher Fantasy.",
