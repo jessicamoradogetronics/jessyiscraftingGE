@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leer · JessyIsCrafting</title>
+<meta name="description" content="Lectura de fanfics y relatos de JessyIsCrafting.">
+<link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#37472f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/reader.css">
+</head>
+<body class="reader-page">
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<div data-include="header"></div>
+
+<div class="reader-progress" id="readerProgress" aria-hidden="true"></div>
+
+<div class="reader-toolbar">
+  <div class="container reader-toolbar__inner">
+    <div class="reader-toolbar__top">
+      <nav class="reader-crumbs" aria-label="Ruta de navegación">
+        <a href="fanfics.html">Fanfics</a> <span aria-hidden="true">/</span> <span id="crumbTitle"></span>
+      </nav>
+      <a href="fanfics.html" class="reader-back">← Volver a fanfics</a>
+    </div>
+    <div class="reader-tools">
+      <div id="chapterPick"></div>
+      <div class="reader-seg" role="group" aria-label="Tema de lectura" id="themeSeg">
+        <button type="button" data-theme="light" aria-pressed="true">Claro</button>
+        <button type="button" data-theme="dark" aria-pressed="false">Oscuro</button>
+      </div>
+      <div class="reader-seg" role="group" aria-label="Tamaño de letra">
+        <button type="button" id="sizeDown" aria-label="Reducir letra">A−</button>
+        <span class="reader-seg__value" id="sizeValue">18 px</span>
+        <button type="button" id="sizeUp" aria-label="Aumentar letra">A+</button>
+      </div>
+      <button type="button" class="btn btn--outline btn--sm" id="shareBtn">Compartir</button>
+      <span class="reader-seg__value" id="shareStatus" aria-live="polite"></span>
+      <button type="button" class="btn btn--outline btn--sm" id="dlPdf" title="Abre el diálogo de impresión: elige Guardar como PDF">Descargar PDF</button>
+      <button type="button" class="btn btn--outline btn--sm" id="dlEpub">Descargar EPUB</button>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="container reader-layout">
+  <aside class="reader-side">
+    <p class="reader-side__eyebrow">Fanfic · Kingdom Come: Deliverance</p>
+    <h2 id="sideTitle"></h2>
+    <p id="sideSummary"></p>
+    <dl class="reader-meta" id="sideMeta"></dl>
+    <h3>Índice de capítulos</h3>
+    <ol class="reader-toc" id="toc"></ol>
+  </aside>
+
+  <article class="reader-article" id="article">
+    <header class="reader-head">
+      <div class="reader-tags" id="tags"></div>
+      <p class="reader-kicker" id="chapterKicker"></p>
+      <h1 id="chapterTitle"></h1>
+      <div class="reader-byline" id="byline"></div>
+    </header>
+
+    <div class="reader-body" id="readerBody"></div>
+
+    <nav class="reader-pager" id="pager" aria-label="Navegación entre capítulos"></nav>
+  </article>
+</main>
+
+<input type="hidden" id="fanficReads" value="0">
+
+<div class="reader-print" id="printArea" aria-hidden="true"></div>
+
+<div data-include="footer"></div>
+
+<script src="js/include.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/fanfic-data.js"></script>
+<script src="js/reader.js"></script>
+</body>
+</html>

@@ -76,7 +76,7 @@
             <h3 class="fx-title" data-i18n="fanfics.items.worth.title">Worth the Wreckage</h3>
             <p class="fx-summary" data-i18n="fanfics.items.worth.summary">Henry lleva una vida sencilla, con algún trabajo que es mejor no cuestionar. Cuando le piden que acoja a Hans en su casa sin hacer preguntas, dos mundos completamente distintos empiezan a chocar y, poco a poco, también a transformarse.</p>
             <div class="fx-actions">
-              <a class="btn btn--primary btn--sm" href="https://archiveofourown.org/works/89977451/chapters/239085071" target="_blank" rel="noopener" data-i18n="fanfics.readWeb">Leer en la web</a>
+              <a class="btn btn--primary btn--sm" href="leer.html?id=worth" data-i18n="fanfics.readWeb">Leer en la web</a>
               <a class="fx-link" href="https://archiveofourown.org/works/89977451/chapters/239085071" target="_blank" rel="noopener" data-i18n="fanfics.viewAO3">Ver en AO3 ↗</a>
             </div>
           </div>
@@ -93,7 +93,7 @@
             <h3 class="fx-title" data-i18n="fanfics.items.something.title">Something We Cannot Name</h3>
             <p class="fx-summary" data-i18n="fanfics.items.something.summary">Qué le pasó a Hans mientras estuvo cautivo en Malešov, y qué pensaba Henry mientras se enfrentaba a sus misiones más peligrosas. Los momentos clave de KCD2 contados desde el punto de vista de Hans, hasta llegar a lo ocurrido en Suchdol.</p>
             <div class="fx-actions">
-              <a class="btn btn--primary btn--sm" href="https://archiveofourown.org/works/84415966/chapters/222672581" target="_blank" rel="noopener" data-i18n="fanfics.readWeb">Leer en la web</a>
+              <a class="btn btn--primary btn--sm" href="leer.html?id=something" data-i18n="fanfics.readWeb">Leer en la web</a>
               <a class="fx-link" href="https://archiveofourown.org/works/84415966/chapters/222672581" target="_blank" rel="noopener" data-i18n="fanfics.viewAO3">Ver en AO3 ↗</a>
             </div>
           </div>
@@ -110,7 +110,7 @@
             <h3 class="fx-title" data-i18n="fanfics.items.road.title">The Road to Constantinople</h3>
             <p class="fx-summary" data-i18n="fanfics.items.road.summary">Se acerca la boda de Hans Capon. Antes de rendirse a ese destino, cumple una promesa hecha a Henry años atrás: viajar juntos hasta Constantinopla. Un último viaje de amor y libertad, marcado por la belleza del mundo y también por su crueldad.</p>
             <div class="fx-actions">
-              <a class="btn btn--primary btn--sm" href="https://archiveofourown.org/works/65370562/chapters/168212833" target="_blank" rel="noopener" data-i18n="fanfics.readWeb">Leer en la web</a>
+              <a class="btn btn--primary btn--sm" href="leer.html?id=road" data-i18n="fanfics.readWeb">Leer en la web</a>
               <a class="fx-link" href="https://archiveofourown.org/works/65370562/chapters/168212833" target="_blank" rel="noopener" data-i18n="fanfics.viewAO3">Ver en AO3 ↗</a>
             </div>
           </div>
@@ -118,6 +118,22 @@
       </div>
 
       <p class="fx-empty" id="fxEmpty" hidden data-i18n="fanfics.empty">Todavía no hay historias con este filtro.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <span class="eyebrow" style="color:var(--color-gold-soft)">Boletín</span>
+        <h2>No te pierdas ninguna actualización</h2>
+        <p>Suscríbete y te avisamos cuando haya nuevos capítulos, historias y relatos.</p>
+        <form class="cta-subscribe" id="fxSubscribe" novalidate>
+          <label for="fxEmail" class="visually-hidden">Correo electrónico</label>
+          <input type="email" id="fxEmail" name="email" placeholder="tu@correo.com" required>
+          <button type="submit" class="btn btn--gold">Suscribirme</button>
+        </form>
+        <p class="cta-subscribe__msg" id="fxSubMsg" role="status"></p>
+      </div>
     </div>
   </section>
 </main>
@@ -129,5 +145,19 @@
 <script src="js/main.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/fanfics.js"></script>
+<script>
+  document.getElementById('fxSubscribe').addEventListener('submit', function (event) {
+    event.preventDefault();
+    var input = document.getElementById('fxEmail');
+    var msg = document.getElementById('fxSubMsg');
+    if (!input.checkValidity()) {
+      msg.textContent = 'Introduce un correo válido.';
+      return;
+    }
+    // Pendiente: conectar con un servicio de newsletter; por ahora no se guarda el correo.
+    msg.textContent = 'Gracias por suscribirte.';
+    this.reset();
+  });
+</script>
 </body>
 </html>
