@@ -29,6 +29,7 @@
   function renderImages(work, title) {
     const container = document.getElementById('workImages');
     if (!container) return;
+    container.classList.toggle('work-images--compact', !!work.compact);
     container.innerHTML = work.images
       .map((src) => `
         <figure class="work-images__item">
@@ -58,6 +59,10 @@
     if (currentWork.images.some((src) => src.includes('/cuadros/'))) {
       const back = document.getElementById('workBack');
       if (back) back.href = 'galeria.html#cuadros';
+    }
+    if (currentWork.images.some((src) => src.includes('/dibujos/'))) {
+      const back = document.getElementById('workBack');
+      if (back) back.href = 'galeria.html#dibujos';
     }
     setBackLink(currentWork.id);
   }

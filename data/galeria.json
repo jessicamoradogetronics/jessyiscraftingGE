@@ -117,6 +117,33 @@
     ]
   },
   {
+    "id": "henry-explorando",
+    "images": [
+      "assets/img/dibujos/henry-explorando-1.jpg"
+    ]
+  },
+  {
+    "id": "luke-dale-ardillas",
+    "images": [
+      "assets/img/dibujos/luke-dale-ardillas-1.jpg"
+    ]
+  },
+  {
+    "id": "emotes-twitch",
+    "compact": true,
+    "images": [
+      "assets/img/dibujos/emotes-twitch-1.jpg",
+      "assets/img/dibujos/emotes-twitch-2.jpg",
+      "assets/img/dibujos/emotes-twitch-3.jpg"
+    ]
+  },
+  {
+    "id": "reinhart-daku",
+    "images": [
+      "assets/img/dibujos/reinhart-daku-1.jpg"
+    ]
+  },
+  {
     "id": "lune",
     "images": [
       "assets/img/figuras/lune-1.jpg",

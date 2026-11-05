@@ -1155,6 +1155,25 @@ p { margin: 0 0 1em; }
   overflow: hidden;
 }
 .gallery-card:focus-visible { outline: 2px solid var(--color-gold); outline-offset: -4px; }
+.gallery-card__collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 6px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: var(--color-surface);
+}
+.gallery-card__collage img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+}
 .gallery-card img {
   width: 100%;
   height: 100%;
@@ -1199,7 +1218,7 @@ p { margin: 0 0 1em; }
 .gallery-filters-section .store-filters { margin: 0; }
 .gallery-section { padding: 1.6rem 0; }
 .gallery-section[hidden] { display: none; }
-#artesanias, #cuadros { scroll-margin-top: 6rem; }
+#artesanias, #cuadros, #dibujos { scroll-margin-top: 6rem; }
 
 .gallery-section__head {
   display: flex;
@@ -1244,6 +1263,7 @@ p { margin: 0 0 1em; }
   background: var(--color-surface);
 }
 .work-images__item img { width: 100%; height: auto; display: block; cursor: zoom-in; }
+.work-images--compact { grid-template-columns: repeat(auto-fill, minmax(180px, 240px)); }
 
 .placeholder-tile {
   aspect-ratio: 4/5;
