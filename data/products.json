@@ -156,6 +156,24 @@
     ]
   },
   {
+    "id": "figura-reencuentro",
+    "category": "figuras",
+    "price": 45,
+    "priceFrom": false,
+    "customizable": true,
+    "featured": false,
+    "images": [
+      "assets/img/figuras/reencuentro-1",
+      "assets/img/figuras/reencuentro-2",
+      "assets/img/figuras/reencuentro-3",
+      "assets/img/figuras/reencuentro-4",
+      "assets/img/figuras/reencuentro-5"
+    ],
+    "customOptions": {
+      "notes": { "maxLength": 1000 }
+    }
+  },
+  {
     "id": "miniatura-caballero-henry",
     "category": "figuras",
     "price": 29.95,

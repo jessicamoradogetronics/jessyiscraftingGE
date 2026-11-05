@@ -126,6 +126,7 @@
       "bosque": { "title": "Corner of the forest", "description": "An oil on canvas of a stream running through a dense forest. The scene is built with layers of greens and ochres, letting the light filtering through the trees mark the path of the water." },
       "renoir": { "title": "Renoir", "description": "A collector figure in a long coat, finished in a matte coat to soften the reflections and bring out the fabrics. The paint is worked area by area, with particular care for the seams and folds." },
       "diorama-brutus": { "title": "Brutus Diorama", "description": "Small hand-painted architectural diorama, with columns and gold details. Each piece is worked separately before the scene is assembled, so the stone surfaces and metallic accents sit together cleanly." },
+      "figura-reencuentro": { "title": "The Reunion", "description": "Resin figure, 16 cm tall, with base included. A depiction of the embrace between Hans and Henry during the rescue in Malešov. Their expressions of relief are genuinely tender." },
       "figura-dobby": { "title": "Dobby", "description": "Hand-painted Dobby figure with his sock. Skin and cloth tones are built up in thin layers so the character keeps its expression and mischievous air." },
       "mini-farkle": { "title": "Travel Mini Farkle", "description": "The compact version of the Farkle set, made to carry in a backpack. It keeps the same care for detail in a small format, ideal for trips, camping or an impromptu game always within reach." }
     }
@@ -415,6 +416,12 @@
       "short": "Synthetic leather dice cups, hand-cut and hand-stitched",
       "description": "Synthetic leather dice cup, 10 cm tall, ideal for rolling dice. Hand-stitched with an elegant X pattern. Price per unit.",
       "addons": { "dados-6": { "name": "Set of dice", "description": "" }, "groschens-madera": { "name": "50 wooden groschen", "description": "" } }
+    },
+    "figura-reencuentro": {
+      "name": "The Reunion",
+      "short": "Hans and Henry's embrace at their reunion",
+      "description": "Resin figure, 16 cm tall, with base included. A depiction of the embrace between Hans and Henry during the rescue in Malešov. Their expressions of relief are genuinely tender.",
+      "customization": "You can choose the colour of Henry's or Hans's gambeson and trousers, but not the shape of the figure."
     },
     "figura-dobby": {
       "name": "Dobby, from Harry Potter",

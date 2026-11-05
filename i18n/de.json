@@ -126,6 +126,7 @@
       "bosque": { "title": "Winkel im Wald", "description": "Ein Ölgemälde auf Leinwand eines Baches, der durch einen dichten Wald fließt. Die Szene entsteht aus Schichten von Grün und Ocker, und das Licht, das zwischen den Bäumen hindurchfällt, zeigt den Weg des Wassers." },
       "renoir": { "title": "Renoir", "description": "Eine Sammlerfigur in einem langen Mantel, mit mattem Finish, um Reflexe zu mildern und die Stoffe hervorzuheben. Die Malerei wird Bereich für Bereich ausgearbeitet, mit besonderer Sorgfalt bei Nähten und Falten." },
       "diorama-brutus": { "title": "Brutus-Diorama", "description": "Kleines, handbemaltes architektonisches Diorama mit Säulen und goldenen Details. Jedes Teil wird vor dem Zusammenbau der Szene einzeln bearbeitet, damit Steinflächen und metallische Akzente sauber zusammenwirken." },
+      "figura-reencuentro": { "title": "Das Wiedersehen", "description": "Harzfigur, 16 cm hoch, inklusive Sockel. Die Umarmung zwischen Hans und Henry während der Rettung in Malešov. Ihr erleichterter Gesichtsausdruck wirkt wirklich berührend." },
       "figura-dobby": { "title": "Dobby", "description": "Handbemalte Dobby-Figur mit seiner Socke. Haut- und Stofftöne werden in dünnen Schichten aufgebaut, damit die Figur ihren Ausdruck und ihren schelmischen Charme behält." },
       "mini-farkle": { "title": "Mini-Farkle für unterwegs", "description": "Die kompakte Version des Farkle-Sets, zum Mitnehmen im Rucksack. Sie bewahrt dieselbe Liebe zum Detail in einem kleinen Format, ideal für Ausflüge, Camping oder eine spontane Partie, die immer griffbereit ist." }
     }
@@ -415,6 +416,12 @@
       "short": "Würfelbecher aus Kunstleder, handgeschnitten und handgenäht",
       "description": "Würfelbecher aus Kunstleder, 10 cm hoch, ideal zum Würfeln. Von Hand genäht mit eleganten X-Muster. Preis pro Stück.",
       "addons": { "dados-6": { "name": "Würfelset", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } }
+    },
+    "figura-reencuentro": {
+      "name": "Das Wiedersehen",
+      "short": "Umarmung beim Wiedersehen von Hans und Henry",
+      "description": "Harzfigur, 16 cm hoch, inklusive Sockel. Die Umarmung zwischen Hans und Henry während der Rettung in Malešov. Ihr erleichterter Gesichtsausdruck wirkt wirklich berührend.",
+      "customization": "Du kannst die Farbe von Henrys oder Hans' Gambeson und Hose wählen, aber nicht die Form der Figur."
     },
     "figura-dobby": {
       "name": "Dobby aus Harry Potter",

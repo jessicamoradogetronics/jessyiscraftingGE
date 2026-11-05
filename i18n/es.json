@@ -126,6 +126,7 @@
       "bosque": { "title": "Rincón del bosque", "description": "Óleo sobre lienzo de un riachuelo que atraviesa un bosque cerrado. La escena se construye con capas de verdes y ocres, dejando que la luz filtrada entre los árboles marque el recorrido del agua." },
       "renoir": { "title": "Renoir", "description": "Figura de coleccionista con un abrigo largo, terminada en acabado mate para suavizar los reflejos y resaltar los tejidos. La pintura se trabaja por zonas, con especial cuidado en las costuras y los pliegues." },
       "diorama-brutus": { "title": "Diorama Brutus", "description": "Pequeño diorama arquitectónico pintado a mano, con columnas y detalles dorados. Cada pieza se trabaja por separado antes de montar la escena, para que las superficies de piedra y los acentos metálicos convivan con limpieza." },
+      "figura-reencuentro": { "title": "El reencuentro", "description": "Figura en resina de 16 cm de alto con base incluida. Representación del abrazo entre Hans y Henry durante el rescate en Malesov. Sus expresiones de alivio son realmente tiernas." },
       "figura-dobby": { "title": "Dobby", "description": "Figura de Dobby con su calcetín, pintada a mano. Los tonos de piel y tela se construyen en capas finas para que el personaje conserve su expresión y su aire travieso." },
       "mini-farkle": { "title": "Mini Farkle de viaje", "description": "La versión compacta del set de Farkle, pensada para llevar en la mochila. Mantiene el mismo cuidado por el detalle en un formato pequeño, ideal para escapadas, acampadas o para tener siempre a mano una partida improvisada." }
     }
@@ -415,6 +416,12 @@
       "short": "Cubiletes de piel sintética cortados y cosidos a mano",
       "description": "Cubilete de piel sintética de 10 cm de alto, ideal para lanzar dados. Cosidos a mano con elegante patrón en X. Precio por unidad.",
       "addons": { "dados-6": { "name": "Set de dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } }
+    },
+    "figura-reencuentro": {
+      "name": "El reencuentro",
+      "short": "Abrazo en el reencuentro de Hans y Henry",
+      "description": "Figura en resina de 16 cm de alto con base incluida. Representación del abrazo entre Hans y Henry durante el rescate en Malesov. Sus expresiones de alivio son realmente tiernas.",
+      "customization": "Puedes escoger el color del gambesón y de los pantalones de Henry o de Hans, pero no la forma de la figura."
     },
     "figura-dobby": {
       "name": "«Dobby», de Harry Potter",

@@ -87,6 +87,16 @@
     ]
   },
   {
+    "id": "figura-reencuentro",
+    "images": [
+      "assets/img/figuras/reencuentro-1.jpg",
+      "assets/img/figuras/reencuentro-2.jpg",
+      "assets/img/figuras/reencuentro-3.jpg",
+      "assets/img/figuras/reencuentro-4.jpg",
+      "assets/img/figuras/reencuentro-5.jpg"
+    ]
+  },
+  {
     "id": "mini-farkle",
     "images": [
       "assets/img/artesanias/mini-farkle-1.jpg"
