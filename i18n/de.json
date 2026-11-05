@@ -117,7 +117,7 @@
     "notFound": "Dieses Werk konnten wir nicht finden. Du kannst zur Galerie zurückkehren, um die anderen zu sehen.",
     "items": {
       "caballero": { "title": "Ritter Henry", "description": "Eine handbemalte Ritterminiatur, bei der jedes Detail der Rüstung mit feinem Pinsel gearbeitet ist. Die Farbschichten bauen sich langsam auf, um Metall und Stoffen Tiefe zu geben, ohne den Charakter einer Figur zu verlieren, die aus der Nähe betrachtet werden soll." },
-      "minas-tirith": { "title": "Öl „Die Zitadelle“", "description": "Ein Ölgemälde auf Leinwand, das eine Zitadelle zwischen Bergen zeigt, mit dünnen Lasuren gemalt, um das Licht der frühen Morgenstunden einzufangen. Die Komposition führt den Blick von der Straße bis zu den Mauern, wo jeder Stein mit kurzen, präzisen Pinselstrichen gearbeitet ist." },
+      "minas-tirith": { "title": "Gandalf erreicht Minas Tirith", "description": "Ein Ölgemälde auf Leinwand, das Minas Tirith zwischen den Bergen zeigt, mit dünnen Lasuren gemalt, um das Licht der ersten Stunden des Tages einzufangen. Die Komposition führt den Blick vom Weg bis zu den Mauern, wo jeder Stein mit kurzen, präzisen Pinselstrichen gearbeitet ist." },
       "set-farkle-blason": { "title": "Farkle-Brett", "description": "Farkle-Brett im Kastenformat von 20 cm x 20 cm, handbemalt und verziert mit deinen Lieblingswappen oder -motiven. Jedes Detail, von der Holzbeize bis zum Pinselstrich des Wappens, wird Stück für Stück ausgearbeitet." },
       "set-farkle": { "title": "Komplettes Farkle-Set", "description": "Farkle-Brett im Kastenformat von 20 cm x 20 cm, handbemalt und verziert, mit 12 handgravierten Holzwürfeln, 4 besonderen Würfeln zur Auswahl, zwei handgenähten Bechern aus Kunstleder und 50 einzeln handbemalten Holz-Groschen." },
       "mini-farkle-viajero": { "title": "Mini-Farkle für unterwegs", "description": "Kompakte Version des Farkle-Sets, 12 cm x 12 cm und zum Reisen gedacht. Enthält 12 normale Würfel und 4 besondere, alle handgraviert." },
@@ -130,7 +130,8 @@
       "jinete": { "title": "Heraldischer Reiter", "description": "Ein Diorama eines Reiters mit heraldischem Schild, auf einem handbemalten Sockel, der einen Feldweg nachbildet. Jedes Element des Schildes ist in satten Farben mit sauberen Konturen gemalt, damit das Wappen auch aus der Ferne gut lesbar ist." },
       "heinrich": { "title": "Szene Heinrichs", "description": "Eine erzählerische Szene in einem mittelalterlichen Innenraum, digital illustriert. Die Figuren stehen in einem Raum, der von einer einzigen Lichtquelle beleuchtet wird, und jeder Gegenstand erzählt ein Stück der Geschichte." },
       "lune": { "title": "Lune", "description": "Eine Figur mit Effektsockel, bemalt mit Übergängen aus Feuer und Kristall. Die Lichter entstehen in durchscheinenden Schichten, sodass der Sockel wie ein Stück einer anderen Welt wirkt, auf dem die Figur steht." },
-      "bosque": { "title": "Winkel im Wald", "description": "Ein Ölgemälde auf Leinwand eines Baches, der durch einen dichten Wald fließt. Die Szene entsteht aus Schichten von Grün und Ocker, und das Licht, das zwischen den Bäumen hindurchfällt, zeigt den Weg des Wassers." },
+      "horreo-gallego": { "title": "Galicischer Hórreo", "description": "Ein galicischer Hórreo, der traditionelle Kornspeicher auf Steinpfeilern, um den Mais vor Feuchtigkeit und Nagetieren zu schützen. Ein Werk über die ländliche Baukunst Galiciens, mit ihren schlichten Formen und den Spuren der Zeit auf jedem Brett." },
+      "bosque": { "title": "Winkel im Wald", "description": "Ein Ölgemälde auf Schiefer eines Baches, der durch einen dichten Wald fließt. Die Szene entsteht aus Schichten von Grün und Ocker, und das Licht, das zwischen den Bäumen hindurchfällt, zeigt den Weg des Wassers." },
       "renoir": { "title": "Renoir", "description": "Eine Sammlerfigur in einem langen Mantel, mit mattem Finish, um Reflexe zu mildern und die Stoffe hervorzuheben. Die Malerei wird Bereich für Bereich ausgearbeitet, mit besonderer Sorgfalt bei Nähten und Falten." },
       "diorama-brutus": { "title": "Brutus-Diorama", "description": "Kleines, handbemaltes architektonisches Diorama mit Säulen und goldenen Details. Jedes Teil wird vor dem Zusammenbau der Szene einzeln bearbeitet, damit Steinflächen und metallische Akzente sauber zusammenwirken." },
       "figura-reencuentro": { "title": "Das Wiedersehen", "description": "Harzfigur, 16 cm hoch, inklusive Sockel. Die Umarmung zwischen Hans und Henry während der Rettung in Malešov. Ihr erleichterter Gesichtsausdruck wirkt wirklich berührend." },
@@ -146,20 +147,21 @@
     "sections": {
       "figuras": { "title": "Modellbau & Figuren", "meta": "Miniaturen und Dioramen" },
       "artesanias": { "title": "Handwerk", "meta": "Einzelstücke und Unikate" },
-      "cuadros": { "title": "Gemälde & Leinwände", "meta": "Öl auf Leinwand", "link": "Alle Gemälde ansehen →" },
+      "cuadros": { "title": "Gemälde & Leinwände", "meta": "Handgemalte Gemälde" },
       "dibujos": { "title": "Digitale Zeichnungen", "meta": "Digitale Illustration", "link": "Alle Zeichnungen ansehen →" }
     },
     "viewDetail": "Details ansehen",
     "captions": {
       "caballero": "Ritter-Miniatur, mit feinem Pinsel bemalt.",
-      "minasTirith": "Öl auf Leinwand, Zitadelle zwischen den Bergen.",
+      "minasTirith": "Öl auf Leinwand. Gandalf kommt in Minas Tirith an.",
       "farkleDetalle": "Detail des handgeschnitzten Wappens.",
       "abanicos": "Handgefertigte Fächer mit Motiven aus Leipa und Skalice",
       "luminoso": "Digitale Illustration, Licht im Nebel.",
       "jinete": "Reiter-Diorama, handbemalte Basis.",
       "heinrich": "Erzählende Szene, digitale Illustration.",
       "lune": "Figur mit Effekt-Basis, Auftragsbemalung.",
-      "bosque": "Öl auf Leinwand, ein Winkel des Waldes.",
+      "bosque": "Öl auf Schiefer, ein Winkel des Waldes.",
+      "horreoGallego": "Galicischer Hórreo, traditioneller Kornspeicher Galiciens.",
       "renoir": "Sammlerfigur, mattes Finish.",
       "miniFarkle": "Mini-Farkle für unterwegs, bereit für den Rucksack."
     },

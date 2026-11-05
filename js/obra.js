@@ -55,6 +55,10 @@
     if (consultBtn) consultBtn.href = `contacto.html?producto=${encodeURIComponent(title)}`;
 
     renderImages(currentWork, title);
+    if (currentWork.images.some((src) => src.includes('/cuadros/'))) {
+      const back = document.getElementById('workBack');
+      if (back) back.href = 'galeria.html#cuadros';
+    }
     setBackLink(currentWork.id);
   }
 

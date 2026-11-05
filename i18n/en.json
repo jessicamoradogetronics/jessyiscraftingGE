@@ -117,7 +117,7 @@
     "notFound": "We could not find this piece. You can go back to the gallery to see the rest.",
     "items": {
       "caballero": { "title": "Henry the Knight", "description": "A hand-painted knight miniature, with every detail of the armour worked with a fine brush. Layers of colour build up slowly to give depth to the metal and the fabrics, without losing the character of a figure made to be seen up close." },
-      "minas-tirith": { "title": "Oil «The Citadel»", "description": "An oil on canvas showing a citadel rising between mountains, painted with thin glazes to capture the light of early morning. The composition leads the eye from the road up to the walls, where each stone is worked with short, precise brushstrokes." },
+      "minas-tirith": { "title": "Gandalf Arriving at Minas Tirith", "description": "Oil on canvas showing Minas Tirith among the mountains, painted with thin glazes to capture the light of the first hours of the day. The composition guides the eye from the road to the walls, where each stone is worked with short, precise brushstrokes." },
       "set-farkle-blason": { "title": "Farkle Board", "description": "Farkle board in 20 cm x 20 cm box format, hand-painted and decorated with your favourite crests or motifs. Every detail, from the wood stain to the brushstrokes of the crest, is finished piece by piece." },
       "set-farkle": { "title": "Complete Farkle Set", "description": "Farkle board in 20 cm x 20 cm box format, hand-painted and decorated, with 12 hand-engraved wooden dice, 4 special dice to choose, two hand-stitched synthetic leather dice cups and 50 wooden groschen painted one by one." },
       "mini-farkle-viajero": { "title": "Travel Mini Farkle", "description": "Compact version of the Farkle set, 12 cm x 12 cm and made for travelling. Includes 12 regular dice and 4 special ones, all hand-engraved." },
@@ -130,7 +130,8 @@
       "jinete": { "title": "Heraldic rider", "description": "A diorama of a rider with a heraldic shield, mounted on a hand-painted base that recreates a dirt track. Each element of the shield is painted in solid colours with clean edges, so the crest reads clearly even from a distance." },
       "heinrich": { "title": "Heinrich's scene", "description": "A narrative scene set in a medieval interior, digitally illustrated. The characters stand in a room lit by a single source of light, and every object in the hall tells a fragment of the story." },
       "lune": { "title": "Lune", "description": "A figure on an effects base, painted with transitions of fire and crystal. The highlights are built in translucent layers, so the base looks like a fragment of another world for the character to stand on." },
-      "bosque": { "title": "Corner of the forest", "description": "An oil on canvas of a stream running through a dense forest. The scene is built with layers of greens and ochres, letting the light filtering through the trees mark the path of the water." },
+      "horreo-gallego": { "title": "Galician Hórreo", "description": "A Galician hórreo, the traditional granary raised on stone pillars to keep the corn safe from damp and rodents. A piece dedicated to the vernacular architecture of Galicia, with its simple forms and the marks of time on every plank." },
+      "bosque": { "title": "Corner of the forest", "description": "An oil on slate of a stream running through a dense forest. The scene is built with layers of greens and ochres, letting the light filtering through the trees mark the path of the water." },
       "renoir": { "title": "Renoir", "description": "A collector figure in a long coat, finished in a matte coat to soften the reflections and bring out the fabrics. The paint is worked area by area, with particular care for the seams and folds." },
       "diorama-brutus": { "title": "Brutus Diorama", "description": "Small hand-painted architectural diorama, with columns and gold details. Each piece is worked separately before the scene is assembled, so the stone surfaces and metallic accents sit together cleanly." },
       "figura-reencuentro": { "title": "The Reunion", "description": "Resin figure, 16 cm tall, with base included. A depiction of the embrace between Hans and Henry during the rescue in Malešov. Their expressions of relief are genuinely tender." },
@@ -146,20 +147,21 @@
     "sections": {
       "figuras": { "title": "Modelling & Figures", "meta": "Miniatures and dioramas" },
       "artesanias": { "title": "Crafts", "meta": "Unique pieces and one-of-a-kind objects" },
-      "cuadros": { "title": "Paintings & Canvases", "meta": "Oil on canvas", "link": "See all paintings →" },
+      "cuadros": { "title": "Paintings & Canvases", "meta": "Hand-painted paintings" },
       "dibujos": { "title": "Digital drawings", "meta": "Digital illustration", "link": "See all drawings →" }
     },
     "viewDetail": "View details",
     "captions": {
       "caballero": "Knight miniature, painted with a fine brush.",
-      "minasTirith": "Oil on canvas, citadel among the mountains.",
+      "minasTirith": "Oil on canvas. Gandalf arriving at Minas Tirith.",
       "farkleDetalle": "Detail of the hand-carved crest.",
       "abanicos": "Handcrafted fans with Leipa and Skalice motifs",
       "luminoso": "Digital illustration, light through the mist.",
       "jinete": "Rider diorama, hand-painted base.",
       "heinrich": "Narrative scene, digital illustration.",
       "lune": "Figure with effects base, commissioned paint job.",
-      "bosque": "Oil on canvas, a corner of the forest.",
+      "bosque": "Oil on slate, a corner of the forest.",
+      "horreoGallego": "Galician hórreo, the traditional granary of Galicia.",
       "renoir": "Collector's figure, matte finish.",
       "miniFarkle": "Travel-size Mini Farkle, ready for your backpack."
     },

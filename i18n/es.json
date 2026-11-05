@@ -117,7 +117,7 @@
     "notFound": "No hemos encontrado esta obra. Puedes volver a la galería para ver el resto.",
     "items": {
       "caballero": { "title": "Caballero Henry", "description": "Miniatura de caballero pintada a mano, con cada detalle de la armadura trabajado a pincel fino. Las capas de color se superponen poco a poco para dar profundidad al metal y a los tejidos, sin perder el carácter de una figura pensada para verse de cerca." },
-      "minas-tirith": { "title": "Óleo «La Ciudadela»", "description": "Óleo sobre lienzo que muestra una ciudadela alzada entre montañas, pintado con veladuras finas para capturar la luz de las primeras horas del día. La composición guía la mirada desde el camino hasta las murallas, donde cada piedra se trabaja con pinceladas breves y precisas." },
+      "minas-tirith": { "title": "Gandalf llegando a Minas Tirith", "description": "Óleo sobre lienzo que muestra Minas Tirith entre las montañas, pintado con veladuras finas para capturar la luz de las primeras horas del día. La composición guía la mirada desde el camino hasta las murallas, donde cada piedra se trabaja con pinceladas breves y precisas." },
       "set-farkle-blason": { "title": "Tablero de Farkle", "description": "Tablero de Farkle en formato caja de 20 cm x 20 cm, pintado y decorado a mano con tus escudos o motivos favoritos. Cada detalle, desde el tinte de la madera hasta el trazo del escudo, se cuida pieza a pieza." },
       "set-farkle": { "title": "Set completo de Farkle", "description": "Tablero de Farkle en formato caja de 20 cm x 20 cm, pintado y decorado a mano, con 12 dados de madera grabados a mano, 4 dados especiales a elegir, dos cubiletes de piel sintética cosidos a mano y 50 groschens de madera pintados uno a uno." },
       "mini-farkle-viajero": { "title": "Mini Farkle de viaje", "description": "Versión compacta del set de Farkle, de 12 cm x 12 cm y pensada para viajar. Incluye 12 dados normales y 4 especiales, todos grabados a mano." },
@@ -130,7 +130,8 @@
       "jinete": { "title": "Jinete heráldico", "description": "Diorama de un jinete con escudo heráldico, montado sobre una base pintada a mano que recrea un camino de tierra. Cada elemento del escudo se pinta con colores sólidos y perfiles limpios, para que el blasón se lea incluso a distancia." },
       "heinrich": { "title": "Escena de Heinrich", "description": "Escena narrativa de interior medieval, ilustrada digitalmente. Los personajes se sitúan en una estancia iluminada por una única fuente de luz, y cada objeto de la sala cuenta un fragmento de la historia." },
       "lune": { "title": "Lune", "description": "Figura con peana de efectos, pintada con transiciones de fuego y cristal. Los brillos se construyen en capas translúcidas, para que la base parezca un fragmento de otro mundo sobre el que se apoya el personaje." },
-      "bosque": { "title": "Rincón del bosque", "description": "Óleo sobre lienzo de un riachuelo que atraviesa un bosque cerrado. La escena se construye con capas de verdes y ocres, dejando que la luz filtrada entre los árboles marque el recorrido del agua." },
+      "horreo-gallego": { "title": "Hórreo gallego", "description": "Un hórreo gallego, el tradicional granero elevado sobre pilares de piedra para guardar el maíz a salvo de la humedad y de los roedores. Una pieza dedicada a la arquitectura popular de Galicia, con sus formas sencillas y la huella del tiempo en cada tabla." },
+      "bosque": { "title": "Rincón del bosque", "description": "Óleo sobre pizarra de un riachuelo que atraviesa un bosque cerrado. La escena se construye con capas de verdes y ocres, dejando que la luz filtrada entre los árboles marque el recorrido del agua." },
       "renoir": { "title": "Renoir", "description": "Figura de coleccionista con un abrigo largo, terminada en acabado mate para suavizar los reflejos y resaltar los tejidos. La pintura se trabaja por zonas, con especial cuidado en las costuras y los pliegues." },
       "diorama-brutus": { "title": "Diorama Brutus", "description": "Pequeño diorama arquitectónico pintado a mano, con columnas y detalles dorados. Cada pieza se trabaja por separado antes de montar la escena, para que las superficies de piedra y los acentos metálicos convivan con limpieza." },
       "figura-reencuentro": { "title": "El reencuentro", "description": "Figura en resina de 16 cm de alto con base incluida. Representación del abrazo entre Hans y Henry durante el rescate en Malesov. Sus expresiones de alivio son realmente tiernas." },
@@ -146,20 +147,21 @@
     "sections": {
       "figuras": { "title": "Modelismo & Figuras", "meta": "Miniaturas y dioramas" },
       "artesanias": { "title": "Artesanías", "meta": "Piezas únicas y objetos singulares" },
-      "cuadros": { "title": "Cuadros & Pinturas", "meta": "Óleo sobre lienzo", "link": "Ver todos los cuadros →" },
+      "cuadros": { "title": "Cuadros & Pinturas", "meta": "Cuadros pintados a mano" },
       "dibujos": { "title": "Dibujos digitales", "meta": "Ilustración digital", "link": "Ver todos los dibujos →" }
     },
     "viewDetail": "Ver detalle",
     "captions": {
       "caballero": "Miniatura de caballero, pintada a pincel fino.",
-      "minasTirith": "Óleo sobre lienzo, ciudadela entre montañas.",
+      "minasTirith": "Óleo sobre lienzo. Gandalf llegando a Minas Tirith.",
       "farkleDetalle": "Detalle del escudo tallado a mano.",
       "abanicos": "Abanicos artesanales con motivos de Leipa y Skalice",
       "luminoso": "Ilustración digital, luz entre la niebla.",
       "jinete": "Diorama de jinete, base pintada a mano.",
       "heinrich": "Escena narrativa, ilustración digital.",
       "lune": "Figura con peana de efectos, pintura por encargo.",
-      "bosque": "Óleo sobre lienzo, un rincón de bosque.",
+      "bosque": "Óleo sobre pizarra, un rincón de bosque.",
+      "horreoGallego": "Hórreo gallego, arquitectura popular de Galicia.",
       "renoir": "Figura de coleccionista, acabado mate.",
       "miniFarkle": "Mini Farkle de viaje, listo para la mochila."
     },

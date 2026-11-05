@@ -10,7 +10,10 @@
   {
     "id": "minas-tirith",
     "images": [
-      "assets/img/cuadros/minas-tirith-1.jpg"
+      "assets/img/cuadros/minas-tirith-1.jpg",
+      "assets/img/cuadros/minas-tirith-2.jpg",
+      "assets/img/cuadros/minas-tirith-3.jpg",
+      "assets/img/cuadros/minas-tirith-4.jpg"
     ]
   },
   {
@@ -126,6 +129,12 @@
     "id": "bosque",
     "images": [
       "assets/img/cuadros/rincon-del-bosque-1.jpg"
+    ]
+  },
+  {
+    "id": "horreo-gallego",
+    "images": [
+      "assets/img/cuadros/horreo-gallego-1.jpg"
     ]
   },
   {
