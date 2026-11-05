@@ -55,6 +55,19 @@
     if (consultBtn) consultBtn.href = `contacto.html?producto=${encodeURIComponent(title)}`;
 
     renderImages(currentWork, title);
+    setBackLink(currentWork.id);
+  }
+
+  function setBackLink(id) {
+    const back = document.getElementById('workBack');
+    if (!back) return;
+    fetch('data/products.json')
+      .then((res) => res.json())
+      .then((products) => {
+        const item = products.find((p) => p.id === id);
+        if (item && item.category === 'artesanias') back.href = 'galeria.html#artesanias';
+      })
+      .catch((err) => console.error('No se pudo leer el producto', err));
   }
 
   function init() {

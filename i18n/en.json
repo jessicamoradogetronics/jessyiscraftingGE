@@ -118,6 +118,13 @@
     "items": {
       "caballero": { "title": "Henry the Knight", "description": "A hand-painted knight miniature, with every detail of the armour worked with a fine brush. Layers of colour build up slowly to give depth to the metal and the fabrics, without losing the character of a figure made to be seen up close." },
       "minas-tirith": { "title": "Oil «The Citadel»", "description": "An oil on canvas showing a citadel rising between mountains, painted with thin glazes to capture the light of early morning. The composition leads the eye from the road up to the walls, where each stone is worked with short, precise brushstrokes." },
+      "set-farkle-blason": { "title": "Farkle Board", "description": "Farkle board in 20 cm x 20 cm box format, hand-painted and decorated with your favourite crests or motifs. Every detail, from the wood stain to the brushstrokes of the crest, is finished piece by piece." },
+      "set-farkle": { "title": "Complete Farkle Set", "description": "Farkle board in 20 cm x 20 cm box format, hand-painted and decorated, with 12 hand-engraved wooden dice, 4 special dice to choose, two hand-stitched synthetic leather dice cups and 50 wooden groschen painted one by one." },
+      "mini-farkle-viajero": { "title": "Travel Mini Farkle", "description": "Compact version of the Farkle set, 12 cm x 12 cm and made for travelling. Includes 12 regular dice and 4 special ones, all hand-engraved." },
+      "set-dados-artesanales": { "title": "Handcrafted Dice Set", "description": "Set of 12 hand-engraved wooden dice, 2 cm x 2 cm, plus 4 special dice that can be customised." },
+      "groschens-madera-50": { "title": "Wooden Groschen", "description": "50 wooden coins that emulate the design of Bohemian groschen. Painted and varnished one by one, kept in a raffia bag." },
+      "cubilete-artesanal": { "title": "Artisan Dice Cup", "description": "Synthetic leather dice cup, 10 cm tall, ideal for rolling dice. Hand-stitched with an elegant X pattern." },
+      "abanicos-artesanales": { "title": "Handcrafted Fans", "description": "Elegant hand-painted fans. The Leipa crest is painted over the Phoenix pattern of Hans Capon's gambeson, and the Skalice crest is painted over a medieval hunting pattern with dogs, on a blue background representing Henry and the silver of Skalice." },
       "farkle-detalle": { "title": "Detail of the carved crest", "description": "A close-up of the crest hand-carved into a solid wooden box. The relief is shaped with gouges and gradual sanding; a finishing coat then sets the tone and brings out the natural grain of the wood." },
       "luminoso": { "title": "Luminous", "description": "A digital illustration of an armoured figure and a white horse wrapped in mist. Light enters from an undefined point in the background and travels across the metallic surfaces, creating a soft contrast between shadows and reflections." },
       "jinete": { "title": "Heraldic rider", "description": "A diorama of a rider with a heraldic shield, mounted on a hand-painted base that recreates a dirt track. Each element of the shield is painted in solid colours with clean edges, so the crest reads clearly even from a distance." },
@@ -138,7 +145,7 @@
     "filters": { "all": "All", "figuras": "Figures", "artesanias": "Crafts", "cuadros": "Paintings", "dibujos": "Digital drawings" },
     "sections": {
       "figuras": { "title": "Modelling & Figures", "meta": "Miniatures and dioramas" },
-      "artesanias": { "title": "Wood & Leather Crafts", "meta": "Unique pieces and one-of-a-kind objects", "link": "See the craft collection →" },
+      "artesanias": { "title": "Crafts", "meta": "Unique pieces and one-of-a-kind objects" },
       "cuadros": { "title": "Paintings & Canvases", "meta": "Oil on canvas", "link": "See all paintings →" },
       "dibujos": { "title": "Digital drawings", "meta": "Digital illustration", "link": "See all drawings →" }
     },
@@ -147,6 +154,7 @@
       "caballero": "Knight miniature, painted with a fine brush.",
       "minasTirith": "Oil on canvas, citadel among the mountains.",
       "farkleDetalle": "Detail of the hand-carved crest.",
+      "abanicos": "Handcrafted fans with Leipa and Skalice motifs",
       "luminoso": "Digital illustration, light through the mist.",
       "jinete": "Rider diorama, hand-painted base.",
       "heinrich": "Narrative scene, digital illustration.",

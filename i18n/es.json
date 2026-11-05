@@ -118,6 +118,13 @@
     "items": {
       "caballero": { "title": "Caballero Henry", "description": "Miniatura de caballero pintada a mano, con cada detalle de la armadura trabajado a pincel fino. Las capas de color se superponen poco a poco para dar profundidad al metal y a los tejidos, sin perder el carácter de una figura pensada para verse de cerca." },
       "minas-tirith": { "title": "Óleo «La Ciudadela»", "description": "Óleo sobre lienzo que muestra una ciudadela alzada entre montañas, pintado con veladuras finas para capturar la luz de las primeras horas del día. La composición guía la mirada desde el camino hasta las murallas, donde cada piedra se trabaja con pinceladas breves y precisas." },
+      "set-farkle-blason": { "title": "Tablero de Farkle", "description": "Tablero de Farkle en formato caja de 20 cm x 20 cm, pintado y decorado a mano con tus escudos o motivos favoritos. Cada detalle, desde el tinte de la madera hasta el trazo del escudo, se cuida pieza a pieza." },
+      "set-farkle": { "title": "Set completo de Farkle", "description": "Tablero de Farkle en formato caja de 20 cm x 20 cm, pintado y decorado a mano, con 12 dados de madera grabados a mano, 4 dados especiales a elegir, dos cubiletes de piel sintética cosidos a mano y 50 groschens de madera pintados uno a uno." },
+      "mini-farkle-viajero": { "title": "Mini Farkle de viaje", "description": "Versión compacta del set de Farkle, de 12 cm x 12 cm y pensada para viajar. Incluye 12 dados normales y 4 especiales, todos grabados a mano." },
+      "set-dados-artesanales": { "title": "Set de dados artesanales", "description": "Set de 12 dados de madera grabados a mano, de 2 cm x 2 cm, y 4 dados especiales que se pueden personalizar." },
+      "groschens-madera-50": { "title": "Groschens de madera", "description": "50 monedas de madera que emulan el diseño de los groschens bohemios. Pintadas y barnizadas una a una, guardadas en una bolsa de rafia." },
+      "cubilete-artesanal": { "title": "Cubilete artesanal", "description": "Cubilete de piel sintética de 10 cm de alto, ideal para lanzar dados. Cosido a mano con un elegante patrón en X." },
+      "abanicos-artesanales": { "title": "Abanicos artesanales", "description": "Elegantes abanicos pintados a mano. El escudo de Leipa está pintado sobre el patrón de Fénix del gambéson de Hans Capon, y el escudo de Skalice está pintado sobre un patrón medieval de caza con perros, con fondo azul representando a Henry y el plateado de la plata de Skalice." },
       "farkle-detalle": { "title": "Detalle del escudo tallado", "description": "Primer plano del escudo tallado a mano en una caja de madera maciza. El relieve se trabaja con gubias y lijado progresivo; después, una capa de acabado fija el tono y resalta la veta natural de la madera." },
       "luminoso": { "title": "Luminoso", "description": "Ilustración digital de una armadura y un caballo blanco envueltos en niebla. La luz llega desde un punto indefinido del fondo y recorre las superficies metálicas, creando un contraste suave entre sombras y reflejos." },
       "jinete": { "title": "Jinete heráldico", "description": "Diorama de un jinete con escudo heráldico, montado sobre una base pintada a mano que recrea un camino de tierra. Cada elemento del escudo se pinta con colores sólidos y perfiles limpios, para que el blasón se lea incluso a distancia." },
@@ -138,7 +145,7 @@
     "filters": { "all": "Todas", "figuras": "Figuras", "artesanias": "Artesanías", "cuadros": "Cuadros", "dibujos": "Dibujos digitales" },
     "sections": {
       "figuras": { "title": "Modelismo & Figuras", "meta": "Miniaturas y dioramas" },
-      "artesanias": { "title": "Artesanías en Madera & Cuero", "meta": "Piezas únicas y objetos singulares", "link": "Ver colección artesanal →" },
+      "artesanias": { "title": "Artesanías", "meta": "Piezas únicas y objetos singulares" },
       "cuadros": { "title": "Cuadros & Pinturas", "meta": "Óleo sobre lienzo", "link": "Ver todos los cuadros →" },
       "dibujos": { "title": "Dibujos digitales", "meta": "Ilustración digital", "link": "Ver todos los dibujos →" }
     },
@@ -147,6 +154,7 @@
       "caballero": "Miniatura de caballero, pintada a pincel fino.",
       "minasTirith": "Óleo sobre lienzo, ciudadela entre montañas.",
       "farkleDetalle": "Detalle del escudo tallado a mano.",
+      "abanicos": "Abanicos artesanales con motivos de Leipa y Skalice",
       "luminoso": "Ilustración digital, luz entre la niebla.",
       "jinete": "Diorama de jinete, base pintada a mano.",
       "heinrich": "Escena narrativa, ilustración digital.",

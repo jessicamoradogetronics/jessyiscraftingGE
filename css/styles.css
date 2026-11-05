@@ -1199,6 +1199,7 @@ p { margin: 0 0 1em; }
 .gallery-filters-section .store-filters { margin: 0; }
 .gallery-section { padding: 1.6rem 0; }
 .gallery-section[hidden] { display: none; }
+#artesanias { scroll-margin-top: 6rem; }
 
 .gallery-section__head {
   display: flex;

@@ -118,6 +118,13 @@
     "items": {
       "caballero": { "title": "Ritter Henry", "description": "Eine handbemalte Ritterminiatur, bei der jedes Detail der Rüstung mit feinem Pinsel gearbeitet ist. Die Farbschichten bauen sich langsam auf, um Metall und Stoffen Tiefe zu geben, ohne den Charakter einer Figur zu verlieren, die aus der Nähe betrachtet werden soll." },
       "minas-tirith": { "title": "Öl „Die Zitadelle“", "description": "Ein Ölgemälde auf Leinwand, das eine Zitadelle zwischen Bergen zeigt, mit dünnen Lasuren gemalt, um das Licht der frühen Morgenstunden einzufangen. Die Komposition führt den Blick von der Straße bis zu den Mauern, wo jeder Stein mit kurzen, präzisen Pinselstrichen gearbeitet ist." },
+      "set-farkle-blason": { "title": "Farkle-Brett", "description": "Farkle-Brett im Kastenformat von 20 cm x 20 cm, handbemalt und verziert mit deinen Lieblingswappen oder -motiven. Jedes Detail, von der Holzbeize bis zum Pinselstrich des Wappens, wird Stück für Stück ausgearbeitet." },
+      "set-farkle": { "title": "Komplettes Farkle-Set", "description": "Farkle-Brett im Kastenformat von 20 cm x 20 cm, handbemalt und verziert, mit 12 handgravierten Holzwürfeln, 4 besonderen Würfeln zur Auswahl, zwei handgenähten Bechern aus Kunstleder und 50 einzeln handbemalten Holz-Groschen." },
+      "mini-farkle-viajero": { "title": "Mini-Farkle für unterwegs", "description": "Kompakte Version des Farkle-Sets, 12 cm x 12 cm und zum Reisen gedacht. Enthält 12 normale Würfel und 4 besondere, alle handgraviert." },
+      "set-dados-artesanales": { "title": "Handgefertigtes Würfelset", "description": "Set aus 12 handgravierten Holzwürfeln, 2 cm x 2 cm, plus 4 besondere Würfel, die individuell gestaltet werden können." },
+      "groschens-madera-50": { "title": "Holz-Groschen", "description": "50 Holzmünzen im Design böhmischer Groschen. Einzeln bemalt und lackiert, in einem Raffiabeutel aufbewahrt." },
+      "cubilete-artesanal": { "title": "Handgefertigter Würfelbecher", "description": "Würfelbecher aus Kunstleder, 10 cm hoch, ideal zum Würfeln. Von Hand genäht mit eleganten X-Muster." },
+      "abanicos-artesanales": { "title": "Handgefertigte Fächer", "description": "Elegante, handbemalte Fächer. Das Wappen von Leipa ist über das Phönix-Muster des Gambesons von Hans Capon gemalt, und das Wappen von Skalice über ein mittelalterliches Jagdmuster mit Hunden, auf blauem Hintergrund, der Henry symbolisiert, und dem Silberton von Skalice." },
       "farkle-detalle": { "title": "Detail des geschnitzten Wappens", "description": "Nahaufnahme des von Hand geschnitzten Wappens auf einer massiven Holzbox. Das Relief entsteht mit Stechbeitel und schrittweisem Schleifen; danach fixiert eine Schutzschicht den Ton und betont die natürliche Maserung des Holzes." },
       "luminoso": { "title": "Leuchtend", "description": "Digitale Illustration einer gepanzerten Gestalt und eines weißen Pferdes im Nebel. Das Licht fällt aus einem unbestimmten Punkt im Hintergrund über die metallischen Flächen und erzeugt einen sanften Kontrast zwischen Schatten und Reflexen." },
       "jinete": { "title": "Heraldischer Reiter", "description": "Ein Diorama eines Reiters mit heraldischem Schild, auf einem handbemalten Sockel, der einen Feldweg nachbildet. Jedes Element des Schildes ist in satten Farben mit sauberen Konturen gemalt, damit das Wappen auch aus der Ferne gut lesbar ist." },
@@ -138,7 +145,7 @@
     "filters": { "all": "Alle", "figuras": "Figuren", "artesanias": "Handwerk", "cuadros": "Gemälde", "dibujos": "Digitale Zeichnungen" },
     "sections": {
       "figuras": { "title": "Modellbau & Figuren", "meta": "Miniaturen und Dioramen" },
-      "artesanias": { "title": "Handwerk aus Holz & Leder", "meta": "Einzelstücke und Unikate", "link": "Handwerkskollektion ansehen →" },
+      "artesanias": { "title": "Handwerk", "meta": "Einzelstücke und Unikate" },
       "cuadros": { "title": "Gemälde & Leinwände", "meta": "Öl auf Leinwand", "link": "Alle Gemälde ansehen →" },
       "dibujos": { "title": "Digitale Zeichnungen", "meta": "Digitale Illustration", "link": "Alle Zeichnungen ansehen →" }
     },
@@ -147,6 +154,7 @@
       "caballero": "Ritter-Miniatur, mit feinem Pinsel bemalt.",
       "minasTirith": "Öl auf Leinwand, Zitadelle zwischen den Bergen.",
       "farkleDetalle": "Detail des handgeschnitzten Wappens.",
+      "abanicos": "Handgefertigte Fächer mit Motiven aus Leipa und Skalice",
       "luminoso": "Digitale Illustration, Licht im Nebel.",
       "jinete": "Reiter-Diorama, handbemalte Basis.",
       "heinrich": "Erzählende Szene, digitale Illustration.",

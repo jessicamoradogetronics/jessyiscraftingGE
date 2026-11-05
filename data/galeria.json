@@ -14,9 +14,81 @@
     ]
   },
   {
-    "id": "farkle-detalle",
+    "id": "set-farkle-blason",
     "images": [
-      "assets/img/artesanias/farkle-set-2.jpg"
+      "assets/img/artesanias/farkle-set-1.jpg",
+      "assets/img/artesanias/farkle-set-2.jpg",
+      "assets/img/artesanias/farkle-set-3.jpg",
+      "assets/img/artesanias/farkle-set-4.jpg",
+      "assets/img/artesanias/farkle-set-5.jpg",
+      "assets/img/artesanias/farkle-extra-1.jpg",
+      "assets/img/artesanias/farkle-extra-2.jpg",
+      "assets/img/artesanias/farkle-extra-3.jpg",
+      "assets/img/artesanias/farkle-extra-4.jpg",
+      "assets/img/artesanias/farkle-extra-5.jpg",
+      "assets/img/artesanias/farkle-extra-6.jpg",
+      "assets/img/artesanias/farkle-extra-7.jpg"
+    ]
+  },
+  {
+    "id": "set-farkle",
+    "images": [
+      "assets/img/artesanias/farkle-set-6.jpg",
+      "assets/img/artesanias/farkle-set-2.jpg",
+      "assets/img/artesanias/farkle-set-3.jpg",
+      "assets/img/artesanias/farkle-set-4.jpg",
+      "assets/img/artesanias/farkle-set-5.jpg",
+      "assets/img/artesanias/farkle-extra-1.jpg",
+      "assets/img/artesanias/farkle-extra-2.jpg",
+      "assets/img/artesanias/farkle-extra-3.jpg",
+      "assets/img/artesanias/farkle-extra-4.jpg",
+      "assets/img/artesanias/farkle-extra-5.jpg",
+      "assets/img/artesanias/farkle-extra-6.jpg",
+      "assets/img/artesanias/farkle-extra-7.jpg",
+      "assets/img/artesanias/farkle-extra-8.jpg",
+      "assets/img/artesanias/farkle-extra-9.jpg",
+      "assets/img/artesanias/farkle-extra-10.jpg",
+      "assets/img/artesanias/farkle-extra-11.jpg"
+    ]
+  },
+  {
+    "id": "mini-farkle-viajero",
+    "images": [
+      "assets/img/artesanias/mini-farkle-1.jpg"
+    ]
+  },
+  {
+    "id": "set-dados-artesanales",
+    "images": [
+      "assets/img/artesanias/farkle-dados-1.jpg",
+      "assets/img/artesanias/farkle-dados-2.jpg",
+      "assets/img/artesanias/farkle-dados-3.jpg"
+    ]
+  },
+  {
+    "id": "groschens-madera-50",
+    "images": [
+      "assets/img/artesanias/farkle-groschens-1.jpg",
+      "assets/img/artesanias/farkle-groschens-2.jpg",
+      "assets/img/artesanias/farkle-groschens-3.jpg",
+      "assets/img/artesanias/farkle-groschens-4.jpg"
+    ]
+  },
+  {
+    "id": "cubilete-artesanal",
+    "images": [
+      "assets/img/artesanias/cubilete-artesanal-1.jpg",
+      "assets/img/artesanias/cubilete-artesanal-2.jpg"
+    ]
+  },
+  {
+    "id": "abanicos-artesanales",
+    "images": [
+      "assets/img/artesanias/abanicos-1.jpg",
+      "assets/img/artesanias/abanicos-2.jpg",
+      "assets/img/artesanias/abanicos-3.jpg",
+      "assets/img/artesanias/abanicos-4.jpg",
+      "assets/img/artesanias/abanicos-5.jpg"
     ]
   },
   {
@@ -94,12 +166,6 @@
       "assets/img/figuras/reencuentro-3.jpg",
       "assets/img/figuras/reencuentro-4.jpg",
       "assets/img/figuras/reencuentro-5.jpg"
-    ]
-  },
-  {
-    "id": "mini-farkle",
-    "images": [
-      "assets/img/artesanias/mini-farkle-1.jpg"
     ]
   }
 ]
