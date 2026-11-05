@@ -20,12 +20,15 @@
         <li><a href="{{BASE}}contacto.html" data-i18n="nav.contact">Contacto</a></li>
         <li><a href="{{BASE}}faq.html" data-i18n="nav.faq">Preguntas frecuentes</a></li>
       </ul>
-      <label class="visually-hidden" for="langSelect" data-i18n="nav.langLabel">Idioma</label>
-      <select class="lang-select" id="langSelect" aria-label="Seleccionar idioma">
-        <option value="es">ES</option>
-        <option value="en">EN</option>
-        <option value="de">DE</option>
-      </select>
+      <span class="lang-picker">
+        <svg class="lang-picker__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><ellipse cx="12" cy="12" rx="4" ry="9.5"/><path d="M2.5 12h19M4 7h16M4 17h16"/></svg>
+        <label class="visually-hidden" for="langSelect" data-i18n="nav.langLabel">Idioma</label>
+        <select class="lang-select" id="langSelect" aria-label="Seleccionar idioma">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+        </select>
+      </span>
     </nav>
 
     <div class="header-actions">

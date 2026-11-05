@@ -281,6 +281,21 @@ p { margin: 0 0 1em; }
   gap: 0.9rem;
 }
 
+.lang-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.lang-picker__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  flex: none;
+  fill: none;
+  stroke: #a0632c;
+  stroke-width: 2;
+}
+
 .lang-select {
   appearance: none;
   background: var(--color-surface) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0 L5 6 L10 0 Z' fill='%234f6b45'/></svg>") no-repeat right 0.7rem center;
