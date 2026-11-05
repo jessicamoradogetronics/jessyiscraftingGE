@@ -406,6 +406,11 @@
       "description": "Würfelbecher aus Kunstleder, 10 cm hoch, ideal zum Würfeln. Von Hand genäht mit eleganten X-Muster. Preis pro Stück.",
       "addons": { "dados-6": { "name": "Würfelset", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } }
     },
+    "figura-dobby": {
+      "name": "Dobby aus Harry Potter",
+      "short": "Dobby-Figur mit seiner Socke",
+      "description": "Harzfigur des Elfen Dobby, 18 cm hoch. Natürliche Farben und matte Oberfläche, mit Glanzlichtern in den Augen und im Funken der Magie."
+    },
     "oleo-minas-tirith": {
       "name": "Ölgemälde „Die Zitadelle“",
       "short": "Eine in Öl gemalte Interpretation einer großen Steinzitadelle zwischen Bergen, inspiriert von mittelalterlicher Fantasy.",

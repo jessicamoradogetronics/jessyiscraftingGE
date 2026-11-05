@@ -406,6 +406,11 @@
       "description": "Synthetic leather dice cup, 10 cm tall, ideal for rolling dice. Hand-stitched with an elegant X pattern. Price per unit.",
       "addons": { "dados-6": { "name": "Set of dice", "description": "" }, "groschens-madera": { "name": "50 wooden groschen", "description": "" } }
     },
+    "figura-dobby": {
+      "name": "Dobby, from Harry Potter",
+      "short": "Dobby figure with his sock",
+      "description": "Resin figure of the elf Dobby, 18 cm tall. Natural colours and matte finish, with highlights in the eyes and the spark of magic."
+    },
     "oleo-minas-tirith": {
       "name": "\"The Citadel\" Oil Painting",
       "short": "An oil-painted interpretation of a great stone citadel among mountains, inspired by medieval fantasy.",

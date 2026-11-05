@@ -141,6 +141,21 @@
     ]
   },
   {
+    "id": "figura-dobby",
+    "category": "figuras",
+    "price": 60,
+    "priceFrom": false,
+    "customizable": false,
+    "featured": false,
+    "images": [
+      "assets/img/figuras/dobby-1",
+      "assets/img/figuras/dobby-2",
+      "assets/img/figuras/dobby-3",
+      "assets/img/figuras/dobby-4",
+      "assets/img/figuras/dobby-5"
+    ]
+  },
+  {
     "id": "miniatura-caballero-henry",
     "category": "figuras",
     "price": 29.95,

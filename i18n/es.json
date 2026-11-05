@@ -406,6 +406,11 @@
       "description": "Cubilete de piel sintética de 10 cm de alto, ideal para lanzar dados. Cosidos a mano con elegante patrón en X. Precio por unidad.",
       "addons": { "dados-6": { "name": "Set de dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } }
     },
+    "figura-dobby": {
+      "name": "«Dobby», de Harry Potter",
+      "short": "Figura de Dobby con su calcetín",
+      "description": "Figura en resina del elfo Dobby, de 18 cm de altura. Colores naturales y acabo en mate, con brillos en los ojos y en la chispa de magia."
+    },
     "oleo-minas-tirith": {
       "name": "Óleo «La Ciudadela»",
       "short": "Interpretación al óleo de una gran ciudadela de piedra entre montañas, inspirada en la fantasía medieval.",
