@@ -125,6 +125,8 @@
       "lune": { "title": "Lune", "description": "Figura con peana de efectos, pintada con transiciones de fuego y cristal. Los brillos se construyen en capas translúcidas, para que la base parezca un fragmento de otro mundo sobre el que se apoya el personaje." },
       "bosque": { "title": "Rincón del bosque", "description": "Óleo sobre lienzo de un riachuelo que atraviesa un bosque cerrado. La escena se construye con capas de verdes y ocres, dejando que la luz filtrada entre los árboles marque el recorrido del agua." },
       "renoir": { "title": "Renoir", "description": "Figura de coleccionista con un abrigo largo, terminada en acabado mate para suavizar los reflejos y resaltar los tejidos. La pintura se trabaja por zonas, con especial cuidado en las costuras y los pliegues." },
+      "diorama-brutus": { "title": "Diorama Brutus", "description": "Pequeño diorama arquitectónico pintado a mano, con columnas y detalles dorados. Cada pieza se trabaja por separado antes de montar la escena, para que las superficies de piedra y los acentos metálicos convivan con limpieza." },
+      "figura-dobby": { "title": "Dobby", "description": "Figura de Dobby con su calcetín, pintada a mano. Los tonos de piel y tela se construyen en capas finas para que el personaje conserve su expresión y su aire travieso." },
       "mini-farkle": { "title": "Mini Farkle de viaje", "description": "La versión compacta del set de Farkle, pensada para llevar en la mochila. Mantiene el mismo cuidado por el detalle en un formato pequeño, ideal para escapadas, acampadas o para tener siempre a mano una partida improvisada." }
     }
   },
@@ -132,6 +134,14 @@
     "eyebrow": "Galería",
     "title": "Un paseo por el taller",
     "subtitle": "Piezas terminadas, procesos a medio camino y algún que otro momento detrás de la mesa de trabajo. Toca cualquier imagen para ver su detalle.",
+    "filters": { "all": "Todas", "figuras": "Figuras", "artesanias": "Artesanías", "cuadros": "Cuadros", "dibujos": "Dibujos digitales" },
+    "sections": {
+      "figuras": { "title": "Modelismo & Figuras", "meta": "Miniaturas y dioramas" },
+      "artesanias": { "title": "Artesanías en Madera & Cuero", "meta": "Piezas únicas y objetos singulares", "link": "Ver colección artesanal →" },
+      "cuadros": { "title": "Cuadros & Pinturas", "meta": "Óleo sobre lienzo", "link": "Ver todos los cuadros →" },
+      "dibujos": { "title": "Dibujos digitales", "meta": "Ilustración digital", "link": "Ver todos los dibujos →" }
+    },
+    "viewDetail": "Ver detalle",
     "captions": {
       "caballero": "Miniatura de caballero, pintada a pincel fino.",
       "minasTirith": "Óleo sobre lienzo, ciudadela entre montañas.",

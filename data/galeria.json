@@ -2,7 +2,9 @@
   {
     "id": "caballero",
     "images": [
-      "assets/img/figuras/caballero-henry-1.jpg"
+      "assets/img/figuras/caballero-henry-1.jpg",
+      "assets/img/figuras/caballero-henry-2.jpg",
+      "assets/img/figuras/caballero-henry-3.jpg"
     ]
   },
   {
@@ -28,7 +30,9 @@
     "images": [
       "assets/img/figuras/jinete-heraldico-1.jpg",
       "assets/img/figuras/jinete-heraldico-2.jpg",
-      "assets/img/figuras/jinete-heraldico-3.jpg"
+      "assets/img/figuras/jinete-heraldico-3.jpg",
+      "assets/img/figuras/jinete-heraldico-4.jpg",
+      "assets/img/figuras/jinete-heraldico-5.jpg"
     ]
   },
   {
@@ -40,7 +44,10 @@
   {
     "id": "lune",
     "images": [
-      "assets/img/figuras/lune-1.jpg"
+      "assets/img/figuras/lune-1.jpg",
+      "assets/img/figuras/lune-2.jpg",
+      "assets/img/figuras/lune-3.jpg",
+      "assets/img/figuras/lune-4.jpg"
     ]
   },
   {
@@ -53,7 +60,30 @@
     "id": "renoir",
     "images": [
       "assets/img/figuras/renoir-1.jpg",
-      "assets/img/figuras/renoir-2.jpg"
+      "assets/img/figuras/renoir-2.jpg",
+      "assets/img/figuras/renoir-3.jpg",
+      "assets/img/figuras/renoir-4.jpg",
+      "assets/img/figuras/renoir-5.jpg"
+    ]
+  },
+  {
+    "id": "diorama-brutus",
+    "images": [
+      "assets/img/figuras/brutus-2.jpg",
+      "assets/img/figuras/brutus-1.jpg",
+      "assets/img/figuras/brutus-3.jpg",
+      "assets/img/figuras/brutus-4.jpg",
+      "assets/img/figuras/brutus-5.jpg"
+    ]
+  },
+  {
+    "id": "figura-dobby",
+    "images": [
+      "assets/img/figuras/dobby-1.jpg",
+      "assets/img/figuras/dobby-2.jpg",
+      "assets/img/figuras/dobby-3.jpg",
+      "assets/img/figuras/dobby-4.jpg",
+      "assets/img/figuras/dobby-5.jpg"
     ]
   },
   {

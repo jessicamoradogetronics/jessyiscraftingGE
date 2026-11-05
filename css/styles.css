@@ -1137,24 +1137,94 @@ p { margin: 0 0 1em; }
 .lightbox__nav--next { right: 1.5rem; }
 
 .gallery-grid {
-  column-count: 3;
-  column-gap: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
 }
 .gallery-grid figure {
-  margin: 0 0 1.2rem;
-  break-inside: avoid;
+  margin: 0;
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--color-border);
   background: var(--color-surface);
 }
-.gallery-grid a { display: block; }
-.gallery-grid img { width: 100%; cursor: pointer; transition: transform 0.4s ease; }
-.gallery-grid img:hover { transform: scale(1.03); }
-.gallery-grid figcaption {
-  padding: 0.7rem 0.9rem;
-  font-size: 0.82rem;
+.gallery-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+.gallery-card:focus-visible { outline: 2px solid var(--color-gold); outline-offset: -4px; }
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.gallery-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.2rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(70, 70, 70, 0.72);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.gallery-card__desc { font-size: 0.92rem; line-height: 1.4; }
+.gallery-card__cta {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentColor;
+}
+.gallery-card:hover img,
+.gallery-card:focus-visible img { transform: scale(1.1); }
+.gallery-card:hover .gallery-card__overlay,
+.gallery-card:focus-visible .gallery-card__overlay { opacity: 1; }
+@media (hover: none) {
+  .gallery-card__overlay { opacity: 1; background: rgba(70, 70, 70, 0.55); }
+}
+
+/* Secciones de la galería */
+.gallery-filters-section { padding: 1.6rem 0 0.4rem; }
+.gallery-filters-section .store-filters { margin: 0; }
+.gallery-section { padding: 1.6rem 0; }
+.gallery-section[hidden] { display: none; }
+
+.gallery-section__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-section__head h2 {
+  margin: 0;
+}
+
+.gallery-section__meta {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--color-text-soft);
+  font-weight: 500;
+}
+
+.gallery-section__link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-green-deep);
 }
 
 /* Detalle de obra (obra.html) */
@@ -1223,7 +1293,7 @@ p { margin: 0 0 1em; }
   .inspo-block { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .gallery-grid { column-count: 2; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
@@ -1246,7 +1316,7 @@ p { margin: 0 0 1em; }
   .grid--4 { grid-template-columns: 1fr 1fr; }
   .quicklinks { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
-  .gallery-grid { column-count: 1; }
+  .gallery-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 520px) {

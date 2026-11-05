@@ -125,6 +125,8 @@
       "lune": { "title": "Lune", "description": "A figure on an effects base, painted with transitions of fire and crystal. The highlights are built in translucent layers, so the base looks like a fragment of another world for the character to stand on." },
       "bosque": { "title": "Corner of the forest", "description": "An oil on canvas of a stream running through a dense forest. The scene is built with layers of greens and ochres, letting the light filtering through the trees mark the path of the water." },
       "renoir": { "title": "Renoir", "description": "A collector figure in a long coat, finished in a matte coat to soften the reflections and bring out the fabrics. The paint is worked area by area, with particular care for the seams and folds." },
+      "diorama-brutus": { "title": "Brutus Diorama", "description": "Small hand-painted architectural diorama, with columns and gold details. Each piece is worked separately before the scene is assembled, so the stone surfaces and metallic accents sit together cleanly." },
+      "figura-dobby": { "title": "Dobby", "description": "Hand-painted Dobby figure with his sock. Skin and cloth tones are built up in thin layers so the character keeps its expression and mischievous air." },
       "mini-farkle": { "title": "Travel Mini Farkle", "description": "The compact version of the Farkle set, made to carry in a backpack. It keeps the same care for detail in a small format, ideal for trips, camping or an impromptu game always within reach." }
     }
   },
@@ -132,6 +134,14 @@
     "eyebrow": "Gallery",
     "title": "A walk through the workshop",
     "subtitle": "Finished pieces, works in progress and the odd moment behind the worktable. Tap any image to see its details.",
+    "filters": { "all": "All", "figuras": "Figures", "artesanias": "Crafts", "cuadros": "Paintings", "dibujos": "Digital drawings" },
+    "sections": {
+      "figuras": { "title": "Modelling & Figures", "meta": "Miniatures and dioramas" },
+      "artesanias": { "title": "Wood & Leather Crafts", "meta": "Unique pieces and one-of-a-kind objects", "link": "See the craft collection →" },
+      "cuadros": { "title": "Paintings & Canvases", "meta": "Oil on canvas", "link": "See all paintings →" },
+      "dibujos": { "title": "Digital drawings", "meta": "Digital illustration", "link": "See all drawings →" }
+    },
+    "viewDetail": "View details",
     "captions": {
       "caballero": "Knight miniature, painted with a fine brush.",
       "minasTirith": "Oil on canvas, citadel among the mountains.",
