@@ -15,9 +15,16 @@
       .catch((err) => console.error(`No se pudo cargar ${url}`, err));
   }
 
+  // Espera a que el documento termine de parsear: con caché fría los scripts
+  // del final del body aún no se han ejecutado cuando llegan los partials.
+  const domReady = document.readyState === 'loading'
+    ? new Promise((resolve) => document.addEventListener('DOMContentLoaded', resolve, { once: true }))
+    : Promise.resolve();
+
   Promise.all([
     loadPartial('[data-include="header"]', 'partials/header.html'),
     loadPartial('[data-include="footer"]', 'partials/footer.html'),
+    domReady,
   ]).then(() => {
     document.dispatchEvent(new CustomEvent('partials:loaded'));
   });
