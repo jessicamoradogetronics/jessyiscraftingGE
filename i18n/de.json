@@ -360,14 +360,14 @@
       "subjectPlaceholder": "z. B. Individueller Auftrag, Kooperation ...",
       "message": "Nachricht",
       "submit": "Nachricht senden",
-      "note": "Ich antworte normalerweise innerhalb von 2-3 Werktagen. Bei dringenden Anliegen schreib mir lieber über Instagram."
+      "note": "Ich antworte in der Regel innerhalb von 1-2 Tagen. Wenn deine Anfrage dringend ist und du noch keine Antwort erhalten hast, kannst du mich über Instagram kontaktieren."
     },
     "channelsTitle": "Weitere Wege, mich zu erreichen",
     "channels": {
       "email": "E-Mail"
     },
     "shippingTitle": "Bevor du schreibst",
-    "shippingText": "Ich versende problemlos nach Spanien, in die Europäische Union und nach Großbritannien. Wenn du in einem anderen Land lebst, melde dich bitte vorher, damit wir Fristen und Versandkosten klären können — alle Details findest du in den häufigen Fragen.",
+    "shippingText": "Ich versende problemlos nach Spanien, in die Europäische Union und nach Großbritannien. Wenn du in einem anderen Land lebst, schreib mir bitte zuerst, um Fristen und Versandkosten zu bestätigen. Alle Details findest du in den häufigen Fragen.",
     "prefillMessage": "Hallo, ich möchte gerne bestellen:"
   },
   "faq": {

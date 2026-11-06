@@ -359,7 +359,7 @@
       "subject": "Asunto",
       "message": "Mensaje",
       "submit": "Enviar mensaje",
-      "note": "Suelo responder en 2-3 días laborables. Si tu consulta es urgente, escríbeme mejor por Instagram.",
+      "note": "Suelo responder en 1-2 días. Si tu consulta es urgente, y todavía no has obtenido respuesta, puedes contactarme por Instagram.",
       "subjectPlaceholder": "Ej. Encargo personalizado, colaboración..."
     },
     "channelsTitle": "Otras formas de encontrarme",
@@ -367,7 +367,7 @@
       "email": "Correo electrónico"
     },
     "shippingTitle": "Antes de escribir",
-    "shippingText": "Envío a toda España, la Unión Europea y Reino Unido sin problema. Si vives en otro país, escríbeme primero para confirmar plazos y gastos de envío — tienes todos los detalles en las preguntas frecuentes.",
+    "shippingText": "Envío a toda España, la Unión Europea y Reino Unido sin problema. Si vives en otro país, escríbeme primero para confirmar plazos y gastos de envío. Tienes todos los detalles en las preguntas frecuentes.",
     "prefillMessage": "Hola, me gustaría encargar:"
   },
   "faq": {
