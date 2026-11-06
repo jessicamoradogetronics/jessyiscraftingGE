@@ -386,17 +386,13 @@
         "q": "¿Puedo devolver o cambiar un pedido?",
         "a": "Las piezas de catálogo sin personalizar se pueden devolver en un plazo de 14 días naturales desde la recepción, siempre que lleguen en perfecto estado y sin usar. Las piezas personalizadas, los encargos a medida y las comisiones de ilustración no admiten devolución, salvo que exista un defecto de fabricación o un daño ocurrido durante el transporte."
       },
-      "customization": {
-        "q": "¿Qué puedo personalizar exactamente?",
-        "a": "Depende de cada pieza. En los sets de Farkle puedes elegir iniciales, un escudo propio o el tono de la madera. En los cuadros, el tamaño del lienzo y, en muchos casos, la escena. En los dibujos digitales, el personaje o la referencia que quieras retratar. Y en las figuras, los colores, el acabado y la base. En la ficha de cada producto encontrarás el detalle exacto de lo que se puede adaptar."
-      },
       "packaging": {
         "q": "¿Cómo viajan las piezas?",
         "a": "Con mucho cuidado. Las figuras y los cuadros se protegen con materiales acolchados y, siempre que es posible, reutilizo o reduzco plástico. Si tu pieza es frágil, lo indico claramente en el paquete para quien la reciba en tu nombre."
       },
       "commission": {
         "q": "¿Cómo encargo una comisión de ilustración?",
-        "a": "Escríbeme por el formulario de contacto o por redes sociales contándome tu idea, con referencias si las tienes. Te preparo un boceto inicial, cerramos juntas el precio y el plazo, y solo quedaría pasarlo a color. Tienes más información en la sección de Personalizaciones."
+        "a": "Normalmente no acepto comisiones de ilustración, pero si te gusta mi estilo, y te gustaría que realizara una para tí, no dudes en ponerte en contacto con el formulario habilitado para ello. Estudio la idea, creo el boceto, y cerramos el encargo."
       },
       "payment": {
         "q": "¿Cómo se paga un encargo?",
