@@ -2,7 +2,7 @@
   {
     "id": "set-farkle-blason",
     "category": "artesanias",
-    "price": 54.95,
+    "price": 49.95,
     "priceFrom": false,
     "customizable": true,
     "featured": true,
@@ -36,7 +36,7 @@
   {
     "id": "set-farkle",
     "category": "artesanias",
-    "price": 84.95,
+    "price": 79.95,
     "priceFrom": false,
     "customizable": true,
     "featured": true,
