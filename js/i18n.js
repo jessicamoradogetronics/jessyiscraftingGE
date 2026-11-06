@@ -6,27 +6,23 @@
  */
 (function () {
   const SUPPORTED_LANGS = ['es', 'en', 'de'];
-  const DEFAULT_LANG = 'es';
-  const FALLBACK_LANG = 'en';
+  const DEFAULT_LANG = 'en';
   const STORAGE_KEY = 'jic-lang';
 
   const cache = {};
   let currentDict = null;
   let currentLang = null;
 
+  // Orden: ?lang=, elección manual guardada, idioma principal del navegador (es/en/de) y, si no, inglés.
   function detectLang() {
+    const fromUrl = new URLSearchParams(location.search).get('lang');
+    if (SUPPORTED_LANGS.includes(fromUrl)) return fromUrl;
+
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
 
-    const browserLangs = navigator.languages && navigator.languages.length
-      ? navigator.languages
-      : [navigator.language || DEFAULT_LANG];
-
-    for (const bl of browserLangs) {
-      const short = bl.slice(0, 2).toLowerCase();
-      if (SUPPORTED_LANGS.includes(short)) return short;
-    }
-    return FALLBACK_LANG;
+    const browser = ((navigator.languages && navigator.languages[0]) || navigator.language || '').slice(0, 2).toLowerCase();
+    return SUPPORTED_LANGS.includes(browser) ? browser : DEFAULT_LANG;
   }
 
   function resolveKey(dict, key) {
@@ -76,7 +72,6 @@
         currentDict = dict;
         currentLang = lang;
         document.documentElement.setAttribute('lang', lang);
-        localStorage.setItem(STORAGE_KEY, lang);
         applyTranslations(dict);
         const select = document.getElementById('langSelect');
         if (select) select.value = lang;
@@ -90,7 +85,10 @@
       const select = document.getElementById('langSelect');
       if (select) {
         select.value = lang;
-        select.addEventListener('change', (e) => setLanguage(e.target.value));
+        select.addEventListener('change', (e) => {
+          localStorage.setItem(STORAGE_KEY, e.target.value);
+          setLanguage(e.target.value);
+        });
       }
     });
   }

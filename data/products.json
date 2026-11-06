@@ -2,6 +2,7 @@
   {
     "id": "set-farkle-blason",
     "category": "artesanias",
+    "availability": "in_stock",
     "price": 49.95,
     "priceFrom": false,
     "customizable": true,
@@ -36,6 +37,7 @@
   {
     "id": "set-farkle",
     "category": "artesanias",
+    "availability": "in_stock",
     "price": 79.95,
     "priceFrom": false,
     "customizable": true,
@@ -74,6 +76,7 @@
   {
     "id": "mini-farkle-viajero",
     "category": "artesanias",
+    "availability": "in_stock",
     "price": 29.95,
     "priceFrom": false,
     "customizable": true,
@@ -97,6 +100,7 @@
   {
     "id": "set-dados-artesanales",
     "category": "artesanias",
+    "availability": "in_stock",
     "price": 6.95,
     "priceFrom": false,
     "customizable": true,
@@ -113,6 +117,7 @@
   {
     "id": "groschens-madera-50",
     "category": "artesanias",
+    "availability": "in_stock",
     "price": 14.95,
     "priceFrom": false,
     "customizable": false,
@@ -127,6 +132,7 @@
   {
     "id": "cubilete-artesanal",
     "category": "artesanias",
+    "availability": "in_stock",
     "price": 5.95,
     "priceFrom": false,
     "customizable": false,
@@ -143,6 +149,7 @@
   {
     "id": "figura-dobby",
     "category": "figuras",
+    "availability": "in_stock",
     "price": 60,
     "priceFrom": false,
     "customizable": false,
@@ -158,6 +165,7 @@
   {
     "id": "figura-reencuentro",
     "category": "figuras",
+    "availability": "in_stock",
     "price": 45,
     "priceFrom": false,
     "customizable": true,
@@ -176,6 +184,7 @@
   {
     "id": "miniatura-caballero-henry",
     "category": "figuras",
+    "availability": "in_stock",
     "price": 29.95,
     "priceFrom": true,
     "customizable": true,
@@ -197,6 +206,7 @@
   {
     "id": "diorama-jinete-heraldico",
     "category": "figuras",
+    "availability": "in_stock",
     "price": 150,
     "priceFrom": false,
     "customizable": true,
@@ -215,6 +225,7 @@
   {
     "id": "figura-lune",
     "category": "figuras",
+    "availability": "in_stock",
     "price": 150,
     "priceFrom": false,
     "customizable": false,
@@ -229,6 +240,7 @@
   {
     "id": "figura-renoir",
     "category": "figuras",
+    "availability": "in_stock",
     "price": 70,
     "priceFrom": false,
     "customizable": false,
@@ -244,6 +256,7 @@
   {
     "id": "diorama-brutus",
     "category": "figuras",
+    "availability": "in_stock",
     "price": 70,
     "priceFrom": false,
     "customizable": true,

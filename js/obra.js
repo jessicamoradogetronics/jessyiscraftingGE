@@ -77,9 +77,23 @@
     const t = (dict.works && dict.works.items && dict.works.items[currentWork.id]) || {};
     const title = captionFor(dict, currentWork.id) || t.title || currentWork.id;
 
-    document.title = `${title} · JessyIsCrafting`;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && t.description) metaDesc.setAttribute('content', t.description.slice(0, 160));
+    const seo = window.JIC_SEO;
+    const pageUrl = `obra.html?id=${encodeURIComponent(currentWork.id)}`;
+    seo.setPageMeta({
+      title: `${title} · JessyIsCrafting`,
+      description: t.description,
+      url: pageUrl,
+      localized: true,
+      image: currentWork.images[0]
+    });
+    seo.setJsonLd('jsonld-work', {
+      '@type': 'VisualArtwork',
+      name: title,
+      description: seo.cleanText(t.description),
+      image: seo.absoluteUrl(currentWork.images[0]),
+      url: seo.absoluteUrl(pageUrl),
+      creator: { '@type': 'Organization', name: 'JessyIsCrafting', url: seo.SITE_URL }
+    });
 
     document.getElementById('breadcrumbCurrent').textContent = title;
     document.getElementById('workTitle').textContent = title;

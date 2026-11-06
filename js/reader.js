@@ -1,9 +1,13 @@
 (function () {
   var stories = window.FANFICS || {};
   var params = new URLSearchParams(window.location.search);
-  var story = stories[params.get('id')] || stories.worth;
+  // Las paginas estaticas (fanfic-<id>-<n>.html) traen id y capitulo en el body.
+  var prerendered = document.body.hasAttribute('data-prerendered');
+  var storyId = document.body.getAttribute('data-story') || params.get('id');
+  var chapterParam = document.body.getAttribute('data-chapter') || params.get('cap');
+  var story = stories[storyId] || stories.worth;
   var chapters = story.chapters;
-  var index = Math.min(Math.max(parseInt(params.get('cap'), 10) || 1, 1), chapters.length) - 1;
+  var index = Math.min(Math.max(parseInt(chapterParam, 10) || 1, 1), chapters.length) - 1;
   var chapter = chapters[index];
 
   if (!chapters.length) {
@@ -41,7 +45,7 @@
   }
 
   function chapterUrl(n) {
-    return 'leer.html?id=' + encodeURIComponent(story.id) + '&cap=' + n;
+    return 'fanfic-' + encodeURIComponent(story.id) + '-' + n + '.html';
   }
 
   // Quote goes after the second paragraph, matching the web and print output.
@@ -95,7 +99,28 @@
   }
 
   function renderHead() {
-    document.title = story.title + ' · Capítulo ' + (index + 1) + ' · JessyIsCrafting';
+    var seo = window.JIC_SEO;
+    var pageUrl = chapterUrl(index + 1);
+    seo.setPageMeta({
+      title: story.title + ' · Capítulo ' + (index + 1) + ' · JessyIsCrafting',
+      description: story.summary,
+      url: pageUrl
+    });
+    seo.setJsonLd('jsonld-chapter', {
+      '@type': 'CreativeWork',
+      name: chapter.title,
+      description: seo.cleanText(story.summary),
+      url: seo.absoluteUrl(pageUrl),
+      position: index + 1,
+      datePublished: chapter.date,
+      isAccessibleForFree: true,
+      author: { '@type': 'Organization', name: 'JessyIsCrafting', url: seo.SITE_URL },
+      isPartOf: {
+        '@type': 'CreativeWorkSeries',
+        name: story.title,
+        url: seo.absoluteUrl('fanfics.html')
+      }
+    });
     document.getElementById('crumbTitle').textContent = story.title;
 
     var tags = document.getElementById('tags');
@@ -428,10 +453,20 @@
       });
   }
 
-  renderSide();
-  renderHead();
-  renderBody();
-  renderPager();
+  if (prerendered) {
+    // El HTML ya viene renderizado; solo falta el selector de capitulos.
+    var pick = document.querySelector('#chapterPick select');
+    if (pick) {
+      pick.addEventListener('change', function () {
+        window.location.href = pick.value;
+      });
+    }
+  } else {
+    renderSide();
+    renderHead();
+    renderBody();
+    renderPager();
+  }
   initTools();
   initProgress();
   countRead();

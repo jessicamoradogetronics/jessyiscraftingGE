@@ -28,6 +28,7 @@
   --color-gold-soft: #d8c39b;
 
   --color-error: #9c3b2f;
+  --color-garnet: #7a1f2b;
 
   --font-display: "Cormorant Garamond", "Georgia", serif;
   --font-body: "Work Sans", "Segoe UI", sans-serif;
@@ -778,6 +779,19 @@ p { margin: 0 0 1em; }
   margin: 0 0 1.2rem;
   font-size: 0.82rem;
   color: var(--color-text-soft);
+}
+
+.product-info__availability {
+  margin: 0 0 0.8rem;
+  font-weight: 600;
+}
+
+.product-info__availability.is-in-stock {
+  color: var(--color-green-soft);
+}
+
+.product-info__availability.is-out-of-stock {
+  color: var(--color-garnet);
 }
 
 .custom-choice {

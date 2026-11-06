@@ -8,6 +8,11 @@
   let currentProduct = null;
   let addonQty = {};
 
+  const AVAILABILITY = {
+    in_stock: { key: 'availabilityInStock', schema: 'https://schema.org/InStock', cls: 'is-in-stock' },
+    out_of_stock: { key: 'availabilityOutOfStock', schema: 'https://schema.org/OutOfStock', cls: 'is-out-of-stock' }
+  };
+
   function getIdFromUrl() {
     return new URLSearchParams(location.search).get('id');
   }
@@ -322,9 +327,36 @@
     const t = dict.products[currentProduct.id] || {};
     const cat = dict.categories[currentProduct.category] || {};
 
-    document.title = `${t.name} · JessyIsCrafting`;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && t.short) metaDesc.setAttribute('content', t.short);
+    const seo = window.JIC_SEO;
+    const pageUrl = `producto.html?id=${encodeURIComponent(currentProduct.id)}`;
+    const image = `${currentProduct.images[0]}.jpg`;
+    seo.setPageMeta({
+      title: `${t.name} · JessyIsCrafting`,
+      description: t.short,
+      url: pageUrl,
+      localized: true,
+      image: image
+    });
+    const availability = AVAILABILITY[currentProduct.availability];
+    const offer = currentProduct.priceFrom
+      ? { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: currentProduct.price, availability: availability && availability.schema }
+      : { '@type': 'Offer', price: currentProduct.price, priceCurrency: 'EUR', availability: availability && availability.schema };
+    const availabilityEl = document.getElementById('productAvailability');
+    if (availabilityEl && availability) {
+      availabilityEl.className = 'product-info__availability ' + availability.cls;
+      availabilityEl.textContent = dict.productDetail[availability.key] || '';
+      availabilityEl.hidden = false;
+    }
+    seo.setJsonLd('jsonld-product', {
+      '@type': 'Product',
+      name: t.name || '',
+      description: seo.cleanText(t.short || t.description),
+      image: seo.absoluteUrl(image),
+      url: seo.absoluteUrl(pageUrl),
+      category: cat.name || '',
+      brand: { '@type': 'Brand', name: 'JessyIsCrafting' },
+      offers: offer
+    });
 
     document.getElementById('productCategory').textContent = cat.name || '';
     document.getElementById('productTitle').textContent = t.name || '';

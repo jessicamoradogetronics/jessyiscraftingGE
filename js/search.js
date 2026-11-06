@@ -138,7 +138,7 @@
         type: 'fanfic',
         title,
         body: [t.summary || story.summary, (story.tags || []).join(' ')].join('\n'),
-        url: `leer.html?id=${encodeURIComponent(id)}`,
+        url: (story.chapters || []).length ? `fanfic-${encodeURIComponent(id)}-1.html` : 'fanfics.html',
       }));
       (story.chapters || []).forEach((ch, i) => {
         out.push(makeEntry({
@@ -146,7 +146,7 @@
           title: ch.title,
           context: title,
           body: [ch.paragraphs.join('\n'), ch.quote || ''].join('\n'),
-          url: `leer.html?id=${encodeURIComponent(id)}&cap=${i + 1}`,
+          url: `fanfic-${encodeURIComponent(id)}-${i + 1}.html`,
         }));
       });
     });

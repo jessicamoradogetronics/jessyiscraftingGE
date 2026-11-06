@@ -94,6 +94,8 @@
     "backToStore": "Volver a la tienda",
     "zoomImage": "Ampliar imagen",
     "taxNote": "Impuestos incluidos · Envío rápido protegido",
+    "availabilityInStock": "Disponible",
+    "availabilityOutOfStock": "No disponible",
     "customChoiceLabel": "Personalización",
     "customNone": "Sin personalizar",
     "customYes": "Personalizar",
