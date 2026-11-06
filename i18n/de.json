@@ -111,6 +111,12 @@
     "relatedEyebrow": "Das könnte dir auch gefallen",
     "relatedTitle": "Weitere Stücke aus derselben Familie"
   },
+  "search": {
+    "label": "Website durchsuchen",
+    "placeholder": "Suchen...",
+    "empty": "Keine Ergebnisse",
+    "types": { "product": "Shop", "work": "Galerie", "fanfic": "Fanfic", "chapter": "Kapitel" }
+  },
   "works": {
     "backToGallery": "Zurück zur Galerie",
     "consultButton": "Zu diesem Stück anfragen",

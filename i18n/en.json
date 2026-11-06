@@ -111,6 +111,12 @@
     "relatedEyebrow": "You might also like",
     "relatedTitle": "More pieces from the same family"
   },
+  "search": {
+    "label": "Search the site",
+    "placeholder": "Search...",
+    "empty": "No results",
+    "types": { "product": "Shop", "work": "Gallery", "fanfic": "Fanfic", "chapter": "Chapter" }
+  },
   "works": {
     "backToGallery": "Back to the gallery",
     "consultButton": "Ask about this piece",

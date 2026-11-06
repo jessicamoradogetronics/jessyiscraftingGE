@@ -18,7 +18,7 @@
         <li><a href="{{BASE}}fanfics.html" data-i18n="nav.fanfics">Fanfics</a></li>
         <li><a href="{{BASE}}inspiracion.html" data-i18n="nav.inspiration">Inspiración</a></li>
         <li><a href="{{BASE}}contacto.html" data-i18n="nav.contact">Contacto</a></li>
-        <li><a href="{{BASE}}faq.html" data-i18n="nav.faq">Preguntas frecuentes</a></li>
+        <li><a href="{{BASE}}faq.html" data-i18n="nav.faq">Preguntas</a></li>
       </ul>
       <span class="lang-picker">
         <svg class="lang-picker__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><ellipse cx="12" cy="12" rx="4" ry="9.5"/><path d="M2.5 12h19M4 7h16M4 17h16"/></svg>
@@ -32,6 +32,10 @@
     </nav>
 
     <div class="header-actions">
+      <div class="site-search" id="siteSearch" role="search">
+        <input type="search" class="site-search__input" id="siteSearchInput" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="siteSearchResults" aria-autocomplete="list" data-i18n-attr="placeholder:search.placeholder;aria-label:search.label" placeholder="Buscar..." aria-label="Buscar en el sitio">
+        <ul class="site-search__results" id="siteSearchResults" role="listbox" hidden></ul>
+      </div>
       <button type="button" class="cart-toggle" id="cartToggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer" data-i18n-attr="aria-label:cart.openCart" aria-label="Abrir carrito">
         🛒<span class="cart-toggle__count" id="cartCount" hidden>0</span>
       </button>

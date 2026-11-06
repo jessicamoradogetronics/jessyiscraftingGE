@@ -84,7 +84,7 @@
     "fanfics": "Fanfics",
     "inspiration": "Inspiración",
     "contact": "Contacto",
-    "faq": "Preguntas frecuentes",
+    "faq": "Preguntas",
     "langLabel": "Idioma"
   },
   "productDetail": {
@@ -110,6 +110,12 @@
     "shippingNote": "Envíos a toda España, la Unión Europea y Reino Unido. Para otros países, consulta antes de encargar — más info en las preguntas frecuentes.",
     "relatedEyebrow": "También te puede gustar",
     "relatedTitle": "Más piezas de esta misma familia"
+  },
+  "search": {
+    "label": "Buscar en el sitio",
+    "placeholder": "Buscar...",
+    "empty": "Sin resultados",
+    "types": { "product": "Tienda", "work": "Galería", "fanfic": "Fanfic", "chapter": "Capítulo" }
   },
   "works": {
     "backToGallery": "Volver a la galería",
