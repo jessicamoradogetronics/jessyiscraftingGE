@@ -1025,6 +1025,19 @@ p { margin: 0 0 1em; }
   margin: 1.2rem 0;
 }
 
+.inspo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.inspo-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 /* ---------- Fanfics ---------- */
 .fx-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 1.5rem; }
 .fx-filters__label { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-muted); margin-right: 0.3rem; }
