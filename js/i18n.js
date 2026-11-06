@@ -7,6 +7,7 @@
 (function () {
   const SUPPORTED_LANGS = ['es', 'en', 'de'];
   const DEFAULT_LANG = 'es';
+  const FALLBACK_LANG = 'en';
   const STORAGE_KEY = 'jic-lang';
 
   const cache = {};
@@ -25,7 +26,7 @@
       const short = bl.slice(0, 2).toLowerCase();
       if (SUPPORTED_LANGS.includes(short)) return short;
     }
-    return DEFAULT_LANG;
+    return FALLBACK_LANG;
   }
 
   function resolveKey(dict, key) {
