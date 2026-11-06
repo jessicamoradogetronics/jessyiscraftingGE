@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/contact-popup.css">
 </head>
 <body>
 <a href="#main" class="skip-link">Saltar al contenido</a>
@@ -145,18 +146,41 @@
 <script src="js/main.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/fanfics.js"></script>
+<script src="js/contact.js"></script>
 <script>
   document.getElementById('fxSubscribe').addEventListener('submit', function (event) {
     event.preventDefault();
+    var form = this;
     var input = document.getElementById('fxEmail');
     var msg = document.getElementById('fxSubMsg');
     if (!input.checkValidity()) {
       msg.textContent = 'Introduce un correo válido.';
       return;
     }
-    // Pendiente: conectar con un servicio de newsletter; por ahora no se guarda el correo.
-    msg.textContent = 'Gracias por suscribirte.';
-    this.reset();
+    msg.textContent = 'Enviando...';
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: 'f36c1955-e6a0-489e-852c-7d9828511509',
+        subject: 'Nuevo suscriptor a fanfics',
+        from_name: 'JessyIsCrafting - Fanfics',
+        email: input.value,
+        message: 'Nuevo usuario suscrito a las actualizaciones: ' + input.value
+      })
+    }).then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data.success) {
+          msg.textContent = '';
+          form.reset();
+          window.jicShowPopup('subscribed');
+        } else {
+          msg.textContent = 'No se pudo completar la suscripción. Inténtalo de nuevo.';
+        }
+      })
+      .catch(function () {
+        msg.textContent = 'No se pudo completar la suscripción. Inténtalo de nuevo.';
+      });
   });
 </script>
 </body>
