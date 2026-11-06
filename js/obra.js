@@ -11,6 +11,39 @@
     return new URLSearchParams(window.location.search).get('id');
   }
 
+  // Clave i18n del overlay de cada tarjeta de galeria.html.
+  const CAPTION_KEYS = {
+    'caballero': 'caballero',
+    'jinete': 'jinete',
+    'lune': 'lune',
+    'renoir': 'renoir',
+    'diorama-brutus': 'brutusCast',
+    'figura-reencuentro': 'reencuentro',
+    'figura-dobby': 'dobbyLabel',
+    'set-farkle-blason': 'tableroFarkle',
+    'set-farkle': 'setFarkleSet',
+    'mini-farkle-viajero': 'miniFarkleLabel',
+    'set-dados-artesanales': 'dadosArtesanales',
+    'groschens-madera-50': 'groschensBohemios',
+    'cubilete-artesanal': 'cubiletesPiel',
+    'abanicos-artesanales': 'abanicos',
+    'luminoso': 'luminosoLabel',
+    'heinrich': 'heinrichCapon',
+    'henry-explorando': 'henryPaseando',
+    'luke-dale-ardillas': 'lukeDaleGaleria',
+    'emotes-twitch': 'emotesDiscordTwitch',
+    'reinhart-daku': 'reinhartDakuGaleria',
+    'minas-tirith': 'minasTirith',
+    'bosque': 'bosque',
+    'horreo-gallego': 'horreoGallego'
+  };
+
+  function captionFor(dict, id) {
+    const key = CAPTION_KEYS[id];
+    const value = key && dict.gallery && dict.gallery.captions && dict.gallery.captions[key];
+    return typeof value === 'string' ? value : '';
+  }
+
   function renderDescription(text) {
     const container = document.getElementById('workDescription');
     if (!container) return;
@@ -42,7 +75,7 @@
     const dict = window.JIC_I18N.getDict();
     if (!dict || !currentWork) return;
     const t = (dict.works && dict.works.items && dict.works.items[currentWork.id]) || {};
-    const title = t.title || currentWork.id;
+    const title = captionFor(dict, currentWork.id) || t.title || currentWork.id;
 
     document.title = `${title} · JessyIsCrafting`;
     const metaDesc = document.querySelector('meta[name="description"]');
