@@ -170,6 +170,22 @@
     });
   }
 
+  function setupBackToTop() {
+    const labels = { es: 'Volver arriba', en: 'Back to top', de: 'Nach oben' };
+    const lang = (document.documentElement.lang || 'es').slice(0, 2).toLowerCase();
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'back-to-top';
+    btn.setAttribute('aria-label', labels[lang] || labels.en);
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+    document.body.appendChild(btn);
+
+    const update = () => btn.classList.toggle('is-visible', window.scrollY > 400);
+    window.addEventListener('scroll', update, { passive: true });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    update();
+  }
+
   function init() {
     markActiveLink();
     setupNavToggle();
@@ -177,6 +193,7 @@
     setupLightbox();
     setupGalleryCarousel();
     setupGalleryFilters();
+    setupBackToTop();
   }
 
   document.addEventListener('partials:loaded', init);
