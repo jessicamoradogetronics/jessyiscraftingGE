@@ -122,7 +122,7 @@
     "consultButton": "Ask about this piece",
     "notFound": "We could not find this piece. You can go back to the gallery to see the rest.",
     "items": {
-      "caballero": { "title": "Sir Henry", "description": "Hand-painted miniature of Sir Henry, with every detail of the armour worked with a fine brush. Layers of colour build up slowly to give depth to the metal and the fabrics, without losing the character of a figure made to be seen up close.\n\nI chose the colours from the start of Kingdom Come: Deliverance 2, because I personally like seeing Henry in the colours of Leipa. I also customised the shield, flattening it so I could paint the Leipa emblem.\n\nThis photo session was special. I took this figure to the village of Skalice in real life and photographed it on the only stone left from Skalice Castle. In the end, Henry came home as Sir Henry." },
+      "caballero": { "title": "Sir Henry", "description": "Hand-painted miniature of Sir Henry, with every detail of the armour worked with a fine brush. Layers of colour build up slowly to give depth to the metal and the fabrics, without losing the character of a figure made to be seen up close.\n\nI chose the colours from the start of Kingdom Come: Deliverance 2, because I personally like seeing Henry in the colours of Leipa. I also customised the shield, flattening it so I could paint the Leipa emblem.\n\nThis photo session was special. I took this figure to the village of Skalitz in real life and photographed it on the only stone left from Skalitz Castle. In the end, Henry came home as Sir Henry." },
       "minas-tirith": { "title": "Gandalf Arriving at Minas Tirith", "description": "Oil on canvas showing Minas Tirith among the mountains, painted with thin glazes to capture the light of the first hours of the day. The composition guides the eye from the road to the walls, where each stone is worked with short, precise brushstrokes." },
       "set-farkle-blason": { "title": "Farkle Board", "description": "Farkle board in 20 cm x 20 cm box format, hand-painted and decorated with your favourite crests or motifs. Every detail, from the wood stain to the brushstrokes of the crest, is finished piece by piece." },
       "set-farkle": { "title": "Complete Farkle Set", "description": "Farkle board in 20 cm x 20 cm box format, hand-painted and decorated, with 12 hand-engraved wooden dice, 4 special dice to choose, two hand-stitched synthetic leather dice cups and 50 wooden groschen painted one by one." },
@@ -130,7 +130,7 @@
       "set-dados-artesanales": { "title": "Handcrafted Dice Set", "description": "Set of 12 hand-engraved wooden dice, 2 cm x 2 cm, plus 4 special dice that can be customised." },
       "groschens-madera-50": { "title": "Wooden Groschen", "description": "50 wooden coins that emulate the design of Bohemian groschen. Painted and varnished one by one, kept in a raffia bag." },
       "cubilete-artesanal": { "title": "Artisan Dice Cup", "description": "Synthetic leather dice cup, 10 cm tall, ideal for rolling dice. Hand-stitched with an elegant X pattern." },
-      "abanicos-artesanales": { "title": "Handcrafted Fans", "description": "Elegant hand-painted fans. The Leipa crest is painted over the Phoenix pattern of Hans Capon's gambeson, and the Skalice crest is painted over a medieval hunting pattern with dogs, on a blue background representing Henry and the silver of Skalice." },
+      "abanicos-artesanales": { "title": "Handcrafted Fans", "description": "Elegant hand-painted fans. The Leipa crest is painted over the Phoenix pattern of Hans Capon's gambeson, and the Skalitz crest is painted over a medieval hunting pattern with dogs, on a blue background representing Henry and the silver of Skalitz." },
       "luminoso": { "title": "Luminous", "description": "A digital illustration of an armoured figure and a white horse wrapped in mist. Light enters from an undefined point in the background and travels across the metallic surfaces, creating a soft contrast between shadows and reflections." },
       "jinete": { "title": "Heraldic rider", "description": "A piece inspired by the Collector's Edition of Kingdom Come: Deliverance 2. I preferred to show Henry's face, without a helmet, conveying the strain of someone in battle. The weapon he carries is Sir Radzig's sword, which Henry will inherit in the future.\n\nI personally like the colours of Leipa, so I chose yellows and blacks for the horse's harness, as well as the Leipa emblem on the shield Henry carries. I painted the horse in Pebbles' colours, a horse I am especially fond of.\n\nTo finish the figure, I added elements to imitate shrubs and undergrowth, giving the piece much more realism and depth." },
       "heinrich": { "title": "Heinrich's scene", "description": "Scene created for my fanfic Beyond The Crossroads, where Hans Capon's son, Heinrich, watches from the bed. Waiting in his father's room in Pirkstejn, he carefully observes the Leipa shield and the two crossed swords of Hans and Henry." },
@@ -160,7 +160,7 @@
     },
     "viewDetail": "View details",
     "captions": {
-      "caballero": "Sir Henry of Skalice",
+      "caballero": "Sir Henry of Skalitz",
       "minasTirith": "Oil on canvas. Gandalf arriving at Minas Tirith.",
       "farkleDetalle": "Detail of the hand-carved crest.",
       "abanicos": "Spanish fan",
