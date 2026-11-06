@@ -295,6 +295,18 @@
     "empty": "Zu diesem Filter gibt es noch keine Geschichten.",
     "readWeb": "Hier lesen",
     "viewAO3": "Auf AO3 ansehen ↗",
+    "subscribe": {
+      "eyebrow": "Newsletter",
+      "title": "Verpasse kein Update",
+      "text": "Abonniere, und wir informieren dich, wenn es neue Kapitel, Geschichten und Erzählungen gibt.",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "du@email.com",
+      "submit": "Abonnieren",
+      "captchaMissing": "Bitte markiere das Verifizierungsfeld, bevor du dich anmeldest.",
+      "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "sending": "Wird gesendet ...",
+      "error": "Die Anmeldung konnte nicht abgeschlossen werden. Bitte versuche es erneut."
+    },
     "game": "Kingdom Come: Deliverance",
     "language": "Englisch",
     "items": {

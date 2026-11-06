@@ -295,6 +295,18 @@
     "empty": "There are no stories with this filter yet.",
     "readWeb": "Read on the web",
     "viewAO3": "View on AO3 ↗",
+    "subscribe": {
+      "eyebrow": "Newsletter",
+      "title": "Don't miss any update",
+      "text": "Subscribe and we'll let you know when there are new chapters, stories and tales.",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@email.com",
+      "submit": "Subscribe",
+      "captchaMissing": "Please tick the verification box before subscribing.",
+      "invalidEmail": "Please enter a valid email address.",
+      "sending": "Sending...",
+      "error": "Could not complete the subscription. Please try again."
+    },
     "game": "Kingdom Come: Deliverance",
     "language": "English",
     "items": {

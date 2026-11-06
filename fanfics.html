@@ -125,13 +125,13 @@
   <section class="section">
     <div class="container">
       <div class="cta-banner">
-        <span class="eyebrow" style="color:var(--color-gold-soft)">Boletín</span>
-        <h2>No te pierdas ninguna actualización</h2>
-        <p>Suscríbete y te avisamos cuando haya nuevos capítulos, historias y relatos.</p>
+        <span class="eyebrow" style="color:var(--color-gold-soft)" data-i18n="fanfics.subscribe.eyebrow">Boletín</span>
+        <h2 data-i18n="fanfics.subscribe.title">No te pierdas ninguna actualización</h2>
+        <p data-i18n="fanfics.subscribe.text">Suscríbete y te avisamos cuando haya nuevos capítulos, historias y relatos.</p>
         <form class="cta-subscribe" id="fxSubscribe" novalidate>
-          <label for="fxEmail" class="visually-hidden">Correo electrónico</label>
-          <input type="email" id="fxEmail" name="email" placeholder="tu@correo.com" required>
-          <button type="submit" class="btn btn--gold">Suscribirme</button>
+          <label for="fxEmail" class="visually-hidden" data-i18n="fanfics.subscribe.emailLabel">Correo electrónico</label>
+          <input type="email" id="fxEmail" name="email" placeholder="tu@correo.com" required data-i18n-attr="placeholder:fanfics.subscribe.emailPlaceholder">
+          <button type="submit" class="btn btn--gold" data-i18n="fanfics.subscribe.submit">Suscribirme</button>
           <div class="h-captcha" data-captcha="true"></div>
         </form>
         <p class="cta-subscribe__msg" id="fxSubMsg" role="status"></p>
@@ -155,15 +155,15 @@
     var input = document.getElementById('fxEmail');
     var msg = document.getElementById('fxSubMsg');
     if (!input.checkValidity()) {
-      msg.textContent = 'Introduce un correo válido.';
+      msg.textContent = window.JIC_I18N.t('fanfics.subscribe.invalidEmail');
       return;
     }
     var captcha = form.querySelector('[name="h-captcha-response"]');
     if (!captcha || !captcha.value) {
-      msg.textContent = 'Marca la casilla de verificación antes de suscribirte.';
+      msg.textContent = window.JIC_I18N.t('fanfics.subscribe.captchaMissing');
       return;
     }
-    msg.textContent = 'Enviando...';
+    msg.textContent = window.JIC_I18N.t('fanfics.subscribe.sending');
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -182,11 +182,11 @@
           form.reset();
           window.jicShowPopup('subscribed');
         } else {
-          msg.textContent = 'No se pudo completar la suscripción. Inténtalo de nuevo.';
+          msg.textContent = window.JIC_I18N.t('fanfics.subscribe.error');
         }
       })
       .catch(function () {
-        msg.textContent = 'No se pudo completar la suscripción. Inténtalo de nuevo.';
+        msg.textContent = window.JIC_I18N.t('fanfics.subscribe.error');
       });
   });
 </script>
