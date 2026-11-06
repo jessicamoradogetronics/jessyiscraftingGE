@@ -300,6 +300,7 @@
     "ctaButton": "Ver la tienda"
   },
   "fanfics": {
+    "comingSoon": "Todavía en construcción. Pronto podrás leer esta historia aquí.",
     "title": "Fanfics y Relatos",
     "subtitle": "Historias inspiradas en miniaturas del taller y ficciones de universos medievales. Disponibles para leer directamente aquí o en nuestra biblioteca de Archive of Our Own (AO3).",
     "filterLabel": "Filtrar",

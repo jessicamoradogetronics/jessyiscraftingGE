@@ -6,6 +6,14 @@
   var index = Math.min(Math.max(parseInt(params.get('cap'), 10) || 1, 1), chapters.length) - 1;
   var chapter = chapters[index];
 
+  if (!chapters.length) {
+    document.querySelector('.reader-toolbar').style.display = 'none';
+    document.querySelector('.reader-side').style.display = 'none';
+    document.getElementById('article').style.display = 'none';
+    document.getElementById('comingSoon').hidden = false;
+    return;
+  }
+
   var SIZE_KEY = 'jic-reader-size';
   var THEME_KEY = 'jic-reader-theme';
   var SIZE_MIN = 14;
@@ -181,10 +189,7 @@
       currentSize = applySize(currentSize + SIZE_STEP);
     });
 
-    document.getElementById('dlPdf').addEventListener('click', function () {
-      buildPrintArea();
-      window.print();
-    });
+    document.getElementById('dlPdf').addEventListener('click', downloadPdf);
     document.getElementById('dlEpub').addEventListener('click', downloadEpub);
     document.getElementById('shareBtn').addEventListener('click', shareLink);
   }
@@ -237,19 +242,68 @@
     update();
   }
 
-  // Print / PDF
+  // PDF
 
-  function buildPrintArea() {
-    var area = document.getElementById('printArea');
-    area.innerHTML = '';
-    area.appendChild(make('h1', null, story.title));
-    area.appendChild(make('p', null, story.summary));
-    chapters.forEach(function (ch, i) {
-      area.appendChild(make('h2', null, 'Capítulo ' + (i + 1) + ': ' + ch.title));
-      blocks(ch).forEach(function (block) {
-        area.appendChild(make(block.kind === 'q' ? 'blockquote' : 'p', null, block.text));
-      });
+  var JSPDF_URL = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+
+  function loadJsPDF() {
+    if (window.jspdf) return Promise.resolve(window.jspdf.jsPDF);
+    return new Promise(function (resolve, reject) {
+      var script = document.createElement('script');
+      script.src = JSPDF_URL;
+      script.onload = function () { resolve(window.jspdf.jsPDF); };
+      script.onerror = function () { reject(new Error('No se pudo cargar jsPDF')); };
+      document.head.appendChild(script);
     });
+  }
+
+  function buildPdf(JsPDF) {
+    var doc = new JsPDF({ unit: 'pt', format: 'a4' });
+    var margin = 64;
+    var pageHeight = doc.internal.pageSize.getHeight();
+    var width = doc.internal.pageSize.getWidth() - margin * 2;
+    var y = margin;
+
+    function write(text, size, style, gap) {
+      doc.setFont('times', style);
+      doc.setFontSize(size);
+      var lineHeight = size * 1.45;
+      doc.splitTextToSize(text, width).forEach(function (line) {
+        if (y + lineHeight > pageHeight - margin) {
+          doc.addPage();
+          y = margin;
+        }
+        doc.text(line, margin, y);
+        y += lineHeight;
+      });
+      y += gap;
+    }
+
+    write(story.title, 24, 'bold', 8);
+    write(story.summary, 12, 'italic', 24);
+    chapters.forEach(function (ch, i) {
+      write('Capítulo ' + (i + 1) + ': ' + ch.title, 16, 'bold', 12);
+      blocks(ch).forEach(function (block) {
+        write(block.text, 12, block.kind === 'q' ? 'italic' : 'normal', 10);
+      });
+      y += 14;
+    });
+
+    doc.save(story.id + '.pdf');
+  }
+
+  function downloadPdf() {
+    var button = document.getElementById('dlPdf');
+    var label = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Generando…';
+    loadJsPDF()
+      .then(buildPdf)
+      .catch(function () { button.textContent = 'Error, reintentar'; })
+      .then(function () {
+        button.disabled = false;
+        if (button.textContent === 'Generando…') button.textContent = label;
+      });
   }
 
   // EPUB

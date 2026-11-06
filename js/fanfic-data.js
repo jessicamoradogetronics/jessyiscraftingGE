@@ -47,7 +47,8 @@ window.FANFICS = {
     summary: 'Qué le pasó a Hans mientras estuvo cautivo en Malešov, y qué pensaba Henry mientras se enfrentaba a sus misiones más peligrosas. Los momentos clave de KCD2 contados desde el punto de vista de Hans, hasta llegar a lo ocurrido en Suchdol.',
     status: 'Completo',
     tags: ['Fanfic', 'Kingdom Come: Deliverance', 'Español', 'Finalizado'],
-    chapters: [
+    chapters: [],
+    draftChapters: [
       {
         title: 'Malešov',
         date: '2026-02-14',
@@ -77,7 +78,8 @@ window.FANFICS = {
     summary: 'Se acerca la boda de Hans Capon. Antes de rendirse a ese destino, cumple una promesa hecha a Henry años atrás: viajar juntos hasta Constantinopla. Un último viaje de amor y libertad, marcado por la belleza del mundo y también por su crueldad.',
     status: 'Completo',
     tags: ['Fanfic', 'Kingdom Come: Deliverance', 'Español', 'Finalizado'],
-    chapters: [
+    chapters: [],
+    draftChapters: [
       {
         title: 'La boda',
         date: '2025-12-20',

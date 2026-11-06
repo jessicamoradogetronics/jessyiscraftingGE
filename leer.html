@@ -41,7 +41,7 @@
       </div>
       <button type="button" class="btn btn--outline btn--sm" id="shareBtn">Compartir</button>
       <span class="reader-seg__value" id="shareStatus" aria-live="polite"></span>
-      <button type="button" class="btn btn--outline btn--sm" id="dlPdf" title="Abre el diálogo de impresión: elige Guardar como PDF">Descargar PDF</button>
+      <button type="button" class="btn btn--outline btn--sm" id="dlPdf">Descargar PDF</button>
       <button type="button" class="btn btn--outline btn--sm" id="dlEpub">Descargar EPUB</button>
     </div>
   </div>
@@ -69,11 +69,10 @@
 
     <nav class="reader-pager" id="pager" aria-label="Navegación entre capítulos"></nav>
   </article>
+  <p class="reader-soon" id="comingSoon" data-i18n="fanfics.comingSoon" hidden></p>
 </main>
 
 <input type="hidden" id="fanficReads" value="0">
-
-<div class="reader-print" id="printArea" aria-hidden="true"></div>
 
 <div data-include="footer"></div>
 
