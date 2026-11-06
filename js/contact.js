@@ -81,6 +81,8 @@ window.jicShowPopup = function (type) {
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
+    const captcha = form.querySelector('[name="h-captcha-response"]');
+    if (!captcha || !captcha.value) { window.jicShowPopup('error'); return; }
     button.disabled = true;
     fetch(form.action, {
       method: 'POST',

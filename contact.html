@@ -55,6 +55,7 @@
               <textarea id="message" name="message" rows="6" required></textarea>
             </div>
             <div>
+              <div class="h-captcha" data-captcha="true"></div>
               <button type="submit" class="btn btn-primary" data-i18n="contact.formSubmit">Enviar mensaje</button>
               <p class="image-note" data-i18n="contact.formNote">Al enviar este formulario aceptas el uso de tus datos.</p>
             </div>
@@ -105,6 +106,8 @@
       var button = form.querySelector('button[type="submit"]');
       form.addEventListener("submit", function (event) {
         event.preventDefault();
+        var captcha = form.querySelector('[name="h-captcha-response"]');
+        if (!captcha || !captcha.value) { window.jicShowPopup("error"); return; }
         button.disabled = true;
         fetch(form.action, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(form) })
           .then(function (res) { return res.json(); })
@@ -121,5 +124,6 @@
       });
     })();
   </script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>

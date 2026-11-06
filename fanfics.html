@@ -132,6 +132,7 @@
           <label for="fxEmail" class="visually-hidden">Correo electrónico</label>
           <input type="email" id="fxEmail" name="email" placeholder="tu@correo.com" required>
           <button type="submit" class="btn btn--gold">Suscribirme</button>
+          <div class="h-captcha" data-captcha="true"></div>
         </form>
         <p class="cta-subscribe__msg" id="fxSubMsg" role="status"></p>
       </div>
@@ -157,6 +158,11 @@
       msg.textContent = 'Introduce un correo válido.';
       return;
     }
+    var captcha = form.querySelector('[name="h-captcha-response"]');
+    if (!captcha || !captcha.value) {
+      msg.textContent = 'Marca la casilla de verificación antes de suscribirte.';
+      return;
+    }
     msg.textContent = 'Enviando...';
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -166,6 +172,7 @@
         subject: 'Nuevo suscriptor a fanfics',
         from_name: 'JessyIsCrafting - Fanfics',
         email: input.value,
+        'h-captcha-response': (form.querySelector('[name="h-captcha-response"]') || {}).value,
         message: 'Nuevo usuario suscrito a las actualizaciones: ' + input.value
       })
     }).then(function (res) { return res.json(); })
@@ -183,5 +190,6 @@
       });
   });
 </script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
