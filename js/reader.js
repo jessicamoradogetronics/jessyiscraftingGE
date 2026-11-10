@@ -103,13 +103,13 @@
     var pageUrl = chapterUrl(index + 1);
     seo.setPageMeta({
       title: story.title + ' · Chapter ' + (index + 1) + ' · JessyIsCrafting',
-      description: story.summary,
+      description: chapter.summary || story.summary,
       url: pageUrl
     });
     seo.setJsonLd('jsonld-chapter', {
       '@type': 'CreativeWork',
       name: chapter.title,
-      description: seo.cleanText(story.summary),
+      description: seo.cleanText(chapter.summary || story.summary),
       url: seo.absoluteUrl(pageUrl),
       position: index + 1,
       datePublished: chapter.date,

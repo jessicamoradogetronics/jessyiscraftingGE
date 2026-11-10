@@ -1,6 +1,6 @@
 {
   "pages": {
-    "index": { "title": "JessyIsCrafting — Artesanía, pintura e ilustración hechas a mano en España", "description": "Sets de Farkle de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano. Artesanía con alma, inspirada en el bosque y en Kingdom Come: Deliverance, hecha con mimo en España." },
+    "index": { "title": "JessyIsCrafting — Artesanía, pintura e ilustración hechas a mano en España", "description": "Sets de Farkle de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano. Artesanía con alma, inspirada en el bosque y en Kingdom Come: Deliverance." },
     "tienda": { "title": "Tienda — JessyIsCrafting", "description": "Descubre artesanías de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano. Piezas únicas y personalizables, hechas con mimo en España." },
     "galeria": { "title": "Galería — JessyIsCrafting", "description": "Un paseo visual por las piezas de JessyIsCrafting: artesanías, cuadros, dibujos y figuras, además de momentos del taller." },
     "contacto": { "title": "Contacto — JessyIsCrafting", "description": "Escríbeme para encargar una pieza, proponer una colaboración o resolver cualquier duda. Formulario de contacto, correo electrónico, Instagram y X." },
@@ -202,9 +202,9 @@
       "bosque": "Óleo sobre pizarra, un rincón de bosque.",
       "horreoGallego": "Hórreo gallego, arquitectura popular de Galicia.",
       "brutusCast": "Brutus, interpretación de Tom McKay",
-      "reencuentro": "El reencuentro",
+      "reencuentro": "El reencuentro de Hans y Henry",
       "dobbyLabel": "Dobby",
-      "tableroFarkle": "Tablero de Farkle",
+      "tableroFarkle": "Tablero de Farkle pintado a mano",
       "setFarkleSet": "Set de Farkle",
       "miniFarkleLabel": "MiniFarkle",
       "luminosoLabel": "Luminoso",
@@ -480,7 +480,7 @@
       "finishes": { "caoba": "Caoba", "roble": "Roble Rústico" },
       "addons": { "cubilete-extra": { "name": "Cubilete artesanal extra", "description": "Piel sintética cosida a mano" }, "dados-extra": { "name": "Set de 12 dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } },
       "name": "Set completo de Farkle",
-      "short": "Tablero de Farkle en formato caja de madera, pintada a mano con tus escudos favoritos.",
+      "short": "Set completo de Farkle: tablero de 20 x 20 cm pintado a mano, 12 dados grabados, 4 dados especiales, dos cubiletes y 50 groschens de madera.",
       "description": "Un tablero de Farkle en formato caja de 20 cm x 20 cm, pintado y decorado a mano con tus escudos o motivos favoritos. Un set de 12 dados de madera grabados a mano y 4 dados especiales que puedes elegir. Cabeza de diablo, Diente de Hugo... ¡escoge 4!\nSe incluyen dos cubiletes de piel sintética, cosidos a mano, para que todas tus tiradas salgan perfectas.\nY para completar el set, un juego de 50 groschens de madera, pintados a mano uno a uno, para hacer el juego más divertido.",
       "customization": "Puedes elegir los colores de la madera, los escudos que quieres en cada lado hasta 4 (dos por fuera y dos por dentro) o algún motivo personalizado como letras o dibujos."
     },
@@ -494,30 +494,30 @@
     },
     "set-dados-artesanales": {
       "name": "Set de dados artesanales",
-      "short": "Dados grabados y pintados a mano con estética artesanal",
+      "short": "Set de 12 dados de madera grabados a mano, de 2 cm x 2 cm, y 4 dados especiales personalizables.",
       "description": "Set de 12 dados de madera grabados a mano, de 2cmx2cm y 4 dados especiales que se pueden personalizar",
       "customization": "Puedes escoger 4 dados de diseño especial. Explícame tu idea o colores. Puedes escoger hasta 2 dados de borde redondeado."
     },
     "groschens-madera-50": {
       "name": "Groschens de madera",
-      "short": "50 groschens de madera, pintados uno a uno",
+      "short": "50 groschens de madera inspirados en las monedas bohemias, pintados y barnizados uno a uno, en bolsa de rafia.",
       "description": "50 monedas de madera que emulan el diseño de los groschens bohemios. Pintadas y barnizadas una a una, guardadas en una bolsa de rafia."
     },
     "cubilete-artesanal": {
       "name": "Cubilete artesanal",
-      "short": "Cubiletes de piel sintética cortados y cosidos a mano",
+      "short": "Cubilete de piel sintética de 10 cm de alto, cortado y cosido a mano con un elegante patrón en X.",
       "description": "Cubilete de piel sintética de 10 cm de alto, ideal para lanzar dados. Cosidos a mano con elegante patrón en X. Precio por unidad.",
       "addons": { "dados-6": { "name": "Set de dados", "description": "" }, "groschens-madera": { "name": "50 groschens de madera", "description": "" } }
     },
     "figura-reencuentro": {
       "name": "El reencuentro",
-      "short": "Abrazo en el reencuentro de Hans y Henry",
+      "short": "Figura de resina del abrazo de Hans y Henry en su reencuentro, de 16 cm de alto, con base incluida.",
       "description": "Figura en resina de 16 cm de alto con base incluida. Representación del abrazo entre Hans y Henry durante el rescate en Malesov. Sus expresiones de alivio son realmente tiernas.",
       "customization": "Puedes escoger el color del gambesón y de los pantalones de Henry o de Hans, pero no la forma de la figura."
     },
     "figura-dobby": {
       "name": "«Dobby», de Harry Potter",
-      "short": "Figura de Dobby con su calcetín",
+      "short": "Figura de Dobby de resina con su calcetín, de 18 cm de alto, pintada a mano con tonos naturales y acabado mate.",
       "description": "Figura en resina del elfo Dobby, de 18 cm de altura. Colores naturales y acabo en mate, con brillos en los ojos y en la chispa de magia."
     },
     "oleo-minas-tirith": {

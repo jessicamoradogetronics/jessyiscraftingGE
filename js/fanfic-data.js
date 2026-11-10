@@ -9,6 +9,7 @@ window.FANFICS = {
     chapters: [
       {
         title: 'The arrival',
+        summary: 'Hans reaches a run-down building on Miller Street with nowhere else to go, and climbs the stairs towards a door he does not trust.',
         date: '2026-11-06',
         paragraphs: [
           'The piece of paper remained unchanged between his fingers, as though looking at it again would remind him of the humiliation involved in doing so. He silently studied the sign displaying the street name. This was the place, he was sure of it, but his eyes inevitably drifted back to the crumpled piece of paper.',
@@ -115,6 +116,7 @@ window.FANFICS = {
       },
       {
         title: 'White Sugar',
+        summary: 'Woken before sunrise by Henry\'s noisy water heater, Hans finds the flat cold, the coffee nearly sugarless and his new life far from comfortable.',
         date: '2026-11-06',
         paragraphs: [
           'That infernal noise again.',

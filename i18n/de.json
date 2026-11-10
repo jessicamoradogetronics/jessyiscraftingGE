@@ -1,10 +1,10 @@
 {
   "pages": {
-    "index": { "title": "JessyIsCrafting — Handgefertigte Kunst, Gemälde und Illustration aus Spanien", "description": "Farkle-Sets aus Holz, Ölgemälde, digitale Zeichnungen und handbemalte Figuren. Handgemachte Kunst mit Seele, inspiriert vom Wald und von Kingdom Come: Deliverance, mit Liebe in Spanien gefertigt." },
+    "index": { "title": "JessyIsCrafting — Handgefertigte Kunst, Gemälde und Illustration aus Spanien", "description": "Farkle-Sets aus Holz, Ölgemälde, digitale Zeichnungen und handbemalte Figuren. Handgemachte Kunst mit Seele, inspiriert vom Wald und von Kingdom Come." },
     "tienda": { "title": "Shop — JessyIsCrafting", "description": "Entdecke Holzhandwerk, Ölgemälde, digitale Zeichnungen und handbemalte Figuren. Einzigartige und individualisierbare Stücke, mit Liebe in Spanien gefertigt." },
     "galeria": { "title": "Galerie — JessyIsCrafting", "description": "Ein visueller Rundgang durch die Werke von JessyIsCrafting: Handwerk, Gemälde, Zeichnungen und Figuren, dazu Momente aus dem Atelier." },
     "contacto": { "title": "Kontakt — JessyIsCrafting", "description": "Schreib mir, um ein Stück in Auftrag zu geben, eine Zusammenarbeit vorzuschlagen oder eine Frage zu stellen. Kontaktformular, E-Mail, Instagram und X." },
-    "faq": { "title": "Häufige Fragen — JessyIsCrafting", "description": "Versand nach Spanien, in die EU und ins Vereinigte Königreich, Bearbeitungszeiten, Rücksendungen und Individualisierung. Antworten auf deine Fragen vor der Bestellung." },
+    "faq": { "title": "Häufige Fragen — JessyIsCrafting", "description": "Versand nach Spanien, in die EU und ins Vereinigte Königreich, Bearbeitungszeiten, Rücksendungen und Individualisierung. Antworten vor der Bestellung." },
     "inspiracion": { "title": "Inspiration — JessyIsCrafting", "description": "Kingdom Come: Deliverance, seine Kunst und Musik sowie die Liebe zum Lesen und Schreiben: die Welten, die jedes Stück von JessyIsCrafting inspirieren." },
     "fanfics": { "title": "Fanfics und Geschichten · JessyIsCrafting", "description": "Fanfics und Geschichten, inspiriert von den Miniaturen des Ateliers und mittelalterlichen Welten, zum Lesen hier oder auf Archive of Our Own." }
   },
@@ -202,9 +202,9 @@
       "bosque": "Öl auf Schiefer, ein Winkel des Waldes.",
       "horreoGallego": "Galicischer Hórreo, traditioneller Kornspeicher Galiciens.",
       "brutusCast": "Brutus, dargestellt von Tom McKay",
-      "reencuentro": "Das Wiedersehen",
+      "reencuentro": "Das Wiedersehen von Hans und Henry",
       "dobbyLabel": "Dobby",
-      "tableroFarkle": "Farkle-Brett",
+      "tableroFarkle": "Handbemaltes Farkle-Brett",
       "setFarkleSet": "Farkle-Set",
       "miniFarkleLabel": "MiniFarkle",
       "luminosoLabel": "Leuchtend",
@@ -480,7 +480,7 @@
       "finishes": { "caoba": "Mahagoni", "roble": "Rustikale Eiche" },
       "addons": { "cubilete-extra": { "name": "Zusätzlicher handgefertigter Becher", "description": "Handgenähtes Kunstleder" }, "dados-extra": { "name": "Set mit 12 zusätzlichen Würfeln", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } },
       "name": "Komplettes Farkle-Set",
-      "short": "Farkle-Brett in Holzbox-Format, handbemalt mit deinen Lieblingswappen.",
+      "short": "Komplettes Farkle-Set: 20 x 20 cm Brett, handbemalt, mit 12 gravierten Würfeln, 4 Sonderwürfeln, zwei Bechern und 50 Holz-Groschen.",
       "description": "Ein Farkle-Brett im Kastenformat von 20 cm x 20 cm, handbemalt und verziert mit deinen Lieblingswappen oder -motiven. Ein Set aus 12 handgravierten Holzwürfeln und 4 besonderen Würfeln, die du wählen kannst. Teufelskopf, Hugos Zahn... wähle 4!\nZwei handgenähte Becher aus Kunstleder gehören dazu, damit jeder Wurf perfekt gelingt.\nUnd um das Set zu vervollständigen: 50 handbemalte Holz-Groschen, Stück für Stück, damit das Spiel noch mehr Spaß macht.",
       "customization": "Du kannst die Holzfarbe wählen, die Wappen, die du auf jeder Seite möchtest, bis zu 4 (zwei außen und zwei innen), oder ein individuelles Motiv wie Buchstaben oder Zeichnungen."
     },
@@ -494,30 +494,30 @@
     },
     "set-dados-artesanales": {
       "name": "Handgefertigtes Würfelset",
-      "short": "Geschnitzte und handbemalte Würfel in handwerklicher Ästhetik",
+      "short": "Set aus 12 handgravierten Holzwürfeln, 2 cm x 2 cm, plus 4 individuell gestaltbare Sonderwürfel.",
       "description": "Individualisierbar.",
       "customization": "Du kannst 4 Würfel mit besonderem Design wählen. Erzähl mir von deiner Idee oder deinen Farben. Du kannst bis zu 2 Würfel mit abgerundeten Kanten wählen."
     },
     "groschens-madera-50": {
       "name": "Holz-Groschen",
-      "short": "50 Holz-Groschen, einzeln handbemalt",
+      "short": "50 Holz-Groschen nach böhmischem Vorbild, einzeln bemalt und lackiert, in einem Raffiabeutel.",
       "description": "50 Holzmünzen im Design böhmischer Groschen. Einzeln bemalt und lackiert, in einem Raffiabeutel aufbewahrt."
     },
     "cubilete-artesanal": {
       "name": "Handgefertigter Würfelbecher",
-      "short": "Würfelbecher aus Kunstleder, handgeschnitten und handgenäht",
+      "short": "Würfelbecher aus Kunstleder, 10 cm hoch, handgeschnitten und mit eleganten X-Muster handgenäht.",
       "description": "Würfelbecher aus Kunstleder, 10 cm hoch, ideal zum Würfeln. Von Hand genäht mit eleganten X-Muster. Preis pro Stück.",
       "addons": { "dados-6": { "name": "Würfelset", "description": "" }, "groschens-madera": { "name": "50 Holz-Groschen", "description": "" } }
     },
     "figura-reencuentro": {
       "name": "Das Wiedersehen",
-      "short": "Umarmung beim Wiedersehen von Hans und Henry",
+      "short": "Harzfigur der Umarmung von Hans und Henry beim Wiedersehen, 16 cm hoch, inklusive Sockel.",
       "description": "Harzfigur, 16 cm hoch, inklusive Sockel. Die Umarmung zwischen Hans und Henry während der Rettung in Malešov. Ihr erleichterter Gesichtsausdruck wirkt wirklich berührend.",
       "customization": "Du kannst die Farbe von Henrys oder Hans' Gambeson und Hose wählen, aber nicht die Form der Figur."
     },
     "figura-dobby": {
       "name": "Dobby aus Harry Potter",
-      "short": "Dobby-Figur mit seiner Socke",
+      "short": "Harz-Figur Dobby mit seiner Socke, 18 cm hoch, handbemalt in natürlichen Farben mit mattem Finish.",
       "description": "Harzfigur des Elfen Dobby, 18 cm hoch. Natürliche Farben und matte Oberfläche, mit Glanzlichtern in den Augen und im Funken der Magie."
     },
     "oleo-minas-tirith": {

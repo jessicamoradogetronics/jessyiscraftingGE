@@ -33,7 +33,9 @@ function esc(value) {
 }
 
 function cleanText(text, max) {
-  return String(text || '').replace(/\s+/g, ' ').trim().slice(0, max || 160);
+  const clean = String(text || '').replace(/\s+/g, ' ').trim();
+  const limit = max || 160;
+  return clean.length <= limit ? clean : clean.slice(0, limit).replace(/\s+\S*$/, '');
 }
 
 function readJson(relativePath) {

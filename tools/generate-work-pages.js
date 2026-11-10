@@ -47,7 +47,9 @@ function esc(value) {
 }
 
 function cleanText(text, max) {
-  return String(text || '').replace(/\s+/g, ' ').trim().slice(0, max || 160);
+  const clean = String(text || '').replace(/\s+/g, ' ').trim();
+  const limit = max || 160;
+  return clean.length <= limit ? clean : clean.slice(0, limit).replace(/\s+\S*$/, '');
 }
 
 function readJson(relativePath) {
@@ -81,7 +83,7 @@ function backHref(work, products) {
 function renderPage(work, dict, products, lang) {
   const id = work.id;
   const t = (dict.works && dict.works.items && dict.works.items[id]) || {};
-  const title = captionFor(dict, id) || t.title || id;
+  const title = (captionFor(dict, id) || t.title || id).replace(/[\s.]+$/, '');
   const file = `obra-${id}.html`;
   const image = work.images[0];
   const description = cleanText(t.description, 160);

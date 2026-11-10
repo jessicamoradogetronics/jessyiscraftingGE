@@ -1,6 +1,6 @@
 {
   "pages": {
-    "index": { "title": "JessyIsCrafting — Handmade crafts, paintings and illustration in Spain", "description": "Farkle sets in wood, oil paintings, digital drawing and hand-painted figures. Handmade art with soul, inspired by the forest and Kingdom Come: Deliverance, made with care in Spain." },
+    "index": { "title": "JessyIsCrafting — Handmade crafts, paintings and illustration in Spain", "description": "Farkle sets in wood, oil paintings, digital art and hand-painted figures, handmade in Spain and inspired by the forest and Kingdom Come: Deliverance." },
     "tienda": { "title": "Shop — JessyIsCrafting", "description": "Discover wooden crafts, oil paintings, digital drawing and hand-painted figures. Unique and customizable pieces, made with care in Spain." },
     "galeria": { "title": "Gallery — JessyIsCrafting", "description": "A visual walk through JessyIsCrafting pieces: crafts, paintings, drawings and figures, plus moments from the workshop." },
     "contacto": { "title": "Contact — JessyIsCrafting", "description": "Write to me to commission a piece, propose a collaboration or ask any question. Contact form, email, Instagram and X." },
@@ -202,9 +202,9 @@
       "bosque": "Oil on slate, a corner of the forest.",
       "horreoGallego": "Galician hórreo, the traditional granary of Galicia.",
       "brutusCast": "Brutus, portrayed by Tom McKay",
-      "reencuentro": "The reunion",
+      "reencuentro": "Hans and Henry's reunion",
       "dobbyLabel": "Dobby",
-      "tableroFarkle": "Farkle board",
+      "tableroFarkle": "Hand-painted Farkle board",
       "setFarkleSet": "Farkle set",
       "miniFarkleLabel": "MiniFarkle",
       "luminosoLabel": "Luminous",
@@ -480,7 +480,7 @@
       "finishes": { "caoba": "Mahogany", "roble": "Rustic Oak" },
       "addons": { "cubilete-extra": { "name": "Extra artisan cup", "description": "Hand-stitched synthetic leather" }, "dados-extra": { "name": "Set of 12 additional dice", "description": "" }, "groschens-madera": { "name": "50 wooden groschen", "description": "" } },
       "name": "Complete Farkle Set",
-      "short": "Farkle board in a wooden box, hand-painted with your favourite crests.",
+      "short": "Complete Farkle set: a 20 x 20 cm hand-painted board, 12 hand-engraved dice, 4 special dice, two dice cups and 50 wooden groschen.",
       "description": "A Farkle board in 20 cm x 20 cm box format, hand-painted and decorated with your favourite crests or motifs. A set of 12 hand-engraved wooden dice and 4 special dice you can choose. Devil head, Hugo's Tooth... pick 4!\nTwo hand-stitched synthetic leather dice cups are included, so every roll comes out perfect.\nAnd to complete the set, 50 wooden groschen, hand-painted one by one, to make the game even more fun.",
       "customization": "You can choose the wood colours, the crests you want on each side up to 4 (two on the outside and two on the inside), or a custom motif such as letters or drawings."
     },
@@ -494,30 +494,30 @@
     },
     "set-dados-artesanales": {
       "name": "Handcrafted Dice Set",
-      "short": "Carved and hand-painted dice with an artisan aesthetic",
+      "short": "Set of 12 hand-engraved wooden dice, 2 cm x 2 cm, plus 4 special dice you can customise.",
       "description": "Customisable.",
       "customization": "You can choose 4 specially designed dice. Tell me your idea or colours. You can choose up to 2 dice with rounded edges."
     },
     "groschens-madera-50": {
       "name": "Wooden Groschen",
-      "short": "50 wooden groschen, painted one by one",
+      "short": "50 wooden groschen modelled on Bohemian coins, painted and varnished one by one, kept in a raffia bag.",
       "description": "50 wooden coins that emulate the design of Bohemian groschen. Painted and varnished one by one, kept in a raffia bag."
     },
     "cubilete-artesanal": {
       "name": "Artisan Dice Cup",
-      "short": "Synthetic leather dice cups, hand-cut and hand-stitched",
+      "short": "Synthetic leather dice cup, 10 cm tall, hand-cut and hand-stitched with an elegant X pattern.",
       "description": "Synthetic leather dice cup, 10 cm tall, ideal for rolling dice. Hand-stitched with an elegant X pattern. Price per unit.",
       "addons": { "dados-6": { "name": "Set of dice", "description": "" }, "groschens-madera": { "name": "50 wooden groschen", "description": "" } }
     },
     "figura-reencuentro": {
       "name": "The Reunion",
-      "short": "Hans and Henry's embrace at their reunion",
+      "short": "Resin figure of Hans and Henry's embrace at their reunion, 16 cm tall, with base included.",
       "description": "Resin figure, 16 cm tall, with base included. A depiction of the embrace between Hans and Henry during the rescue in Malešov. Their expressions of relief are genuinely tender.",
       "customization": "You can choose the colour of Henry's or Hans's gambeson and trousers, but not the shape of the figure."
     },
     "figura-dobby": {
       "name": "Dobby, from Harry Potter",
-      "short": "Dobby figure with his sock",
+      "short": "Resin Dobby figure with his sock, 18 cm tall, hand-painted in natural tones with a matte finish.",
       "description": "Resin figure of the elf Dobby, 18 cm tall. Natural colours and matte finish, with highlights in the eyes and the spark of magic."
     },
     "oleo-minas-tirith": {
