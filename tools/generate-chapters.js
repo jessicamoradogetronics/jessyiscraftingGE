@@ -156,7 +156,7 @@ function pageHtml(story, index) {
 <meta property="og:title" content="${escapeHtml(pageTitle)}">
 <meta property="og:description" content="${summary}">
 <meta property="og:url" content="${pageUrl}">
-<link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+<link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#37472f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
