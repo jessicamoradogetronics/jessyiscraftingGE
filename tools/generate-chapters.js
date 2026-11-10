@@ -14,7 +14,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
-const SITE_URL = 'https://jessicamrey.github.io/jessyiscrafting/';
+const SITE_URL = 'https://jessyiscrafting.com/';
 const DRY_RUN = process.argv.includes('--dry-run');
 
 const numberFormat = new Intl.NumberFormat('es-ES');

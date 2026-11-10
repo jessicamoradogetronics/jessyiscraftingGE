@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jessicamrey.github.io/jessyiscrafting/sitemap.xml
+Sitemap: https://jessyiscrafting.com/sitemap.xml

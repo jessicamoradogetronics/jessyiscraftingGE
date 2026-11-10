@@ -3,7 +3,7 @@
  * en las páginas que se rellenan desde JavaScript (obra, producto, leer).
  */
 (function () {
-  const SITE_URL = 'https://jessicamrey.github.io/jessyiscrafting/';
+  const SITE_URL = 'https://jessyiscrafting.com/';
 
   function absoluteUrl(path) {
     return new URL(path, SITE_URL).href;

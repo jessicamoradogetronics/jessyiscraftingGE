@@ -81,7 +81,7 @@ usar herramientas como [Squoosh](https://squoosh.app/) o `sharp` en Node).
   correo `hola@jessyiscrafting.com` por los reales en
   `partials/header.html`, `partials/footer.html` y `contacto.html`.
 - **Dominio**: las etiquetas `canonical` y Open Graph usan
-  `https://jessicamrey.github.io/jessyiscrafting/`. Si usas un dominio
+  `https://jessyiscrafting.com/`. Si usas un dominio
   propio, actualiza esas URLs y `sitemap.xml` / `robots.txt`.
 
 ## Desarrollo local
