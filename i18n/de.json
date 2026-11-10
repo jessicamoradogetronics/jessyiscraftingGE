@@ -1,4 +1,13 @@
 {
+  "pages": {
+    "index": { "title": "JessyIsCrafting — Handgefertigte Kunst, Gemälde und Illustration aus Spanien", "description": "Farkle-Sets aus Holz, Ölgemälde, digitale Zeichnungen und handbemalte Figuren. Handgemachte Kunst mit Seele, inspiriert vom Wald und von Kingdom Come: Deliverance, mit Liebe in Spanien gefertigt." },
+    "tienda": { "title": "Shop — JessyIsCrafting", "description": "Entdecke Holzhandwerk, Ölgemälde, digitale Zeichnungen und handbemalte Figuren. Einzigartige und individualisierbare Stücke, mit Liebe in Spanien gefertigt." },
+    "galeria": { "title": "Galerie — JessyIsCrafting", "description": "Ein visueller Rundgang durch die Werke von JessyIsCrafting: Handwerk, Gemälde, Zeichnungen und Figuren, dazu Momente aus dem Atelier." },
+    "contacto": { "title": "Kontakt — JessyIsCrafting", "description": "Schreib mir, um ein Stück in Auftrag zu geben, eine Zusammenarbeit vorzuschlagen oder eine Frage zu stellen. Kontaktformular, E-Mail, Instagram und X." },
+    "faq": { "title": "Häufige Fragen — JessyIsCrafting", "description": "Versand nach Spanien, in die EU und ins Vereinigte Königreich, Bearbeitungszeiten, Rücksendungen und Individualisierung. Antworten auf deine Fragen vor der Bestellung." },
+    "inspiracion": { "title": "Inspiration — JessyIsCrafting", "description": "Kingdom Come: Deliverance, seine Kunst und Musik sowie die Liebe zum Lesen und Schreiben: die Welten, die jedes Stück von JessyIsCrafting inspirieren." },
+    "fanfics": { "title": "Fanfics und Geschichten · JessyIsCrafting", "description": "Fanfics und Geschichten, inspiriert von den Miniaturen des Ateliers und mittelalterlichen Welten, zum Lesen hier oder auf Archive of Our Own." }
+  },
   "home": {
     "hero": {
       "eyebrow": "Handgemacht · Mit Liebe gefertigt",

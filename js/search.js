@@ -125,7 +125,7 @@
         title: w.title || id,
         body: w.description || '',
         image: (galleryImages[id] && galleryImages[id][0]) || '',
-        url: `obra.html?id=${encodeURIComponent(id)}`,
+        url: window.JIC_I18N.workUrl(id),
       }));
     });
 

@@ -54,6 +54,26 @@
     });
   }
 
+  function setMeta(attr, key, content) {
+    const el = document.head.querySelector(`meta[${attr}="${key}"]`);
+    if (el) el.setAttribute('content', content);
+  }
+
+  // Título y descripción de páginas estáticas desde el bloque "pages" del diccionario.
+  function applyPageMeta(dict) {
+    const page = location.pathname.split('/').pop().replace(/\.html$/, '') || 'index';
+    const meta = resolveKey(dict, `pages.${page}`);
+    if (!meta) return;
+    if (meta.title) {
+      document.title = meta.title;
+      setMeta('property', 'og:title', meta.title);
+    }
+    if (meta.description) {
+      setMeta('name', 'description', meta.description);
+      setMeta('property', 'og:description', meta.description);
+    }
+  }
+
   function fetchDict(lang) {
     if (cache[lang]) return Promise.resolve(cache[lang]);
     return fetch(`i18n/${lang}.json`)
@@ -76,6 +96,7 @@
         currentLang = lang;
         document.documentElement.setAttribute('lang', lang);
         applyTranslations(dict);
+        applyPageMeta(dict);
         const select = document.getElementById('langSelect');
         if (select) select.value = lang;
         document.dispatchEvent(new CustomEvent('i18n:ready', { detail: { lang, dict } }));
@@ -102,6 +123,7 @@
     getLang: () => currentLang,
     t: (key) => resolveKey(currentDict || {}, key),
     productUrl: (id) => `producto-${encodeURIComponent(id)}.html?lang=${currentLang || document.documentElement.getAttribute('lang') || DEFAULT_LANG}`,
+    workUrl: (id) => `obra-${encodeURIComponent(id)}.html?lang=${currentLang || document.documentElement.getAttribute('lang') || DEFAULT_LANG}`,
     setLanguage,
   };
 

@@ -1,4 +1,13 @@
 {
+  "pages": {
+    "index": { "title": "JessyIsCrafting — Handmade crafts, paintings and illustration in Spain", "description": "Farkle sets in wood, oil paintings, digital drawing and hand-painted figures. Handmade art with soul, inspired by the forest and Kingdom Come: Deliverance, made with care in Spain." },
+    "tienda": { "title": "Shop — JessyIsCrafting", "description": "Discover wooden crafts, oil paintings, digital drawing and hand-painted figures. Unique and customizable pieces, made with care in Spain." },
+    "galeria": { "title": "Gallery — JessyIsCrafting", "description": "A visual walk through JessyIsCrafting pieces: crafts, paintings, drawings and figures, plus moments from the workshop." },
+    "contacto": { "title": "Contact — JessyIsCrafting", "description": "Write to me to commission a piece, propose a collaboration or ask any question. Contact form, email, Instagram and X." },
+    "faq": { "title": "Frequently asked questions — JessyIsCrafting", "description": "Shipping to Spain, the EU and the UK, preparation times, returns and customization. Answers to your questions before you order." },
+    "inspiracion": { "title": "Inspiration — JessyIsCrafting", "description": "Kingdom Come: Deliverance, its art and music, and the love of reading and writing: the worlds that inspire every JessyIsCrafting piece." },
+    "fanfics": { "title": "Fanfics and Stories · JessyIsCrafting", "description": "Fanfics and stories inspired by the workshop's miniatures and medieval universes, to read here or on Archive of Our Own." }
+  },
   "home": {
     "hero": {
       "eyebrow": "Handmade · Made with care",

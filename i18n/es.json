@@ -1,4 +1,13 @@
 {
+  "pages": {
+    "index": { "title": "JessyIsCrafting — Artesanía, pintura e ilustración hechas a mano en España", "description": "Sets de Farkle de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano. Artesanía con alma, inspirada en el bosque y en Kingdom Come: Deliverance, hecha con mimo en España." },
+    "tienda": { "title": "Tienda — JessyIsCrafting", "description": "Descubre artesanías de madera, cuadros al óleo, dibujo digital y figuras pintadas a mano. Piezas únicas y personalizables, hechas con mimo en España." },
+    "galeria": { "title": "Galería — JessyIsCrafting", "description": "Un paseo visual por las piezas de JessyIsCrafting: artesanías, cuadros, dibujos y figuras, además de momentos del taller." },
+    "contacto": { "title": "Contacto — JessyIsCrafting", "description": "Escríbeme para encargar una pieza, proponer una colaboración o resolver cualquier duda. Formulario de contacto, correo electrónico, Instagram y X." },
+    "faq": { "title": "Preguntas frecuentes — JessyIsCrafting", "description": "Envíos a España, la Unión Europea y Reino Unido, plazos de preparación, devoluciones y personalización. Resuelve tus dudas antes de hacer un pedido." },
+    "inspiracion": { "title": "Inspiración — JessyIsCrafting", "description": "Kingdom Come: Deliverance, su arte y su música, y el amor por la lectura y la escritura: los mundos que inspiran cada pieza de JessyIsCrafting." },
+    "fanfics": { "title": "Fanfics y Relatos · JessyIsCrafting", "description": "Fanfics y relatos inspirados en las miniaturas del taller y en universos medievales, para leer aquí o en Archive of Our Own." }
+  },
   "home": {
     "hero": {
       "eyebrow": "Hecho a mano · Hecho con mimo",
