@@ -66,7 +66,7 @@
 
   function loadProducts() {
     if (!productsLoaded) {
-      productsLoaded = fetch('data/products.json')
+      productsLoaded = fetch((document.documentElement.getAttribute('data-root') || '') + 'data/products.json')
         .then((res) => res.json())
         .then((data) => {
           products = data;

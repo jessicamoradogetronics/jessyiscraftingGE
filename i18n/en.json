@@ -122,6 +122,17 @@
     "relatedEyebrow": "You might also like",
     "relatedTitle": "More pieces from the same family"
   },
+  "a11y": {
+    "breadcrumb": "Breadcrumb",
+    "previous": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "handPaintedFigure": "Hand-painted figure",
+    "oilPainting": "Oil painting",
+    "woodenFarkleSet": "Wooden Farkle set",
+    "filterGallery": "Filter gallery",
+    "pagination": "Pagination"
+  },
   "search": {
     "label": "Search the site",
     "placeholder": "Search...",

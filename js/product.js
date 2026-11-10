@@ -450,7 +450,7 @@
 
   function init() {
     const id = getIdFromUrl();
-    fetch('data/products.json')
+    fetch((document.documentElement.getAttribute('data-root') || '') + 'data/products.json')
       .then((res) => res.json())
       .then((data) => {
         products = data;

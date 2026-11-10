@@ -83,7 +83,7 @@
     applyInitialHash();
     setupFilters();
 
-    const productsReady = fetch('data/products.json').then((res) => res.json());
+    const productsReady = fetch((document.documentElement.getAttribute('data-root') || '') + 'data/products.json').then((res) => res.json());
     const dictReady = window.JIC_I18N.getDict()
       ? Promise.resolve()
       : new Promise((resolve) => document.addEventListener('i18n:ready', resolve, { once: true }));

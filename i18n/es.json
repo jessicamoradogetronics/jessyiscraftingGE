@@ -122,6 +122,17 @@
     "relatedEyebrow": "También te puede gustar",
     "relatedTitle": "Más piezas de esta misma familia"
   },
+  "a11y": {
+    "breadcrumb": "Ruta de navegación",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "close": "Cerrar",
+    "handPaintedFigure": "Figura pintada a mano",
+    "oilPainting": "Pintura al óleo",
+    "woodenFarkleSet": "Set Farkle de madera",
+    "filterGallery": "Filtrar galería",
+    "pagination": "Paginación"
+  },
   "search": {
     "label": "Buscar en el sitio",
     "placeholder": "Buscar...",

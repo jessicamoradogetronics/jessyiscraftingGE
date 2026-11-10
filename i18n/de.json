@@ -122,6 +122,17 @@
     "relatedEyebrow": "Das könnte dir auch gefallen",
     "relatedTitle": "Weitere Stücke aus derselben Familie"
   },
+  "a11y": {
+    "breadcrumb": "Navigationspfad",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "close": "Schließen",
+    "handPaintedFigure": "Handbemalte Figur",
+    "oilPainting": "Ölgemälde",
+    "woodenFarkleSet": "Farkle-Set aus Holz",
+    "filterGallery": "Galerie filtern",
+    "pagination": "Seitennavigation"
+  },
   "search": {
     "label": "Website durchsuchen",
     "placeholder": "Suchen...",

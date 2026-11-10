@@ -7,10 +7,10 @@
   function loadPartial(selector, url) {
     const target = document.querySelector(selector);
     if (!target) return Promise.resolve();
-    return fetch(url)
+    return fetch((document.documentElement.getAttribute('data-root') || '') + url)
       .then((res) => res.text())
       .then((html) => {
-        target.innerHTML = html.split('{{BASE}}').join('');
+        target.innerHTML = html.split('{{BASE}}').join(document.documentElement.getAttribute('data-root') || '');
       })
       .catch((err) => console.error(`No se pudo cargar ${url}`, err));
   }

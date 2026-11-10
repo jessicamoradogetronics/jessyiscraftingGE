@@ -25,18 +25,23 @@
 
   const LANGS = ['es', 'en', 'de'];
 
-  // Idioma de la URL (?lang=); sin parámetro o no válido, español.
-  function urlLang() {
-    const lang = new URLSearchParams(location.search).get('lang');
-    return LANGS.indexOf(lang) > -1 ? lang : 'es';
+  // Idioma activo de una página localizada (lo fija i18n.js en <html lang>).
+  // Las páginas sin versión por idioma (fanfics, lector) siempre usan la URL en inglés.
+  function pageLang() {
+    if (!document.documentElement.hasAttribute('data-localized')) return 'en';
+    const lang = document.documentElement.getAttribute('lang');
+    return LANGS.indexOf(lang) > -1 ? lang : 'en';
   }
 
-  // El español es la versión sin ?lang=.
-  function langUrl(url, lang) {
-    const u = new URL(url, SITE_URL);
-    u.searchParams.delete('lang');
-    if (lang !== 'es') u.searchParams.set('lang', lang);
-    return u.href;
+  // URL pública de una página en un idioma: inglés en la raíz, es/ y de/ en su carpeta.
+  function localizedUrl(url, lang) {
+    const source = new URL(url, SITE_URL);
+    const file = source.pathname.split('/').pop() || 'index.html';
+    const out = new URL(SITE_URL + (lang === 'en' ? '' : lang + '/') + file);
+    source.searchParams.forEach((value, key) => {
+      if (key !== 'lang') out.searchParams.append(key, value);
+    });
+    return out.href;
   }
 
   function setCanonical(url) {
@@ -46,7 +51,7 @@
       link.rel = 'canonical';
       document.head.appendChild(link);
     }
-    link.href = langUrl(url, urlLang());
+    link.href = localizedUrl(url, pageLang());
   }
 
   function setAlternates(url) {
@@ -55,13 +60,13 @@
       const link = document.createElement('link');
       link.rel = 'alternate';
       link.hreflang = lang;
-      link.href = langUrl(url, lang);
+      link.href = localizedUrl(url, lang);
       document.head.appendChild(link);
     });
     const def = document.createElement('link');
     def.rel = 'alternate';
     def.hreflang = 'x-default';
-    def.href = langUrl(url, 'es');
+    def.href = localizedUrl(url, 'en');
     document.head.appendChild(def);
   }
 
@@ -80,7 +85,7 @@
       const url = absoluteUrl(opts.url);
       setCanonical(url);
       if (opts.localized) setAlternates(url);
-      upsertMeta('property', 'og:url', langUrl(url, urlLang()));
+      upsertMeta('property', 'og:url', localizedUrl(url, pageLang()));
     }
     if (opts.image) {
       upsertMeta('property', 'og:image', absoluteUrl(opts.image));

@@ -13,16 +13,21 @@
   let currentDict = null;
   let currentLang = null;
 
-  // Orden: ?lang=, elección guardada, idioma fijado de la página (data-static-lang), navegador (es/en/de) y, si no, inglés.
+  // Ruta a la raíz del sitio desde la página actual ("../" en las carpetas es/ y de/).
+  function rootPrefix() {
+    return document.documentElement.getAttribute('data-root') || '';
+  }
+
+  // Orden: ?lang=, idioma fijado de la carpeta (data-static-lang), elección guardada, navegador (es/en/de) y, si no, inglés.
   function detectLang() {
     const fromUrl = new URLSearchParams(location.search).get('lang');
     if (SUPPORTED_LANGS.includes(fromUrl)) return fromUrl;
 
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
-
     const pinned = document.body && document.body.dataset.staticLang;
     if (SUPPORTED_LANGS.includes(pinned)) return pinned;
+
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
 
     const browser = ((navigator.languages && navigator.languages[0]) || navigator.language || '').slice(0, 2).toLowerCase();
     return SUPPORTED_LANGS.includes(browser) ? browser : DEFAULT_LANG;
@@ -76,7 +81,7 @@
 
   function fetchDict(lang) {
     if (cache[lang]) return Promise.resolve(cache[lang]);
-    return fetch(`i18n/${lang}.json`)
+    return fetch(`${rootPrefix()}i18n/${lang}.json`)
       .then((res) => {
         if (!res.ok) throw new Error(`No se pudo cargar el idioma ${lang}`);
         return res.json();
@@ -110,8 +115,19 @@
       if (select) {
         select.value = lang;
         select.addEventListener('change', (e) => {
-          localStorage.setItem(STORAGE_KEY, e.target.value);
-          setLanguage(e.target.value);
+          const target = e.target.value;
+          localStorage.setItem(STORAGE_KEY, target);
+          // Páginas con versión por idioma: ir a su URL (raíz = inglés, es/ y de/).
+          if (document.documentElement.hasAttribute('data-localized')) {
+            const file = location.pathname.split('/').pop() || 'index.html';
+            const folder = target === DEFAULT_LANG ? '' : `${target}/`;
+            const search = new URLSearchParams(location.search);
+            search.delete('lang');
+            const query = search.toString();
+            location.href = rootPrefix() + folder + file + (query ? `?${query}` : '');
+            return;
+          }
+          setLanguage(target);
         });
       }
     });

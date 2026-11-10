@@ -117,7 +117,7 @@
   function setBackLink(id) {
     const back = document.getElementById('workBack');
     if (!back) return;
-    fetch('data/products.json')
+    fetch((document.documentElement.getAttribute('data-root') || '') + 'data/products.json')
       .then((res) => res.json())
       .then((products) => {
         const item = products.find((p) => p.id === id);
@@ -128,7 +128,7 @@
 
   function init() {
     const id = getIdFromUrl();
-    fetch('data/galeria.json')
+    fetch((document.documentElement.getAttribute('data-root') || '') + 'data/galeria.json')
       .then((res) => res.json())
       .then((data) => {
         works = data;

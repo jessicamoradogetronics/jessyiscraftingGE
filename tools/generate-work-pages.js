@@ -9,7 +9,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const SITE_URL = 'https://jessyiscrafting.com/';
-const LANGS = ['es', 'en', 'de'];
+const { LOCALES, OG_LOCALE, folderFor, localizedUrl, htmlTag, bodyAttrs, headLinks, rewriteAssetPaths, rootPrefixFor, translateAriaLabels } = require('./lib/localize');
 
 // Mantener sincronizado con CAPTION_KEYS de js/obra.js.
 const CAPTION_KEYS = {
@@ -60,15 +60,6 @@ function captionFor(dict, id) {
   return typeof value === 'string' ? value : '';
 }
 
-function hreflangLinks(file) {
-  const lines = LANGS.map((lang) => {
-    const href = lang === 'en' ? SITE_URL + file : `${SITE_URL}${file}?lang=${lang}`;
-    return `<link rel="alternate" hreflang="${lang}" href="${href}">`;
-  });
-  lines.push(`<link rel="alternate" hreflang="x-default" href="${SITE_URL}${file}">`);
-  return lines.join('\n');
-}
-
 function descriptionHtml(text) {
   return String(text)
     .split(/\n\s*\n/)
@@ -87,7 +78,7 @@ function backHref(work, products) {
   return 'galeria.html';
 }
 
-function renderPage(work, dict, products) {
+function renderPage(work, dict, products, lang) {
   const id = work.id;
   const t = (dict.works && dict.works.items && dict.works.items[id]) || {};
   const title = captionFor(dict, id) || t.title || id;
@@ -101,7 +92,7 @@ function renderPage(work, dict, products) {
     name: title,
     description: cleanText(t.description),
     image: SITE_URL + image,
-    url: SITE_URL + file,
+    url: SITE_URL + folderFor(lang) + file,
     creator: { '@type': 'Organization', name: 'JessyIsCrafting', url: SITE_URL }
   }).replace(/</g, '\\u003c');
 
@@ -110,21 +101,20 @@ function renderPage(work, dict, products) {
           <img src="${src}" alt="${esc(title)}"${index === 0 ? '' : ' loading="lazy"'} data-lightbox="${src}">
         </figure>`).join('');
 
-  return `<!DOCTYPE html>
-<html lang="en">
+  return rewriteAssetPaths(`<!DOCTYPE html>
+${htmlTag(lang)}
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(pageTitle)}</title>
 <meta name="description" content="${esc(description)}">
-<link rel="canonical" href="${SITE_URL}${file}">
-${hreflangLinks(file)}
+${headLinks(file, lang)}
 <meta property="og:site_name" content="JessyIsCrafting">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="${OG_LOCALE[lang]}">
 <meta property="og:title" content="${esc(pageTitle)}">
 <meta property="og:description" content="${esc(description)}">
-<meta property="og:url" content="${SITE_URL}${file}">
+<meta property="og:url" content="${localizedUrl(file, lang)}">
 <meta property="og:image" content="${SITE_URL}${image}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
@@ -136,7 +126,7 @@ ${hreflangLinks(file)}
 <link rel="stylesheet" href="css/styles.css">
 <script type="application/ld+json" id="jsonld-work">${ld}</script>
 </head>
-<body data-work-id="${esc(id)}" data-work-page="${file}">
+<body ${bodyAttrs(lang)} data-work-id="${esc(id)}" data-work-page="${file}">
 <a href="#main" class="skip-link">Skip to content</a>
 <div data-include="header"></div>
 
@@ -188,24 +178,30 @@ ${hreflangLinks(file)}
 <script src="js/obra.js"></script>
 </body>
 </html>
-`;
+`, rootPrefixFor(lang));
 }
 
 function main() {
   const works = readJson('data/galeria.json');
-  const dict = readJson('i18n/en.json');
   const products = readJson('data/products.json');
   let count = 0;
-  works.forEach((work) => {
-    const t = dict.works && dict.works.items && dict.works.items[work.id];
-    if (!t) {
-      console.warn(`Sin textos en i18n/es.json para la obra: ${work.id}`);
-      return;
-    }
-    fs.writeFileSync(path.join(ROOT, `obra-${work.id}.html`), renderPage(work, dict, products), 'utf8');
-    count += 1;
+  LOCALES.forEach((lang) => {
+    const dict = readJson(`i18n/${lang}.json`);
+    const dir = path.join(ROOT, folderFor(lang));
+    fs.mkdirSync(dir, { recursive: true });
+    works.forEach((work) => {
+      const t = dict.works && dict.works.items && dict.works.items[work.id];
+      if (!t) {
+        console.warn(`Sin textos en i18n/${lang}.json para la obra: ${work.id}`);
+        return;
+      }
+      fs.writeFileSync(path.join(dir, `obra-${work.id}.html`), translateAriaLabels(renderPage(work, dict, products, lang), dict, readJson('i18n/en.json')), 'utf8');
+      count += 1;
+    });
   });
   console.log(`Páginas de obra generadas: ${count}`);
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = { renderPage };
