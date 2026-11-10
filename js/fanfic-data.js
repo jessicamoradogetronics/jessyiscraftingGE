@@ -3,9 +3,9 @@ window.FANFICS = {
   worth: {
     id: 'worth',
     title: 'Worth the Wreckage',
-    summary: 'Henry lleva una vida sencilla, con algún trabajo que es mejor no cuestionar. Cuando le piden que acoja a Hans en su casa sin hacer preguntas, dos mundos completamente distintos empiezan a chocar y, poco a poco, también a transformarse.',
-    status: 'En curso',
-    tags: ['Fanfic', 'Kingdom Come: Deliverance', 'Inglés'],
+    summary: 'Henry leads a simple life, with the odd job that\'s better left unquestioned. When he\'s asked to take Hans into his home, no questions asked, two completely different worlds begin to clash and, slowly, to change each other.',
+    status: 'Ongoing',
+    tags: ['Fanfic', 'Kingdom Come: Deliverance', 'English'],
     chapters: [
       {
         title: 'The arrival',
@@ -291,62 +291,62 @@ window.FANFICS = {
   something: {
     id: 'something',
     title: 'Something We Cannot Name',
-    summary: 'Qué le pasó a Hans mientras estuvo cautivo en Malešov, y qué pensaba Henry mientras se enfrentaba a sus misiones más peligrosas. Los momentos clave de KCD2 contados desde el punto de vista de Hans, hasta llegar a lo ocurrido en Suchdol.',
-    status: 'Completo',
-    tags: ['Fanfic', 'Kingdom Come: Deliverance', 'Español', 'Finalizado'],
+    summary: 'What happened to Hans while he was held captive in Malešov, and what Henry thought as he faced his most dangerous missions. The key moments of KCD2 told from Hans\'s point of view, up to what happened in Suchdol.',
+    status: 'Completed',
+    tags: ['Fanfic', 'Kingdom Come: Deliverance', 'English', 'Finished'],
     chapters: [],
     draftChapters: [
       {
         title: 'Malešov',
         date: '2026-02-14',
         paragraphs: [
-          'Lo que Hans recordaría después no eran los golpes, sino el olor a humedad de la celda y el sonido de las llaves al alejarse por el pasillo.',
-          'Durante días contó las horas por la luz que se filtraba por una rendija del techo. Cuando dejó de contar, empezó a recordar.',
-          'Pensó en Henry, en la forma en que lo miraba cuando creía que nadie lo veía. Pensó en las misiones que vendrían y en los hombres que no volverían a casa.',
-          'Cuando por fin abrieron la puerta, no preguntó por qué. Solo supo que el mundo seguía allí fuera y que tendría que volver a encontrarle sentido.'
+          'What Hans would remember later was not the blows, but the damp smell of the cell and the sound of the keys fading down the corridor.',
+          'For days he counted the hours by the light seeping through a crack in the ceiling. When he stopped counting, he began to remember.',
+          'He thought of Henry, of the way he looked at him when he thought no one could see. He thought of the missions to come and the men who would not return home.',
+          'When the door finally opened, he didn\'t ask why. He only knew the world was still out there and that he would have to find meaning in it again.'
         ]
       },
       {
         title: 'Suchdol',
         date: '2026-03-01',
         paragraphs: [
-          'Henry nunca supo cuántas noches pasó sin dormir mientras Hans estaba cautivo. Lo que sí sabía era que cada camino que tomaba lo llevaba, de algún modo, de vuelta a Malešov.',
-          'En Suchdol, la lluvia caía sobre los tejados como si quisiera borrar la aldea entera.',
-          '—No puedo prometerte que todo irá bien —dijo Hans—. Pero no voy a irme sin ti.',
-          'Y por primera vez, Henry sintió que las palabras podían ser tan firmes como una espada.'
+          'Henry never knew how many nights he lay awake while Hans was held captive. What he did know was that every road he took somehow led him back to Malešov.',
+          'In Suchdol, the rain fell on the rooftops as if it wanted to wipe out the whole village.',
+          '"I can\'t promise you everything will be all right," said Hans. "But I won\'t leave without you."',
+          'And for the first time, Henry felt that words could be as firm as a sword.'
         ],
-        quote: '«Algunas cosas no tienen nombre, pero aun así pesan.»'
+        quote: '"Some things have no name, yet they still weigh on us."'
       }
     ]
   },
   road: {
     id: 'road',
     title: 'The Road to Constantinople',
-    summary: 'Se acerca la boda de Hans Capon. Antes de rendirse a ese destino, cumple una promesa hecha a Henry años atrás: viajar juntos hasta Constantinopla. Un último viaje de amor y libertad, marcado por la belleza del mundo y también por su crueldad.',
-    status: 'Completo',
-    tags: ['Fanfic', 'Kingdom Come: Deliverance', 'Español', 'Finalizado'],
+    summary: 'Hans Capon\'s wedding is drawing near. Before giving in to that fate, he keeps a promise made to Henry years ago: to travel together all the way to Constantinople. One last journey of love and freedom, marked by the beauty of the world and also by its cruelty.',
+    status: 'Completed',
+    tags: ['Fanfic', 'Kingdom Come: Deliverance', 'English', 'Finished'],
     chapters: [],
     draftChapters: [
       {
-        title: 'La boda',
+        title: 'The wedding',
         date: '2025-12-20',
         paragraphs: [
-          'La carta llegó con el primer sol de primavera. Hans la leyó dos veces antes de dejarla sobre la mesa, junto al pan y la sal.',
-          'Iba a casarse. Su familia lo había decidido, y él había aceptado sin discutir, como quien acepta una tormenta que ya se ve venir.',
-          'Pero antes de rendirse a ese destino, quedaba una promesa pendiente.',
-          'Años atrás, Henry y él habían hablado de viajar juntos hasta Constantinopla, de ver el mar y las cúpulas que tantos mercaderes describían. Hans nunca había olvidado aquella conversación.'
+          'The letter arrived with the first spring sun. Hans read it twice before setting it down on the table, beside the bread and the salt.',
+          'He was going to be married. His family had decided, and he had accepted without argument, like someone who accepts a storm they can already see coming.',
+          'But before surrendering to that fate, one promise was still outstanding.',
+          'Years earlier, Henry and he had talked about travelling together to Constantinople, to see the sea and the domes that so many merchants described. Hans had never forgotten that conversation.'
         ]
       },
       {
-        title: 'Camino al este',
+        title: 'Heading east',
         date: '2026-01-05',
         paragraphs: [
-          'Partieron antes del amanecer, con dos caballos, un mapa desgastado y más provisiones de las necesarias.',
-          'El camino los llevó por bosques cerrados, aldeas que olían a pan recién hecho y puentes de piedra que se hundían en el río.',
-          '—¿Crees que valdrá la pena? —preguntó Henry, cuando la ciudad aún era un rumor en el horizonte.',
-          '—Todo viaje vale la pena si lo haces con la persona adecuada —respondió Hans, sin apartar la mirada del camino.'
+          'They set out before dawn, with two horses, a worn map and more provisions than they needed.',
+          'The road led them through dense forests, villages that smelled of fresh bread and stone bridges sinking into the river.',
+          '"Do you think it will be worth it?" asked Henry, when the city was still only a rumour on the horizon.',
+          '"Every journey is worth it if you make it with the right person," replied Hans, without taking his eyes off the road.'
         ],
-        quote: '«El mundo es enorme, y aun así cabe en una sola promesa.»'
+        quote: '"The world is enormous, and yet it fits within a single promise."'
       }
     ]
   }

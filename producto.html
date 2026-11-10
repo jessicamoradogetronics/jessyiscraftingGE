@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Producto — JessyIsCrafting</title>
-<meta name="description" content="Pieza artesanal hecha a mano por JessyIsCrafting.">
+<title>Product — JessyIsCrafting</title>
+<meta name="description" content="Handmade craft piece by JessyIsCrafting.">
 <link rel="canonical" href="https://jessyiscrafting.com/producto.html">
 <meta property="og:site_name" content="JessyIsCrafting">
 <meta property="og:type" content="product">
-<meta property="og:locale" content="es_ES">
-<meta property="og:title" content="Producto — JessyIsCrafting">
-<meta property="og:description" content="Pieza artesanal hecha a mano por JessyIsCrafting.">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Product — JessyIsCrafting">
+<meta property="og:description" content="Handmade craft piece by JessyIsCrafting.">
 <link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#37472f">
@@ -20,20 +20,20 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<a href="#main" class="skip-link">Saltar al contenido</a>
+<a href="#main" class="skip-link">Skip to content</a>
 <div data-include="header"></div>
 
 <main id="main">
   <section class="section" style="padding-bottom:0;">
     <div class="container">
       <div class="product-topbar">
-        <nav class="breadcrumb" aria-label="Ruta de navegación">
-          <a href="index.html" data-i18n="nav.home">Inicio</a> /
-          <a href="tienda.html" data-i18n="nav.store">Tienda</a> /
-          <a href="#" id="breadcrumbCategory">Categoría</a> /
-          <span id="breadcrumbCurrent">Producto</span>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-i18n="nav.home">Home</a> /
+          <a href="tienda.html" data-i18n="nav.store">Shop</a> /
+          <a href="#" id="breadcrumbCategory">Category</a> /
+          <span id="breadcrumbCurrent">Product</span>
         </nav>
-        <a href="tienda.html" class="product-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span data-i18n="productDetail.backToStore">Volver a la tienda</span></a>
+        <a href="tienda.html" class="product-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span data-i18n="productDetail.backToStore">Back to the shop</span></a>
       </div>
     </div>
   </section>
@@ -41,7 +41,7 @@
   <section class="section" style="padding-top:0.5rem;">
     <div class="container">
 
-      <p id="productNotFound" hidden data-i18n="productDetail.notFound">No hemos encontrado esta pieza. Puede que ya no esté disponible — echa un vistazo al resto de la tienda.</p>
+      <p id="productNotFound" hidden data-i18n="productDetail.notFound">We couldn't find this piece. It may no longer be available — take a look at the rest of the shop.</p>
 
       <div class="product-detail" id="productWrapper">
         <div class="product-gallery">
@@ -50,40 +50,40 @@
         </div>
 
         <div class="product-info">
-          <span class="eyebrow" id="productCategory">Categoría</span>
-          <h1 id="productTitle">Nombre del producto</h1>
+          <span class="eyebrow" id="productCategory">Category</span>
+          <h1 id="productTitle">Product name</h1>
           <p class="product-info__price" id="productPrice">0€</p>
-          <p class="product-info__meta" data-i18n="productDetail.taxNote">Impuestos incluidos · Envío rápido protegido</p>
+          <p class="product-info__meta" data-i18n="productDetail.taxNote">Taxes included · Fast, protected shipping</p>
           <p class="product-info__availability" id="productAvailability" hidden></p>
-          <div id="productDescription">Descripción del producto.</div>
+          <div id="productDescription">Product description.</div>
 
           <div class="custom-choice" id="customChoice" hidden></div>
           <div class="customization-box" id="customizationBox" hidden></div>
 
           <div class="product-info__cart-actions">
             <div class="qty-stepper">
-              <button type="button" class="qty-stepper__btn" data-qty-step="-1" data-i18n-aria-label="productDetail.qtyDecrease" aria-label="Reducir cantidad">&minus;</button>
-              <label for="productQty" class="visually-hidden" data-i18n="cart.quantityLabel">Cantidad</label>
+              <button type="button" class="qty-stepper__btn" data-qty-step="-1" data-i18n-aria-label="productDetail.qtyDecrease" aria-label="Decrease quantity">&minus;</button>
+              <label for="productQty" class="visually-hidden" data-i18n="cart.quantityLabel">Quantity</label>
               <input type="number" id="productQty" class="qty-stepper__input" min="1" value="1">
-              <button type="button" class="qty-stepper__btn" data-qty-step="1" data-i18n-aria-label="productDetail.qtyIncrease" aria-label="Aumentar cantidad">+</button>
+              <button type="button" class="qty-stepper__btn" data-qty-step="1" data-i18n-aria-label="productDetail.qtyIncrease" aria-label="Increase quantity">+</button>
             </div>
-            <button type="button" class="btn btn--gold" id="addToCartBtn" data-add-to-cart=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cart.addButton">Añadir al carrito</span></button>
+            <button type="button" class="btn btn--gold" id="addToCartBtn" data-add-to-cart=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cart.addButton">Add to cart</span></button>
           </div>
 
           <div class="product-info__actions">
-            <a href="contacto.html" id="orderButton" class="btn btn--soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg><span data-i18n="productDetail.orderButton">Consultar o encargar pieza a medida</span></a>
+            <a href="contacto.html" id="orderButton" class="btn btn--soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg><span data-i18n="productDetail.orderButton">Ask about or order a made-to-measure piece</span></a>
           </div>
 
           <div class="addons" id="productAddons" hidden></div>
 
-          <p class="form-note" style="margin-top:1.5rem;" data-i18n="productDetail.shippingNote">Envíos a toda España, la Unión Europea y Reino Unido. Para otros países, consulta antes de encargar — más info en las preguntas frecuentes.</p>
+          <p class="form-note" style="margin-top:1.5rem;" data-i18n="productDetail.shippingNote">Shipping to Spain, the European Union and the United Kingdom. For other countries, please get in touch before ordering. More details in the FAQ.</p>
         </div>
       </div>
 
       <section id="relatedSection" style="margin-top:4.5rem;">
         <div class="section-head">
-          <span class="eyebrow" data-i18n="productDetail.relatedEyebrow">También te puede gustar</span>
-          <h2 data-i18n="productDetail.relatedTitle">Más piezas de esta misma familia</h2>
+          <span class="eyebrow" data-i18n="productDetail.relatedEyebrow">You might also like</span>
+          <h2 data-i18n="productDetail.relatedTitle">More pieces from the same family</h2>
         </div>
         <div class="grid grid--3" id="relatedProducts"></div>
       </section>

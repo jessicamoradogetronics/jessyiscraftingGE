@@ -25,8 +25,8 @@
   var SIZE_STEP = 2;
   var SIZE_DEFAULT = 18;
 
-  var numberFormat = new Intl.NumberFormat('es-ES');
-  var dateFormat = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+  var numberFormat = new Intl.NumberFormat('en-US');
+  var dateFormat = new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
 
   function wordCount(text) {
     return text.split(/\s+/).filter(Boolean).length;
@@ -73,12 +73,12 @@
 
     var meta = document.getElementById('sideMeta');
     var rows = [
-      ['Estado', story.status],
-      ['Capítulos', chapters.length],
-      ['Palabras', numberFormat.format(totalWords)],
-      ['Lectura aprox.', readMinutes(totalWords) + ' min'],
-      ['Publicado', formatDate(chapters[0].date)],
-      ['Actualizado', formatDate(chapters[chapters.length - 1].date)]
+      ['Status', story.status],
+      ['Chapters', chapters.length],
+      ['Words', numberFormat.format(totalWords)],
+      ['Reading time', readMinutes(totalWords) + ' min'],
+      ['Published', formatDate(chapters[0].date)],
+      ['Updated', formatDate(chapters[chapters.length - 1].date)]
     ];
     rows.forEach(function (row) {
       meta.appendChild(make('dt', null, row[0]));
@@ -102,7 +102,7 @@
     var seo = window.JIC_SEO;
     var pageUrl = chapterUrl(index + 1);
     seo.setPageMeta({
-      title: story.title + ' · Capítulo ' + (index + 1) + ' · JessyIsCrafting',
+      title: story.title + ' · Chapter ' + (index + 1) + ' · JessyIsCrafting',
       description: story.summary,
       url: pageUrl
     });
@@ -128,14 +128,14 @@
       tags.appendChild(make('span', 'reader-tag', tag));
     });
 
-    document.getElementById('chapterKicker').textContent = 'Capítulo ' + (index + 1) + ' de ' + chapters.length;
+    document.getElementById('chapterKicker').textContent = 'Chapter ' + (index + 1) + ' of ' + chapters.length;
     document.getElementById('chapterTitle').textContent = chapter.title;
 
     var words = chapterWords(chapter);
     var byline = document.getElementById('byline');
-    byline.appendChild(make('span', null, 'Publicado el ' + formatDate(chapter.date)));
-    byline.appendChild(make('span', null, numberFormat.format(words) + ' palabras'));
-    byline.appendChild(make('span', null, 'Lectura aprox. ' + readMinutes(words) + ' min'));
+    byline.appendChild(make('span', null, 'Published ' + formatDate(chapter.date)));
+    byline.appendChild(make('span', null, numberFormat.format(words) + ' words'));
+    byline.appendChild(make('span', null, 'Reading time ' + readMinutes(words) + ' min'));
   }
 
   function renderBody() {
@@ -166,11 +166,11 @@
 
   function renderPager() {
     var pager = document.getElementById('pager');
-    pager.appendChild(pagerItem(index - 1, '← Capítulo anterior', false));
-    pager.appendChild(pagerItem(index + 1, 'Capítulo siguiente →', true));
+    pager.appendChild(pagerItem(index - 1, '← Previous chapter', false));
+    pager.appendChild(pagerItem(index + 1, 'Next chapter →', true));
 
     var select = make('select', 'reader-select');
-    select.setAttribute('aria-label', 'Seleccionar capítulo');
+    select.setAttribute('aria-label', 'Select chapter');
     chapters.forEach(function (ch, i) {
       var option = make('option', null, (i + 1) + '. ' + ch.title);
       option.value = chapterUrl(i + 1);
@@ -244,13 +244,13 @@
     var status = document.getElementById('shareStatus');
     if (navigator.clipboard && window.isSecureContext) {
       navigator.clipboard.writeText(url).then(function () {
-        status.textContent = 'Enlace copiado';
+        status.textContent = 'Link copied';
       }, function () {
-        window.prompt('Copia el enlace:', url);
+        window.prompt('Copy the link:', url);
       });
       return;
     }
-    window.prompt('Copia el enlace:', url);
+    window.prompt('Copy the link:', url);
   }
 
   function initProgress() {
@@ -277,7 +277,7 @@
       var script = document.createElement('script');
       script.src = JSPDF_URL;
       script.onload = function () { resolve(window.jspdf.jsPDF); };
-      script.onerror = function () { reject(new Error('No se pudo cargar jsPDF')); };
+      script.onerror = function () { reject(new Error('Could not load jsPDF')); };
       document.head.appendChild(script);
     });
   }
@@ -307,7 +307,7 @@
     write(story.title, 24, 'bold', 8);
     write(story.summary, 12, 'italic', 24);
     chapters.forEach(function (ch, i) {
-      write('Capítulo ' + (i + 1) + ': ' + ch.title, 16, 'bold', 12);
+      write('Chapter ' + (i + 1) + ': ' + ch.title, 16, 'bold', 12);
       blocks(ch).forEach(function (block) {
         write(block.text, 12, block.kind === 'q' ? 'italic' : 'normal', 10);
       });
@@ -321,13 +321,13 @@
     var button = document.getElementById('dlPdf');
     var label = button.textContent;
     button.disabled = true;
-    button.textContent = 'Generando…';
+    button.textContent = 'Generating…';
     loadJsPDF()
       .then(buildPdf)
-      .catch(function () { button.textContent = 'Error, reintentar'; })
+      .catch(function () { button.textContent = 'Error, try again'; })
       .then(function () {
         button.disabled = false;
-        if (button.textContent === 'Generando…') button.textContent = label;
+        if (button.textContent === 'Generating…') button.textContent = label;
       });
   }
 
@@ -341,7 +341,7 @@
       var script = document.createElement('script');
       script.src = JSZIP_URL;
       script.onload = function () { resolve(window.JSZip); };
-      script.onerror = function () { reject(new Error('No se pudo cargar JSZip')); };
+      script.onerror = function () { reject(new Error('Could not load JSZip')); };
       document.head.appendChild(script);
     });
   }
@@ -357,7 +357,7 @@
   function xhtmlPage(title, bodyHtml) {
     return '<?xml version="1.0" encoding="UTF-8"?>\n' +
       '<!DOCTYPE html>\n' +
-      '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">\n' +
+      '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\n' +
       '<head><meta charset="utf-8"/><title>' + xmlEscape(title) + '</title>' +
       '<link rel="stylesheet" type="text/css" href="style.css"/></head>\n' +
       '<body>\n' + bodyHtml + '\n</body>\n</html>';
@@ -368,7 +368,7 @@
       return (block.kind === 'q' ? '<blockquote><p>' : '<p>') + xmlEscape(block.text) +
         (block.kind === 'q' ? '</p></blockquote>' : '</p>');
     }).join('\n');
-    return xhtmlPage(ch.title, '<h1>' + xmlEscape('Capítulo ' + n + ': ' + ch.title) + '</h1>\n' + inner);
+    return xhtmlPage(ch.title, '<h1>' + xmlEscape('Chapter ' + n + ': ' + ch.title) + '</h1>\n' + inner);
   }
 
   function buildEpub(JSZip) {
@@ -407,7 +407,7 @@
       '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">\n' +
       '<dc:identifier id="bookid">' + xmlEscape(bookId) + '</dc:identifier>\n' +
       '<dc:title>' + xmlEscape(story.title) + '</dc:title>\n' +
-      '<dc:language>es</dc:language>\n' +
+      '<dc:language>en</dc:language>\n' +
       '<dc:creator>JessyIsCrafting</dc:creator>\n' +
       '<meta property="dcterms:modified">' + modified + '</meta>\n' +
       '</metadata>\n' +
@@ -415,8 +415,8 @@
       '<spine>\n' + spine + '</spine>\n' +
       '</package>');
 
-    zip.file('OEBPS/nav.xhtml', xhtmlPage('Índice',
-      '<nav xmlns:epub="http://www.idpf.org/2007/ops" epub:type="toc"><h1>Índice</h1><ol>\n' +
+    zip.file('OEBPS/nav.xhtml', xhtmlPage('Contents',
+      '<nav xmlns:epub="http://www.idpf.org/2007/ops" epub:type="toc"><h1>Contents</h1><ol>\n' +
       navItems + '</ol></nav>'));
 
     zip.file('OEBPS/title.xhtml', xhtmlPage(story.title,
@@ -442,14 +442,14 @@
     var button = document.getElementById('dlEpub');
     var label = button.textContent;
     button.disabled = true;
-    button.textContent = 'Generando…';
+    button.textContent = 'Generating…';
     loadJSZip()
       .then(buildEpub)
       .then(function (blob) { download(blob, story.id + '.epub'); })
-      .catch(function () { button.textContent = 'Error, reintentar'; return; })
+      .catch(function () { button.textContent = 'Error, try again'; return; })
       .then(function () {
         button.disabled = false;
-        if (button.textContent === 'Generando…') button.textContent = label;
+        if (button.textContent === 'Generating…') button.textContent = label;
       });
   }
 

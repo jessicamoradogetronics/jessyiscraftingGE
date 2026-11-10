@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leer · JessyIsCrafting</title>
-<meta name="description" content="Lectura de fanfics y relatos de JessyIsCrafting.">
+<title>Read · JessyIsCrafting</title>
+<meta name="description" content="Reading fanfics and stories by JessyIsCrafting.">
 <link rel="canonical" href="https://jessyiscrafting.com/leer.html">
 <meta property="og:site_name" content="JessyIsCrafting">
 <meta property="og:type" content="article">
-<meta property="og:locale" content="es_ES">
-<meta property="og:title" content="Leer · JessyIsCrafting">
-<meta property="og:description" content="Lectura de fanfics y relatos de JessyIsCrafting.">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Read · JessyIsCrafting">
+<meta property="og:description" content="Reading fanfics and stories by JessyIsCrafting.">
 <link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#37472f">
@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="css/reader.css">
 </head>
 <body class="reader-page">
-<a href="#main" class="skip-link">Saltar al contenido</a>
+<a href="#main" class="skip-link">Skip to content</a>
 <div data-include="header"></div>
 
 <div class="reader-progress" id="readerProgress" aria-hidden="true"></div>
@@ -29,26 +29,26 @@
 <div class="reader-toolbar">
   <div class="container reader-toolbar__inner">
     <div class="reader-toolbar__top">
-      <nav class="reader-crumbs" aria-label="Ruta de navegación">
+      <nav class="reader-crumbs" aria-label="Breadcrumb">
         <a href="fanfics.html">Fanfics</a> <span aria-hidden="true">/</span> <span id="crumbTitle"></span>
       </nav>
-      <a href="fanfics.html" class="reader-back">← Volver a fanfics</a>
+      <a href="fanfics.html" class="reader-back">← Back to fanfics</a>
     </div>
     <div class="reader-tools">
       <div id="chapterPick"></div>
-      <div class="reader-seg" role="group" aria-label="Tema de lectura" id="themeSeg">
-        <button type="button" data-theme="light" aria-pressed="true">Claro</button>
-        <button type="button" data-theme="dark" aria-pressed="false">Oscuro</button>
+      <div class="reader-seg" role="group" aria-label="Reading theme" id="themeSeg">
+        <button type="button" data-theme="light" aria-pressed="true">Light</button>
+        <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
       </div>
-      <div class="reader-seg" role="group" aria-label="Tamaño de letra">
-        <button type="button" id="sizeDown" aria-label="Reducir letra">A−</button>
+      <div class="reader-seg" role="group" aria-label="Font size">
+        <button type="button" id="sizeDown" aria-label="Decrease text size">A−</button>
         <span class="reader-seg__value" id="sizeValue">18 px</span>
-        <button type="button" id="sizeUp" aria-label="Aumentar letra">A+</button>
+        <button type="button" id="sizeUp" aria-label="Increase text size">A+</button>
       </div>
-      <button type="button" class="btn btn--outline btn--sm" id="shareBtn">Compartir</button>
+      <button type="button" class="btn btn--outline btn--sm" id="shareBtn">Share</button>
       <span class="reader-seg__value" id="shareStatus" aria-live="polite"></span>
-      <button type="button" class="btn btn--outline btn--sm" id="dlPdf">Descargar PDF</button>
-      <button type="button" class="btn btn--outline btn--sm" id="dlEpub">Descargar EPUB</button>
+      <button type="button" class="btn btn--outline btn--sm" id="dlPdf">Download PDF</button>
+      <button type="button" class="btn btn--outline btn--sm" id="dlEpub">Download EPUB</button>
     </div>
   </div>
 </div>
@@ -59,7 +59,7 @@
     <h2 id="sideTitle"></h2>
     <p id="sideSummary"></p>
     <dl class="reader-meta" id="sideMeta"></dl>
-    <h3>Índice de capítulos</h3>
+    <h3>Chapter index</h3>
     <ol class="reader-toc" id="toc"></ol>
   </aside>
 
@@ -73,7 +73,7 @@
 
     <div class="reader-body" id="readerBody"></div>
 
-    <nav class="reader-pager" id="pager" aria-label="Navegación entre capítulos"></nav>
+    <nav class="reader-pager" id="pager" aria-label="Chapter navigation"></nav>
   </article>
   <p class="reader-soon" id="comingSoon" data-i18n="fanfics.comingSoon" hidden></p>
 </main>

@@ -1,6 +1,6 @@
 /**
  * Genera una página HTML estática por producto (producto-<id>.html) con
- * contenido, metadatos y JSON-LD en español, usando data/products.json e i18n/es.json.
+ * contenido, metadatos y JSON-LD en inglés, usando data/products.json e i18n/en.json.
  * Uso: node tools/generate-product-pages.js
  * Volver a ejecutarlo cada vez que cambien los productos o sus textos.
  */
@@ -144,7 +144,7 @@ function descriptionHtml(text) {
 
 function hreflangLinks(file) {
   const lines = LANGS.map((lang) => {
-    const href = lang === 'es' ? SITE_URL + file : `${SITE_URL}${file}?lang=${lang}`;
+    const href = lang === 'en' ? SITE_URL + file : `${SITE_URL}${file}?lang=${lang}`;
     return `<link rel="alternate" hreflang="${lang}" href="${href}">`;
   });
   lines.push(`<link rel="alternate" hreflang="x-default" href="${SITE_URL}${file}">`);
@@ -165,7 +165,7 @@ function renderPage(product, dict) {
   const ld = JSON.stringify(buildJsonLd(product, t, cat, file, image)).replace(/</g, '\\u003c');
 
   return `<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -175,7 +175,7 @@ function renderPage(product, dict) {
 ${hreflangLinks(file)}
 <meta property="og:site_name" content="JessyIsCrafting">
 <meta property="og:type" content="product">
-<meta property="og:locale" content="es_ES">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${SITE_URL}${file}">
@@ -190,21 +190,21 @@ ${hreflangLinks(file)}
 <link rel="stylesheet" href="css/styles.css">
 <script type="application/ld+json" id="jsonld-product">${ld}</script>
 </head>
-<body data-product-id="${esc(id)}" data-product-page="${file}" data-static-lang="es">
-<a href="#main" class="skip-link">Saltar al contenido</a>
+<body data-product-id="${esc(id)}" data-product-page="${file}">
+<a href="#main" class="skip-link">Skip to content</a>
 <div data-include="header"></div>
 
 <main id="main">
   <section class="section" style="padding-bottom:0;">
     <div class="container">
       <div class="product-topbar">
-        <nav class="breadcrumb" aria-label="Ruta de navegación">
-          <a href="index.html" data-i18n="nav.home">Inicio</a> /
-          <a href="tienda.html" data-i18n="nav.store">Tienda</a> /
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-i18n="nav.home">Home</a> /
+          <a href="tienda.html" data-i18n="nav.store">Shop</a> /
           <a href="tienda.html#${esc(product.category)}" id="breadcrumbCategory">${esc(cat.name || '')}</a> /
           <span id="breadcrumbCurrent">${esc(name)}</span>
         </nav>
-        <a href="tienda.html" class="product-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span data-i18n="productDetail.backToStore">Volver a la tienda</span></a>
+        <a href="tienda.html" class="product-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span data-i18n="productDetail.backToStore">Back to the shop</span></a>
       </div>
     </div>
   </section>
@@ -227,7 +227,7 @@ ${hreflangLinks(file)}
           <span class="eyebrow" id="productCategory">${esc(cat.name || '')}</span>
           <h1 id="productTitle">${esc(name)}</h1>
           <p class="product-info__price" id="productPrice">${esc(formatPrice(product, dict))}</p>
-          <p class="product-info__meta" data-i18n="productDetail.taxNote">Impuestos incluidos · Envío rápido protegido</p>
+          <p class="product-info__meta" data-i18n="productDetail.taxNote">Taxes included · Fast, protected shipping</p>
           ${availability ? `<p class="product-info__availability ${availability.cls}" id="productAvailability">${esc(dict.productDetail[availability.key] || '')}</p>` : ''}
           <div id="productDescription">
         ${descriptionHtml(t.description || '')}
@@ -238,28 +238,28 @@ ${hreflangLinks(file)}
 
           <div class="product-info__cart-actions">
             <div class="qty-stepper">
-              <button type="button" class="qty-stepper__btn" data-qty-step="-1" data-i18n-aria-label="productDetail.qtyDecrease" aria-label="Reducir cantidad">&minus;</button>
-              <label for="productQty" class="visually-hidden" data-i18n="cart.quantityLabel">Cantidad</label>
+              <button type="button" class="qty-stepper__btn" data-qty-step="-1" data-i18n-aria-label="productDetail.qtyDecrease" aria-label="Decrease quantity">&minus;</button>
+              <label for="productQty" class="visually-hidden" data-i18n="cart.quantityLabel">Quantity</label>
               <input type="number" id="productQty" class="qty-stepper__input" min="1" value="1">
-              <button type="button" class="qty-stepper__btn" data-qty-step="1" data-i18n-aria-label="productDetail.qtyIncrease" aria-label="Aumentar cantidad">+</button>
+              <button type="button" class="qty-stepper__btn" data-qty-step="1" data-i18n-aria-label="productDetail.qtyIncrease" aria-label="Increase quantity">+</button>
             </div>
-            <button type="button" class="btn btn--gold" id="addToCartBtn" data-add-to-cart="${esc(id)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cart.addButton">Añadir al carrito</span></button>
+            <button type="button" class="btn btn--gold" id="addToCartBtn" data-add-to-cart="${esc(id)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg><span data-i18n="cart.addButton">Add to cart</span></button>
           </div>
 
           <div class="product-info__actions">
-            <a href="contacto.html?producto=${encodeURIComponent(name)}" id="orderButton" class="btn btn--soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg><span data-i18n="productDetail.orderButton">Consultar o encargar pieza a medida</span></a>
+            <a href="contacto.html?producto=${encodeURIComponent(name)}" id="orderButton" class="btn btn--soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg><span data-i18n="productDetail.orderButton">Ask about or order a made-to-measure piece</span></a>
           </div>
 
           <div class="addons" id="productAddons" hidden></div>
 
-          <p class="form-note" style="margin-top:1.5rem;" data-i18n="productDetail.shippingNote">Envíos a toda España, la Unión Europea y Reino Unido. Para otros países, consulta antes de encargar. Más info en las preguntas frecuentes.</p>
+          <p class="form-note" style="margin-top:1.5rem;" data-i18n="productDetail.shippingNote">Shipping to Spain, the European Union and the United Kingdom. For other countries, please get in touch before ordering. More details in the FAQ.</p>
         </div>
       </div>
 
       <section id="relatedSection" style="margin-top:4.5rem;">
         <div class="section-head">
-          <span class="eyebrow" data-i18n="productDetail.relatedEyebrow">También te puede gustar</span>
-          <h2 data-i18n="productDetail.relatedTitle">Más piezas de esta misma familia</h2>
+          <span class="eyebrow" data-i18n="productDetail.relatedEyebrow">You might also like</span>
+          <h2 data-i18n="productDetail.relatedTitle">More pieces from the same family</h2>
         </div>
         <div class="grid grid--3" id="relatedProducts"></div>
       </section>
@@ -283,7 +283,7 @@ ${hreflangLinks(file)}
 
 function main() {
   const products = readJson('data/products.json');
-  const dict = readJson('i18n/es.json');
+  const dict = readJson('i18n/en.json');
   products.forEach((product) => {
     const file = path.join(ROOT, `producto-${product.id}.html`);
     fs.writeFileSync(file, renderPage(product, dict), 'utf8');

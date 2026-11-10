@@ -1,6 +1,6 @@
 /**
  * Genera una página HTML estática por obra de la galería (obra-<id>.html) con
- * contenido, metadatos y JSON-LD en español, usando data/galeria.json, data/products.json e i18n/es.json.
+ * contenido, metadatos y JSON-LD en inglés, usando data/galeria.json, data/products.json e i18n/en.json.
  * Uso: node tools/generate-work-pages.js
  * Volver a ejecutarlo cada vez que cambien las obras o sus textos.
  */
@@ -62,7 +62,7 @@ function captionFor(dict, id) {
 
 function hreflangLinks(file) {
   const lines = LANGS.map((lang) => {
-    const href = lang === 'es' ? SITE_URL + file : `${SITE_URL}${file}?lang=${lang}`;
+    const href = lang === 'en' ? SITE_URL + file : `${SITE_URL}${file}?lang=${lang}`;
     return `<link rel="alternate" hreflang="${lang}" href="${href}">`;
   });
   lines.push(`<link rel="alternate" hreflang="x-default" href="${SITE_URL}${file}">`);
@@ -111,7 +111,7 @@ function renderPage(work, dict, products) {
         </figure>`).join('');
 
   return `<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -121,7 +121,7 @@ function renderPage(work, dict, products) {
 ${hreflangLinks(file)}
 <meta property="og:site_name" content="JessyIsCrafting">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="es_ES">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="${esc(pageTitle)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${SITE_URL}${file}">
@@ -136,20 +136,20 @@ ${hreflangLinks(file)}
 <link rel="stylesheet" href="css/styles.css">
 <script type="application/ld+json" id="jsonld-work">${ld}</script>
 </head>
-<body data-work-id="${esc(id)}" data-work-page="${file}" data-static-lang="es">
-<a href="#main" class="skip-link">Saltar al contenido</a>
+<body data-work-id="${esc(id)}" data-work-page="${file}">
+<a href="#main" class="skip-link">Skip to content</a>
 <div data-include="header"></div>
 
 <main id="main">
   <section class="section" style="padding-bottom:0;">
     <div class="container">
       <div class="product-topbar">
-        <nav class="breadcrumb" aria-label="Ruta de navegación">
-          <a href="index.html" data-i18n="nav.home">Inicio</a> /
-          <a href="galeria.html" data-i18n="nav.gallery">Galería</a> /
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-i18n="nav.home">Home</a> /
+          <a href="galeria.html" data-i18n="nav.gallery">Gallery</a> /
           <span id="breadcrumbCurrent">${esc(title)}</span>
         </nav>
-        <a href="${backHref(work, products)}" id="workBack" class="product-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span data-i18n="works.backToGallery">Volver a la galería</span></a>
+        <a href="${backHref(work, products)}" id="workBack" class="product-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span data-i18n="works.backToGallery">Back to the gallery</span></a>
       </div>
     </div>
   </section>
@@ -159,13 +159,13 @@ ${hreflangLinks(file)}
 
       <div class="work-detail" id="workWrapper">
         <div class="work-intro">
-          <span class="eyebrow" data-i18n="nav.gallery">Galería</span>
+          <span class="eyebrow" data-i18n="nav.gallery">Gallery</span>
           <h1 id="workTitle">${esc(title)}</h1>
           <div class="work-description" id="workDescription">
         ${descriptionHtml(t.description || '')}
           </div>
           <div class="work-actions">
-            <a href="contacto.html?producto=${encodeURIComponent(title)}" id="workConsultButton" class="btn btn--soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg><span data-i18n="works.consultButton">Consultar esta pieza</span></a>
+            <a href="contacto.html?producto=${encodeURIComponent(title)}" id="workConsultButton" class="btn btn--soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg><span data-i18n="works.consultButton">Ask about this piece</span></a>
           </div>
         </div>
 
@@ -193,7 +193,7 @@ ${hreflangLinks(file)}
 
 function main() {
   const works = readJson('data/galeria.json');
-  const dict = readJson('i18n/es.json');
+  const dict = readJson('i18n/en.json');
   const products = readJson('data/products.json');
   let count = 0;
   works.forEach((work) => {

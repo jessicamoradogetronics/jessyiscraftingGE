@@ -5,20 +5,20 @@
       <span>JessyIsCrafting</span>
     </a>
 
-    <nav class="nav-drawer" id="navDrawer" aria-label="Navegación principal">
+    <nav class="nav-drawer" id="navDrawer" aria-label="Main navigation">
       <ul class="main-nav">
-        <li><a href="{{BASE}}index.html" data-i18n="nav.home">Inicio</a></li>
-        <li><a href="{{BASE}}tienda.html" data-i18n="nav.store">Tienda</a></li>
-        <li><a href="{{BASE}}galeria.html" data-i18n="nav.gallery">Galería</a></li>
+        <li><a href="{{BASE}}index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="{{BASE}}tienda.html" data-i18n="nav.store">Shop</a></li>
+        <li><a href="{{BASE}}galeria.html" data-i18n="nav.gallery">Gallery</a></li>
         <li><a href="{{BASE}}fanfics.html" data-i18n="nav.fanfics">Fanfics</a></li>
-        <li><a href="{{BASE}}inspiracion.html" data-i18n="nav.inspiration">Inspiración</a></li>
-        <li><a href="{{BASE}}contacto.html" data-i18n="nav.contact">Contacto</a></li>
-        <li><a href="{{BASE}}faq.html" data-i18n="nav.faq">Preguntas</a></li>
+        <li><a href="{{BASE}}inspiracion.html" data-i18n="nav.inspiration">Inspiration</a></li>
+        <li><a href="{{BASE}}contacto.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="{{BASE}}faq.html" data-i18n="nav.faq">FAQ</a></li>
       </ul>
       <span class="lang-picker">
         <svg class="lang-picker__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><ellipse cx="12" cy="12" rx="4" ry="9.5"/><path d="M2.5 12h19M4 7h16M4 17h16"/></svg>
-        <label class="visually-hidden" for="langSelect" data-i18n="nav.langLabel">Idioma</label>
-        <select class="lang-select" id="langSelect" aria-label="Seleccionar idioma">
+        <label class="visually-hidden" for="langSelect" data-i18n="nav.langLabel">Language</label>
+        <select class="lang-select" id="langSelect" aria-label="Select language">
           <option value="es">ES</option>
           <option value="en">EN</option>
           <option value="de">DE</option>
@@ -28,30 +28,30 @@
 
     <div class="header-actions">
       <div class="site-search" id="siteSearch" role="search">
-        <input type="search" class="site-search__input" id="siteSearchInput" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="siteSearchResults" aria-autocomplete="list" data-i18n-attr="placeholder:search.placeholder;aria-label:search.label" placeholder="Buscar..." aria-label="Buscar en el sitio">
+        <input type="search" class="site-search__input" id="siteSearchInput" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="siteSearchResults" aria-autocomplete="list" data-i18n-attr="placeholder:search.placeholder;aria-label:search.label" placeholder="Search..." aria-label="Search the site">
         <ul class="site-search__results" id="siteSearchResults" role="listbox" hidden></ul>
       </div>
-      <button type="button" class="cart-toggle" id="cartToggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer" data-i18n-attr="aria-label:cart.openCart" aria-label="Abrir carrito">
+      <button type="button" class="cart-toggle" id="cartToggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer" data-i18n-attr="aria-label:cart.openCart" aria-label="Open cart">
         🛒<span class="cart-toggle__count" id="cartCount" hidden>0</span>
       </button>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navDrawer" aria-label="Abrir menú">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navDrawer" aria-label="Open menu">
         <span class="nav-toggle__bar"></span>
       </button>
     </div>
   </div>
 </header>
 
-<div class="cart-drawer" id="cartDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Carrito">
+<div class="cart-drawer" id="cartDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Cart">
   <div class="cart-drawer__backdrop" id="cartBackdrop"></div>
   <div class="cart-drawer__panel">
     <div class="cart-drawer__header">
-      <h2 data-i18n="cart.title">Tu carrito</h2>
-      <button type="button" class="cart-drawer__close" id="cartClose" aria-label="Cerrar carrito">&times;</button>
+      <h2 data-i18n="cart.title">Your cart</h2>
+      <button type="button" class="cart-drawer__close" id="cartClose" aria-label="Close cart">&times;</button>
     </div>
     <div class="cart-drawer__items" id="cartItems"></div>
-    <p class="cart-drawer__empty" id="cartEmpty" data-i18n="cart.empty">Tu carrito está vacío.</p>
+    <p class="cart-drawer__empty" id="cartEmpty" data-i18n="cart.empty">Your cart is empty.</p>
     <div class="cart-drawer__footer">
-      <a href="{{BASE}}contacto.html?carrito=1" class="btn btn--gold btn--block" id="cartCheckout" hidden data-i18n="cart.checkout">Solicitar presupuesto</a>
+      <a href="{{BASE}}contacto.html?carrito=1" class="btn btn--gold btn--block" id="cartCheckout" hidden data-i18n="cart.checkout">Request a quote</a>
     </div>
   </div>
 </div>
