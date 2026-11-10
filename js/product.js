@@ -13,6 +13,56 @@
     out_of_stock: { key: 'availabilityOutOfStock', schema: 'https://schema.org/OutOfStock', cls: 'is-out-of-stock' }
   };
 
+  // Datos de envío y devolución para el JSON-LD (según preguntas frecuentes).
+  const SHIPPING_ES_EUR = 7;
+  const SHIPPING_INTL_MIN_EUR = 16;
+  const SHIPPING_INTL_MAX_EUR = 20;
+  const SHIPPING_TRANSIT_DAYS = 7;
+  const SHIPPING_COUNTRIES_INTL = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'SE', 'GB'];
+
+  function buildShippingDetails(customizable) {
+    const handlingTime = customizable
+      ? { '@type': 'QuantitativeValue', minValue: 7, maxValue: 21, unitCode: 'DAY' }
+      : { '@type': 'QuantitativeValue', minValue: 2, maxValue: 4, unitCode: 'DAY' };
+    const deliveryTime = { '@type': 'ShippingDeliveryTime', handlingTime: handlingTime };
+    if (SHIPPING_TRANSIT_DAYS !== null) {
+      deliveryTime.transitTime = { '@type': 'QuantitativeValue', value: SHIPPING_TRANSIT_DAYS, unitCode: 'DAY' };
+    }
+    const region = (c) => ({ '@type': 'DefinedRegion', addressCountry: c });
+    return [
+      {
+        '@type': 'OfferShippingDetails',
+        shippingRate: { '@type': 'MonetaryAmount', value: SHIPPING_ES_EUR, currency: 'EUR' },
+        shippingDestination: [region('ES')],
+        deliveryTime: deliveryTime
+      },
+      {
+        '@type': 'OfferShippingDetails',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          minValue: SHIPPING_INTL_MIN_EUR,
+          maxValue: SHIPPING_INTL_MAX_EUR,
+          currency: 'EUR'
+        },
+        shippingDestination: SHIPPING_COUNTRIES_INTL.map(region),
+        deliveryTime: deliveryTime
+      }
+    ];
+  }
+
+  function buildReturnPolicy(customizable) {
+    if (customizable) {
+      return { '@type': 'MerchantReturnPolicy', applicableCountry: 'ES', returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted' };
+    }
+    return {
+      '@type': 'MerchantReturnPolicy',
+      applicableCountry: 'ES',
+      returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+      merchantReturnDays: 14,
+      returnMethod: 'https://schema.org/ReturnByMail'
+    };
+  }
+
   function getIdFromUrl() {
     return new URLSearchParams(location.search).get('id');
   }
@@ -338,9 +388,27 @@
       image: image
     });
     const availability = AVAILABILITY[currentProduct.availability];
+    const customizable = !!currentProduct.customizable;
+    const sizePrices = (currentProduct.sizes || []).map((s) => s.price);
     const offer = currentProduct.priceFrom
-      ? { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: currentProduct.price, availability: availability && availability.schema }
-      : { '@type': 'Offer', price: currentProduct.price, priceCurrency: 'EUR', availability: availability && availability.schema };
+      ? {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'EUR',
+        lowPrice: currentProduct.price,
+        highPrice: Math.max(currentProduct.price, ...sizePrices),
+        offerCount: sizePrices.length || 1,
+        availability: availability && availability.schema,
+        shippingDetails: buildShippingDetails(customizable),
+        hasMerchantReturnPolicy: buildReturnPolicy(customizable)
+      }
+      : {
+        '@type': 'Offer',
+        price: currentProduct.price,
+        priceCurrency: 'EUR',
+        availability: availability && availability.schema,
+        shippingDetails: buildShippingDetails(customizable),
+        hasMerchantReturnPolicy: buildReturnPolicy(customizable)
+      };
     const availabilityEl = document.getElementById('productAvailability');
     if (availabilityEl && availability) {
       availabilityEl.className = 'product-info__availability ' + availability.cls;
