@@ -111,7 +111,7 @@
         title: t.name,
         body: [t.short, t.description, t.customization].filter(Boolean).join('\n'),
         image: cover ? `${cover}-thumb.jpg` : '',
-        url: `producto.html?id=${encodeURIComponent(p.id)}`,
+        url: window.JIC_I18N.productUrl(p.id),
       }));
     });
 

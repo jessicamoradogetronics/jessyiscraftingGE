@@ -64,7 +64,7 @@
   }
 
   function getIdFromUrl() {
-    return new URLSearchParams(location.search).get('id');
+    return new URLSearchParams(location.search).get('id') || document.body.dataset.productId || null;
   }
 
   function formatPrice(product, dict) {
@@ -121,19 +121,20 @@
     container.innerHTML = related.map((p) => {
       const t = dict.products[p.id] || {};
       const img = p.images[0];
+      const href = window.JIC_I18N.productUrl(p.id);
       return `
         <article class="product-card">
-          <a class="product-card__media" href="producto.html?id=${p.id}">
+          <a class="product-card__media" href="${href}">
             <picture>
               <source srcset="${img}-thumb.webp" type="image/webp">
               <img src="${img}-thumb.jpg" alt="${t.name || ''}" loading="lazy" width="640" height="800">
             </picture>
           </a>
           <div class="product-card__body">
-            <h3 class="product-card__title"><a href="producto.html?id=${p.id}">${t.name || ''}</a></h3>
+            <h3 class="product-card__title"><a href="${href}">${t.name || ''}</a></h3>
             <div class="product-card__footer">
               <span class="price">${formatPrice(p, dict)}</span>
-              <a class="btn btn--outline btn--sm" href="producto.html?id=${p.id}">${dict.common.viewProduct}</a>
+              <a class="btn btn--outline btn--sm" href="${href}">${dict.common.viewProduct}</a>
             </div>
           </div>
         </article>`;
@@ -378,7 +379,7 @@
     const cat = dict.categories[currentProduct.category] || {};
 
     const seo = window.JIC_SEO;
-    const pageUrl = `producto.html?id=${encodeURIComponent(currentProduct.id)}`;
+    const pageUrl = document.body.dataset.productPage || `producto.html?id=${encodeURIComponent(currentProduct.id)}`;
     const image = `${currentProduct.images[0]}.jpg`;
     seo.setPageMeta({
       title: `${t.name} · JessyIsCrafting`,

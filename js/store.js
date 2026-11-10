@@ -20,9 +20,10 @@
     const t = dict.products[product.id] || {};
     const cat = dict.categories[product.category] || {};
     const img = product.images[0];
+    const href = window.JIC_I18N.productUrl(product.id);
     return `
       <article class="product-card">
-        <a class="product-card__media" href="producto.html?id=${product.id}">
+        <a class="product-card__media" href="${href}">
           <picture>
             <source srcset="${img}-thumb.webp" type="image/webp">
             <img src="${img}-thumb.jpg" alt="${t.name || ''}" loading="lazy" width="640" height="800">
@@ -31,11 +32,11 @@
         </a>
         <div class="product-card__body">
           <span class="product-card__cat">${cat.name || ''}</span>
-          <h3 class="product-card__title"><a href="producto.html?id=${product.id}">${t.name || ''}</a></h3>
+          <h3 class="product-card__title"><a href="${href}">${t.name || ''}</a></h3>
           <p class="product-card__desc">${t.short || ''}</p>
           <div class="product-card__footer">
             <span class="price">${formatPrice(product, dict)}</span>
-            <a class="btn btn--outline btn--sm" href="producto.html?id=${product.id}">${dict.common.viewProduct}</a>
+            <a class="btn btn--outline btn--sm" href="${href}">${dict.common.viewProduct}</a>
           </div>
           <button type="button" class="btn btn--primary btn--sm btn--block" data-add-to-cart="${product.id}">${dict.cart.addButton}</button>
         </div>

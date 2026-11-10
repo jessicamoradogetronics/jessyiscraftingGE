@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="hero__gallery">
-        <a href="producto.html?id=miniatura-caballero-henry" aria-label="Figura pintada a mano">
+        <a href="producto-miniatura-caballero-henry.html" aria-label="Figura pintada a mano">
           <picture>
             <source srcset="assets/img/figuras/caballero-henry-1-thumb.webp" type="image/webp">
             <img src="assets/img/figuras/caballero-henry-1-thumb.jpg" alt="Figura de caballero medieval pintada a mano" loading="lazy" width="640" height="800">
@@ -73,7 +73,7 @@
             <img src="assets/img/cuadros/minas-tirith-1-thumb.jpg" alt="Cuadro al óleo de una ciudadela entre montañas" loading="lazy" width="640" height="800">
           </picture>
         </a>
-        <a href="producto.html?id=set-farkle-blason" aria-label="Set de Farkle de madera">
+        <a href="producto-set-farkle-blason.html" aria-label="Set de Farkle de madera">
           <picture>
             <source srcset="assets/img/artesanias/farkle-set-1-thumb.webp" type="image/webp">
             <img src="assets/img/artesanias/farkle-set-1-thumb.jpg" alt="Caja de madera tallada con set de dados Farkle" loading="lazy" width="640" height="800">
@@ -170,9 +170,10 @@
       const img = p.images[0];
       const amount = Number.isInteger(p.price) ? p.price : p.price.toFixed(2);
       const prefix = p.priceFrom ? `<span class="price__from">${dict.common.from}</span>` : '';
+      const href = window.JIC_I18N.productUrl(p.id);
       return `
         <article class="product-card">
-          <a class="product-card__media" href="producto.html?id=${p.id}">
+          <a class="product-card__media" href="${href}">
             <picture>
               <source srcset="${img}-thumb.webp" type="image/webp">
               <img src="${img}-thumb.jpg" alt="${t.name || ''}" loading="lazy" width="640" height="800">
@@ -180,11 +181,11 @@
             <span class="badge">${cat.name || ''}</span>
           </a>
           <div class="product-card__body">
-            <h3 class="product-card__title"><a href="producto.html?id=${p.id}">${t.name || ''}</a></h3>
+            <h3 class="product-card__title"><a href="${href}">${t.name || ''}</a></h3>
             <p class="product-card__desc">${t.short || ''}</p>
             <div class="product-card__footer">
               <span class="price">${prefix}${amount}€</span>
-              <a class="btn btn--outline btn--sm" href="producto.html?id=${p.id}">${dict.common.viewProduct}</a>
+              <a class="btn btn--outline btn--sm" href="${href}">${dict.common.viewProduct}</a>
             </div>
           </div>
         </article>`;

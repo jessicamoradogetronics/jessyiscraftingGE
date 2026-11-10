@@ -13,13 +13,16 @@
   let currentDict = null;
   let currentLang = null;
 
-  // Orden: ?lang=, elección manual guardada, idioma principal del navegador (es/en/de) y, si no, inglés.
+  // Orden: ?lang=, elección guardada, idioma fijado de la página (data-static-lang), navegador (es/en/de) y, si no, inglés.
   function detectLang() {
     const fromUrl = new URLSearchParams(location.search).get('lang');
     if (SUPPORTED_LANGS.includes(fromUrl)) return fromUrl;
 
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
+
+    const pinned = document.body && document.body.dataset.staticLang;
+    if (SUPPORTED_LANGS.includes(pinned)) return pinned;
 
     const browser = ((navigator.languages && navigator.languages[0]) || navigator.language || '').slice(0, 2).toLowerCase();
     return SUPPORTED_LANGS.includes(browser) ? browser : DEFAULT_LANG;
@@ -98,6 +101,7 @@
     getDict: () => currentDict,
     getLang: () => currentLang,
     t: (key) => resolveKey(currentDict || {}, key),
+    productUrl: (id) => `producto-${encodeURIComponent(id)}.html?lang=${currentLang || document.documentElement.getAttribute('lang') || DEFAULT_LANG}`,
     setLanguage,
   };
 
